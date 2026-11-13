@@ -1,0 +1,98 @@
+{
+  "expert_bg": {
+    "x": 996,
+    "y": 14,
+    "x2": 2844
+  },
+  "master_bg": {
+    "x": 996,
+    "y": 14,
+    "x2": 2844
+  },
+  "normal": {
+    "x": 3222,
+    "y": 132
+  },
+  "normal_en": {
+    "x": 3222,
+    "y": 132
+  },
+  "normal_zh": {
+    "x": 3222,
+    "y": 132
+  },
+  "normal_ko": {
+    "x": 3222,
+    "y": 132
+  },
+  "expert": {
+    "x": 3222,
+    "y": 132
+  },
+  "expert_en": {
+    "x": 3222,
+    "y": 132
+  },
+  "expert_zh": {
+    "x": 3222,
+    "y": 132
+  },
+  "expert_ko": {
+    "x": 3222,
+    "y": 132
+  },
+  "master": {
+    "x": 3222,
+    "y": 132
+  },
+  "master_en": {
+    "x": 3222,
+    "y": 132
+  },
+  "master_zh": {
+    "x": 3222,
+    "y": 132
+  },
+  "master_ko": {
+    "x": 3222,
+    "y": 132
+  },
+  "level_up": {
+    "x": 488,
+    "y": -168,
+    "density": 1
+  },
+  "level_up_en": {
+    "x": 488,
+    "y": -168
+  },
+  "level_up_zh": {
+    "x": 488,
+    "y": -168,
+    "density": 1
+  },
+  "level_up_ko": {
+    "x": 488,
+    "y": -168,
+    "density": 1
+  },
+  "level_down": {
+    "x": 488,
+    "y": -168,
+    "density": 1
+  },
+  "level_down_en": {
+    "x": 488,
+    "y": -168
+  },
+  "level_down_zh": {
+    "x": 488,
+    "y": -168,
+    "density": 1
+  },
+  "level_down_ko": {
+    "x": 488,
+    "y": -168,
+    "density": 1
+  }
+}

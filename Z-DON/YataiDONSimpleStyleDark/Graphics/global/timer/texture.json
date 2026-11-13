@@ -1,0 +1,25 @@
+{
+  "bg": {
+    "x": 3338,
+    "y": 24,
+    "density": 1
+  },
+  "bg_red": {
+    "x": 3338,
+    "y": 24,
+    "density": 1
+  },
+  "highlight": {
+    "x": 3218,
+    "y": -96,
+    "density": 1
+  },
+  "counter_black": {
+    "x": 3562,
+    "y": 168
+  },
+  "counter_white": {
+    "x": 3562,
+    "y": 168
+  }
+}

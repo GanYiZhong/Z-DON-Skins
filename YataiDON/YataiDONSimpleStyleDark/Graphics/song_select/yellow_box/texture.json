@@ -1,0 +1,277 @@
+{
+    "crown_clear": {},
+    "crown_fc": {
+        "frame_order": [
+            0,
+            0,
+            0,
+            0,
+            0
+        ]
+    },
+    "crown_dfc": {
+        "frame_order": [
+            0,
+            0,
+            0,
+            0,
+            0
+        ]
+    },
+    "frame_score": {},
+    "level_number": {
+        "frame_order": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ]
+    },
+    "score_rank": {
+        "frame_order": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            2,
+            2,
+            2,
+            2,
+            2,
+            3,
+            3,
+            3,
+            3,
+            3,
+            4,
+            4,
+            4,
+            4,
+            4,
+            5,
+            5,
+            5,
+            5,
+            5,
+            6,
+            6,
+            6,
+            6,
+            6
+        ]
+    },
+    "s_crown_outline": {},
+    "star": {},
+    "branch_indicator": {},
+    "branch_indicator_diff": {},
+    "branch_indicator_ura": {},
+    "ex_data_new_audio": {
+        "x": 687,
+        "y": 180
+    },
+    "ex_data_old_audio": {
+        "x": 687,
+        "y": 180
+    },
+    "ex_data_new_song_ja": {},
+    "ex_data_limited_time_ja": {
+        "x": 687,
+        "y": 180
+    },
+    "favorite_1p_ja": {
+        "x": 687,
+        "y": 180
+    },
+    "favorite_2p_ja": {
+        "x": 687,
+        "y": 180
+    },
+    "ex_data_new_song_en": {},
+    "ex_data_limited_time_en": {
+        "x": 687,
+        "y": 180
+    },
+    "favorite_1p_en": {
+        "x": 687,
+        "y": 180
+    },
+    "favorite_2p_en": {
+        "x": 687,
+        "y": 180
+    },
+    "song_count_back": {},
+    "s_crown_clear": {},
+    "s_crown_dfc": {
+        "x": 0,
+        "y": 0
+    },
+    "s_crown_fc": {
+        "x": 0,
+        "y": 0
+    },
+    "ex_data_new_song_balloon_en": {
+        "x": -7,
+        "y": 15
+    },
+    "ex_data_new_song_balloon_ja": {
+        "x": -7,
+        "y": 15
+    },
+    "ex_data_limited_time_balloon_en": {
+        "x": -7,
+        "y": 15
+    },
+    "ex_data_limited_time_balloon_ja": {
+        "x": -7,
+        "y": 15
+    },
+    "preimage_bg": {
+        "x": -7,
+        "y": 15
+    },
+    "difficulty_bar": {
+        "x": 687,
+        "y": 315,
+        "frame_order": [
+            0,
+            0,
+            0,
+            0,
+            0
+        ]
+    },
+    "difficulty_bar_shadow": {
+        "x": 687,
+        "y": 315,
+        "frame_order": [
+            0,
+            0,
+            0,
+            0
+        ]
+    },
+    "star_ura": {
+        "x": 723,
+        "y": 706
+    },
+    "yellow_box_bottom_right": {},
+    "yellow_box_bottom_left": {},
+    "yellow_box_top_right": {},
+    "yellow_box_top_left": {},
+    "yellow_box_left": {},
+    "yellow_box_right": {},
+    "yellow_box_bottom": {},
+    "yellow_box_top": {},
+    "yellow_box_center": {},
+    "shadow_bottom_left": [
+        {
+            "y": 819,
+            "x": 15
+        },
+        {
+            "y": 819,
+            "x": -217
+        }
+    ],
+    "shadow_bottom_right": [
+        {
+            "x": 105,
+            "y": 819
+        },
+        {
+            "x": 330,
+            "y": 819
+        }
+    ],
+    "shadow_bottom": [
+        {
+            "x": 63,
+            "y": 819,
+            "x2": 42
+        },
+        {
+            "x": -169,
+            "y": 819,
+            "x2": 499
+        }
+    ],
+    "shadow_right": [
+        {
+            "x": 105,
+            "y": 198,
+            "y2": 621
+        },
+        {
+            "x": 330,
+            "y": 198,
+            "y2": 621
+        }
+    ],
+    "shadow_top_right": [
+        {
+            "y": 150,
+            "x": 105
+        },
+        {
+            "y": 150,
+            "x": 330
+        }
+    ]
+}

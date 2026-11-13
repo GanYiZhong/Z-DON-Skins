@@ -1,0 +1,298 @@
+{
+  "crown_clear": {},
+  "crown_fc": {
+    "frame_order": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "crown_dfc": {
+    "frame_order": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "frame_score": {
+    "density": 1
+  },
+  "level_number": {
+    "frame_order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ]
+  },
+  "score_rank": {
+    "frame_order": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      2,
+      2,
+      2,
+      3,
+      3,
+      3,
+      3,
+      3,
+      4,
+      4,
+      4,
+      4,
+      4,
+      5,
+      5,
+      5,
+      5,
+      5,
+      6,
+      6,
+      6,
+      6,
+      6
+    ]
+  },
+  "s_crown_outline": {},
+  "star": {},
+  "branch_indicator": {},
+  "branch_indicator_diff": {},
+  "branch_indicator_ura": {},
+  "ex_data_new_audio": {
+    "x": 1374,
+    "y": 360,
+    "density": 1
+  },
+  "ex_data_old_audio": {
+    "x": 1374,
+    "y": 360,
+    "density": 1
+  },
+  "ex_data_new_song_ja": {},
+  "ex_data_limited_time_ja": {
+    "x": 1374,
+    "y": 360,
+    "density": 1
+  },
+  "favorite_1p_ja": {
+    "x": 1374,
+    "y": 360,
+    "density": 1
+  },
+  "favorite_2p_ja": {
+    "x": 1374,
+    "y": 360,
+    "density": 1
+  },
+  "ex_data_new_song_en": {},
+  "ex_data_limited_time_en": {
+    "x": 1374,
+    "y": 360,
+    "density": 1
+  },
+  "favorite_1p_en": {
+    "x": 1374,
+    "y": 360,
+    "density": 1
+  },
+  "favorite_2p_en": {
+    "x": 1374,
+    "y": 360,
+    "density": 1
+  },
+  "song_count_back": {
+    "density": 1
+  },
+  "s_crown_clear": {
+    "density": 1
+  },
+  "s_crown_dfc": {
+    "x": 0,
+    "y": 0
+  },
+  "s_crown_fc": {
+    "x": 0,
+    "y": 0
+  },
+  "ex_data_new_song_balloon_en": {
+    "x": -14,
+    "y": 30,
+    "density": 1
+  },
+  "ex_data_new_song_balloon_ja": {
+    "x": -14,
+    "y": 30,
+    "density": 1
+  },
+  "ex_data_limited_time_balloon_en": {
+    "x": -14,
+    "y": 30,
+    "density": 1
+  },
+  "ex_data_limited_time_balloon_ja": {
+    "x": -14,
+    "y": 30,
+    "density": 1
+  },
+  "preimage_bg": {
+    "x": -14,
+    "y": 30,
+    "density": 1
+  },
+  "difficulty_bar": {
+    "x": 1374,
+    "y": 630,
+    "frame_order": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "density": 1
+  },
+  "difficulty_bar_shadow": {
+    "x": 1374,
+    "y": 630,
+    "frame_order": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "density": 1
+  },
+  "star_ura": {
+    "x": 1446,
+    "y": 1412
+  },
+  "yellow_box_bottom_right": {},
+  "yellow_box_bottom_left": {},
+  "yellow_box_top_right": {},
+  "yellow_box_top_left": {},
+  "yellow_box_left": {},
+  "yellow_box_right": {},
+  "yellow_box_bottom": {},
+  "yellow_box_top": {},
+  "yellow_box_center": {},
+  "shadow_bottom_left": [
+    {
+      "y": 1638,
+      "x": 30
+    },
+    {
+      "y": 1638,
+      "x": -434
+    }
+  ],
+  "shadow_bottom_right": [
+    {
+      "x": 210,
+      "y": 1638
+    },
+    {
+      "x": 660,
+      "y": 1638
+    }
+  ],
+  "shadow_bottom": [
+    {
+      "x": 126,
+      "y": 1638,
+      "x2": 84
+    },
+    {
+      "x": -338,
+      "y": 1638,
+      "x2": 998
+    }
+  ],
+  "shadow_right": [
+    {
+      "x": 210,
+      "y": 396,
+      "y2": 1242
+    },
+    {
+      "x": 660,
+      "y": 396,
+      "y2": 1242
+    }
+  ],
+  "shadow_top_right": [
+    {
+      "y": 300,
+      "x": 210
+    },
+    {
+      "y": 300,
+      "x": 660
+    }
+  ]
+}

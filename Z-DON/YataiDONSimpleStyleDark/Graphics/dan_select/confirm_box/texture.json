@@ -1,0 +1,62 @@
+{
+  "bg": {
+    "x": 528,
+    "y": 478,
+    "density": 1
+  },
+  "confirmation_text": {
+    "x": 1282,
+    "y": 754,
+    "density": 1
+  },
+  "selection_box": [
+    {
+      "x": 1360,
+      "y": 938,
+      "density": 1
+    },
+    {
+      "x": 2036,
+      "y": 938
+    }
+  ],
+  "selection_box_highlight": [
+    {
+      "x": 1360,
+      "y": 938,
+      "density": 1
+    },
+    {
+      "x": 2036,
+      "y": 938
+    }
+  ],
+  "selection_box_outline": [
+    {
+      "x": 1360,
+      "y": 938,
+      "density": 1
+    },
+    {
+      "x": 2036,
+      "y": 938
+    }
+  ],
+  "yes": {
+    "x": 1558,
+    "y": 1038
+  },
+  "no": {
+    "x": 2206,
+    "y": 1038
+  },
+  "option": {
+    "x": 1130,
+    "y": 984
+  },
+  "option_highlight": {
+    "x": 1086,
+    "y": 938,
+    "density": 1
+  }
+}

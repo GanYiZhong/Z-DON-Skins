@@ -1,0 +1,36 @@
+{
+  "rainbow_bg": {
+    "x": 0,
+    "y": 0,
+    "density": 1
+  },
+  "rainbow_bg_top": {
+    "x": 0,
+    "y": 0,
+    "density": 1
+  },
+  "rainbow_bg_bottom": {
+    "x": 0,
+    "y": 0,
+    "density": 1
+  },
+  "text_bg": {
+    "x": 0,
+    "y": 0
+  },
+  "chara_left": {
+    "x": -240,
+    "y": 1012,
+    "density": 1
+  },
+  "chara_right": {
+    "x": 2960,
+    "y": 1012,
+    "density": 1
+  },
+  "chara_center": {
+    "x": 0,
+    "y": 1136,
+    "density": 1
+  }
+}

@@ -1,0 +1,45 @@
+{
+    "background": {},
+    "background_overlay": {},
+    "background_overlay_2": {},
+    "box_1": {
+        "x": 7,
+        "y": 1080
+    },
+    "box_2": {
+        "x": 7,
+        "y": 1080
+    },
+    "bottom_text": {
+        "x": 90,
+        "y": 1602
+    },
+    "subdiff_easy": {
+        "x": 105,
+        "y": 1248
+    },
+    "subdiff_normal": {
+        "x": 105,
+        "y": 1248
+    },
+    "subdiff_hard": {
+        "x": 105,
+        "y": 1248
+    },
+    "subdiff_oni": {
+        "x": 105,
+        "y": 1248
+    },
+    "subdiff_selector": {
+        "x": 115,
+        "y": 1248
+    },
+    "subdiff_select_text": {
+        "x": 97,
+        "y": 1176
+    },
+    "box_bg_blur": {
+        "x": 7,
+        "y": 1062
+    }
+}

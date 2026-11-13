@@ -1,0 +1,152 @@
+{
+  "box_top_left_1p": {
+    "x": 0,
+    "y": 0
+  },
+  "box_top_right_1p": {
+    "x": 1200,
+    "y": 0
+  },
+  "box_bottom_left_1p": {
+    "x": 0,
+    "y": 540
+  },
+  "box_bottom_right_1p": {
+    "x": 1200,
+    "y": 540
+  },
+  "box_top_1p": {
+    "x": 258,
+    "y": 1414,
+    "density": 1
+  },
+  "box_bottom_1p": {
+    "x": 632,
+    "y": 1666,
+    "density": 1
+  },
+  "box_left_1p": {
+    "x": 0,
+    "y": 192,
+    "y2": 348
+  },
+  "box_right_1p": {
+    "x": 1200,
+    "y": 192,
+    "y2": 348
+  },
+  "box_center_1p": {
+    "x": 78,
+    "y": 274,
+    "density": 1
+  },
+  "box_top_left_2p": {
+    "x": 0,
+    "y": 0
+  },
+  "box_top_right_2p": {
+    "x": 1200,
+    "y": 0
+  },
+  "box_bottom_left_2p": {
+    "x": 0,
+    "y": 540
+  },
+  "box_bottom_right_2p": {
+    "x": 1200,
+    "y": 540
+  },
+  "box_top_2p": {
+    "x": 192,
+    "y": 0,
+    "x2": 1008
+  },
+  "box_bottom_2p": {
+    "x": 192,
+    "y": 540,
+    "x2": 1008
+  },
+  "box_left_2p": {
+    "x": 0,
+    "y": 192,
+    "y2": 348
+  },
+  "box_right_2p": {
+    "x": 1200,
+    "y": 192,
+    "y2": 348
+  },
+  "box_center_2p": {
+    "x": 1926,
+    "y": 274,
+    "density": 1
+  },
+  "blue_arrow": {
+    "x": 1506,
+    "y": 1472
+  },
+  "costume": {
+    "x": 0,
+    "y": 0
+  },
+  "default": {
+    "x": 0,
+    "y": 0
+  },
+  "head_body": {
+    "x": 0,
+    "y": 0
+  },
+  "item_box_1p": {
+    "x": 512,
+    "y": 1436
+  },
+  "item_box_2p": {
+    "x": 512,
+    "y": 1436
+  },
+  "item_box_highlighted": {
+    "x": 478,
+    "y": 1402
+  },
+  "text_highlight_1p": {
+    "x": 996,
+    "y": 1344
+  },
+  "text_highlight_2p": {
+    "x": 996,
+    "y": 1344
+  },
+  "preset_1": {
+    "x": 0,
+    "y": 0
+  },
+  "preset_2": {
+    "x": 0,
+    "y": 0
+  },
+  "preset_3": {
+    "x": 0,
+    "y": 0
+  },
+  "random_item": {
+    "x": 0,
+    "y": 0
+  },
+  "cloud": {
+    "x": -240,
+    "y": 558
+  },
+  "random": {
+    "x": -156,
+    "y": 618
+  },
+  "costume_example": {
+    "x": -186,
+    "y": 600
+  },
+  "hiroba_ad": {
+    "x": -240,
+    "y": 560
+  }
+}

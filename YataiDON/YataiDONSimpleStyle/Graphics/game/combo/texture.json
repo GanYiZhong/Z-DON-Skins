@@ -1,0 +1,69 @@
+{
+    "gleam": {
+        "y": -276
+    },
+    "counter": {
+        "x": 395,
+        "y": 58
+    },
+    "counter_100": {
+        "x": 395,
+        "y": 58
+    },
+    "counter_gold": {
+        "x": 395,
+        "y": 58
+    },
+    "announce_bg_1p": {
+        "x": 264,
+        "y": -264
+    },
+    "announce_bg_2p": {
+        "x": 264,
+        "y": -264
+    },
+    "announce_number": {
+        "x": 450,
+        "y": -196
+    },
+    "announce_add": {
+        "x": 0,
+        "y": -196,
+        "frame_order": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ]
+    },
+    "combo_ja": {
+        "x": 320,
+        "y": 136
+    },
+    "combo_100_ja": {
+        "x": 320,
+        "y": 136
+    },
+    "combo_en": {
+        "x": 320,
+        "y": 136
+    },
+    "combo_100_en": {
+        "x": 320,
+        "y": 136
+    },
+    "announce_text": {
+        "x": 362,
+        "y": -137
+    },
+    "announce_digit_1p": {
+        "x": 362,
+        "y": -196
+    },
+    "announce_digit_2p": {
+        "x": 362,
+        "y": -196
+    }
+}

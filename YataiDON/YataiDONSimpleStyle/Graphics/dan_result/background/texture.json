@@ -1,0 +1,43 @@
+{
+    "background_4p": {},
+    "genre_banner": {
+        "x": 380,
+        "y": 148,
+        "frame_order": [
+            0,
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+        ]
+    },
+    "result_2_bg": {
+        "x": 320,
+        "y": 68
+    },
+    "dan_result_p1_bg": {
+        "x": 0,
+        "y": 0
+    },
+    "dan_result_p1_board": {
+        "x": 340,
+        "y": 92
+    },
+    "footer_4p": {},
+    "result_text": {
+        "x": 10,
+        "y": 6
+    },
+    "result_2_pullout": {
+        "x": 444,
+        "y": 78
+    },
+    "result_2_divider": {
+        "x": 522,
+        "y": 492
+    }
+}

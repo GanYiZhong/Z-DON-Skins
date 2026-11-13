@@ -1,0 +1,1452 @@
+{
+    "zdon_ai_arcade_flow": {
+        "x": 0
+    },
+    "zdon_ai_board_dissolve": {
+        "x": 0
+    },
+    "zdon_ai_instant_page0": {
+        "x": 0
+    },
+    "zdon_ai_card_hold_ms": {
+        "x": 0
+    },
+    "zdon_ai_level_panel_ms": {
+        "x": 0
+    },
+    "zdon_ai_gauge_fade_ms": {
+        "x": 0
+    },
+    "zdon_ai_don_scale": {
+        "x": 0
+    },
+    "zdon_ai_don": {
+        "x": 0,
+        "y": 0
+    },
+    "zdon_ai_native_sort": {
+        "x": 0
+    },
+    "zdon_ai_off_box": {
+        "x": 0,
+        "y": 0
+    },
+    "zdon_ai_result_gauge": {
+        "x": 0,
+        "y": 0,
+        "width": 0
+    },
+    "zdon_ai_indicator_phase": {
+        "x": 0
+    },
+    "zdon_ai_result_gauge_clear": {
+        "x": 0,
+        "y": 0
+    },
+    "zdon_ai_no_puchi": {
+        "x": 0
+    },
+    "zdon_ai_game_plate": {
+        "x": 0,
+        "y": 0
+    },
+    "zdon_ai_off_arrows": {
+        "x": 0,
+        "y": 0
+    },
+    "zdon_ai_off_panels": {
+        "x": 0,
+        "y": 0
+    },
+    "zdon_ai_off_rankup": {
+        "x": 0,
+        "y": 0
+    },
+    "zdon_ai_off_footer": {
+        "x": 0,
+        "y": 0
+    },
+    "zdon_ai_off_nameplate": {
+        "x": 0,
+        "y": 0
+    },
+    "zdon_auto_badge": {
+        "x": 150,
+        "y": -85,
+        "outline": 0.6
+    },
+    "transition_hint_title": {
+        "font_size": 32,
+        "text": {
+            "ja": "ゲームのヒント",
+            "en": "Hints",
+            "zh": "遊戲提示",
+            "ko": "게임의 힌트"
+        }
+    },
+    "transition_hint_line1": {
+        "font_size": 26,
+        "text": {
+            "ja": "太鼓の面とフチをたたいてリズムにのろう!",
+            "en": "Hit the drum face and rim and ride the rhythm!",
+            "zh": "敲擊鼓面和鼓邊，跟上節奏吧！",
+            "ko": "북면과 테두리를 두드려 리듬을 타자!"
+        }
+    },
+    "transition_hint_line2": {
+        "font_size": 26,
+        "text": {
+            "ja": "黄色い連打音符はたたいた数だけ得点アップ!",
+            "en": "Yellow drumroll notes: every hit adds to your score!",
+            "zh": "黃色連打音符敲得越多得分越高！",
+            "ko": "노란 연타 음표는 두드린 만큼 점수 UP!"
+        }
+    },
+    "tutorial_skip": {
+        "font_size": 48,
+        "text": {
+            "ja": "フチを5回叩くと説明がおわるよ",
+            "en": "Hit the rim 5 times to skip",
+            "zh": "敲擊5次鼓邊即可結束說明",
+            "ko": "테두리를 5번 치면 설명이 끝나"
+        }
+    },
+    "tutorial_clear": {
+        "font_size": 44,
+        "text": {
+            "ja": "ココをこえれば\nクリア",
+            "en": "Get past here\nto clear",
+            "zh": "超過這個位置\n就算通關了！",
+            "ko": "여기를 넘으면\n클리어"
+        }
+    },
+    "tutorial_caption_1": {
+        "font_size": 38,
+        "text": {
+            "ja": "このゲームのあそびかたをおしえるよ",
+            "en": "This is how to play!",
+            "zh": "現在開始講解遊戲的玩法",
+            "ko": "이 게임의 플레이 방법을 알려줄게"
+        }
+    },
+    "tutorial_caption_2": {
+        "font_size": 38,
+        "text": {
+            "ja": "流れてくる音符が\nワクにかさなったら\nバチで太鼓をたたこう",
+            "en": "When a note flows in\nand reaches the frame,\nhit the drum with your sticks!",
+            "zh": "注意畫面\n當音符移動至與敲擊框重合\n便敲擊太鼓吧！",
+            "ko": "흘러오는 음표가\n틀에 겹쳐지면\n북채로 북을 치자"
+        }
+    },
+    "tutorial_caption_3": {
+        "font_size": 38,
+        "text": {
+            "ja": "太鼓のどうの部分は\nキケンだからたたかないでね",
+            "en": "Don't hit the side of the drum,\nit's dangerous!",
+            "zh": "為避免危險\n請不要敲擊鼓身",
+            "ko": "북의 몸통 부분은\n위험하니까 치지 마"
+        }
+    },
+    "tutorial_caption_4": {
+        "font_size": 38,
+        "text": {
+            "ja": "赤い音符{don}は面をたたこう",
+            "en": "Red notes {don} : hit the face!",
+            "zh": "{don} 敲打鼓面吧",
+            "ko": "빨간 음표{don}는 면을 치자"
+        }
+    },
+    "tutorial_caption_5": {
+        "font_size": 38,
+        "text": {
+            "ja": "青い音符{kat}はフチをたたこう",
+            "en": "Blue notes {kat} : hit the rim!",
+            "zh": "{kat} 敲打鼓邊吧",
+            "ko": "파란 음표{kat}는 테를 치자"
+        }
+    },
+    "tutorial_caption_6": {
+        "font_size": 38,
+        "text": {
+            "ja": "大きな音符{big_don}{big_kat}は\n強くたたくと高得点！",
+            "en": "Big notes {big_don}{big_kat}\nscore more when hit hard!",
+            "zh": "{big_don}{big_kat} 用雙手用力敲打！",
+            "ko": "큰 음표{big_don}{big_kat}는\n세게 치면 고득점!"
+        }
+    },
+    "tutorial_caption_7": {
+        "font_size": 38,
+        "text": {
+            "ja": "黄色い音符{roll}は\nひたすら連打！",
+            "en": "Yellow notes {roll}\nhit them as fast as you can!",
+            "zh": "{roll} 不停連續敲打！",
+            "ko": "노란 음표{roll}는\n계속 연타!"
+        }
+    },
+    "tutorial_caption_8": {
+        "font_size": 38,
+        "text": {
+            "ja": "ふうせん音符{balloon}と\nくすだま音符{kusudama}もとにかく連打ー！",
+            "en": "Balloon notes {balloon} and\nkusudama notes {kusudama}: keep drumming!",
+            "zh": "{balloon}{kusudama} 總之連續敲打吧！",
+            "ko": "풍선 음표{balloon}와\n쿠스다마 음표{kusudama}도 무조건 연타!"
+        }
+    },
+    "tutorial_caption_9": {
+        "font_size": 38,
+        "text": {
+            "ja": "タイミングよくたたけば\n魂（たましい）ゲージがアップ！",
+            "en": "Hit with good timing\nto fill the soul gauge!",
+            "zh": "時機把握得好，\n就能積累魂槽哦！",
+            "ko": "타이밍 좋게 치면\n혼 게이지가 올라가!"
+        }
+    },
+    "tutorial_caption_10": {
+        "font_size": 38,
+        "text": {
+            "ja": "うまくたたいてクリアをめざそう！",
+            "en": "Play well and aim for a clear!",
+            "zh": "盡情擊打，爭取過關吧！",
+            "ko": "잘 쳐서 클리어를 노리자!"
+        }
+    },
+    "screen": {
+        "parent": "YataiDONSimpleStyle/_base/PyTaikoGreen",
+        "width": 1920,
+        "height": 1080,
+        "options": {
+            "disable_retry_game": true,
+            "horizontal_song_select": true,
+            "one_menu_sort": true,
+            "option_skip_row": true,
+            "option_neiro_row": true,
+            "entry_credit_arcade": true,
+            "dan_title_horizontal": true,
+            "dan_chip_name_black": true,
+            "disable_chara_3d": false,
+            "disable_ai_combo_announce": true,
+            "ai_select_chara_3d": true,
+            "ai_no_support_levels": true,
+            "ai_game_chara_3d": true,
+            "ai_loading_chara_3d": true,
+            "ai_keep_preview": true,
+            "ai_wait_loading_card": true,
+            "ai_start_voice": true,
+            "ai_list_fade_in_place": true,
+            "ai_result_reveal_at_once": false,
+            "ai_result_short_black": true,
+            "ai_don_under_flames": true,
+            "disable_campaigns": true,
+            "disable_reward_shop": true,
+            "disable_total_result": true,
+            "disable_waiwai": true
+        }
+    },
+    "game_song_info": {
+        "x": 1873,
+        "y": 75,
+        "font_size": 52
+    },
+    "game_song_info_center": {
+        "x": 1734,
+        "y": 50,
+        "width": 400
+    },
+    "game_drumroll_counter_margin": {
+        "x": 80
+    },
+    "nameplate_text_padding": {
+        "x": 101
+    },
+    "song_select_box_subtitle": {
+        "x": 0,
+        "y": 0,
+        "height": 60,
+        "font_size": 24
+    },
+    "song_select_box_bpm": {
+        "x": 250,
+        "y": -168,
+        "font_size": 22
+    },
+    "song_num": {
+        "x": 1748,
+        "y": 252,
+        "font_size": 31,
+        "text": {
+            "ja": "{0}曲目",
+            "en": "Song {0}",
+            "zh": "{0}曲目",
+            "ko": "{0}곡째"
+        },
+        "outline": 2.3333333333333335
+    },
+    "song_back_label": {
+        "x": 0,
+        "y": 0,
+        "font_size": 44,
+        "text": {
+            "ja": "もどる",
+            "en": "BACK",
+            "zh": "返回",
+            "ko": "돌아가기"
+        }
+    },
+    "transition_title": {
+        "y": 1606,
+        "font_size": 64
+    },
+    "transition_subtitle": {
+        "y": 1686,
+        "font_size": 40
+    },
+    "free_play": {
+        "x": 0,
+        "y": 1048,
+        "font_size": 40,
+        "text": {
+            "ja": "フリープレイ",
+            "en": "FREE PLAY",
+            "zh": "自由遊戲",
+            "ko": "프리 플레이"
+        }
+    },
+    "credit_side_player": {
+        "x": 1700,
+        "y": 736,
+        "font_size": 40,
+        "text": {
+            "ja": "2人プレイ",
+            "en": "2P",
+            "zh": "2P",
+            "ko": "2인 플레이"
+        }
+    },
+    "credit_side_msg": {
+        "x": 1700,
+        "y": 792,
+        "font_size": 40,
+        "text": {
+            "ja": "太鼓をたたいてスタート!",
+            "en": "Hit the taiko to start!",
+            "zh": "敲打太鼓開始!",
+            "ko": "북을 쳐서 시작!"
+        }
+    },
+    "crown_message_miss": {
+        "x": 0,
+        "y": 0,
+        "font_size": 52,
+        "text": {
+            "ja": "もう少し\nがんばるドン!",
+            "en": "Good try.",
+            "zh": "下次\n加油鼓咚!",
+            "ko": "조금 더\n힘내라 동!"
+        }
+    },
+    "crown_message_near": {
+        "x": 0,
+        "y": 0,
+        "font_size": 52,
+        "text": {
+            "ja": "おしかったドン",
+            "en": "Almost.",
+            "zh": "可惜!\n就差一點了鼓咚…",
+            "ko": "아쉬웠다 동"
+        }
+    },
+    "crown_message_success": {
+        "x": 0,
+        "y": 0,
+        "font_size": 52,
+        "text": {
+            "ja": "ノリノリだドン",
+            "en": "Cleared!\nCongrats, Don!",
+            "zh": "過關\n恭喜鼓咚!",
+            "ko": "신난다 동"
+        }
+    },
+    "crown_message_perfect": {
+        "x": 0,
+        "y": 0,
+        "font_size": 52,
+        "text": {
+            "ja": "よくできたドン！",
+            "en": "Awesome!",
+            "zh": "魂槽全滿!\n太厲害了鼓咚!",
+            "ko": "잘했다 동!"
+        }
+    },
+    "entry_costume_text": {
+        "x": 0,
+        "y": 0,
+        "font_size": 52,
+        "text": {
+            "en": "Select your outfit!",
+            "ja": "きせかえをえらぼう！",
+            "zh": "選擇服飾吧！",
+            "ko": "옷을 골라 보자!"
+        }
+    },
+    "result_topscore_text": {
+        "x": 0,
+        "y": 0,
+        "font_size": 24,
+        "text": {
+            "ja": "ベストスコア更新！",
+            "en": "New High Score!",
+            "zh": "最高分更新！",
+            "ko": "베스트 스코어 갱신!"
+        }
+    },
+    "course_name_0": {
+        "x": 0,
+        "y": 0,
+        "font_size": 34,
+        "text": {
+            "ja": "かんたん",
+            "en": "Easy",
+            "zh": "簡單",
+            "ko": "쉬움"
+        }
+    },
+    "course_name_1": {
+        "x": 0,
+        "y": 0,
+        "font_size": 34,
+        "text": {
+            "ja": "ふつう",
+            "en": "Normal",
+            "zh": "普通",
+            "ko": "보통"
+        }
+    },
+    "course_name_2": {
+        "x": 0,
+        "y": 0,
+        "font_size": 34,
+        "text": {
+            "ja": "むずかしい",
+            "en": "Hard",
+            "zh": "困難",
+            "ko": "어려움"
+        }
+    },
+    "course_name_3": {
+        "x": 0,
+        "y": 0,
+        "font_size": 34,
+        "text": {
+            "ja": "おに",
+            "en": "Oni",
+            "zh": "魔王",
+            "ko": "오니"
+        }
+    },
+    "course_name_4": {
+        "x": 0,
+        "y": 0,
+        "font_size": 34,
+        "text": {
+            "ja": "おに(裏)",
+            "en": "Ura",
+            "zh": "裏魔王",
+            "ko": "오니(우라)"
+        }
+    },
+    "guide_select_label": {
+        "x": 0,
+        "y": 0,
+        "font_size": 24,
+        "text": {
+            "ja": "えらぶ",
+            "en": "Select",
+            "zh": "選擇",
+            "ko": "선택"
+        }
+    },
+    "guide_decide_label": {
+        "x": 0,
+        "y": 0,
+        "font_size": 24,
+        "text": {
+            "ja": "決定",
+            "en": "Decide",
+            "zh": "決定",
+            "ko": "결정"
+        }
+    },
+    "chip_course_name_0": {
+        "x": 0,
+        "y": 0,
+        "font_size": 18,
+        "text": {
+            "ja": "かんたん",
+            "en": "Easy",
+            "zh": "簡單",
+            "ko": "쉬움"
+        }
+    },
+    "chip_course_name_1": {
+        "x": 0,
+        "y": 0,
+        "font_size": 18,
+        "text": {
+            "ja": "ふつう",
+            "en": "Normal",
+            "zh": "普通",
+            "ko": "보통"
+        }
+    },
+    "chip_course_name_2": {
+        "x": 0,
+        "y": 0,
+        "font_size": 18,
+        "text": {
+            "ja": "むずかしい",
+            "en": "Hard",
+            "zh": "困難",
+            "ko": "어려움"
+        }
+    },
+    "chip_course_name_3": {
+        "x": 0,
+        "y": 0,
+        "font_size": 18,
+        "text": {
+            "ja": "おに",
+            "en": "Oni",
+            "zh": "魔王",
+            "ko": "오니"
+        }
+    },
+    "chip_course_name_4": {
+        "x": 0,
+        "y": 0,
+        "font_size": 18,
+        "text": {
+            "ja": "おに(裏)",
+            "en": "Ura",
+            "zh": "裏魔王",
+            "ko": "오니(우라)"
+        }
+    },
+    "skip_counter": {
+        "x": 960,
+        "y": 700,
+        "font_size": 56
+    },
+    "skip_used_text": {
+        "x": 960,
+        "y": 700,
+        "font_size": 44
+    },
+    "skip_used": {
+        "text": {
+            "en": "Used Skip Song",
+            "ja": "演奏スキップをつかいました",
+            "zh": "使用了跳略演奏",
+            "ko": "연주 스킵을 사용했습니다"
+        }
+    },
+    "modifier_name_skip": {
+        "text": {
+            "en": "Skip Song",
+            "ja": "演奏スキップ",
+            "zh": "跳略演奏",
+            "ko": "연주 스킵"
+        }
+    },
+    "modifier_name_neiro": {
+        "text": {
+            "en": "Sound",
+            "ja": "音色",
+            "zh": "音色",
+            "ko": "음색"
+        }
+    },
+    "modifier_text_muon": {
+        "text": {
+            "en": "No sound",
+            "ja": "無音",
+            "zh": "無聲",
+            "ko": "무음"
+        }
+    },
+    "song_count": {
+        "text": {
+            "en": "{0} Songs",
+            "ja": "全{0}曲",
+            "zh": "全{0}曲",
+            "ko": "전{0}곡"
+        }
+    },
+    "modifier_title": {
+        "x": 0,
+        "y": 0,
+        "font_size": 32,
+        "text": {
+            "ja": "演奏オプション",
+            "en": "Play Options",
+            "zh": "演奏選項",
+            "ko": "연주 옵션"
+        }
+    },
+    "song_select_row_pitch": {
+        "x": 135,
+        "y": 120
+    },
+    "song_select_row_curve": {
+        "x": 40
+    },
+    "song_num_game": {
+        "x": 1674,
+        "y": 122,
+        "font_size": 31,
+        "outline": 2.3333333333333335
+    },
+    "game_gauge_cells": {
+        "x": 50
+    },
+    "mod_badge_grid": {
+        "x": 170,
+        "y": 77,
+        "width": 44,
+        "height": 44,
+        "font_size": 3
+    },
+    "game_gauge_hit_effect_note": {
+        "x": 1738,
+        "y": -126,
+        "height": 324
+    },
+    "dan_select_title": {
+        "x": 632,
+        "y": 262,
+        "height": 60,
+        "font_size": 36,
+        "outline": 2.6
+    },
+    "dan_select_subtitle": {
+        "x": 632,
+        "y": 262,
+        "height": 40,
+        "font_size": 22
+    },
+    "dan_select_exam_info": {
+        "x": 40,
+        "y": 140,
+        "width": 984
+    },
+    "game_notes": {
+        "y": 14
+    },
+    "game_drumroll_width_offset": {
+        "width": -68
+    },
+    "game_moji": {
+        "x": 222,
+        "y": 209
+    },
+    "game_moji_drumroll": {
+        "x": 90,
+        "y": 10,
+        "width": 174
+    },
+    "game_judge_pos": {
+        "x": 618,
+        "y": 384
+    },
+    "entry_credit_1p": {
+        "x": 0,
+        "y": 0,
+        "font_size": 56,
+        "text": {
+            "en": "1-Player",
+            "ja": "１人プレイ",
+            "zh": "１人遊玩",
+            "ko": "1인 플레이"
+        }
+    },
+    "entry_credit_2p": {
+        "x": 0,
+        "y": 0,
+        "font_size": 56,
+        "text": {
+            "en": "2-Player",
+            "ja": "２人プレイ",
+            "zh": "２人遊玩",
+            "ko": "2인 플레이"
+        }
+    },
+    "entry_credit_start": {
+        "x": 0,
+        "y": 0,
+        "font_size": 56,
+        "text": {
+            "en": "Hit the drum to start!",
+            "ja": "太鼓をたたいてスタート！",
+            "zh": "敲打太鼓開始遊戲！",
+            "ko": "북을 쳐서 시작!"
+        }
+    },
+    "entry_cancel": {
+        "x": 0,
+        "y": 0,
+        "font_size": 28,
+        "text": {
+            "en": "Cancel",
+            "ja": "つかわない",
+            "zh": "不使用",
+            "ko": "사용 안 함"
+        }
+    },
+    "game_balloon_counter_margin": {
+        "x": 64
+    },
+    "game_balloon_counter_2p_offset": {
+        "x": 0,
+        "y": 180
+    },
+    "game_gogo_fire_fade": {
+        "x": 0.699
+    },
+    "game_gogo_fire_anim": {
+        "x": 25
+    },
+    "game_gogo_explosion_tilt": {
+        "x": 5.8875
+    },
+    "game_gogo_explosion_slots": {
+        "x": 6,
+        "y": 4
+    },
+    "game_dan_exam_info": {
+        "x": 40,
+        "y": 159,
+        "width": 648
+    },
+    "loading_progress_bar": {
+        "x": 498,
+        "y": 977,
+        "width": 924,
+        "height": 40
+    },
+    "loading_fade_ms": {
+        "x": 417
+    },
+    "screen_fade_ms": {
+        "x": 500
+    },
+    "dan_select_chip_name": {
+        "x": 0,
+        "y": 89,
+        "height": 88,
+        "font_size": 42
+    },
+    "dan_exam_best_label": {
+        "font_size": 17,
+        "text": {
+            "en": "My Best",
+            "ja": "自己ベスト",
+            "zh": "個人最佳",
+            "ko": "개인 최고"
+        }
+    },
+    "dan_back_label": {
+        "x": 0,
+        "y": 89,
+        "width": 52,
+        "height": 88,
+        "font_size": 42,
+        "text": {
+            "en": "Back",
+            "ja": "戻る",
+            "zh": "返回",
+            "ko": "뒤로"
+        }
+    },
+    "song_num_max": {
+        "font_size": 27,
+        "text": {
+            "ja": "{0}曲",
+            "zh": "{0}曲",
+            "en": "of {0}",
+            "ko": "{0}곡"
+        },
+        "outline": 2.0
+    },
+    "song_num_max_game": {
+        "x": 1814,
+        "y": 122,
+        "font_size": 27
+    },
+    "dan_exam_gauge_box": {
+        "x": 436,
+        "y": 610
+    },
+    "dan_exam_score_box": {
+        "x": 769,
+        "y": 610,
+        "height": 132
+    },
+    "dan_exam_seg": {
+        "x": 11,
+        "y": 47,
+        "width": 327
+    },
+    "dan_select_exam_border_text": {
+        "x": 309,
+        "y": 55,
+        "font_size": 25,
+        "outline": 2.6
+    },
+    "dan_select_gauge_border_text": {
+        "x": 291,
+        "y": 67,
+        "font_size": 32,
+        "outline": 3.1
+    },
+    "dan_exam_value": {
+        "x": 185,
+        "y": 40
+    },
+    "dan_exam_label_pill": {
+        "x": 28,
+        "y": -1
+    },
+    "dan_exam_text_less": {
+        "text": {
+            "ja": "%s 未満",
+            "en": "under %s",
+            "zh": "%s 未滿",
+            "ko": "%s 미만"
+        }
+    },
+    "dan_result_nosave": {
+        "text": {
+            "ja": "今回の挑戦は記録されません",
+            "en": "This attempt will not be recorded",
+            "zh": "本次挑戰不會被記錄",
+            "ko": "이번 도전은 기록되지 않습니다"
+        }
+    },
+    "dan_exam_text_gauge": {
+        "text": {
+            "ja": "%s ％以上",
+            "en": "%s%% or more",
+            "zh": "%s％以上",
+            "ko": "%s％ 이상"
+        }
+    },
+    "dan_exam_text_gauge_less": {
+        "text": {
+            "ja": "%s ％未満",
+            "en": "under %s%%",
+            "zh": "%s％未滿",
+            "ko": "%s％ 미만"
+        }
+    },
+    "entry_game_comment_1": {
+        "text": {
+            "ja": "すきな曲や、むずかしさを",
+            "en": "Select a song and",
+            "zh": "可選擇喜愛的"
+        }
+    },
+    "entry_game_comment_2": {
+        "text": {
+            "ja": "えらんであそべるよ！",
+            "en": "difficulty to play!",
+            "zh": "歌曲、難度遊玩哦！"
+        }
+    },
+    "entry_practice_comment_1": {
+        "text": {
+            "ja": "曲の一部をくりかえし練習して",
+            "en": "Practice a section of a song",
+            "zh": "反覆練習歌曲的片段"
+        }
+    },
+    "entry_practice_comment_2": {
+        "text": {
+            "ja": "腕をみがこう！",
+            "en": "over and over to improve!",
+            "zh": "磨練技巧吧！"
+        }
+    },
+    "entry_costume_comment_1": {
+        "text": {
+            "ja": "どんちゃんのきせかえを",
+            "en": "Choose an outfit",
+            "zh": "可為咚醬選擇"
+        }
+    },
+    "entry_costume_comment_2": {
+        "text": {
+            "ja": "えらんであそべるよ！",
+            "en": "for your Don-chan!",
+            "zh": "服飾遊玩哦！"
+        }
+    },
+    "entry_ai_battle_comment_1": {
+        "text": {
+            "ja": "「ＡＩどん」と勝つか負けるか",
+            "en": "See if you can beat AI-DON",
+            "zh": "與「AI咚」來一場"
+        }
+    },
+    "entry_ai_battle_comment_2": {
+        "text": {
+            "ja": "ギリギリのバトルをたのしもう！",
+            "en": "in this neck-and-neck competition!",
+            "zh": "不到最後難分勝負的對戰吧！"
+        }
+    },
+    "mode_dan_comment_1": {
+        "text": {
+            "ja": "３曲連続して演奏しながら、",
+            "en": "Play three songs in a row",
+            "zh": "連續演奏３首指定曲"
+        }
+    },
+    "mode_dan_comment_2": {
+        "text": {
+            "ja": "お題の合格を目指そう！",
+            "en": "and aim to clear the task!",
+            "zh": "並達成題目的合格條件吧！"
+        }
+    },
+    "mode_dan_comment_3": {
+        "text": {
+            "ja": "合格すると腕前が認定されるよ！",
+            "en": "Your skills will be rewarded!",
+            "zh": "只要合格實力就會備受肯定哦！"
+        }
+    },
+    "entry_settings_comment_1": {
+        "text": {
+            "ja": "ゲームのせっていを",
+            "en": "Change the game's",
+            "zh": "可以變更"
+        }
+    },
+    "entry_settings_comment_2": {
+        "text": {
+            "ja": "かえられるよ！",
+            "en": "settings here!",
+            "zh": "遊戲設定哦！"
+        }
+    },
+    "sort_window_diff": {
+        "text": {
+            "ja": "むずかしさ",
+            "en": "Difficulty",
+            "zh": "難度"
+        }
+    },
+    "sort_window_star": {
+        "text": {
+            "ja": "★の数",
+            "en": "Number of \"★\"",
+            "zh": "★的個數"
+        }
+    },
+    "sort_window_order": {
+        "text": {
+            "ja": "表示順",
+            "en": "Sort by",
+            "zh": "排序"
+        }
+    },
+    "sort_window_order_0": {
+        "text": {
+            "ja": "いつもどおり",
+            "en": "Default",
+            "zh": "通常"
+        }
+    },
+    "sort_window_order_1": {
+        "text": {
+            "ja": "未クリア優先",
+            "en": "Not cleared",
+            "zh": "未通關優先"
+        }
+    },
+    "sort_window_order_2": {
+        "text": {
+            "ja": "未フルコンボ優先",
+            "en": "Not Full Combo",
+            "zh": "未全連段優先"
+        }
+    },
+    "sort_window_order_3": {
+        "text": {
+            "ja": "未ドンダフルコンボ優先",
+            "en": "Not Donderful Combo",
+            "zh": "未全良連段優先"
+        }
+    },
+    "sort_window_songs": {
+        "text": {
+            "ja": "曲",
+            "en": "Songs",
+            "zh": "首"
+        }
+    },
+    "folder_sort_select": {
+        "text": {
+            "ja": "むずかしさからえらぶ",
+            "en": "Select by difficulty",
+            "zh": "根據難度選擇"
+        }
+    },
+    "dan_gauge_name": {
+        "text": {
+            "ja": "魂ゲージ",
+            "en": "Soul Gauge",
+            "zh": "魂槽",
+            "ko": "클리어 게이지"
+        }
+    },
+    "skip_badge_text": {
+        "text": {
+            "ja": "演奏スキップON",
+            "en": "演奏スキップON",
+            "zh": "演奏スキップON"
+        }
+    },
+    "mode_dan": {
+        "text": {
+            "ja": "段位道場",
+            "en": "Dan-i Dojo",
+            "zh": "段位道場"
+        }
+    },
+    "chara_3d": {
+        "entry": [
+            954,
+            545
+        ],
+        "song_select_1p": [
+            225,
+            925
+        ],
+        "song_select_2p": [
+            1695,
+            925
+        ],
+        "result": [
+            205,
+            935
+        ],
+        "dan_result": [
+            187,
+            934
+        ],
+        "game_p1": [
+            248,
+            29
+        ]
+    },
+    "nameplate": {
+        "entry": [
+            756,
+            567
+        ],
+        "song_select_1p": [
+            14,
+            908
+        ],
+        "song_select_2p": [
+            1494,
+            908
+        ],
+        "result": [
+            2,
+            922
+        ],
+        "result_2p": [
+            2,
+            922
+        ],
+        "dan_result": [
+            23,
+            922
+        ],
+        "game_p1": [
+            -44,
+            161
+        ],
+        "game_p2": [
+            -44,
+            7
+        ]
+    },
+    "zdon_practice_info": {
+        "x": 420,
+        "y": 18
+    },
+    "entry_ai_battle": {
+        "text": {
+            "ja": "AIバトル演奏",
+            "en": "AI Battle",
+            "zh": "AI對戰演奏",
+            "ko": "AI 배틀 연주"
+        }
+    },
+    "entry_record": {
+        "text": {
+            "ja": "録画モード",
+            "en": "Recording",
+            "zh": "錄影模式",
+            "ko": "녹화 모드"
+        }
+    },
+    "entry_record_comment_1": {
+        "text": {
+            "ja": "えらんだ曲とむずかしさを",
+            "en": "Turn a song and course",
+            "zh": "把選好的歌曲和難度",
+            "ko": "고른 곡과 난이도를"
+        }
+    },
+    "entry_record_comment_2": {
+        "text": {
+            "ja": "動画に書き出そう！",
+            "en": "into a video!",
+            "zh": "匯出成影片吧！",
+            "ko": "영상으로 저장하자!"
+        }
+    },
+    "ai_tension_1": {
+        "text": {
+            "ja": "メチャワル",
+            "en": "Awful",
+            "zh": "非常糟",
+            "ko": "엄청 나빠"
+        }
+    },
+    "ai_tension_2": {
+        "text": {
+            "ja": "ワルイ",
+            "en": "Bad",
+            "zh": "糟",
+            "ko": "나빠"
+        }
+    },
+    "ai_tension_3": {
+        "text": {
+            "ja": "フツー",
+            "en": "Meh",
+            "zh": "普通",
+            "ko": "그냥 그래―"
+        }
+    },
+    "ai_tension_4": {
+        "text": {
+            "ja": "ヨイ",
+            "en": "Good",
+            "zh": "好",
+            "ko": "좋아"
+        }
+    },
+    "ai_tension_5": {
+        "text": {
+            "ja": "メチャヨイ",
+            "en": "On Fire",
+            "zh": "超好",
+            "ko": "엄청 좋아"
+        }
+    },
+    "pboard_best": {
+        "text": {
+            "ja": "自己ベスト",
+            "en": "Personal Best",
+            "zh": "個人最佳",
+            "ko": "자기 베스트"
+        }
+    },
+    "ai_total_wins": {
+        "text": {
+            "ja": "合計勝利数",
+            "en": "Total Wins",
+            "zh": "合計勝利數",
+            "ko": "승리 횟수 총합"
+        }
+    },
+    "ai_battle_win": {
+        "text": {
+            "ja": "勝ち",
+            "en": "WIN",
+            "zh": "勝利",
+            "ko": "승리"
+        }
+    },
+    "ai_battle_lose": {
+        "text": {
+            "ja": "負け",
+            "en": "LOSE",
+            "zh": "落敗",
+            "ko": "패배"
+        }
+    },
+    "ai_battle_draw": {
+        "text": {
+            "ja": "引き分け",
+            "en": "DRAW",
+            "zh": "平局",
+            "ko": "무승부"
+        }
+    },
+    "ai_name": {
+        "text": {
+            "ja": "AIどん",
+            "en": "AI-DON",
+            "zh": "AI咚",
+            "ko": "AI동"
+        }
+    },
+    "ai_next_reward": {
+        "text": {
+            "ja": "次のごほうびまでの勝利数",
+            "en": "Number of Wins Until Next Reward",
+            "zh": "距離下一個獎勵的勝利數",
+            "ko": "다음 보상까지 필요한 승리 횟수"
+        }
+    },
+    "ai_best": {
+        "text": {
+            "ja": "ベストスコア",
+            "en": "Top Score",
+            "zh": "最佳成績",
+            "ko": "최고 스코어"
+        }
+    },
+    "ai_section": {
+        "text": {
+            "ja": "{0}区",
+            "en": "Sec.{0}",
+            "zh": "{0}區",
+            "ko": "{0}구"
+        }
+    },
+    "ai_versus": {
+        "text": {
+            "ja": "VS.AIどん",
+            "en": "VS. AI-DON",
+            "zh": "VS. AI咚",
+            "ko": "VS. AI동"
+        }
+    },
+    "zdon_ai_judge_offset": {
+        "x": 0,
+        "y": 0
+    },
+    "zdon_ai_lane": {
+        "x": 0
+    },
+    "game_ai_drumroll_counter_scale": {
+        "x": 0.76
+    },
+    "zdon_ai_rules": {
+        "x": 200
+    },
+    "zdon_ai_tuning": {
+        "x": 0
+    },
+    "zdon_ai_arena": {
+        "x": 0
+    },
+    "ai_tension_name": {
+        "text": {
+            "ja": "調子",
+            "en": "Status",
+            "zh": "狀態",
+            "ko": "상태"
+        }
+    },
+    "zdon_ai_song_info": {
+        "x": -22,
+        "y": 910,
+        "height": 1,
+        "font_size": 52
+    },
+    "zdon_ai_song_plate": {
+        "x": 3,
+        "y": 10
+    },
+    "zdon_ai_nj_gauge": {
+        "x": 1
+    },
+    "zdon_ai_green_gauge": {
+        "x": 0
+    },
+    "zdon_green_strict": {
+        "x": 0
+    },
+    "ai_load_tip_1": {
+        "font_size": 32,
+        "text": {
+            "ja": "演奏ゲームの結果に関係なく",
+            "en": "No matter how you play,",
+            "zh": "無論演奏遊戲的結果如何，",
+            "ko": "연주 게임의 결과와 관계없이"
+        }
+    },
+    "ai_load_tip_2": {
+        "font_size": 32,
+        "text": {
+            "ja": "設定された曲数の分あそべるよ!",
+            "en": "you play the set number of songs!",
+            "zh": "都能玩到設定好的曲數！",
+            "ko": "설정된 곡 수만큼 즐길 수 있어!"
+        }
+    },
+    "wash_hands_text": {
+        "font_size": 40,
+        "text": {
+            "ja": "ゲームをあそんだら手をあらおう!",
+            "en": "Wash your hands after playing!",
+            "zh": "玩完遊戲後要洗手喔！",
+            "ko": "게임을 한 뒤엔 손을 씻자!"
+        }
+    },
+    "zdon_ai_cutin_first": {
+        "x": 1
+    },
+    "zdon_ai_banner": {
+        "x": 1
+    },
+    "zdon_ai_bgm_after_announce": {
+        "x": 1810
+    },
+    "zdon_ai_announce_at_fade": {
+        "x": 0
+    },
+    "zdon_ai_board_voice_ms": {
+        "x": 0
+    },
+    "zdon_ai_no_enter_voice": {
+        "x": 0
+    },
+    "zdon_ai_ready_voice_ms": {
+        "x": 0
+    },
+    "zdon_ai_end_hold": {
+        "x": 3250
+    },
+    "zdon_song_title_always": {
+        "x": 1
+    },
+    "zdon_ai_keep_cabinet": {
+        "x": 1
+    },
+    "zdon_ai_result_hold": {
+        "x": 2254
+    },
+    "zdon_ai_end_delay": {
+        "x": 0
+    },
+    "zdon_result_delay": {
+        "x": 8033,
+        "y": 0
+    },
+    "ai_game_drumroll": {
+        "x": 230,
+        "y": 42
+    },
+    "ai_game_drumroll_ai": {
+        "x": 230,
+        "y": -55
+    },
+    "zdon_ai_drumroll": {
+        "x": 230,
+        "y": 42
+    },
+    "zdon_ai_drumroll_ai": {
+        "x": 230,
+        "y": -55
+    },
+    "zdon_result_fail_color": {
+        "x": 0,
+        "y": 11,
+        "width": 125
+    },
+    "zdon_end_over_result": {
+        "x": 1
+    },
+    "zdon_gogo_fire_add": {
+        "x": 1
+    },
+    "zdon_note_arc_dwell": {
+        "x": 1
+    },
+    "entry_side_question": {
+        "text": {
+            "ja": "どちらの太鼓を使いますか？",
+            "en": "Which drum will you use?",
+            "zh": "要使用哪一边的太鼓？",
+            "ko": "어느 쪽 북을 사용하시겠습니까?"
+        }
+    },
+    "entry_side_left": {
+        "text": {
+            "ja": "左",
+            "en": "Left",
+            "zh": "左",
+            "ko": "왼쪽"
+        }
+    },
+    "entry_side_right": {
+        "text": {
+            "ja": "右",
+            "en": "Right",
+            "zh": "右",
+            "ko": "오른쪽"
+        }
+    },
+    "entry_side_none": {
+        "text": {
+            "ja": "使わない",
+            "en": "Don't use",
+            "zh": "不使用",
+            "ko": "사용 안 함"
+        }
+    },
+    "entry_name_title": {
+        "text": {
+            "ja": "名前をえらぼう！",
+            "en": "Choose your name!",
+            "zh": "选择名字吧！",
+            "ko": "이름을 골라 보자!"
+        }
+    },
+    "entry_name_hint": {
+        "text": {
+            "ja": "※名前はドンダーひろばでいつでもかえられるよ",
+            "en": "* You can change your name on Donder Hiroba at any time",
+            "zh": "※名字随时可以在咚哒广场更改",
+            "ko": "※이름은 동더 광장에서 언제든지 바꿀 수 있어"
+        }
+    },
+    "result_score_text": {
+        "x": 282,
+        "y": 298,
+        "font_size": 34,
+        "text": {
+            "ja": "スコア",
+            "en": "SCORE",
+            "zh": "分数",
+            "ko": "스코어"
+        }
+    },
+    "guide_large_heading": {
+        "text": {
+            "ja": "フチでえらんで、面で決定！",
+            "en": "Hit the rim to choose, the face to decide!",
+            "zh": "敲鼓边选择，敲鼓面决定！",
+            "ko": "테두리로 고르고, 면으로 결정!"
+        }
+    }
+}

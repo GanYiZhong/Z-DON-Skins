@@ -1,0 +1,156 @@
+{
+  "judge_ok": {
+    "x": 1092,
+    "y": -90
+  },
+  "judge_ok_en": {
+    "x": 1092,
+    "y": -90
+  },
+  "judge_ok_zh": {
+    "x": 1092,
+    "y": -90
+  },
+  "judge_ok_ko": {
+    "x": 1092,
+    "y": -90
+  },
+  "judge_bad": {
+    "x": 1092,
+    "y": -90
+  },
+  "judge_bad_en": {
+    "x": 1092,
+    "y": -90
+  },
+  "judge_bad_zh": {
+    "x": 1092,
+    "y": -90
+  },
+  "judge_bad_ko": {
+    "x": 1092,
+    "y": -90
+  },
+  "judge_good": {
+    "x": 1092,
+    "y": -90,
+    "frame_order": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "judge_good_en": {
+    "x": 1092,
+    "y": -90,
+    "frame_order": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "judge_good_zh": {
+    "x": 1092,
+    "y": -90,
+    "frame_order": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "judge_good_ko": {
+    "x": 1092,
+    "y": -90,
+    "frame_order": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "hit_effect_good": {
+    "x": 1020,
+    "y": 4,
+    "density": 1
+  },
+  "hit_effect_ok": {
+    "x": 1020,
+    "y": 4,
+    "density": 1
+  },
+  "hit_effect_good_big": {
+    "x": 1020,
+    "y": 4,
+    "density": 1
+  },
+  "hit_effect_ok_big": {
+    "x": 1020,
+    "y": 4,
+    "density": 1
+  },
+  "outer_good": {
+    "x": 900,
+    "y": -116,
+    "frame_order": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "density": 1
+  },
+  "outer_ok": {
+    "x": 900,
+    "y": -116,
+    "frame_order": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "density": 1
+  },
+  "outer_good_big": {
+    "x": 900,
+    "y": -116,
+    "frame_order": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "density": 1
+  },
+  "outer_ok_big": {
+    "x": 900,
+    "y": -116,
+    "frame_order": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "density": 1
+  },
+  "firework": {
+    "density": 1
+  },
+  "explosion": [
+    {
+      "density": 1
+    }
+  ],
+  "outer_effect_ok": {
+    "x": 912,
+    "y": -122,
+    "density": 1
+  },
+  "outer_effect_good": {
+    "x": 912,
+    "y": -122,
+    "density": 1
+  }
+}

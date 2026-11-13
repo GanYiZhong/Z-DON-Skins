@@ -1,0 +1,47 @@
+{
+  "kitsune": {
+    "x": 3834,
+    "y": 1222,
+    "frame_order": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "density": 1
+  },
+  "curtain": {
+    "x": 6070,
+    "density": 1
+  },
+  "curtain_side": {
+    "x": 4104,
+    "density": 1
+  },
+  "game_over_text_ja": {
+    "x": 840,
+    "y": 0,
+    "density": 1
+  },
+  "game_over_text_en": {
+    "x": 840,
+    "y": 0,
+    "density": 1
+  },
+  "game_over_text_zh": {
+    "x": 840,
+    "y": 0,
+    "density": 1
+  },
+  "copyright": {
+    "x": 0,
+    "y": 936,
+    "density": 1
+  }
+}

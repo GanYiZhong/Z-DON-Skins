@@ -1,0 +1,115 @@
+{
+  "border": {
+    "x": 1440,
+    "y": 404,
+    "density": 1
+  },
+  "1p_unfilled": {
+    "x": 1440,
+    "y": 404,
+    "density": 1
+  },
+  "2p_unfilled": {
+    "x": 1440,
+    "y": 404,
+    "density": 1
+  },
+  "overlay": {
+    "x": 1440,
+    "y": 484,
+    "density": 1
+  },
+  "rainbow": {
+    "x": 1440,
+    "y": 484,
+    "frame_order": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "density": 1
+  },
+  "1p_bar": {
+    "x": 1476,
+    "y": 496
+  },
+  "2p_bar": {
+    "x": 1476,
+    "y": 496
+  },
+  "1p_bar_fade": {
+    "x": 1466,
+    "y": 482
+  },
+  "2p_bar_fade": {
+    "x": 1466,
+    "y": 482
+  },
+  "bar_fade_clear": {
+    "x": 1466,
+    "y": 482
+  },
+  "tamashii": {
+    "x": 3580,
+    "y": 404
+  },
+  "tamashii_dark": {
+    "x": 3580,
+    "y": 404
+  },
+  "tamashii_overlay": {
+    "x": 3580,
+    "y": 404
+  },
+  "tamashii_fire": {
+    "x": 3396,
+    "y": 68,
+    "frame_order": [
+      0,
+      1,
+      2,
+      3,
+      0,
+      1,
+      2,
+      3
+    ],
+    "density": 1
+  },
+  "track_red": {
+    "x": 1476,
+    "y": 484
+  },
+  "1p_lamp": {
+    "x": 1476,
+    "y": 484
+  },
+  "2p_lamp": {
+    "x": 1476,
+    "y": 484
+  },
+  "lamp_clear": {
+    "x": 1476,
+    "y": 484
+  },
+  "hit_effect": {
+    "x": 3668,
+    "y": 492,
+    "density": 1
+  },
+  "hit_effect_circle": {
+    "x": 3474,
+    "y": 302,
+    "density": 1
+  },
+  "hit_effect_circle_big": {
+    "x": 3474,
+    "y": 302,
+    "density": 1
+  }
+}

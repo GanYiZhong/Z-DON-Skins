@@ -1,0 +1,166 @@
+{
+  "box_top_left_1p": {
+    "x": 0,
+    "y": 0
+  },
+  "box_top_right_1p": {
+    "x": 400,
+    "y": 0
+  },
+  "box_bottom_left_1p": {
+    "x": 0,
+    "y": 180
+  },
+  "box_bottom_right_1p": {
+    "x": 400,
+    "y": 180
+  },
+  "box_top_1p": {
+    "x": 64,
+    "y": 0,
+    "x2": 336
+  },
+  "box_bottom_1p": {
+    "x": 64,
+    "y": 180,
+    "x2": 336
+  },
+  "box_left_1p": {
+    "x": 0,
+    "y": 64,
+    "y2": 116
+  },
+  "box_right_1p": {
+    "x": 400,
+    "y": 64,
+    "y2": 116
+  },
+  "box_center_1p": {
+    "x": 64,
+    "y": 64,
+    "x2": 336,
+    "y2": 116
+  },
+  "box_top_left_2p": {
+    "x": 0,
+    "y": 0
+  },
+  "box_top_right_2p": {
+    "x": 400,
+    "y": 0
+  },
+  "box_bottom_left_2p": {
+    "x": 0,
+    "y": 180
+  },
+  "box_bottom_right_2p": {
+    "x": 400,
+    "y": 180
+  },
+  "box_top_2p": {
+    "x": 64,
+    "y": 0,
+    "x2": 336
+  },
+  "box_bottom_2p": {
+    "x": 64,
+    "y": 180,
+    "x2": 336
+  },
+  "box_left_2p": {
+    "x": 0,
+    "y": 64,
+    "y2": 116
+  },
+  "box_right_2p": {
+    "x": 400,
+    "y": 64,
+    "y2": 116
+  },
+  "box_center_2p": {
+    "x": 64,
+    "y": 64,
+    "x2": 336,
+    "y2": 116
+  },
+  "blue_arrow": {
+    "x": 0,
+    "y": 0
+  },
+  "cloud": {
+    "x": -80,
+    "y": 186
+  },
+  "costume": {
+    "x": 0,
+    "y": 0
+  },
+  "default": {
+    "x": 10,
+    "y": 8
+  },
+  "head_body": {
+    "x": 0,
+    "y": 0
+  },
+  "item_box_1p": {
+    "x": 32,
+    "y": 80
+  },
+  "item_box_2p": {
+    "x": 32,
+    "y": 80
+  },
+  "item_box_highlighted": {
+    "x": 32,
+    "y": 80
+  },
+  "text_highlight_1p": {
+    "x": 232,
+    "y": 188
+  },
+  "text_highlight_2p": {
+    "x": 232,
+    "y": 188
+  },
+  "preset_1": {
+    "x": 0,
+    "y": 0
+  },
+  "preset_2": {
+    "x": 0,
+    "y": 0
+  },
+  "preset_3": {
+    "x": 0,
+    "y": 0
+  },
+  "random": {
+    "x": -52,
+    "y": 206
+  },
+  "random_item": {
+    "x": 0,
+    "y": 0
+  },
+  "costume_example": {
+    "x": -62,
+    "y": 200
+  },
+  "hiroba_ad": {
+    "x": -80,
+    "y": 187
+  },
+  "collabo_burst": {
+    "x": -68,
+    "y": -24
+  },
+  "collabo_card": {
+    "x": -8,
+    "y": 37
+  },
+  "collabo_sparkle": {
+    "x": 22,
+    "y": 200.05
+  }
+}

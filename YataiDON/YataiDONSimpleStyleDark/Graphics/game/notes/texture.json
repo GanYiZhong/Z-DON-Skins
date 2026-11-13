@@ -1,0 +1,115 @@
+{
+    "0": {},
+    "1": {
+        "frame_order": [
+            0,
+            0,
+            0
+        ]
+    },
+    "2": {
+        "frame_order": [
+            0,
+            0,
+            0
+        ]
+    },
+    "3": {
+        "frame_order": [
+            0,
+            0
+        ]
+    },
+    "4": {
+        "frame_order": [
+            0,
+            0
+        ]
+    },
+    "5": {
+        "frame_order": [
+            0,
+            0,
+            0
+        ]
+    },
+    "6": {
+        "frame_order": [
+            0,
+            0
+        ]
+    },
+    "7": {
+        "frame_order": [
+            0,
+            0,
+            0
+        ]
+    },
+    "8": {},
+    "9": {
+        "frame_order": [
+            0,
+            0
+        ]
+    },
+    "10": {
+        "frame_order": [
+            0,
+            0
+        ]
+    },
+    "drumroll_tail": {},
+    "drumroll_big_tail": {},
+    "moji": {},
+    "moji_en": {
+        "frame_order": [
+            0,
+            1,
+            2,
+            3,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ]
+    },
+    "moji_zh": {
+        "frame_order": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+        ]
+    },
+    "moji_ko": {
+        "frame_order": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+        ]
+    },
+    "moji_drumroll_mid": {},
+    "moji_drumroll_mid_big": {}
+}

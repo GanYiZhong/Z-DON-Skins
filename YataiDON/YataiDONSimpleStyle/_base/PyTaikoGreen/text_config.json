@@ -1,0 +1,1380 @@
+{
+  "free_play": {
+    "x": 560,
+    "y": 672,
+    "font_size": 26,
+    "text": {
+      "ja": "フリープレイ",
+      "en": "FREE PLAY",
+      "zh": "自由遊戲",
+      "ko": "프리 플레이"
+    }
+  },
+  "hit_taiko_to_start": {
+    "x": 200,
+    "y": 672,
+    "width": 800,
+    "font_size": 26,
+    "text": {
+      "ja": "太鼓をたたいてスタート！",
+      "en": "HIT THE TAIKO!",
+      "zh": "敲打太鼓開始！",
+      "ko": "북을 쳐서 시작!"
+    }
+  },
+  "indicator_text": {
+    "x": 113,
+    "font_size": 26,
+    "text": {
+      "ja": "フチでえらんで       面で決定",
+      "en": "Navigate           Decide",
+      "zh": "敲打鼓邊選擇        敲打鼓面",
+      "ko": "테두리로 선택       면으로 결정"
+    }
+  },
+  "indicator_text_skip": {
+    "x": 155,
+    "font_size": 26,
+    "text": {
+      "ja": "面をたたいてスキップ",
+      "en": "Hit the face to skip",
+      "zh": "敲打鼓面跳過",
+      "ko": "면을 쳐서 건너뛰기"
+    }
+  },
+  "indicator_text_cancel": {
+    "x": 120,
+    "font_size": 26,
+    "text": {
+      "ja": "両方のフチをたたくと戻れるよ",
+      "en": "Hit both rims to go back",
+      "zh": "敲打兩側鼓邊返回",
+      "ko": "양쪽 테두리를 치면 돌아가요"
+    }
+  },
+  "indicator_text_wait": {
+    "x": 165,
+    "font_size": 26,
+    "text": {
+      "ja": "ちょっとまってね",
+      "en": "Please wait",
+      "zh": "請稍等",
+      "ko": "잠시만 기다려 주세요"
+    }
+  },
+  "song_num": {
+    "x": 1110,
+    "y": 28,
+    "font_size": 40,
+    "text": {
+      "ja": "{0}曲目",
+      "en": "Song {0}",
+      "zh": "{0}曲目",
+      "ko": "{0}곡째"
+    }
+  },
+  "entry_game": {
+    "text": {
+      "en": "Game",
+      "ja": "演奏ゲーム",
+      "zh": "節奏遊戲",
+      "ko": "연주 게임"
+    }
+  },
+  "entry_practice": {
+    "text": {
+      "en": "Practice",
+      "ja": "特訓モード",
+      "zh": "練習遊戲",
+      "ko": "특훈 모드"
+    }
+  },
+  "entry_settings": {
+    "text": {
+      "en": "Settings",
+      "ja": "ゲーム設定",
+      "zh": "遊戲設定",
+      "ko": "게임 설정"
+    }
+  },
+  "entry_ai_battle": {
+    "text": {
+      "en": "AI Battle",
+      "ja": "AIバトル演奏",
+      "zh": "AI鬥爭",
+      "ko": "AI 배틀"
+    }
+  },
+  "entry_costume": {
+    "text": {
+      "en": "Costume",
+      "ja": "きせかえ",
+      "zh": "裝扮",
+      "ko": "옷 갈아입기"
+    }
+  },
+  "entry_costume_text": {
+    "x": 0,
+    "y": 30,
+    "font_size": 33,
+    "text": {
+      "en": "Choose a Costume",
+      "ja": "きせかえをえらべるよ",
+      "zh": "選擇裝扮",
+      "ko": "옷을 골라 보자!"
+    }
+  },
+  "entry_name_confirm": {
+    "text": {
+      "en": "Use this name?",
+      "ja": "この名前でよろしいですか？",
+      "zh": "使用這個名字嗎？",
+      "ko": "이 이름으로 하시겠습니까?"
+    }
+  },
+  "entry_name_yes": {
+    "text": {
+      "en": "Yes",
+      "ja": "はい",
+      "zh": "是",
+      "ko": "예"
+    }
+  },
+  "entry_name_no": {
+    "text": {
+      "en": "No",
+      "ja": "いいえ",
+      "zh": "否",
+      "ko": "아니요"
+    }
+  },
+  "entry_name_back": {
+    "text": {
+      "en": "Back",
+      "ja": "もどる",
+      "zh": "返回",
+      "ko": "뒤로"
+    }
+  },
+  "entry_name_done": {
+    "text": {
+      "en": "Done",
+      "ja": "おわる",
+      "zh": "完成",
+      "ko": "완료"
+    }
+  },
+  "entry_name_title": {
+    "text": {
+      "en": "Choose a name",
+      "ja": "名前をえらんでね",
+      "zh": "請選擇名字",
+      "ko": "이름을 골라 주세요"
+    }
+  },
+  "entry_costume_text_head": {
+    "text": {
+      "en": "Choose a Head",
+      "ja": "あたまをえらべるよ",
+      "zh": "選擇頭部",
+      "ko": "머리를 골라 보자!"
+    }
+  },
+  "entry_costume_text_body": {
+    "text": {
+      "en": "Choose a Body",
+      "ja": "からだをえらべるよ",
+      "zh": "選擇身體",
+      "ko": "몸을 골라 보자!"
+    }
+  },
+  "entry_costume_text_suit": {
+    "text": {
+      "en": "Choose a Suit",
+      "ja": "きぐるみをえらべるよ",
+      "zh": "選擇玩偶裝",
+      "ko": "인형옷을 골라 보자!"
+    }
+  },
+  "entry_cancel": {
+    "x": 0,
+    "y": 0,
+    "font_size": 33,
+    "text": {
+      "en": "Cancel",
+      "ja": "つかわない",
+      "zh": "取消",
+      "ko": "사용 안 함"
+    }
+  },
+  "entry_1p": {
+    "x": 156,
+    "y": 40,
+    "font_size": 26,
+    "text": {
+      "en": "Left",
+      "ja": "左でつかう",
+      "zh": "使用左側",
+      "ko": "왼쪽 사용"
+    }
+  },
+  "entry_2p": {
+    "x": 99,
+    "y": 40,
+    "font_size": 26,
+    "text": {
+      "en": "Right",
+      "ja": "右でつかう",
+      "zh": "使用右側",
+      "ko": "오른쪽 사용"
+    }
+  },
+  "entry_wait": {
+    "x": 251,
+    "y": 205,
+    "font_size": 33,
+    "text": {
+      "en": "Hit the drum to start!",
+      "ja": "太鼓をたたいてスタート！",
+      "zh": "敲擊太鼓開始！",
+      "ko": "북을 쳐서 시작!"
+    }
+  },
+  "entry_afk": {
+    "x": 640,
+    "y": 190,
+    "font_size": 36,
+    "text": {
+      "ja": "ゲームをはじめるには太鼓を連打！",
+      "en": "Hit the drum to start the game!",
+      "zh": "連續敲擊太鼓開始遊戲！",
+      "ko": "게임을 시작하려면 북을 연타!"
+    }
+  },
+  "entry_question": {
+    "x": 636,
+    "y": 143,
+    "font_size": 33,
+    "text": {
+      "en": "Play as this user?",
+      "ja": "どちらでつかいますか?",
+      "zh": "你打算用它來做什麼？",
+      "ko": "어느 쪽으로 플레이할까요?"
+    }
+  },
+  "modifier_name_auto": {
+    "text": {
+      "en": "Auto",
+      "ja": "オート",
+      "zh": "自動播放",
+      "ko": "오토"
+    }
+  },
+  "modifier_name_speed": {
+    "text": {
+      "en": "Speed",
+      "ja": "はやさ",
+      "zh": "速度",
+      "ko": "속도"
+    }
+  },
+  "modifier_name_display": {
+    "text": {
+      "en": "Display",
+      "ja": "ドロン",
+      "zh": "隱身",
+      "ko": "도론"
+    }
+  },
+  "modifier_name_inverse": {
+    "text": {
+      "en": "Inverse",
+      "ja": "あべこべ",
+      "zh": "顛倒",
+      "ko": "아베코베"
+    }
+  },
+  "modifier_name_random": {
+    "text": {
+      "en": "Random",
+      "ja": "ランダム",
+      "zh": "隨機",
+      "ko": "랜덤"
+    }
+  },
+  "modifier_name_skip": {
+    "text": {
+      "en": "Skip Song",
+      "ja": "演奏スキップ",
+      "zh": "跳略演奏",
+      "ko": "연주 스킵"
+    }
+  },
+  "modifier_name_neiro": {
+    "text": {
+      "en": "Sound",
+      "ja": "音色",
+      "zh": "音色",
+      "ko": "음색"
+    }
+  },
+  "modifier_text_true": {
+    "text": {
+      "en": "On",
+      "ja": "する",
+      "zh": "是",
+      "ko": "켬"
+    }
+  },
+  "modifier_text_false": {
+    "text": {
+      "en": "Off",
+      "ja": "しない",
+      "zh": "否",
+      "ko": "끔"
+    }
+  },
+  "modifier_text_kimagure": {
+    "text": {
+      "en": "Kimagure",
+      "ja": "きまぐれ",
+      "zh": "隨意",
+      "ko": "기마구레"
+    }
+  },
+  "modifier_text_detarame": {
+    "text": {
+      "en": "Detarame",
+      "ja": "でたらめ",
+      "zh": "即興",
+      "ko": "데타라메"
+    }
+  },
+  "entry_game_desc": {
+    "text": {
+      "en": "Pick any song and\ndifficulty to play!",
+      "ja": "好きな曲やむずかしさを\nえらんであそべるよ！",
+      "zh": "選擇喜歡的歌曲\n和難度來遊玩！",
+      "ko": "좋아하는 곡과 난이도를\n골라 플레이해요!"
+    }
+  },
+  "entry_dan_desc": {
+    "text": {
+      "en": "Take on dan courses and\nearn your rank!",
+      "ja": "段位道場に挑戦して\n段位をめざそう！",
+      "zh": "挑戰段位道場，\n爭取更高段位！",
+      "ko": "단위도장에 도전해\n단위를 올려요!"
+    }
+  },
+  "entry_ai_battle_desc": {
+    "text": {
+      "en": "Win or lose against AI Don!\nEnjoy a down-to-the-wire battle!\nYour scores and crowns are saved too!",
+      "ja": "AIどんどん勝つか負けるか\nギリギリのバトルを楽しもう！\nスコアや王冠の成績も記録されるよ",
+      "zh": "與AI小咚一決勝負，\n享受驚險刺激的對戰！\n分數和王冠成績也會被記錄哦！",
+      "ko": "AI 동이와 이기느냐 지느냐,\n아슬아슬한 배틀을 즐겨요!\n점수와 왕관 기록도 저장돼요!"
+    }
+  },
+  "entry_practice_desc": {
+    "text": {
+      "en": "Practice with fast-forward,\nrewind and tempo changes!",
+      "ja": "早送り、早戻し、曲テンポ変更\nなど専用の機能をつかった\n特訓ができるよ！",
+      "zh": "使用快進、倒帶、變速等\n專用功能進行特訓！",
+      "ko": "빨리감기, 되감기, 속도 변경\n등으로 연습해요!"
+    }
+  },
+  "entry_costume_desc": {
+    "text": {
+      "en": "Change your Don's\ncostume!",
+      "ja": "ドンちゃんの\nきせかえができるよ！",
+      "zh": "更換小咚的服裝！",
+      "ko": "동이의 의상을\n갈아입혀요!"
+    }
+  },
+  "entry_settings_desc": {
+    "text": {
+      "en": "Change game and\ndisplay settings!",
+      "ja": "あそびかたや画面の\nせっていをかえるよ！",
+      "zh": "更改遊戲和顯示設定！",
+      "ko": "게임과 화면 설정을\n바꿔요!"
+    }
+  },
+  "song_count": {
+    "text": {
+      "en": "{0} Songs",
+      "ja": "全{0}曲",
+      "zh": "全{0}曲",
+      "ko": "전{0}곡"
+    }
+  },
+  "leaderboard_title": {
+    "text": {
+      "ja": "自己ベスト",
+      "en": "My Best",
+      "zh": "個人最佳",
+      "ko": "개인 최고 기록"
+    }
+  },
+  "dan_exam_label_gauge": {
+    "text": {
+      "ja": "魂ゲージ",
+      "en": "Soul Gauge",
+      "zh": "魂量表",
+      "ko": "혼 게이지"
+    }
+  },
+  "dan_exam_label_judgeperfect": {
+    "text": {
+      "ja": "良の数",
+      "en": "Good",
+      "zh": "良數",
+      "ko": "양 수"
+    }
+  },
+  "dan_exam_label_judgegood": {
+    "text": {
+      "ja": "可の数",
+      "en": "OK",
+      "zh": "可數",
+      "ko": "가 수"
+    }
+  },
+  "dan_exam_label_judgebad": {
+    "text": {
+      "ja": "不可の数",
+      "en": "Bad",
+      "zh": "不可數",
+      "ko": "불가 수"
+    }
+  },
+  "dan_exam_label_combo": {
+    "text": {
+      "ja": "コンボ数",
+      "en": "Combo",
+      "zh": "連擊數",
+      "ko": "콤보 수"
+    }
+  },
+  "dan_exam_label_renda": {
+    "text": {
+      "ja": "連打数",
+      "en": "Drumroll Hits",
+      "zh": "連打數",
+      "ko": "연타 수"
+    }
+  },
+  "dan_exam_label_hit": {
+    "text": {
+      "ja": "たたけた数",
+      "en": "Hits",
+      "zh": "擊打數",
+      "ko": "친 횟수"
+    }
+  },
+  "dan_exam_label_score": {
+    "text": {
+      "ja": "スコア",
+      "en": "Score",
+      "zh": "分數",
+      "ko": "점수"
+    }
+  },
+  "dan_game_total_notes_text": {
+    "text": {
+      "ja": "残り音符数",
+      "en": "Notes Left",
+      "zh": "剩餘音符數",
+      "ko": "남은 음표 수"
+    },
+    "x": 148,
+    "y": 499,
+    "width": 184,
+    "font_size": 36,
+    "outline": 4.0
+  },
+  "dan_exam_text_more": {
+    "text": {
+      "ja": "%s 以上",
+      "en": "%s or more",
+      "zh": "%s 以上",
+      "ko": "%s 이상"
+    }
+  },
+  "dan_exam_text_less": {
+    "text": {
+      "ja": "%s 未満",
+      "en": "under %s",
+      "zh": "%s 未滿",
+      "ko": "%s 미만"
+    }
+  },
+  "dan_exam_text_gauge": {
+    "text": {
+      "ja": "%s ％以上",
+      "en": "%s%% or more",
+      "zh": "%s％以上",
+      "ko": "%s％ 이상"
+    }
+  },
+  "dan_exam_text_gauge_less": {
+    "text": {
+      "ja": "%s ％未満",
+      "en": "under %s%%",
+      "zh": "%s％未滿",
+      "ko": "%s％ 미만"
+    }
+  },
+  "practice_menu_end_game": {
+    "text": {
+      "ja": "ゲーム終了",
+      "zh": "結束遊戲",
+      "en": "End Game",
+      "ko": "게임 종료"
+    }
+  },
+  "practice_menu_another_song": {
+    "text": {
+      "ja": "ほかの曲を演奏",
+      "zh": "選其他歌曲",
+      "en": "Another Song",
+      "ko": "다른 곡 연주"
+    }
+  },
+  "practice_menu_restart": {
+    "text": {
+      "ja": "最初から演奏",
+      "zh": "從頭演奏",
+      "en": "From the Top",
+      "ko": "처음부터 연주"
+    }
+  },
+  "practice_menu_auto_play": {
+    "text": {
+      "ja": "オート演奏設定",
+      "zh": "自動演奏設定",
+      "en": "Auto Play",
+      "ko": "오토 연주 설정"
+    }
+  },
+  "practice_menu_jump_to_mark": {
+    "text": {
+      "ja": "ジャンプポイントへ",
+      "zh": "跳至跳轉點",
+      "en": "To Jump Point",
+      "ko": "점프 지점으로"
+    }
+  },
+  "practice_menu_set_mark": {
+    "text": {
+      "ja": "ジャンプポイント設定",
+      "zh": "設定跳轉點",
+      "en": "Set Jump Point",
+      "ko": "점프 지점 설정"
+    }
+  },
+  "practice_menu_close": {
+    "text": {
+      "ja": "メニューをとじる",
+      "zh": "關閉選單",
+      "en": "Close Menu",
+      "ko": "메뉴 닫기"
+    }
+  },
+  "practice_menu_confirm_end": {
+    "text": {
+      "ja": "特訓モードを終了しますカッ？",
+      "zh": "要結束特訓模式嗎鏘？",
+      "en": "End practice mode?",
+      "ko": "특훈 모드를 종료할까?"
+    }
+  },
+  "practice_menu_confirm_another": {
+    "text": {
+      "ja": "ほかの曲を演奏しますカッ？",
+      "zh": "要選其他歌曲嗎鏘？",
+      "en": "Play another song?",
+      "ko": "다른 곡을 연주할까?"
+    }
+  },
+  "practice_menu_confirm_restart": {
+    "text": {
+      "ja": "最初から演奏しますカッ？",
+      "zh": "要從頭演奏嗎鏘？",
+      "en": "Restart from the top?",
+      "ko": "처음부터 연주할까?"
+    }
+  },
+  "practice_menu_confirm_auto": {
+    "text": {
+      "ja": "オート演奏を設定するドン！",
+      "zh": "設定自動演奏咚！",
+      "en": "Set Auto Play!",
+      "ko": "오토 연주를 설정한다 동!"
+    }
+  },
+  "practice_menu_yes": {
+    "text": {
+      "ja": "はい",
+      "zh": "是",
+      "en": "Yes",
+      "ko": "예"
+    }
+  },
+  "practice_menu_no": {
+    "text": {
+      "ja": "いいえ",
+      "zh": "否",
+      "en": "No",
+      "ko": "아니오"
+    }
+  },
+  "practice_menu_auto_on": {
+    "text": {
+      "ja": "ON",
+      "zh": "ON",
+      "en": "ON",
+      "ko": "ON"
+    }
+  },
+  "practice_menu_auto_off": {
+    "text": {
+      "ja": "OFF",
+      "zh": "OFF",
+      "en": "OFF",
+      "ko": "OFF"
+    }
+  },
+  "box_back_text": {
+    "x": 47,
+    "y": 173,
+    "font_size": 40,
+    "text": {
+      "ja": "もどる",
+      "en": "Back",
+      "zh": "返回",
+      "ko": "뒤로"
+    }
+  },
+  "diff_tower_easy": {
+    "text": {
+      "ja": "かんたん",
+      "en": "Easy",
+      "zh": "簡單",
+      "ko": "쉬움"
+    }
+  },
+  "diff_tower_normal": {
+    "text": {
+      "ja": "ふつう",
+      "en": "Normal",
+      "zh": "普通",
+      "ko": "보통"
+    }
+  },
+  "diff_tower_hard": {
+    "text": {
+      "ja": "むずかしい",
+      "en": "Hard",
+      "zh": "困難",
+      "ko": "어려움"
+    }
+  },
+  "diff_tower_oni": {
+    "text": {
+      "ja": "おに",
+      "en": "Oni",
+      "zh": "魔王",
+      "ko": "귀신"
+    }
+  },
+  "diff_tower_ura": {
+    "text": {
+      "ja": "おに",
+      "en": "Ura",
+      "zh": "裏魔王",
+      "ko": "우라"
+    }
+  },
+  "network_msg_clear_reading": {
+    "text": {
+      "ja": "通信中",
+      "en": "Communicating..."
+    }
+  },
+  "network_msg_clear_reading_ok": {
+    "text": {
+      "ja": "通信に成功しました！\nタッチした後は、お取り忘れにご注意ください。",
+      "en": "Communication successful!\nDon't forget to take your card after touching."
+    }
+  },
+  "network_msg_error_reading_ng": {
+    "text": {
+      "ja": "通信に失敗しました\nタッチした後は、お取り忘れにご注意ください。",
+      "en": "Communication failed.\nDon't forget to take your card after touching."
+    }
+  },
+  "network_msg_error_data_ban": {
+    "text": {
+      "ja": "このデータの使用は禁止されています\n心当たりのない方はカードサイトにお問い合わせください",
+      "en": "This data has been banned from use.\nIf you do not know why, please contact the card site."
+    }
+  },
+  "network_msg_error_disconnect": {
+    "text": {
+      "ja": "オフラインのためカード or ケータイを使用してのプレイはできません\nカード、おサイフケータイ®をお取りください",
+      "en": "You cannot play with a card or phone while offline.\nPlease take your card or phone."
+    }
+  },
+  "network_msg_error_assign_limit": {
+    "text": {
+      "ja": "これ以上はタッチを受け付けられません\nカード、おサイフケータイ®をお取りください\nまた、カードリーダーの上に置いたままにしないでください",
+      "en": "No more touches can be accepted.\nPlease take your card or phone,\nand do not leave it on the card reader."
+    }
+  },
+  "network_msg_error_cannot_assign": {
+    "text": {
+      "ja": "このデータはすでに読みこんでいます\nカード、おサイフケータイ®をお取りください\nまた、カードリーダーの上に置いたままにしないでください",
+      "en": "This data has already been loaded.\nPlease take your card or phone,\nand do not leave it on the card reader."
+    }
+  },
+  "network_msg_notice_pickup_card": {
+    "text": {
+      "ja": "お取り忘れに注意！",
+      "en": "Don't forget your card!"
+    }
+  },
+  "network_msg_clear_reading_maybe": {
+    "text": {
+      "ja": "通信中\n~通信状態によって、プレイデータの更新ができないことや、遅れることがあります。",
+      "en": "Communicating...\n~Depending on the connection, play data may fail to update or be delayed."
+    }
+  },
+  "network_msg_error_lost_card": {
+    "text": {
+      "ja": "しっかりとタッチしてください",
+      "en": "Please touch firmly."
+    }
+  },
+  "network_msg_error_userdata": {
+    "text": {
+      "ja": "プレイデータの受信に失敗しました\nオフラインモードに切り替わります",
+      "en": "Failed to receive play data.\nSwitching to offline mode."
+    }
+  },
+  "network_msg_error_already_gasha": {
+    "text": {
+      "ja": "今日はもうガシャをまわしてるドン…\n~※ガシャは1日1回だけまわせます。",
+      "en": "You already spun the gacha today, Don...\n~*The gacha can only be spun once a day."
+    }
+  },
+  "network_msg_error_not_play": {
+    "text": {
+      "ja": "まだ、一度もゲームをプレイしていないドン…\n~※新規カードをお使いの場合、一度太鼓の達人であそぶ必要があります。",
+      "en": "You haven't played the game yet, Don...\n~*New cards must play once before using the gacha."
+    }
+  },
+  "network_msg_error_touch_again": {
+    "text": {
+      "ja": "もう1度しっかりタッチしてください",
+      "en": "Please touch firmly once more."
+    }
+  },
+  "network_msg_error_close_shop": {
+    "text": {
+      "ja": "まもなく閉店のお時間となります。\n閉店時間になるとガシャができなくなります。",
+      "en": "Closing time is approaching.\nThe gacha is unavailable after closing."
+    }
+  },
+  "network_msg_error_offline_gasha": {
+    "text": {
+      "ja": "オフライン状態のため大会限定ガシャは実施できません。\nネットワークの状態を確認してください。",
+      "en": "The tournament gacha is unavailable while offline.\nPlease check the network."
+    }
+  },
+  "network_msg_error_card_gasha": {
+    "text": {
+      "ja": "カードが使用不可のため大会限定ガシャは実施できません。\nカードリーダーの状態を確認してください。",
+      "en": "The tournament gacha is unavailable: card unusable.\nPlease check the card reader."
+    }
+  },
+  "network_msg_error_end_gasha": {
+    "text": {
+      "ja": "大会ガシャは終了となりました。\n~※通常のアトラクト状態に戻すには、テストモードで大会限定ガシャを OFF にしてください。",
+      "en": "The tournament gacha has ended.\n~*To return to normal attract, turn the tournament gacha OFF in test mode."
+    }
+  },
+  "network_msg_error_bnid": {
+    "text": {
+      "ja": "このバンダイナムコIDは使えません。",
+      "en": "This Bandai Namco ID cannot be used."
+    }
+  },
+  "network_msg_error_shop_already": {
+    "text": {
+      "ja": "すでにゲットしています\n~ごほうびの所持状態を更新しました。再度ご確認ください。",
+      "en": "You already have this.\n~Reward ownership updated. Please check again."
+    }
+  },
+  "network_msg_error_shop_failed": {
+    "text": {
+      "ja": "通信に失敗しました\n~ごほうびがゲットできていない可能性があります。\n~最新の獲得状況は、サイトでご確認いただけます。",
+      "en": "Communication failed.\n~The reward may not have been obtained.\n~Check the latest status online."
+    }
+  },
+  "network_msg_error_shop_shortage": {
+    "text": {
+      "ja": "どんメダルが足りません\n~どんメダルの所持量を更新しました。再度ご確認ください。\n~※通信状態によって、最新のプレイデータへの更新が遅れることがあります。",
+      "en": "Not enough Don Medals.\n~Medal count updated. Please check again.\n~*Updates may be delayed depending on the connection."
+    }
+  },
+  "network_msg_shop_get_OK": {
+    "text": {
+      "ja": "ごほうびをゲットしました！\n~ゲットしたきせかえは、次回のプレイからつかえます",
+      "en": "Reward obtained!\n~Obtained costumes can be used from your next play."
+    }
+  },
+  "network_msg_error_offline_shop": {
+    "text": {
+      "ja": "通信エラーが発生しました\n~ごほうびショップを終了し、オフラインモードに切り替えます",
+      "en": "A communication error occurred.\n~Closing the reward shop and switching to offline mode."
+    }
+  },
+  "ai_reward_song": {
+    "font_size": 26,
+    "text": {
+      "ja": "新曲",
+      "en": "New song",
+      "zh": "新曲",
+      "ko": "신곡"
+    }
+  },
+  "ai_reward_head": {
+    "font_size": 26,
+    "text": {
+      "ja": "きせかえ（あたま）",
+      "en": "Costume (head)",
+      "zh": "服裝（頭部）",
+      "ko": "의상 (머리)"
+    }
+  },
+  "ai_reward_body": {
+    "font_size": 26,
+    "text": {
+      "ja": "きせかえ（からだ）",
+      "en": "Costume (body)",
+      "zh": "服裝（身體）",
+      "ko": "의상 (몸)"
+    }
+  },
+  "ai_reward_title": {
+    "font_size": 26,
+    "text": {
+      "ja": "称号",
+      "en": "Title",
+      "zh": "稱號",
+      "ko": "칭호"
+    }
+  },
+  "ai_assigned_folder": {
+    "font_size": 30,
+    "text": {
+      "ja": "課題曲",
+      "en": "Assigned Songs",
+      "zh": "課題曲",
+      "ko": "과제곡"
+    }
+  },
+  "ai_intro_hint_page": {
+    "font_size": 30,
+    "text": {
+      "ja": "フチでページきりかえ",
+      "en": "Rim: change page",
+      "zh": "敲鼓邊翻頁",
+      "ko": "테를 쳐서 페이지 넘기기"
+    }
+  },
+  "ai_intro_hint_end": {
+    "font_size": 30,
+    "text": {
+      "ja": "面でおわり",
+      "en": "Center: finish",
+      "zh": "敲鼓面結束",
+      "ko": "면을 쳐서 끝내기"
+    }
+  },
+  "tutorial_caption_1": {
+    "font_size": 38,
+    "text": {
+      "ja": "このゲームのあそびかたをおしえるよ",
+      "en": "This is how to play!",
+      "zh": "來教你這個遊戲的玩法吧",
+      "ko": "이 게임의 플레이 방법을 알려줄게"
+    }
+  },
+  "tutorial_caption_2": {
+    "font_size": 38,
+    "text": {
+      "ja": "流れてくる音符が\nワクにかさなったら\nバチで太鼓をたたこう",
+      "en": "When a note flows in\nand reaches the frame,\nhit the drum with your sticks!",
+      "zh": "流過來的音符\n和框重疊的時候\n用鼓槌敲打太鼓吧",
+      "ko": "흘러오는 음표가\n틀에 겹쳐지면\n북채로 북을 치자"
+    }
+  },
+  "tutorial_caption_3": {
+    "font_size": 38,
+    "text": {
+      "ja": "太鼓のどうの部分は\nキケンだからたたかないでね",
+      "en": "Don't hit the side of the drum,\nit's dangerous!",
+      "zh": "太鼓的鼓身部分\n很危險，不要敲哦",
+      "ko": "북의 몸통 부분은\n위험하니까 치지 마"
+    }
+  },
+  "tutorial_caption_4": {
+    "font_size": 38,
+    "text": {
+      "ja": "赤い音符{don}は面をたたこう",
+      "en": "Red notes {don} : hit the face!",
+      "zh": "紅色音符{don}要敲鼓面",
+      "ko": "빨간 음표{don}는 면을 치자"
+    }
+  },
+  "tutorial_caption_5": {
+    "font_size": 38,
+    "text": {
+      "ja": "青い音符{kat}はフチをたたこう",
+      "en": "Blue notes {kat} : hit the rim!",
+      "zh": "藍色音符{kat}要敲鼓邊",
+      "ko": "파란 음표{kat}는 테를 치자"
+    }
+  },
+  "tutorial_caption_6": {
+    "font_size": 38,
+    "text": {
+      "ja": "大きな音符{big_don}{big_kat}は\n強くたたくと高得点！",
+      "en": "Big notes {big_don}{big_kat}\nscore more when hit hard!",
+      "zh": "大音符{big_don}{big_kat}\n用力敲打得高分！",
+      "ko": "큰 음표{big_don}{big_kat}는\n세게 치면 고득점!"
+    }
+  },
+  "tutorial_caption_7": {
+    "font_size": 38,
+    "text": {
+      "ja": "黄色い音符{roll}は\nひたすら連打！",
+      "en": "Yellow notes {roll}\nhit them as fast as you can!",
+      "zh": "黃色音符{roll}\n一個勁地連打！",
+      "ko": "노란 음표{roll}는\n계속 연타!"
+    }
+  },
+  "tutorial_caption_8": {
+    "font_size": 38,
+    "text": {
+      "ja": "ふうせん音符{balloon}と\nくすだま音符{kusudama}もとにかく連打ー！",
+      "en": "Balloon notes {balloon} and\nkusudama notes {kusudama}: keep drumming!",
+      "zh": "氣球音符{balloon}和\n綵球音符{kusudama}也要拼命連打！",
+      "ko": "풍선 음표{balloon}와\n쿠스다마 음표{kusudama}도 무조건 연타!"
+    }
+  },
+  "tutorial_caption_9": {
+    "font_size": 38,
+    "text": {
+      "ja": "タイミングよくたたけば\n魂（たましい）ゲージがアップ！",
+      "en": "Hit with good timing\nto fill the soul gauge!",
+      "zh": "掌握好時機敲打\n魂槽就會上升！",
+      "ko": "타이밍 좋게 치면\n혼 게이지가 올라가!"
+    }
+  },
+  "tutorial_caption_10": {
+    "font_size": 38,
+    "text": {
+      "ja": "うまくたたいてクリアをめざそう！",
+      "en": "Play well and aim for a clear!",
+      "zh": "好好敲打，以通關為目標吧！",
+      "ko": "잘 쳐서 클리어를 노리자!"
+    }
+  },
+  "campaign_mac_desc": {
+    "text": {
+      "en": "Take a photo with your Happy Set toy\nand play in an original McDonald's costume!",
+      "ja": "ハッピーセットのおもちゃといっしょに しゃしんをとって\nマクドナルドオリジナルの きせかえであそぼう！",
+      "zh": "和開心樂園餐的玩具一起拍照，\n用麥當勞原創換裝來玩吧！",
+      "ko": "해피밀 장난감과 함께 사진을 찍고\n맥도날드 오리지널 옷으로 놀자!"
+    }
+  },
+  "campaign_mac_no": {
+    "text": {
+      "en": "No photo",
+      "ja": "しゃしんをとらない",
+      "zh": "不拍照",
+      "ko": "사진 안 찍기"
+    }
+  },
+  "campaign_mac_yes": {
+    "text": {
+      "en": "Take a photo",
+      "ja": "しゃしんをとる",
+      "zh": "拍照",
+      "ko": "사진 찍기"
+    }
+  },
+  "campaign_mac_pose": {
+    "text": {
+      "en": "Strike a pose with your toy!\nHit the drum when you're ready!",
+      "ja": "おもちゃといっしょにポーズを決めよう！\nじゅんびができたら太鼓をたたいてね！",
+      "zh": "和玩具一起擺個姿勢吧！\n準備好了就敲太鼓吧！",
+      "ko": "장난감과 함께 포즈를 잡아 보자!\n준비가 되면 북을 쳐 줘!"
+    }
+  },
+  "campaign_mac_reward": {
+    "text": {
+      "en": "Cheeseburger",
+      "ja": "チーズバーガー",
+      "zh": "起司漢堡",
+      "ko": "치즈버거"
+    }
+  },
+  "campaign_smart_keep": {
+    "text": {
+      "en": "Don't cover the picture with your hand,\nhold it up to the camera!",
+      "ja": "画像を手でかくしたりしないように、\nしっかりカメラに向けてね！",
+      "zh": "不要用手遮住圖片，\n請對準攝影機！",
+      "ko": "손으로 그림을 가리지 말고,\n카메라에 잘 비춰 줘!"
+    }
+  },
+  "campaign_smart_keep_alt": {
+    "text": {
+      "en": "Hold it up to the camera to scan it!",
+      "ja": "認識させるものをカメラに向けてかざしてね！",
+      "zh": "把要識別的東西對準攝影機吧！",
+      "ko": "인식시킬 것을 카메라에 비춰 줘!"
+    }
+  },
+  "campaign_smart_prize_0": {
+    "text": {
+      "en": "Sunflower",
+      "ja": "ひまわり",
+      "zh": "向日葵",
+      "ko": "해바라기"
+    }
+  },
+  "campaign_smart_prize_1": {
+    "text": {
+      "en": "Moon-viewing Dango",
+      "ja": "月見だんご",
+      "zh": "賞月團子",
+      "ko": "달맞이 경단"
+    }
+  },
+  "campaign_smart_prize_2": {
+    "text": {
+      "en": "Halloween",
+      "ja": "ハロウィン",
+      "zh": "萬聖節",
+      "ko": "핼러윈"
+    }
+  },
+  "campaign_smart_prize_3": {
+    "text": {
+      "en": "Hot Pot",
+      "ja": "よせ鍋",
+      "zh": "什錦火鍋",
+      "ko": "모둠 전골"
+    }
+  },
+  "campaign_smart_prize_4": {
+    "text": {
+      "en": "Santa Claus",
+      "ja": "サンタクロース",
+      "zh": "聖誕老人",
+      "ko": "산타클로스"
+    }
+  },
+  "campaign_smart_prize_5": {
+    "text": {
+      "en": "Kagami Mochi",
+      "ja": "鏡もち",
+      "zh": "鏡餅",
+      "ko": "가가미모치"
+    }
+  },
+  "campaign_smart_prize_6": {
+    "text": {
+      "en": "Oni with a Club",
+      "ja": "オニに金棒",
+      "zh": "鬼拿鐵棒",
+      "ko": "도깨비 방망이"
+    }
+  },
+  "campaign_smart_prize_7": {
+    "text": {
+      "en": "Glasses",
+      "ja": "めがね",
+      "zh": "眼鏡",
+      "ko": "안경"
+    }
+  },
+  "campaign_smart_prize_8": {
+    "text": {
+      "en": "CoroCoro Comic",
+      "ja": "コロコロコミック",
+      "zh": "CoroCoro Comic",
+      "ko": "코로코로 코믹"
+    }
+  },
+  "campaign_smart_prize_9": {
+    "text": {
+      "en": "Ciao",
+      "ja": "ちゃお",
+      "zh": "Ciao",
+      "ko": "챠오"
+    }
+  },
+  "kusudama_renda": {
+    "x": 640,
+    "y": 244,
+    "font_size": 72,
+    "text": {
+      "ja": "連打!!",
+      "en": "Drumroll!!",
+      "zh": "连打!!",
+      "ko": "연타!!"
+    }
+  },
+  "entry_waiwai": {
+    "text": {
+      "en": "Waiwai Play",
+      "ja": "ワイワイ演奏",
+      "zh": "一起哇哇演奏",
+      "ko": "와이와이 연주"
+    }
+  },
+  "entry_shop": {
+    "text": {
+      "en": "Reward Shop",
+      "ja": "ごほうびショップ",
+      "zh": "奖励商店",
+      "ko": "보상 상점"
+    }
+  },
+  "entry_shop_desc": {
+    "text": {
+      "en": "Spend your Don medals\non costumes!",
+      "ja": "どんメダルで\nきせかえをゲットしよう！",
+      "zh": "用咚奖牌兑换服装！",
+      "ko": "동 메달로\n의상을 받아요!"
+    }
+  },
+  "reward_shop_telop": {
+    "text": {
+      "en": "Get new costumes with your Don medals! The lineup changes every day.",
+      "ja": "どんメダルできせかえをゲットしよう！ラインナップは毎日かわるよ！",
+      "zh": "用咚奖牌兑换新服装吧！商品每日更新！",
+      "ko": "동 메달로 새 의상을 받아요! 상품은 매일 바뀌어요!"
+    }
+  },
+  "entry_wait_pill": {
+    "x": 638,
+    "y": 472,
+    "font_size": 30,
+    "text": {
+      "en": "Hit the drum to start!",
+      "ja": "太鼓をたたいてスタート！",
+      "zh": "敲击太鼓开始！",
+      "ko": "북을 쳐서 시작!"
+    }
+  },
+  "entry_waiwai_desc": {
+    "text": {
+      "en": "Two players play together\nand match their breath!",
+      "ja": "2人で息を合わせて\nいっしょに演奏しよう！",
+      "zh": "两人一起配合\n默契演奏！",
+      "ko": "둘이서 호흡을 맞춰\n함께 연주해요!"
+    }
+  },
+  "practice_menu_confirm_review_end": {
+    "text": {
+      "ja": "ふりかえりタイムを終了しますカッ？",
+      "zh": "要结束回顾时间吗锵？",
+      "en": "End review time?",
+      "ko": "되돌아보기 타임을 종료할까?"
+    }
+  },
+  "kinotake_result_caption": {
+    "text": {
+      "en": "* Today's Kinotake Battle standings across every cabinet.\n* Standings are tallied each day.",
+      "ja": "※全国のきのたけ合戦の状況です。\n※状況は日ごとに集計されます。",
+      "zh": "※全国蘑菇竹笋大战的战况。\n※战况每天统计。",
+      "ko": "※전국 버섯죽순 대전의 상황입니다.\n※상황은 날마다 집계됩니다."
+    }
+  },
+  "kinotake_costume_0": {
+    "text": {
+      "en": "Kinoko no Yama",
+      "ja": "きのこの山",
+      "zh": "蘑菇山",
+      "ko": "버섯의 산"
+    }
+  },
+  "kinotake_costume_1": {
+    "text": {
+      "en": "Takenoko no Sato",
+      "ja": "たけのこの里",
+      "zh": "竹笋村",
+      "ko": "죽순의 마을"
+    }
+  },
+  "campaign_hint_by": {
+    "text": {
+      "en": "to",
+      "ja": "で",
+      "zh": "",
+      "ko": "로"
+    }
+  },
+  "campaign_hint_select": {
+    "text": {
+      "en": "select",
+      "ja": "えらんで",
+      "zh": "选择",
+      "ko": "선택"
+    }
+  },
+  "campaign_hint_decide": {
+    "text": {
+      "en": "confirm",
+      "ja": "決定",
+      "zh": "确定",
+      "ko": "결정"
+    }
+  },
+  "bncoin_shortage": {
+    "text": {
+      "en": "Not enough BanaCoin.",
+      "ja": "残高が足りません。",
+      "zh": "余额不足。",
+      "ko": "잔액이 부족합니다."
+    }
+  },
+  "bncoin_onlyplay": {
+    "text": {
+      "en": "This mode is single-player only.",
+      "ja": "1人プレイ専用のモードです。",
+      "zh": "此模式仅限单人游玩。",
+      "ko": "1인 플레이 전용 모드입니다."
+    }
+  },
+  "bncoin_cantuse": {
+    "text": {
+      "en": "BanaCoin can't be used\nright now.",
+      "ja": "ただいまバナコインは\n使えません。",
+      "zh": "目前无法使用\nBanaCoin。",
+      "ko": "현재 바나코인을\n사용할 수 없습니다."
+    }
+  },
+  "bncoin_cantplay": {
+    "text": {
+      "en": "Training mode can't be played\nright now.",
+      "ja": "ただいま特訓モードは\n遊べません。",
+      "zh": "目前无法游玩\n特训模式。",
+      "ko": "현재 특훈 모드를\n플레이할 수 없습니다."
+    }
+  },
+  "bncoin_firstplay": {
+    "text": {
+      "en": "Training mode isn't available\non a Banapassport card's\nfirst play.",
+      "ja": "初めてバナパスポートカードを\nタッチしてあそぶ時は、\n特訓モードはあそべません。",
+      "zh": "首次使用Banapassport卡\n游玩时，\n无法游玩特训模式。",
+      "ko": "바나패스포트 카드로\n처음 플레이할 때는\n특훈 모드를 할 수 없습니다."
+    }
+  },
+  "bncoin_unit": {
+    "text": {
+      "en": "BanaCoin",
+      "ja": "バナコイン",
+      "zh": "BanaCoin",
+      "ko": "바나코인"
+    }
+  },
+  "bncoin_consume": {
+    "text": {
+      "en": "will be used.",
+      "ja": "消費します。",
+      "zh": "将被扣除。",
+      "ko": "사용합니다."
+    }
+  },
+  "bncoin_cancel": {
+    "text": {
+      "en": "Hit the rim to cancel",
+      "ja": "フチを叩いてキャンセル",
+      "zh": "敲击鼓边取消",
+      "ko": "테를 쳐서 취소"
+    }
+  },
+  "bncoin_confirm_question": {
+    "text": {
+      "en": "Really not use it?",
+      "ja": "本当につかいませんか？",
+      "zh": "真的不使用吗？",
+      "ko": "정말 사용하지 않겠습니까?"
+    }
+  },
+  "bncoin_confirm_use": {
+    "text": {
+      "en": "Use!",
+      "ja": "つかう！",
+      "zh": "使用！",
+      "ko": "사용!"
+    }
+  },
+  "bncoin_confirm_not_use": {
+    "text": {
+      "en": "Don't use",
+      "ja": "つかわない",
+      "zh": "不使用",
+      "ko": "사용 안 함"
+    }
+  },
+  "waiwai_result_msg_vbad": {
+    "font_size": 56,
+    "text": {
+      "ja": "つぎはがんばるドン…",
+      "en": "Let's try again next time!",
+      "zh": "下次再加油咚…",
+      "ko": "다음엔 힘내자 쿵…"
+    }
+  },
+  "waiwai_result_msg_bad": {
+    "font_size": 56,
+    "text": {
+      "ja": "おしかったドン!",
+      "en": "So close!",
+      "zh": "差一点咚!",
+      "ko": "아깝다 쿵!"
+    }
+  },
+  "waiwai_result_msg_good": {
+    "font_size": 56,
+    "text": {
+      "ja": "いい息だったドン!",
+      "en": "Great teamwork!",
+      "zh": "配合得不错咚!",
+      "ko": "호흡이 좋았어 쿵!"
+    }
+  },
+  "waiwai_tutorial_box": {
+    "text": {
+      "ja": "ワイワイ演奏説明",
+      "en": "How to Play Waiwai",
+      "zh": "一起哇哇演奏说明",
+      "ko": "와이와이 연주 설명"
+    }
+  },
+  "waiwai_result_msg_excellent": {
+    "font_size": 56,
+    "text": {
+      "ja": "息ぴったりだドン!",
+      "en": "Perfectly in sync!",
+      "zh": "默契十足咚!",
+      "ko": "호흡이 딱 맞아 쿵!"
+    }
+  }
+}

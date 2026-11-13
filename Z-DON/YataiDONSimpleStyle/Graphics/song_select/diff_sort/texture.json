@@ -1,0 +1,239 @@
+{
+  "background": {
+    "x": 0,
+    "y": 0,
+    "density": 1
+  },
+  "level_box": {
+    "x": 0,
+    "y": 0,
+    "density": 1
+  },
+  "box_highlight": {
+    "x": 0,
+    "y": 0,
+    "density": 1
+  },
+  "box_outline": {
+    "x": 0,
+    "y": 0,
+    "density": 1
+  },
+  "arrow": {
+    "x": 0,
+    "y": 0
+  },
+  "diff": {
+    "x": 0,
+    "y": 0
+  },
+  "stat_num": {
+    "x": 0,
+    "y": 0
+  },
+  "star_select_text": {
+    "x": 0,
+    "y": 0
+  },
+  "back_en": {
+    "x": 884,
+    "y": 396,
+    "density": 1
+  },
+  "back_ja": {
+    "x": 884,
+    "y": 396,
+    "density": 1
+  },
+  "back_outline": {
+    "x": 884,
+    "y": 396,
+    "density": 1
+  },
+  "box": {
+    "x": 1164,
+    "y": 396,
+    "density": 1
+  },
+  "box_diff": {
+    "x": 1164,
+    "y": 276,
+    "frame_order": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "box_text": {
+    "x": 1164,
+    "y": 396,
+    "frame_order": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "density": 1
+  },
+  "box_text_highlight": {
+    "x": 1164,
+    "y": 396,
+    "frame_order": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "density": 1
+  },
+  "star_select_prompt": {
+    "x": 1236,
+    "y": 150,
+    "density": 1
+  },
+  "star_limit": {
+    "x": 1364,
+    "y": 314,
+    "frame_order": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "density": 1
+  },
+  "star_num": {
+    "x": 2202,
+    "y": 524,
+    "frame_order": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "star": {
+    "x": 1304,
+    "y": 780
+  },
+  "pongos": {
+    "x": 1476,
+    "y": 1200,
+    "density": 1
+  },
+  "small_box": {
+    "x": 876,
+    "y": 1214,
+    "density": 1
+  },
+  "small_box_outline": {
+    "x": 876,
+    "y": 1214,
+    "density": 1
+  },
+  "small_box_highlight": {
+    "x": 876,
+    "y": 1214,
+    "density": 1
+  },
+  "small_box_text": {
+    "x": 876,
+    "y": 1214,
+    "frame_order": [
+      0,
+      0,
+      0
+    ],
+    "density": 1
+  },
+  "small_box_text_highlight": {
+    "x": 876,
+    "y": 1214,
+    "frame_order": [
+      0,
+      0,
+      0
+    ],
+    "density": 1
+  },
+  "stat_bg_1p": {
+    "x": 74,
+    "y": 468,
+    "density": 1
+  },
+  "stat_bg_2p": {
+    "x": 74,
+    "y": 468,
+    "density": 1
+  },
+  "stat_overlay": {
+    "x": 74,
+    "y": 468,
+    "density": 1
+  },
+  "stat_num_small": [
+    {
+      "x": 618,
+      "y": 1038
+    },
+    {
+      "x": 618,
+      "y": 1176
+    }
+  ],
+  "stat_num_star": [
+    {
+      "x": 498,
+      "y": 980
+    },
+    {
+      "x": 392,
+      "y": 980
+    },
+    {
+      "x": 392,
+      "y": 1130
+    }
+  ],
+  "stat_diff": {
+    "x": 108,
+    "y": 584,
+    "frame_order": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "density": 1
+  },
+  "stat_starx": {
+    "x": 330,
+    "y": 584,
+    "density": 1
+  },
+  "stat_recommend": {
+    "x": 74,
+    "y": 468,
+    "density": 1
+  },
+  "stat_prev": {
+    "x": 74,
+    "y": 468,
+    "density": 1
+  }
+}

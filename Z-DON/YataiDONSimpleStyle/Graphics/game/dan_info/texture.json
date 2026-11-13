@@ -1,0 +1,206 @@
+{
+  "gauge_border_plate": {
+    "x": 0,
+    "y": 0,
+    "density": 1
+  },
+  "gauge_border_cell": {
+    "x": 0,
+    "y": 0
+  },
+  "exam_bg": {
+    "x": 240,
+    "y": 1106
+  },
+  "exam_badge": {
+    "x": 300,
+    "y": 1230
+  },
+  "exam_overlay_1": {
+    "x": 1018,
+    "y": 1138
+  },
+  "exam_overlay_2": {
+    "x": 1018,
+    "y": 1138
+  },
+  "exam_frame_back_all": {
+    "x": 1014,
+    "y": 1138
+  },
+  "exam_frame_front_all": {
+    "x": 1014,
+    "y": 1138
+  },
+  "exam_max": {
+    "x": 1050,
+    "y": 1180,
+    "x2": 0
+  },
+  "exam_gold": {
+    "x": 1050,
+    "y": 1180,
+    "x2": 0
+  },
+  "exam_red": {
+    "x": 1050,
+    "y": 1180,
+    "x2": 0
+  },
+  "exam_fail": {
+    "x": 1050,
+    "y": 1180,
+    "x2": 0
+  },
+  "exam_gauge": {
+    "x": 284,
+    "y": 1128
+  },
+  "exam_combo": {
+    "x": 284,
+    "y": 1128
+  },
+  "exam_drumroll": {
+    "x": 284,
+    "y": 1128
+  },
+  "exam_hit": {
+    "x": 284,
+    "y": 1128
+  },
+  "exam_judgebad": {
+    "x": 284,
+    "y": 1128
+  },
+  "exam_judgegood": {
+    "x": 284,
+    "y": 1128
+  },
+  "exam_judgeperfect": {
+    "x": 284,
+    "y": 1128
+  },
+  "exam_score": {
+    "x": 284,
+    "y": 1128
+  },
+  "exam_roll": {
+    "x": 284,
+    "y": 1128
+  },
+  "exam_less": {
+    "x": 828,
+    "y": 1226
+  },
+  "exam_more": {
+    "x": 828,
+    "y": 1226
+  },
+  "exam_percent": [
+    {
+      "x": 716,
+      "y": 1234
+    },
+    {
+      "x": 1888,
+      "y": 1194
+    }
+  ],
+  "exam_border_counter": {
+    "x": 812,
+    "y": 1226
+  },
+  "value_counter": {
+    "x": 1840,
+    "y": 1154
+  },
+  "exam_failed": {
+    "x": 1338,
+    "y": 1170
+  },
+  "exam_sub_bg": {
+    "x": 2432,
+    "y": 1160
+  },
+  "exam_sub_track": {
+    "x": 2502,
+    "y": 1160
+  },
+  "exam_sub_front": {
+    "x": 2502,
+    "y": 1160
+  },
+  "exam_sub_chip": {
+    "x": 2432,
+    "y": 1176
+  },
+  "exam_sub_red": {
+    "x": 2524,
+    "y": 1184,
+    "x2": 0
+  },
+  "exam_sub_gold": {
+    "x": 2524,
+    "y": 1184,
+    "x2": 0
+  },
+  "exam_sub_max": {
+    "x": 2524,
+    "y": 1184,
+    "x2": 0
+  },
+  "exam_sub_fail": {
+    "x": 2524,
+    "y": 1184,
+    "x2": 0
+  },
+  "exam_sub_counter": {
+    "x": 2956,
+    "y": 1176
+  },
+  "rank_plate": {
+    "x": 3070,
+    "y": 1048
+  },
+  "frame": {
+    "x": 3400,
+    "y": 1120
+  },
+  "total_notes": {
+    "x": 0,
+    "y": 1080
+  },
+  "total_notes_counter": {
+    "x": 3120,
+    "y": 1916
+  },
+  "exam_down80": {
+    "x": 1050,
+    "y": 1180,
+    "x2": 0
+  },
+  "exam_rainbow_all": {
+    "x": 1050,
+    "y": 1180,
+    "x2": 0
+  },
+  "exam_rainbow": {
+    "x": 1050,
+    "y": 1180,
+    "x2": 0
+  },
+  "exam_sub_down80": {
+    "x": 2524,
+    "y": 1184,
+    "x2": 0
+  },
+  "exam_sub_rainbow": {
+    "x": 2524,
+    "y": 1184,
+    "x2": 0
+  },
+  "exam_flash": {
+    "x": 944,
+    "y": 1148
+  }
+}

@@ -1,0 +1,40 @@
+{
+    "kitsune": {
+        "x": 1917,
+        "y": 611,
+        "frame_order": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ]
+    },
+    "curtain": {
+        "x": 3035
+    },
+    "curtain_side": {
+        "x": 2052
+    },
+    "game_over_text_ja": {
+        "x": 420,
+        "y": 0
+    },
+    "game_over_text_en": {
+        "x": 420,
+        "y": 0
+    },
+    "game_over_text_zh": {
+        "x": 420,
+        "y": 0
+    },
+    "copyright": {
+        "x": 0,
+        "y": 468
+    }
+}

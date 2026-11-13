@@ -1,0 +1,42 @@
+{
+    "fist_outline": {
+        "x": 766,
+        "y": 199,
+        "frame_order": [
+            0,
+            0,
+            0,
+            0
+        ]
+    },
+    "stick_outline": {
+        "x": 766,
+        "y": 199,
+        "frame_order": [
+            0,
+            0,
+            0,
+            0
+        ]
+    },
+    "fist_fill": {
+        "x": 766,
+        "y": 199,
+        "frame_order": [
+            0,
+            0,
+            0,
+            0
+        ]
+    },
+    "stick_fill": {
+        "x": 766,
+        "y": 199,
+        "frame_order": [
+            0,
+            0,
+            0,
+            0
+        ]
+    }
+}

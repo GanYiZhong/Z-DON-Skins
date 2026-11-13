@@ -1,0 +1,187 @@
+{
+  "1p_unfilled_hard": {
+    "x": 0,
+    "y": 0,
+    "density": 1
+  },
+  "2p_unfilled_hard": {
+    "x": 0,
+    "y": 0,
+    "density": 1
+  },
+  "overlay_hard": {
+    "x": 0,
+    "y": 0,
+    "density": 1
+  },
+  "rainbow_hard": {
+    "x": 0,
+    "y": 0,
+    "frame_order": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "density": 1
+  },
+  "1p_unfilled_normal": {
+    "x": 0,
+    "y": 0,
+    "density": 1
+  },
+  "2p_unfilled_normal": {
+    "x": 0,
+    "y": 0,
+    "density": 1
+  },
+  "overlay_normal": {
+    "x": 0,
+    "y": 0,
+    "density": 1
+  },
+  "rainbow_normal": {
+    "x": 0,
+    "y": 0,
+    "frame_order": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "density": 1
+  },
+  "1p_unfilled_easy": {
+    "x": 0,
+    "y": 0,
+    "density": 1
+  },
+  "2p_unfilled_easy": {
+    "x": 0,
+    "y": 0,
+    "density": 1
+  },
+  "overlay_easy": {
+    "x": 0,
+    "y": 0,
+    "density": 1
+  },
+  "rainbow_easy": {
+    "x": 0,
+    "y": 0,
+    "frame_order": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "density": 1
+  },
+  "clear": [
+    {
+      "x": 624,
+      "y": 24
+    },
+    {
+      "x": 728,
+      "y": 24
+    },
+    {
+      "x": 834,
+      "y": 24
+    }
+  ],
+  "clear_dark": [
+    {
+      "x": 624,
+      "y": 24
+    },
+    {
+      "x": 728,
+      "y": 24
+    },
+    {
+      "x": 834,
+      "y": 24
+    }
+  ],
+  "bar_clear_transition": {
+    "x": 12,
+    "y": 18
+  },
+  "bar_clear_top": {
+    "x": 14,
+    "y": 20
+  },
+  "bar_clear_bottom": {
+    "x": 14,
+    "y": 54
+  },
+  "1p_bar": {
+    "x": 14,
+    "y": 54
+  },
+  "2p_bar": {
+    "x": 14,
+    "y": 54
+  },
+  "bar_clear_transition_fade": {
+    "x": -6,
+    "y": 20
+  },
+  "bar_clear_fade": {
+    "x": -6,
+    "y": 20
+  },
+  "1p_bar_fade": {
+    "x": -6,
+    "y": 42
+  },
+  "2p_bar_fade": {
+    "x": -6,
+    "y": 42
+  },
+  "tamashii": {
+    "x": 1050,
+    "y": 8
+  },
+  "tamashii_dark": {
+    "x": 1050,
+    "y": 8
+  },
+  "tamashii_overlay": {
+    "x": 1050,
+    "y": 8
+  },
+  "tamashii_fire": {
+    "x": 806,
+    "y": -368,
+    "frame_order": [
+      0,
+      1,
+      2,
+      3,
+      0,
+      1,
+      2,
+      3
+    ],
+    "density": 1
+  },
+  "footer": {
+    "x": 1062,
+    "y": 14
+  }
+}

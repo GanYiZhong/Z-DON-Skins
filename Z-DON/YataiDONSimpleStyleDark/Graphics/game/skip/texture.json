@@ -1,0 +1,57 @@
+{
+  "panel": {
+    "x": 912,
+    "y": 1080,
+    "density": 1
+  },
+  "panel_ja": {
+    "x": 912,
+    "y": 1080,
+    "density": 1
+  },
+  "panel_en": {
+    "x": 912,
+    "y": 1080,
+    "density": 1
+  },
+  "panel_zh": {
+    "x": 912,
+    "y": 1080,
+    "density": 1
+  },
+  "panel_ko": {
+    "x": 912,
+    "y": 1080,
+    "density": 1
+  },
+  "number": {
+    "x": 1576,
+    "y": 1264,
+    "density": 1
+  },
+  "dim": {
+    "x": 0,
+    "y": 0,
+    "x2": 3840,
+    "y2": 2160
+  },
+  "text_ja": {
+    "x": 56,
+    "y": 546,
+    "density": 1
+  },
+  "text_en": {
+    "x": 520,
+    "y": 546
+  },
+  "text_zh": {
+    "x": 520,
+    "y": 546,
+    "density": 1
+  },
+  "text_ko": {
+    "x": 56,
+    "y": 546,
+    "density": 1
+  }
+}

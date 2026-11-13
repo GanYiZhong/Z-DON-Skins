@@ -1,0 +1,302 @@
+{
+  "lane_background": {
+    "x": 996,
+    "x2": 2844
+  },
+  "ai_lane_background": {
+    "x": 992,
+    "y": 0,
+    "density": 1
+  },
+  "lane_hit_effect": {
+    "x": 992,
+    "y": 24,
+    "x2": 2848,
+    "y2": 390
+  },
+  "lane_hit_circle": {
+    "x": 1020,
+    "y": 4
+  },
+  "dan_between_fill": {
+    "x": 996,
+    "y": 24,
+    "x2": 2844,
+    "y2": 390
+  },
+  "dan_between_fusuma": {
+    "x": 1698,
+    "y": 10,
+    "density": 1
+  },
+  "1p_lane_cover": {},
+  "2p_lane_cover": {},
+  "dan_lane_cover": {},
+  "ai_lane_cover": {},
+  "lane_score_cover": {
+    "x": 0,
+    "y": 24
+  },
+  "drum": {
+    "x": 524,
+    "y": -36,
+    "density": 1
+  },
+  "drum_don_l": {
+    "x": 524,
+    "y": -36,
+    "density": 1
+  },
+  "drum_don_r": {
+    "x": 524,
+    "y": -36,
+    "density": 1
+  },
+  "drum_kat_l": {
+    "x": 524,
+    "y": -36,
+    "density": 1
+  },
+  "drum_kat_r": {
+    "x": 524,
+    "y": -36,
+    "density": 1
+  },
+  "lane_difficulty": [
+    {
+      "x": 58,
+      "y": 140
+    },
+    {
+      "x": 58,
+      "y": 196
+    }
+  ],
+  "lane_difficulty_en": [
+    {
+      "x": 58,
+      "y": 140
+    },
+    {
+      "x": 58,
+      "y": 196
+    }
+  ],
+  "lane_difficulty_zh": [
+    {
+      "x": 58,
+      "y": 140
+    },
+    {
+      "x": 58,
+      "y": 196
+    }
+  ],
+  "lane_difficulty_ko": [
+    {
+      "x": 58,
+      "y": 140
+    },
+    {
+      "x": 58,
+      "y": 196
+    }
+  ],
+  "score_number": {
+    "y": -544
+  },
+  "1p_icon": {
+    "x": 0,
+    "y": 0
+  },
+  "2p_icon": [
+    {
+      "x": 0,
+      "y": 0
+    },
+    {
+      "x": 0,
+      "y": 0
+    }
+  ],
+  "mod_shinuchi": {
+    "x": 0,
+    "y": 0
+  },
+  "mod_doron": {
+    "x": 0,
+    "y": 0
+  },
+  "mod_doron_en": {
+    "x": 0,
+    "y": 0
+  },
+  "mod_doron_zh": {
+    "x": 0,
+    "y": 0
+  },
+  "mod_doron_ko": {
+    "x": 0,
+    "y": 0
+  },
+  "mod_abekobe": {
+    "x": 0,
+    "y": 0
+  },
+  "mod_abekobe_en": {
+    "x": 0,
+    "y": 0
+  },
+  "mod_abekobe_zh": {
+    "x": 0,
+    "y": 0
+  },
+  "mod_abekobe_ko": {
+    "x": 0,
+    "y": 0
+  },
+  "mod_detarame": {
+    "x": 0,
+    "y": 0
+  },
+  "mod_detarame_en": {
+    "x": 0,
+    "y": 0
+  },
+  "mod_detarame_zh": {
+    "x": 0,
+    "y": 0
+  },
+  "mod_detarame_ko": {
+    "x": 0,
+    "y": 0
+  },
+  "mod_kimagure": {
+    "x": 0,
+    "y": 0
+  },
+  "mod_kimagure_en": {
+    "x": 0,
+    "y": 0
+  },
+  "mod_kimagure_zh": {
+    "x": 0,
+    "y": 0
+  },
+  "mod_kimagure_ko": {
+    "x": 0,
+    "y": 0
+  },
+  "mod_speed_x1_1": {
+    "x": 0,
+    "y": 0
+  },
+  "mod_speed_x1_2": {
+    "x": 0,
+    "y": 0
+  },
+  "mod_speed_x1_3": {
+    "x": 0,
+    "y": 0
+  },
+  "mod_speed_x1_4": {
+    "x": 0,
+    "y": 0
+  },
+  "mod_speed_x1_5": {
+    "x": 0,
+    "y": 0
+  },
+  "mod_speed_x1_6": {
+    "x": 0,
+    "y": 0
+  },
+  "mod_speed_x1_7": {
+    "x": 0,
+    "y": 0
+  },
+  "mod_speed_x1_8": {
+    "x": 0,
+    "y": 0
+  },
+  "mod_speed_x1_9": {
+    "x": 0,
+    "y": 0
+  },
+  "mod_speed_x2": {
+    "x": 0,
+    "y": 0
+  },
+  "mod_speed_x2_5": {
+    "x": 0,
+    "y": 0
+  },
+  "mod_speed_x3": {
+    "x": 0,
+    "y": 0
+  },
+  "mod_speed_x3_5": {
+    "x": 0,
+    "y": 0
+  },
+  "mod_speed_x4": {
+    "x": 0,
+    "y": 0
+  },
+  "auto_icon_ja": [
+    {
+      "x": 0,
+      "y": 308
+    },
+    {
+      "x": 0,
+      "y": 60
+    }
+  ],
+  "auto_icon_en": [
+    {
+      "x": 0,
+      "y": 308
+    },
+    {
+      "x": 0,
+      "y": 60
+    }
+  ],
+  "auto_icon_zh": [
+    {
+      "x": 0,
+      "y": 308
+    },
+    {
+      "x": 0,
+      "y": 60
+    }
+  ],
+  "auto_icon_ko": [
+    {
+      "x": 0,
+      "y": 308
+    },
+    {
+      "x": 0,
+      "y": 60
+    }
+  ],
+  "mod_baisaku": {
+    "x": 426,
+    "y": 120
+  },
+  "mod_sanbai": {
+    "x": 426,
+    "y": 120
+  },
+  "mod_yonbai": {
+    "x": 426,
+    "y": 120
+  },
+  "timer": {
+    "y": 498,
+    "density": 1
+  }
+}

@@ -1,0 +1,102 @@
+{
+    "credit_pill": {
+        "x": 380,
+        "y": 404
+    },
+    "credit_flash": {
+        "x": 380,
+        "y": 404
+    },
+    "footer": {
+        "x": 1,
+        "y": 862
+    },
+    "footer_left": {
+        "x": 1,
+        "y": 901
+    },
+    "footer_right": {
+        "x": 963,
+        "y": 901
+    },
+    "box_top_left": {
+        "x": 357,
+        "y": 162
+    },
+    "box_top_right": {
+        "x": 1468,
+        "y": 162
+    },
+    "box_bottom_left": {
+        "x": 357,
+        "y": 780
+    },
+    "box_bottom_right": {
+        "x": 1468,
+        "y": 780
+    },
+    "box_top": {
+        "x": 453,
+        "y": 162
+    },
+    "box_bottom": {
+        "x": 453,
+        "y": 780
+    },
+    "box_left": {
+        "x": 357,
+        "y": 258
+    },
+    "box_right": {
+        "x": 1468,
+        "y": 258
+    },
+    "box_center": {
+        "x": 453,
+        "y": 258
+    },
+    "1P": {
+        "x": 391,
+        "y": 600
+    },
+    "1P_highlight": {
+        "x": 391,
+        "y": 600
+    },
+    "2P": {
+        "x": 1143,
+        "y": 600
+    },
+    "2P_highlight": {
+        "x": 1143,
+        "y": 600
+    },
+    "cancel": {
+        "x": 768,
+        "y": 600
+    },
+    "cancel_highlight": {
+        "x": 768,
+        "y": 600
+    },
+    "cancel_outline": {
+        "x": 768,
+        "y": 600
+    },
+    "1P2P_outline": {
+        "x": 391,
+        "y": 600
+    },
+    "red_drum": {
+        "x": 240,
+        "y": 1252
+    },
+    "blue_drum": {
+        "x": 1200,
+        "y": 1252
+    },
+    "cloud": {
+        "x": 240,
+        "y": 877
+    }
+}

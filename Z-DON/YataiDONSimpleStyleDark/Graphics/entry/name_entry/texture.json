@@ -1,0 +1,51 @@
+{
+  "plate_red": {
+    "x": 0,
+    "y": 0
+  },
+  "plate_yellow": {
+    "x": 0,
+    "y": 0
+  },
+  "big_red": {
+    "x": 0,
+    "y": 0,
+    "density": 1
+  },
+  "big_yellow": {
+    "x": 0,
+    "y": 0,
+    "density": 1
+  },
+  "ring_outline": {
+    "x": 0,
+    "y": 0
+  },
+  "button_red": {
+    "x": 0,
+    "y": 0,
+    "density": 1
+  },
+  "button_yellow": {
+    "x": 0,
+    "y": 0,
+    "density": 1
+  },
+  "button_outline": {
+    "x": 0,
+    "y": 0,
+    "density": 1
+  },
+  "arrow": {
+    "x": 0,
+    "y": 0
+  },
+  "banner_1p": {
+    "x": 0,
+    "y": 0
+  },
+  "banner_2p": {
+    "x": 0,
+    "y": 0
+  }
+}

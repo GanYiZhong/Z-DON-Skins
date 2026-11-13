@@ -1,0 +1,45 @@
+{
+  "camera": [
+    {
+      "x": 2984,
+      "y": 1276,
+      "density": 1
+    },
+    {
+      "x": 24,
+      "y": 1276
+    }
+  ],
+  "banapass_card": {
+    "x": 2920,
+    "y": 76
+  },
+  "banapass_osaifu_keitai": {
+    "x": 3140,
+    "y": 76
+  },
+  "banapass_or": {
+    "x": 2400,
+    "y": 90,
+    "frame_order": [
+      0,
+      0
+    ]
+  },
+  "banapass_no": {
+    "x": 2080,
+    "y": 76
+  },
+  "allnet_indicator": {
+    "x": 3736,
+    "y": 2056,
+    "frame_order": [
+      0,
+      0,
+      1
+    ]
+  },
+  "touch_drum": {
+    "density": 1
+  }
+}

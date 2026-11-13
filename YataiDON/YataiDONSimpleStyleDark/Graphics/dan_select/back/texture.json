@@ -1,0 +1,31 @@
+{
+    "folder": {
+        "x": -42,
+        "y": 15
+    },
+    "chip": {
+        "x": 30,
+        "y": 405
+    },
+    "board_tl": {},
+    "board_t": {},
+    "board_tr": {},
+    "board_r": {},
+    "board_br": {},
+    "board_b": {},
+    "board_bl": {},
+    "board_l": {},
+    "board_c": {},
+    "graphic": {
+        "x": 717,
+        "y": 282
+    },
+    "text": {
+        "x": 966,
+        "y": 207
+    },
+    "pill": {
+        "x": 706,
+        "y": 195
+    }
+}

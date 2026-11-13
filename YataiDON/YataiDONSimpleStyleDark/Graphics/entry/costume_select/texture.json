@@ -1,0 +1,148 @@
+{
+    "box_top_left_1p": {
+        "x": 0,
+        "y": 0
+    },
+    "box_top_right_1p": {
+        "x": 600,
+        "y": 0
+    },
+    "box_bottom_left_1p": {
+        "x": 0,
+        "y": 270
+    },
+    "box_bottom_right_1p": {
+        "x": 600,
+        "y": 270
+    },
+    "box_top_1p": {
+        "x": 129,
+        "y": 707
+    },
+    "box_bottom_1p": {
+        "x": 316,
+        "y": 833
+    },
+    "box_left_1p": {
+        "x": 0,
+        "y": 96,
+        "y2": 174
+    },
+    "box_right_1p": {
+        "x": 600,
+        "y": 96,
+        "y2": 174
+    },
+    "box_center_1p": {
+        "x": 39,
+        "y": 137
+    },
+    "box_top_left_2p": {
+        "x": 0,
+        "y": 0
+    },
+    "box_top_right_2p": {
+        "x": 600,
+        "y": 0
+    },
+    "box_bottom_left_2p": {
+        "x": 0,
+        "y": 270
+    },
+    "box_bottom_right_2p": {
+        "x": 600,
+        "y": 270
+    },
+    "box_top_2p": {
+        "x": 96,
+        "y": 0,
+        "x2": 504
+    },
+    "box_bottom_2p": {
+        "x": 96,
+        "y": 270,
+        "x2": 504
+    },
+    "box_left_2p": {
+        "x": 0,
+        "y": 96,
+        "y2": 174
+    },
+    "box_right_2p": {
+        "x": 600,
+        "y": 96,
+        "y2": 174
+    },
+    "box_center_2p": {
+        "x": 963,
+        "y": 137
+    },
+    "blue_arrow": {
+        "x": 753,
+        "y": 736
+    },
+    "costume": {
+        "x": 0,
+        "y": 0
+    },
+    "default": {
+        "x": 0,
+        "y": 0
+    },
+    "head_body": {
+        "x": 0,
+        "y": 0
+    },
+    "item_box_1p": {
+        "x": 256,
+        "y": 718
+    },
+    "item_box_2p": {
+        "x": 256,
+        "y": 718
+    },
+    "item_box_highlighted": {
+        "x": 239,
+        "y": 701
+    },
+    "text_highlight_1p": {
+        "x": 498,
+        "y": 672
+    },
+    "text_highlight_2p": {
+        "x": 498,
+        "y": 672
+    },
+    "preset_1": {
+        "x": 0,
+        "y": 0
+    },
+    "preset_2": {
+        "x": 0,
+        "y": 0
+    },
+    "preset_3": {
+        "x": 0,
+        "y": 0
+    },
+    "random_item": {
+        "x": 0,
+        "y": 0
+    },
+    "cloud": {
+        "x": -120,
+        "y": 279
+    },
+    "random": {
+        "x": -78,
+        "y": 309
+    },
+    "costume_example": {
+        "x": -93,
+        "y": 300
+    },
+    "hiroba_ad": {
+        "x": -120,
+        "y": 280
+    }
+}

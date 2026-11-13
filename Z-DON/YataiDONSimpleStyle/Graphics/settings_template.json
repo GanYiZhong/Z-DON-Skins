@@ -1,0 +1,2173 @@
+{
+  "general": {
+    "name": {
+      "en": "General",
+      "ja": "全般",
+      "zh": "一般",
+      "ko": "일반"
+    },
+    "options": {
+      "current_skin": {
+        "path": "paths/skin",
+        "name": {
+          "en": "Skin",
+          "ja": "スキン",
+          "zh": "皮膚",
+          "ko": "스킨"
+        },
+        "description": {
+          "en": "Select the active skin. Takes effect when you exit settings.",
+          "ja": "使用するスキンを選択します。設定を終了すると反映されます。",
+          "zh": "選擇當前使用的皮膚。退出設定後生效。",
+          "ko": "사용할 스킨을 선택합니다. 설정을 종료하면 적용됩니다."
+        },
+        "type": "skin",
+        "values": []
+      },
+      "fps_counter": {
+        "path": "general/fps_counter",
+        "name": {
+          "en": "FPS Counter",
+          "ja": "FPSカウンター",
+          "zh": "FPS計數器",
+          "ko": "FPS 카운터"
+        },
+        "description": {
+          "en": "Turn on/off the FPS counter.",
+          "ja": "FPSカウンターのオン/オフを切り替えます。",
+          "zh": "開啟/關閉FPS計數器。",
+          "ko": "FPS 카운터를 켜기/끄기합니다."
+        },
+        "type": "bool",
+        "values": {
+          "true": {
+            "en": "Enabled",
+            "ja": "オン",
+            "zh": "開啟",
+            "ko": "켜기"
+          },
+          "false": {
+            "en": "Disabled",
+            "ja": "オフ",
+            "zh": "關閉",
+            "ko": "끄기"
+          }
+        }
+      },
+      "audio_offset": {
+        "path": "general/audio_offset",
+        "name": {
+          "en": "Audio Offset",
+          "ja": "音声オフセット",
+          "zh": "音訊偏移",
+          "ko": "오디오 오프셋"
+        },
+        "description": {
+          "en": "Adjust the start of the music in milliseconds.",
+          "ja": "音楽の開始タイミングをミリ秒単位で調整します。",
+          "zh": "以毫秒為單位調整音樂開始時間。",
+          "ko": "음악 시작 시점을 밀리초 단위로 조정합니다."
+        },
+        "type": "audiooffset",
+        "values": []
+      },
+      "visual_offset": {
+        "path": "general/visual_offset",
+        "name": {
+          "en": "Visual Offset",
+          "ja": "表示オフセット",
+          "zh": "畫面偏移",
+          "ko": "화면 오프셋"
+        },
+        "description": {
+          "en": "Adjust the visual timing in milliseconds.",
+          "ja": "表示タイミングをミリ秒単位で調整します。",
+          "zh": "以毫秒為單位調整畫面顯示時間。",
+          "ko": "화면 표시 타이밍을 밀리초 단위로 조정합니다."
+        },
+        "type": "int",
+        "values": []
+      },
+      "language": {
+        "path": "general/language",
+        "name": {
+          "en": "Language",
+          "ja": "言語",
+          "zh": "語言",
+          "ko": "언어"
+        },
+        "description": {
+          "en": "Select the interface language.",
+          "ja": "インターフェースの言語を選択します。",
+          "zh": "選擇介面語言。",
+          "ko": "인터페이스 언어를 선택합니다."
+        },
+        "type": "string",
+        "values": {
+          "en": {
+            "en": "English",
+            "ja": "英語",
+            "zh": "英語",
+            "ko": "영어"
+          },
+          "ja": {
+            "en": "Japanese",
+            "ja": "日本語",
+            "zh": "日語",
+            "ko": "일본어"
+          },
+          "zh": {
+            "en": "Traditional Chinese",
+            "ja": "繁体字中国語",
+            "zh": "繁體中文",
+            "ko": "중국어 번체"
+          },
+          "ko": {
+            "en": "Korean",
+            "ja": "韓国語",
+            "zh": "韓語",
+            "ko": "한국어"
+          }
+        }
+      },
+      "song_timer": {
+        "path": "general/song_timer",
+        "name": {
+          "en": "Song Timer",
+          "ja": "曲タイマー",
+          "zh": "歌曲計時器",
+          "ko": "곡 타이머"
+        },
+        "description": {
+          "en": "Display the song timer during gameplay.",
+          "ja": "プレイ中に曲のタイマーを表示します。",
+          "zh": "在遊戲過程中顯示歌曲計時器。",
+          "ko": "플레이 중 곡 타이머를 표시합니다."
+        },
+        "type": "bool",
+        "values": {
+          "true": {
+            "en": "Enabled",
+            "ja": "オン",
+            "zh": "開啟",
+            "ko": "켜기"
+          },
+          "false": {
+            "en": "Disabled",
+            "ja": "オフ",
+            "zh": "關閉",
+            "ko": "끄기"
+          }
+        }
+      },
+      "judge_counter": {
+        "path": "general/judge_counter",
+        "name": {
+          "en": "Judge Counter",
+          "ja": "判定カウンター",
+          "zh": "判定計數器",
+          "ko": "판정 카운터"
+        },
+        "description": {
+          "en": "Display the judge counter during gameplay.",
+          "ja": "プレイ中に判定カウンターを表示します。",
+          "zh": "在遊戲過程中顯示判定計數器。",
+          "ko": "플레이 중 판정 카운터를 표시합니다."
+        },
+        "type": "bool",
+        "values": {
+          "true": {
+            "en": "Enabled",
+            "ja": "オン",
+            "zh": "開啟",
+            "ko": "켜기"
+          },
+          "false": {
+            "en": "Disabled",
+            "ja": "オフ",
+            "zh": "關閉",
+            "ko": "끄기"
+          }
+        }
+      },
+      "zdon_hit_timing": {
+        "path": "general/zdon_hit_timing",
+        "name": {
+          "en": "Hit Timing",
+          "ja": "タイミング表示",
+          "zh": "打擊時機顯示",
+          "ko": "타이밍 표시"
+        },
+        "description": {
+          "en": "Shows FAST / SLOW under the hit circle and a timing graph on the result screen.",
+          "ja": "判定枠の下に はやい / おそい を、リザルトにタイミングのグラフを表示します。",
+          "zh": "在判定圈下方顯示快 / 慢，並在結算畫面顯示時機分佈圖。",
+          "ko": "판정 원 아래에 빠름 / 느림을, 결과 화면에 타이밍 그래프를 표시합니다."
+        },
+        "type": "bool",
+        "values": {
+          "true": {
+            "en": "Enabled",
+            "ja": "オン",
+            "zh": "開啟",
+            "ko": "켜기"
+          },
+          "false": {
+            "en": "Disabled",
+            "ja": "オフ",
+            "zh": "關閉",
+            "ko": "끄기"
+          }
+        }
+      },
+      "zdon_hit_timing_show": {
+        "path": "general/zdon_hit_timing_show",
+        "name": {
+          "en": "FAST / SLOW Marks",
+          "ja": "はやい / おそい の表示",
+          "zh": "快 / 慢 提示",
+          "ko": "빠름 / 느림 표시"
+        },
+        "description": {
+          "en": "Which hits get a FAST / SLOW mark.",
+          "ja": "はやい / おそい を表示する打撃を選びます。",
+          "zh": "選擇哪些打擊要顯示快 / 慢。",
+          "ko": "빠름 / 느림을 표시할 타격을 고릅니다."
+        },
+        "type": "string",
+        "values": {
+          "half": {
+            "en": "Off by half the GOOD window",
+            "ja": "良の幅の半分以上ずれたとき",
+            "zh": "偏差超過良判定的一半",
+            "ko": "양 판정 폭의 절반 이상 어긋날 때"
+          },
+          "ok": {
+            "en": "Only OK and BAD",
+            "ja": "可・不可のときだけ",
+            "zh": "只在可、不可時",
+            "ko": "가·불가일 때만"
+          },
+          "all": {
+            "en": "Every hit",
+            "ja": "すべての打撃",
+            "zh": "每一下",
+            "ko": "모든 타격"
+          }
+        }
+      },
+      "show_timing_offset": {
+        "path": "general/show_timing_offset",
+        "name": {
+          "en": "Average Timing",
+          "ja": "平均タイミング表示",
+          "zh": "平均時機顯示",
+          "ko": "평균 타이밍 표시"
+        },
+        "description": {
+          "en": "Shows your average early / late offset in ms during play and on the result screen.",
+          "ja": "プレイ中とリザルトで平均のずれ（ms）を表示します。",
+          "zh": "在遊戲中和結算畫面顯示平均偏差（毫秒）。",
+          "ko": "플레이 중과 결과 화면에 평균 어긋남(ms)을 표시합니다."
+        },
+        "type": "bool",
+        "values": {
+          "true": {
+            "en": "Enabled",
+            "ja": "オン",
+            "zh": "開啟",
+            "ko": "켜기"
+          },
+          "false": {
+            "en": "Disabled",
+            "ja": "オフ",
+            "zh": "關閉",
+            "ko": "끄기"
+          }
+        }
+      },
+      "zdon_sort_filter": {
+        "path": "general/zdon_sort_filter",
+        "name": {
+          "en": "Difficulty Folder Filter",
+          "ja": "難易度フォルダの絞り込み",
+          "zh": "難度資料夾篩選",
+          "ko": "난이도 폴더 필터"
+        },
+        "description": {
+          "en": "Not cleared / not full combo / not donderful lists only those songs (off: they come first).",
+          "ja": "未クリア・未フルコンボ・未全良を選ぶと、その曲だけを表示します（オフ：先頭に並べる）。",
+          "zh": "選擇未通關、未全連、未全良時只列出這些歌（關閉：排在前面）。",
+          "ko": "미클리어·미풀콤보·미전량을 고르면 그 곡만 표시합니다 (끄면: 앞에 정렬)."
+        },
+        "type": "bool",
+        "values": {
+          "true": {
+            "en": "Enabled",
+            "ja": "オン",
+            "zh": "開啟",
+            "ko": "켜기"
+          },
+          "false": {
+            "en": "Disabled",
+            "ja": "オフ",
+            "zh": "關閉",
+            "ko": "끄기"
+          }
+        }
+      },
+      "zdon_practice_loop": {
+        "path": "general/zdon_practice_loop",
+        "name": {
+          "en": "Practice Section Loop",
+          "ja": "練習の区間ループ",
+          "zh": "練習區段循環",
+          "ko": "연습 구간 반복"
+        },
+        "description": {
+          "en": "Resume at a jump mark to loop up to the next mark, with each pass's judgements.",
+          "ja": "ジャンプ地点から再開すると次の地点までをループし、毎周の判定を表示します。",
+          "zh": "從跳躍點繼續時，會循環到下一個跳躍點，並顯示每一輪的判定。",
+          "ko": "점프 지점에서 재개하면 다음 지점까지 반복하고 매 회차 판정을 표시합니다."
+        },
+        "type": "bool",
+        "values": {
+          "true": {
+            "en": "Enabled",
+            "ja": "オン",
+            "zh": "開啟",
+            "ko": "켜기"
+          },
+          "false": {
+            "en": "Disabled",
+            "ja": "オフ",
+            "zh": "關閉",
+            "ko": "끄기"
+          }
+        }
+      },
+      "zdon_ai_level": {
+        "path": "general/zdon_ai_level",
+        "name": {
+          "en": "AI Level",
+          "ja": "AI のレベル",
+          "zh": "AI 等級",
+          "ko": "AI 레벨"
+        },
+        "description": {
+          "en": "The AI battle opponent, 1 (gentle) to 10 (sharp). Goes up 1 when you win, down 1 when you lose.",
+          "ja": "AIバトルの相手の強さ（1〜10）。勝つと 1 上がり、負けると 1 下がります。",
+          "zh": "AI 對戰對手的強度（1～10）。獲勝升 1 級，落敗降 1 級。",
+          "ko": "AI 배틀 상대의 강함(1~10). 이기면 1 오르고, 지면 1 내려갑니다."
+        },
+        "type": "int",
+        "values": {
+          "1": {
+            "en": "Lv.1"
+          },
+          "2": {
+            "en": "Lv.2"
+          },
+          "3": {
+            "en": "Lv.3"
+          },
+          "4": {
+            "en": "Lv.4"
+          },
+          "5": {
+            "en": "Lv.5"
+          },
+          "6": {
+            "en": "Lv.6"
+          },
+          "7": {
+            "en": "Lv.7"
+          },
+          "8": {
+            "en": "Lv.8"
+          },
+          "9": {
+            "en": "Lv.9"
+          },
+          "10": {
+            "en": "Lv.10"
+          }
+        }
+      },
+      "zdon_song_progress": {
+        "path": "general/zdon_song_progress",
+        "name": {
+          "en": "Song Progress",
+          "ja": "曲の進行バー",
+          "zh": "歌曲進度條",
+          "ko": "곡 진행 바"
+        },
+        "description": {
+          "en": "Shows a progress bar under the lane, with the GOGO sections marked.",
+          "ja": "レーンの下に進行バーを表示します（ゴーゴータイムに色付け）。",
+          "zh": "在音符軌道下方顯示進度條，並標出 GOGO 段落。",
+          "ko": "레인 아래에 진행 바를 표시합니다 (고고 타임 표시)."
+        },
+        "type": "bool",
+        "values": {
+          "true": {
+            "en": "Enabled",
+            "ja": "オン",
+            "zh": "開啟",
+            "ko": "켜기"
+          },
+          "false": {
+            "en": "Disabled",
+            "ja": "オフ",
+            "zh": "關閉",
+            "ko": "끄기"
+          }
+        }
+      },
+      "log_level": {
+        "path": "general/log_level",
+        "name": {
+          "en": "Log Level",
+          "ja": "ログレベル",
+          "zh": "日誌級別",
+          "ko": "로그 레벨"
+        },
+        "description": {
+          "en": "Set the logging verbosity level.",
+          "ja": "ログの詳細レベルを設定します。",
+          "zh": "設定日誌詳細級別。",
+          "ko": "로그 상세 수준을 설정합니다."
+        },
+        "type": "string",
+        "values": {
+          "debug": {
+            "en": "Debug",
+            "ja": "デバッグ",
+            "zh": "除錯",
+            "ko": "디버그"
+          },
+          "info": {
+            "en": "Info",
+            "ja": "情報",
+            "zh": "資訊",
+            "ko": "정보"
+          },
+          "warning": {
+            "en": "Warning",
+            "ja": "警告",
+            "zh": "警告",
+            "ko": "경고"
+          },
+          "error": {
+            "en": "Error",
+            "ja": "エラー",
+            "zh": "錯誤",
+            "ko": "오류"
+          }
+        }
+      },
+      "practice_mode_bar_delay": {
+        "path": "general/practice_mode_bar_delay",
+        "name": {
+          "en": "Practice Mode Bar Delay",
+          "ja": "練習モード小節ディレイ",
+          "zh": "練習模式小節延遲",
+          "ko": "연습 모드 마디 지연"
+        },
+        "description": {
+          "en": "Number of bars before the notes start after unpausing",
+          "ja": "一時停止解除後、音符が流れ始めるまでの小節数",
+          "zh": "取消暫停後音符開始流動前的小節數",
+          "ko": "일시 정지 해제 후 노트가 시작되기까지의 마디 수"
+        },
+        "type": "int",
+        "values": []
+      },
+      "score_method": {
+        "path": "general/score_method",
+        "name": {
+          "en": "Score Method",
+          "ja": "スコア計算方式",
+          "zh": "計分方式",
+          "ko": "점수 계산 방식"
+        },
+        "description": {
+          "en": "Select the scoring calculation method.",
+          "ja": "スコアの計算方式を選択します。",
+          "zh": "選擇計分方式。",
+          "ko": "점수 계산 방식을 선택합니다."
+        },
+        "type": "string",
+        "values": {
+          "shinuchi": {
+            "en": "Shinuchi",
+            "ja": "真打",
+            "zh": "真打",
+            "ko": "진타"
+          },
+          "gen3": {
+            "en": "Gen 3",
+            "ja": "Gen 3",
+            "zh": "Gen 3",
+            "ko": "Gen 3"
+          }
+        }
+      },
+      "display_bpm": {
+        "path": "general/display_bpm",
+        "name": {
+          "en": "Display BPM",
+          "ja": "BPM表示",
+          "zh": "顯示BPM",
+          "ko": "BPM 표시"
+        },
+        "description": {
+          "en": "Shows the BPM of the song on song select.",
+          "ja": "曲選択画面で曲のBPMを表示します。",
+          "zh": "在選曲畫面顯示歌曲的BPM。",
+          "ko": "곡 선택 화면에서 곡의 BPM을 표시합니다."
+        },
+        "type": "bool",
+        "values": {
+          "true": {
+            "en": "Enabled",
+            "ja": "オン",
+            "zh": "開啟",
+            "ko": "켜기"
+          },
+          "false": {
+            "en": "Disabled",
+            "ja": "オフ",
+            "zh": "關閉",
+            "ko": "끄기"
+          }
+        }
+      },
+      "touch_input": {
+        "path": "general/touch_input",
+        "name": {
+          "en": "Touch Input",
+          "ja": "タッチ入力",
+          "zh": "觸控輸入",
+          "ko": "터치 입력"
+        },
+        "description": {
+          "en": "Enable touch screen input.",
+          "ja": "タッチスクリーン入力を有効にします。",
+          "zh": "啟用觸控式螢幕輸入。",
+          "ko": "터치스크린 입력을 활성화합니다."
+        },
+        "type": "bool",
+        "values": {
+          "true": {
+            "en": "Enabled",
+            "ja": "オン",
+            "zh": "開啟",
+            "ko": "켜기"
+          },
+          "false": {
+            "en": "Disabled",
+            "ja": "オフ",
+            "zh": "關閉",
+            "ko": "끄기"
+          }
+        }
+      },
+      "touch_drum_size": {
+        "path": "general/touch_drum_size",
+        "name": {
+          "en": "Touch Drum Size",
+          "ja": "タッチ太鼓の大きさ",
+          "zh": "觸控太鼓大小",
+          "ko": "터치 북 크기"
+        },
+        "description": {
+          "en": "Size of the touch screen drum (25% to 200%).",
+          "ja": "タッチスクリーン太鼓の大きさ（25%～200%）。",
+          "zh": "觸控式螢幕太鼓的大小（25% 至 200%）。",
+          "ko": "터치스크린 북의 크기(25%~200%)."
+        },
+        "type": "float",
+        "values": []
+      }
+    }
+  },
+  "limits": {
+    "name": {
+      "en": "Limits",
+      "ja": "制限",
+      "zh": "限制",
+      "ko": "제한"
+    },
+    "options": {
+      "timer_frozen": {
+        "path": "limits/timer_frozen",
+        "name": {
+          "en": "Timer Frozen",
+          "ja": "タイマー固定",
+          "zh": "計時器固定",
+          "ko": "타이머 고정"
+        },
+        "description": {
+          "en": "Freeze the timer display.",
+          "ja": "タイマー表示を停止します。",
+          "zh": "凍結計時器顯示。",
+          "ko": "타이머 표시를 고정합니다."
+        },
+        "type": "bool",
+        "values": {
+          "true": {
+            "en": "Enabled",
+            "ja": "オン",
+            "zh": "開啟",
+            "ko": "켜기"
+          },
+          "false": {
+            "en": "Disabled",
+            "ja": "オフ",
+            "zh": "關閉",
+            "ko": "끄기"
+          }
+        }
+      },
+      "song_limit": {
+        "path": "limits/song_limit",
+        "name": {
+          "en": "Song Limit",
+          "ja": "曲数制限",
+          "zh": "歌曲數量限制",
+          "ko": "곡 수 제한"
+        },
+        "description": {
+          "en": "Songs allowed per session. 0 = unlimited.",
+          "ja": "1プレイで遊べる曲数。0で無制限。",
+          "zh": "每局可玩歌曲數。0為不限制。",
+          "ko": "한 번에 플레이할 수 있는 곡 수. 0은 무제한."
+        },
+        "type": "int",
+        "values": []
+      },
+      "practice_time_limit": {
+        "path": "limits/practice_time_limit",
+        "name": {
+          "en": "Practice Time Limit",
+          "ja": "特訓制限時間",
+          "zh": "練習時間限制",
+          "ko": "연습 시간 제한"
+        },
+        "description": {
+          "en": "Practice session length in seconds. 0 = unlimited.",
+          "ja": "特訓の制限時間(秒)。0で無制限。",
+          "zh": "練習時長(秒)。0為不限制。",
+          "ko": "연습 제한 시간(초). 0은 무제한."
+        },
+        "type": "int",
+        "values": []
+      }
+    }
+  },
+  "network": {
+    "name": {
+      "en": "Network",
+      "ja": "ネットワーク",
+      "zh": "網路",
+      "ko": "네트워크"
+    },
+    "options": {
+      "online_play": {
+        "path": "network/online_play",
+        "name": {
+          "en": "Online Play",
+          "ja": "オンラインプレイ",
+          "zh": "線上遊戲",
+          "ko": "온라인 플레이"
+        },
+        "description": {
+          "en": "Connect to the hiroba server for online score submission and features.",
+          "ja": "スコアのオンライン送信などの機能のため、広場サーバーに接続します。",
+          "zh": "連線到廣場（hiroba）伺服器，以使用線上成績上傳等功能。",
+          "ko": "온라인 점수 전송 등의 기능을 위해 히로바(hiroba) 서버에 연결합니다."
+        },
+        "type": "bool",
+        "values": {
+          "true": {
+            "en": "Enabled",
+            "ja": "オン",
+            "zh": "開啟",
+            "ko": "켜기"
+          },
+          "false": {
+            "en": "Disabled",
+            "ja": "オフ",
+            "zh": "關閉",
+            "ko": "끄기"
+          }
+        }
+      },
+      "sync_scores_on_launch": {
+        "path": "network/sync_scores",
+        "name": {
+          "en": "Sync Scores On Launch",
+          "ja": "起動時にスコア同期",
+          "zh": "啟動時同步成績",
+          "ko": "실행 시 점수 동기화"
+        },
+        "description": {
+          "en": "Pull scores from the hiroba server on startup, overwriting missing or different local scores.",
+          "ja": "起動時に広場サーバーからスコアを取得し、欠落または異なるローカルスコアを上書きします。",
+          "zh": "啟動時從廣場（hiroba）伺服器拉取成績，覆蓋缺失或不同的本地成績。",
+          "ko": "시작 시 히로바(hiroba) 서버에서 점수를 가져와, 없거나 다른 로컬 점수를 덮어씁니다."
+        },
+        "type": "bool",
+        "values": {
+          "true": {
+            "en": "Enabled",
+            "ja": "オン",
+            "zh": "開啟",
+            "ko": "켜기"
+          },
+          "false": {
+            "en": "Disabled",
+            "ja": "オフ",
+            "zh": "關閉",
+            "ko": "끄기"
+          }
+        }
+      }
+    }
+  },
+  "nameplate": {
+    "name": {
+      "en": "Nameplate",
+      "ja": "ネームプレート",
+      "zh": "銘牌",
+      "ko": "네임플레이트"
+    },
+    "options": {
+      "name_1p": {
+        "path": "nameplate_1p/name",
+        "name": {
+          "en": "Player 1 Name",
+          "ja": "プレイヤー1 名前",
+          "zh": "玩家1 名稱",
+          "ko": "플레이어 1 이름"
+        },
+        "description": {
+          "en": "Set the display name for Player 1.",
+          "ja": "プレイヤー1の表示名を設定します。",
+          "zh": "設定玩家1的顯示名稱。",
+          "ko": "플레이어 1의 표시 이름을 설정합니다."
+        },
+        "type": "string",
+        "values": []
+      },
+      "title_1p": {
+        "path": "nameplate_1p/title",
+        "name": {
+          "en": "Player 1 Title",
+          "ja": "プレイヤー1 称号",
+          "zh": "玩家1 稱號",
+          "ko": "플레이어 1 칭호"
+        },
+        "description": {
+          "en": "Set the title for Player 1.",
+          "ja": "プレイヤー1の称号を設定します。",
+          "zh": "設定玩家1的稱號。",
+          "ko": "플레이어 1의 칭호를 설정합니다."
+        },
+        "type": "string",
+        "values": []
+      },
+      "title_bg_1p": {
+        "path": "nameplate_1p/title_bg",
+        "name": {
+          "en": "Player 1 Title Background",
+          "ja": "プレイヤー1 称号背景",
+          "zh": "玩家1 稱號背景",
+          "ko": "플레이어 1 칭호 배경"
+        },
+        "description": {
+          "en": "Select the title background style for Player 1.",
+          "ja": "プレイヤー1の称号背景スタイルを選択します。",
+          "zh": "選擇玩家1的稱號背景樣式。",
+          "ko": "플레이어 1의 칭호 배경 스타일을 선택합니다."
+        },
+        "type": "int",
+        "values": {
+          "0": {
+            "en": "1P",
+            "ja": "1P",
+            "zh": "1P",
+            "ko": "1P"
+          },
+          "1": {
+            "en": "2P",
+            "ja": "2P",
+            "zh": "2P",
+            "ko": "2P"
+          },
+          "2": {
+            "en": "Wood",
+            "ja": "ウッド",
+            "zh": "木色",
+            "ko": "우드"
+          },
+          "3": {
+            "en": "Purple",
+            "ja": "パープル",
+            "zh": "紫色",
+            "ko": "퍼플"
+          },
+          "4": {
+            "en": "Gold",
+            "ja": "ゴールド",
+            "zh": "金色",
+            "ko": "골드"
+          }
+        }
+      },
+      "dan_1p": {
+        "path": "nameplate_1p/dan",
+        "name": {
+          "en": "Player 1 Dan",
+          "ja": "プレイヤー1 段位",
+          "zh": "玩家1 段位",
+          "ko": "플레이어 1 단"
+        },
+        "description": {
+          "en": "Set the Dan rank for Player 1",
+          "ja": "プレイヤー1の段位を設定します",
+          "zh": "設定玩家1的段位",
+          "ko": "플레이어 1의 단을 설정합니다"
+        },
+        "type": "int",
+        "values": {
+          "-1": {
+            "en": "None",
+            "ja": "なし",
+            "zh": "無",
+            "ko": "없음"
+          },
+          "0": {
+            "en": "Shokyuu",
+            "ja": "初級",
+            "zh": "初級",
+            "ko": "초급"
+          },
+          "1": {
+            "en": "10th Kyuu",
+            "ja": "10級",
+            "zh": "10級",
+            "ko": "10급"
+          },
+          "2": {
+            "en": "9th Kyuu",
+            "ja": "9級",
+            "zh": "9級",
+            "ko": "9급"
+          },
+          "3": {
+            "en": "8th Kyuu",
+            "ja": "8級",
+            "zh": "8級",
+            "ko": "8급"
+          },
+          "4": {
+            "en": "7th Kyuu",
+            "ja": "7級",
+            "zh": "7級",
+            "ko": "7급"
+          },
+          "5": {
+            "en": "6th Kyuu",
+            "ja": "6級",
+            "zh": "6級",
+            "ko": "6급"
+          },
+          "6": {
+            "en": "5th Kyuu",
+            "ja": "5級",
+            "zh": "5級",
+            "ko": "5급"
+          },
+          "7": {
+            "en": "4th Kyuu",
+            "ja": "4級",
+            "zh": "4級",
+            "ko": "4급"
+          },
+          "8": {
+            "en": "3rd Kyuu",
+            "ja": "3級",
+            "zh": "3級",
+            "ko": "3급"
+          },
+          "9": {
+            "en": "2nd Kyuu",
+            "ja": "2級",
+            "zh": "2級",
+            "ko": "2급"
+          },
+          "10": {
+            "en": "1st Kyuu",
+            "ja": "1級",
+            "zh": "1級",
+            "ko": "1급"
+          },
+          "11": {
+            "en": "Shodan",
+            "ja": "初段",
+            "zh": "初段",
+            "ko": "초단"
+          },
+          "12": {
+            "en": "2nd Dan",
+            "ja": "2段",
+            "zh": "2段",
+            "ko": "2단"
+          },
+          "13": {
+            "en": "3rd Dan",
+            "ja": "3段",
+            "zh": "3段",
+            "ko": "3단"
+          },
+          "14": {
+            "en": "4th Dan",
+            "ja": "4段",
+            "zh": "4段",
+            "ko": "4단"
+          },
+          "15": {
+            "en": "5th Dan",
+            "ja": "5段",
+            "zh": "5段",
+            "ko": "5단"
+          },
+          "16": {
+            "en": "6th Dan",
+            "ja": "6段",
+            "zh": "6段",
+            "ko": "6단"
+          },
+          "17": {
+            "en": "7th Dan",
+            "ja": "7段",
+            "zh": "7段",
+            "ko": "7단"
+          },
+          "18": {
+            "en": "8th Dan",
+            "ja": "8段",
+            "zh": "8段",
+            "ko": "8단"
+          },
+          "19": {
+            "en": "9th Dan",
+            "ja": "9段",
+            "zh": "9段",
+            "ko": "9단"
+          },
+          "20": {
+            "en": "10th Dan",
+            "ja": "10段",
+            "zh": "10段",
+            "ko": "10단"
+          },
+          "21": {
+            "en": "Kurouto",
+            "ja": "玄人",
+            "zh": "玄人",
+            "ko": "전문가"
+          },
+          "22": {
+            "en": "Meijin",
+            "ja": "名人",
+            "zh": "名人",
+            "ko": "명인"
+          },
+          "23": {
+            "en": "Choujin",
+            "ja": "超人",
+            "zh": "超人",
+            "ko": "초인"
+          },
+          "24": {
+            "en": "Tatsujin",
+            "ja": "達人",
+            "zh": "達人",
+            "ko": "달인"
+          }
+        }
+      },
+      "gold_1p": {
+        "path": "nameplate_1p/gold",
+        "name": {
+          "en": "Player 1 Gold",
+          "ja": "プレイヤー1 ゴールド",
+          "zh": "玩家1 金色",
+          "ko": "플레이어 1 골드"
+        },
+        "description": {
+          "en": "Enable gold dan nameplate for Player 1.",
+          "ja": "プレイヤー1のゴールド段位ネームプレートを有効にします。",
+          "zh": "為玩家1啟用金色段位銘牌。",
+          "ko": "플레이어 1의 골드 단 네임플레이트를 활성화합니다."
+        },
+        "type": "bool",
+        "values": {
+          "true": {
+            "en": "Enabled",
+            "ja": "オン",
+            "zh": "開啟",
+            "ko": "켜기"
+          },
+          "false": {
+            "en": "Disabled",
+            "ja": "オフ",
+            "zh": "關閉",
+            "ko": "끄기"
+          }
+        }
+      },
+      "rainbow_1p": {
+        "path": "nameplate_1p/rainbow",
+        "name": {
+          "en": "Player 1 Rainbow",
+          "ja": "プレイヤー1 レインボー",
+          "zh": "玩家1 彩虹",
+          "ko": "플레이어 1 레인보우"
+        },
+        "description": {
+          "en": "Enable rainbow nameplate for Player 1.",
+          "ja": "プレイヤー1の虹色ネームプレートを有効にします。",
+          "zh": "為玩家1啟用彩虹銘牌。",
+          "ko": "플레이어 1의 레인보우 네임플레이트를 활성화합니다."
+        },
+        "type": "bool",
+        "values": {
+          "true": {
+            "en": "Enabled",
+            "ja": "オン",
+            "zh": "開啟",
+            "ko": "켜기"
+          },
+          "false": {
+            "en": "Disabled",
+            "ja": "オフ",
+            "zh": "關閉",
+            "ko": "끄기"
+          }
+        }
+      },
+      "name_2p": {
+        "path": "nameplate_2p/name",
+        "name": {
+          "en": "Player 2 Name",
+          "ja": "プレイヤー2 名前",
+          "zh": "玩家2 名稱",
+          "ko": "플레이어 2 이름"
+        },
+        "description": {
+          "en": "Set the display name for Player 2.",
+          "ja": "プレイヤー2の表示名を設定します。",
+          "zh": "設定玩家2的顯示名稱。",
+          "ko": "플레이어 2의 표시 이름을 설정합니다."
+        },
+        "type": "string",
+        "values": []
+      },
+      "title_2p": {
+        "path": "nameplate_2p/title",
+        "name": {
+          "en": "Player 2 Title",
+          "ja": "プレイヤー2 称号",
+          "zh": "玩家2 稱號",
+          "ko": "플레이어 2 칭호"
+        },
+        "description": {
+          "en": "Set the title for Player 2.",
+          "ja": "プレイヤー2の称号を設定します。",
+          "zh": "設定玩家2的稱號。",
+          "ko": "플레이어 2의 칭호를 설정합니다."
+        },
+        "type": "string",
+        "values": []
+      },
+      "title_bg_2p": {
+        "path": "nameplate_2p/title_bg",
+        "name": {
+          "en": "Player 2 Title Background",
+          "ja": "プレイヤー2 称号背景",
+          "zh": "玩家2 稱號背景",
+          "ko": "플레이어 2 칭호 배경"
+        },
+        "description": {
+          "en": "Select the title background style for Player 2.",
+          "ja": "プレイヤー2の称号背景スタイルを選択します。",
+          "zh": "選擇玩家2的稱號背景樣式。",
+          "ko": "플레이어 2의 칭호 배경 스타일을 선택합니다."
+        },
+        "type": "int",
+        "values": []
+      },
+      "dan_2p": {
+        "path": "nameplate_2p/dan",
+        "name": {
+          "en": "Player 2 Dan",
+          "ja": "プレイヤー2 段位",
+          "zh": "玩家2 段位",
+          "ko": "플레이어 2 단"
+        },
+        "description": {
+          "en": "Set the Dan rank for Player 2",
+          "ja": "プレイヤー2の段位を設定します",
+          "zh": "設定玩家2的段位",
+          "ko": "플레이어 2의 단을 설정합니다"
+        },
+        "type": "int",
+        "values": {
+          "-1": {
+            "en": "None",
+            "ja": "なし",
+            "zh": "無",
+            "ko": "없음"
+          },
+          "0": {
+            "en": "Shokyuu",
+            "ja": "初級",
+            "zh": "初級",
+            "ko": "초급"
+          },
+          "1": {
+            "en": "10th Kyuu",
+            "ja": "10級",
+            "zh": "10級",
+            "ko": "10급"
+          },
+          "2": {
+            "en": "9th Kyuu",
+            "ja": "9級",
+            "zh": "9級",
+            "ko": "9급"
+          },
+          "3": {
+            "en": "8th Kyuu",
+            "ja": "8級",
+            "zh": "8級",
+            "ko": "8급"
+          },
+          "4": {
+            "en": "7th Kyuu",
+            "ja": "7級",
+            "zh": "7級",
+            "ko": "7급"
+          },
+          "5": {
+            "en": "6th Kyuu",
+            "ja": "6級",
+            "zh": "6級",
+            "ko": "6급"
+          },
+          "6": {
+            "en": "5th Kyuu",
+            "ja": "5級",
+            "zh": "5級",
+            "ko": "5급"
+          },
+          "7": {
+            "en": "4th Kyuu",
+            "ja": "4級",
+            "zh": "4級",
+            "ko": "4급"
+          },
+          "8": {
+            "en": "3rd Kyuu",
+            "ja": "3級",
+            "zh": "3級",
+            "ko": "3급"
+          },
+          "9": {
+            "en": "2nd Kyuu",
+            "ja": "2級",
+            "zh": "2級",
+            "ko": "2급"
+          },
+          "10": {
+            "en": "1st Kyuu",
+            "ja": "1級",
+            "zh": "1級",
+            "ko": "1급"
+          },
+          "11": {
+            "en": "Shodan",
+            "ja": "初段",
+            "zh": "初段",
+            "ko": "초단"
+          },
+          "12": {
+            "en": "2nd Dan",
+            "ja": "2段",
+            "zh": "2段",
+            "ko": "2단"
+          },
+          "13": {
+            "en": "3rd Dan",
+            "ja": "3段",
+            "zh": "3段",
+            "ko": "3단"
+          },
+          "14": {
+            "en": "4th Dan",
+            "ja": "4段",
+            "zh": "4段",
+            "ko": "4단"
+          },
+          "15": {
+            "en": "5th Dan",
+            "ja": "5段",
+            "zh": "5段",
+            "ko": "5단"
+          },
+          "16": {
+            "en": "6th Dan",
+            "ja": "6段",
+            "zh": "6段",
+            "ko": "6단"
+          },
+          "17": {
+            "en": "7th Dan",
+            "ja": "7段",
+            "zh": "7段",
+            "ko": "7단"
+          },
+          "18": {
+            "en": "8th Dan",
+            "ja": "8段",
+            "zh": "8段",
+            "ko": "8단"
+          },
+          "19": {
+            "en": "9th Dan",
+            "ja": "9段",
+            "zh": "9段",
+            "ko": "9단"
+          },
+          "20": {
+            "en": "10th Dan",
+            "ja": "10段",
+            "zh": "10段",
+            "ko": "10단"
+          },
+          "21": {
+            "en": "Kurouto",
+            "ja": "玄人",
+            "zh": "玄人",
+            "ko": "전문가"
+          },
+          "22": {
+            "en": "Meijin",
+            "ja": "名人",
+            "zh": "名人",
+            "ko": "명인"
+          },
+          "23": {
+            "en": "Choujin",
+            "ja": "超人",
+            "zh": "超人",
+            "ko": "초인"
+          },
+          "24": {
+            "en": "Tatsujin",
+            "ja": "達人",
+            "zh": "達人",
+            "ko": "달인"
+          }
+        }
+      },
+      "gold_2p": {
+        "path": "nameplate_2p/gold",
+        "name": {
+          "en": "Player 2 Gold Dan",
+          "ja": "プレイヤー2 ゴールド段位",
+          "zh": "玩家2 金色段位",
+          "ko": "플레이어 2 골드 단"
+        },
+        "description": {
+          "en": "Enable gold dan nameplate for Player 2.",
+          "ja": "プレイヤー2のゴールド段位ネームプレートを有効にします。",
+          "zh": "為玩家2啟用金色段位銘牌。",
+          "ko": "플레이어 2의 골드 단 네임플레이트를 활성화합니다."
+        },
+        "type": "bool",
+        "values": {
+          "true": {
+            "en": "Enabled",
+            "ja": "オン",
+            "zh": "開啟",
+            "ko": "켜기"
+          },
+          "false": {
+            "en": "Disabled",
+            "ja": "オフ",
+            "zh": "關閉",
+            "ko": "끄기"
+          }
+        }
+      },
+      "rainbow_2p": {
+        "path": "nameplate_2p/rainbow",
+        "name": {
+          "en": "Player 2 Rainbow",
+          "ja": "プレイヤー2 レインボー",
+          "zh": "玩家2 彩虹",
+          "ko": "플레이어 2 레인보우"
+        },
+        "description": {
+          "en": "Enable rainbow nameplate for Player 2.",
+          "ja": "プレイヤー2の虹色ネームプレートを有効にします。",
+          "zh": "為玩家2啟用彩虹銘牌。",
+          "ko": "플레이어 2의 레인보우 네임플레이트를 활성화합니다."
+        },
+        "type": "bool",
+        "values": {
+          "true": {
+            "en": "Enabled",
+            "ja": "オン",
+            "zh": "開啟",
+            "ko": "켜기"
+          },
+          "false": {
+            "en": "Disabled",
+            "ja": "オフ",
+            "zh": "關閉",
+            "ko": "끄기"
+          }
+        }
+      }
+    }
+  },
+  "keybinds": {
+    "name": {
+      "en": "Keybinds",
+      "ja": "キー設定",
+      "zh": "按鍵設定",
+      "ko": "키 설정"
+    },
+    "options": {
+      "exit_key": {
+        "path": "keys/exit_key",
+        "name": {
+          "en": "Exit Key",
+          "ja": "終了キー",
+          "zh": "退出鍵",
+          "ko": "종료 키"
+        },
+        "description": {
+          "en": "Key to exit the game.",
+          "ja": "ゲームを終了するキー。",
+          "zh": "退出遊戲的按鍵。",
+          "ko": "게임을 종료하는 키."
+        },
+        "type": "keybind",
+        "values": []
+      },
+      "borderless_key": {
+        "path": "keys/borderless_key",
+        "name": {
+          "en": "Borderless Key",
+          "ja": "ボーダーレス切替キー",
+          "zh": "無邊框切換鍵",
+          "ko": "테두리 없음 전환 키"
+        },
+        "description": {
+          "en": "Key to toggle borderless mode.",
+          "ja": "ボーダーレスモードを切り替えるキー。",
+          "zh": "切換無邊框模式的按鍵。",
+          "ko": "테두리 없음 모드를 전환하는 키."
+        },
+        "type": "keybind",
+        "values": []
+      },
+      "fullscreen_key": {
+        "path": "keys/fullscreen_key",
+        "name": {
+          "en": "Fullscreen Key",
+          "ja": "フルスクリーン切替キー",
+          "zh": "全屏切換鍵",
+          "ko": "전체 화면 전환 키"
+        },
+        "description": {
+          "en": "Key to toggle fullscreen mode.",
+          "ja": "フルスクリーンモードを切り替えるキー。",
+          "zh": "切換全屏模式的按鍵。",
+          "ko": "전체 화면 모드를 전환하는 키."
+        },
+        "type": "keybind",
+        "values": []
+      },
+      "pause_key": {
+        "path": "keys/pause_key",
+        "name": {
+          "en": "Pause Key",
+          "ja": "一時停止キー",
+          "zh": "暫停鍵",
+          "ko": "일시 정지 키"
+        },
+        "description": {
+          "en": "Key to pause the game.",
+          "ja": "ゲームを一時停止するキー。",
+          "zh": "暫停遊戲的按鍵。",
+          "ko": "게임을 일시 정지하는 키."
+        },
+        "type": "keybind",
+        "values": []
+      },
+      "back_key": {
+        "path": "keys/back_key",
+        "name": {
+          "en": "Back Key",
+          "ja": "戻るキー",
+          "zh": "返回鍵",
+          "ko": "뒤로 가기 키"
+        },
+        "description": {
+          "en": "Key to go back to the previous screen.",
+          "ja": "前の画面に戻るキー。",
+          "zh": "返回上一畫面的按鍵。",
+          "ko": "이전 화면으로 돌아가는 키."
+        },
+        "type": "keybind",
+        "values": []
+      },
+      "restart_key": {
+        "path": "keys/restart_key",
+        "name": {
+          "en": "Restart Key",
+          "ja": "再スタートキー",
+          "zh": "重新開始鍵",
+          "ko": "다시 시작 키"
+        },
+        "description": {
+          "en": "Key to restart the current song.",
+          "ja": "現在の曲を再スタートするキー。",
+          "zh": "重新開始當前歌曲的按鍵。",
+          "ko": "현재 곡을 다시 시작하는 키."
+        },
+        "type": "keybind",
+        "values": []
+      },
+      "left_kat_1p": {
+        "path": "keys_1p/left_kat",
+        "name": {
+          "en": "Player 1 Left Kat",
+          "ja": "プレイヤー1 左カッ",
+          "zh": "玩家1 左咔",
+          "ko": "플레이어 1 왼쪽 캇"
+        },
+        "description": {
+          "en": "Key(s) for Player 1 left kat.",
+          "ja": "プレイヤー1の左カッ用キー。",
+          "zh": "玩家1左咔的按鍵。",
+          "ko": "플레이어 1 왼쪽 캇의 키."
+        },
+        "type": "keybind",
+        "values": []
+      },
+      "left_don_1p": {
+        "path": "keys_1p/left_don",
+        "name": {
+          "en": "Player 1 Left Don",
+          "ja": "プレイヤー1 左ドン",
+          "zh": "玩家1 左咚",
+          "ko": "플레이어 1 왼쪽 동"
+        },
+        "description": {
+          "en": "Key(s) for Player 1 left don.",
+          "ja": "プレイヤー1の左ドン用キー。",
+          "zh": "玩家1左咚的按鍵。",
+          "ko": "플레이어 1 왼쪽 동의 키."
+        },
+        "type": "keybind",
+        "values": []
+      },
+      "right_don_1p": {
+        "path": "keys_1p/right_don",
+        "name": {
+          "en": "Player 1 Right Don",
+          "ja": "プレイヤー1 右ドン",
+          "zh": "玩家1 右咚",
+          "ko": "플레이어 1 오른쪽 동"
+        },
+        "description": {
+          "en": "Key(s) for Player 1 right don.",
+          "ja": "プレイヤー1の右ドン用キー。",
+          "zh": "玩家1右咚的按鍵。",
+          "ko": "플레이어 1 오른쪽 동의 키."
+        },
+        "type": "keybind",
+        "values": []
+      },
+      "right_kat_1p": {
+        "path": "keys_1p/right_kat",
+        "name": {
+          "en": "Player 1 Right Kat",
+          "ja": "プレイヤー1 右カッ",
+          "zh": "玩家1 右咔",
+          "ko": "플레이어 1 오른쪽 캇"
+        },
+        "description": {
+          "en": "Key(s) for Player 1 right kat.",
+          "ja": "プレイヤー1の右カッ用キー。",
+          "zh": "玩家1右咔的按鍵。",
+          "ko": "플레이어 1 오른쪽 캇의 키."
+        },
+        "type": "keybind",
+        "values": []
+      },
+      "left_kat_2p": {
+        "path": "keys_2p/left_kat",
+        "name": {
+          "en": "Player 2 Left Kat",
+          "ja": "プレイヤー2 左カッ",
+          "zh": "玩家2 左咔",
+          "ko": "플레이어 2 왼쪽 캇"
+        },
+        "description": {
+          "en": "Key(s) for Player 2 left kat.",
+          "ja": "プレイヤー2の左カッ用キー。",
+          "zh": "玩家2左咔的按鍵。",
+          "ko": "플레이어 2 왼쪽 캇의 키."
+        },
+        "type": "keybind",
+        "values": []
+      },
+      "left_don_2p": {
+        "path": "keys_2p/left_don",
+        "name": {
+          "en": "Player 2 Left Don",
+          "ja": "プレイヤー2 左ドン",
+          "zh": "玩家2 左咚",
+          "ko": "플레이어 2 왼쪽 동"
+        },
+        "description": {
+          "en": "Key(s) for Player 2 left don.",
+          "ja": "プレイヤー2の左ドン用キー。",
+          "zh": "玩家2左咚的按鍵。",
+          "ko": "플레이어 2 왼쪽 동의 키."
+        },
+        "type": "keybind",
+        "values": []
+      },
+      "right_don_2p": {
+        "path": "keys_2p/right_don",
+        "name": {
+          "en": "Player 2 Right Don",
+          "ja": "プレイヤー2 右ドン",
+          "zh": "玩家2 右咚",
+          "ko": "플레이어 2 오른쪽 동"
+        },
+        "description": {
+          "en": "Key(s) for Player 2 right don.",
+          "ja": "プレイヤー2の右ドン用キー。",
+          "zh": "玩家2右咚的按鍵。",
+          "ko": "플레이어 2 오른쪽 동의 키."
+        },
+        "type": "keybind",
+        "values": []
+      },
+      "right_kat_2p": {
+        "path": "keys_2p/right_kat",
+        "name": {
+          "en": "Player 2 Right Kat",
+          "ja": "プレイヤー2 右カッ",
+          "zh": "玩家2 右咔",
+          "ko": "플레이어 2 오른쪽 캇"
+        },
+        "description": {
+          "en": "Key(s) for Player 2 right kat.",
+          "ja": "プレイヤー2の右カッ用キー。",
+          "zh": "玩家2右咔的按鍵。",
+          "ko": "플레이어 2 오른쪽 캇의 키."
+        },
+        "type": "keybind",
+        "values": []
+      }
+    }
+  },
+  "controller_1p": {
+    "name": {
+      "en": "Controller 1P",
+      "ja": "コントローラー 1P",
+      "zh": "手柄 1P",
+      "ko": "컨트롤러 1P"
+    },
+    "options": {
+      "left_kat": {
+        "path": "gamepad_1p/left_kat",
+        "name": {
+          "en": "Left Kat",
+          "ja": "左カッ",
+          "zh": "左咔",
+          "ko": "왼쪽 캇"
+        },
+        "description": {
+          "en": "Gamepad button(s) for Player 1 left kat.",
+          "ja": "プレイヤー1の左カッ用ゲームパッドボタン。",
+          "zh": "玩家1左咔的手柄按鍵。",
+          "ko": "플레이어 1 왼쪽 캇의 게임패드 버튼."
+        },
+        "type": "keybind_controller",
+        "values": []
+      },
+      "left_don": {
+        "path": "gamepad_1p/left_don",
+        "name": {
+          "en": "Left Don",
+          "ja": "左ドン",
+          "zh": "左咚",
+          "ko": "왼쪽 동"
+        },
+        "description": {
+          "en": "Gamepad button(s) for Player 1 left don.",
+          "ja": "プレイヤー1の左ドン用ゲームパッドボタン。",
+          "zh": "玩家1左咚的手柄按鍵。",
+          "ko": "플레이어 1 왼쪽 동의 게임패드 버튼."
+        },
+        "type": "keybind_controller",
+        "values": []
+      },
+      "right_don": {
+        "path": "gamepad_1p/right_don",
+        "name": {
+          "en": "Right Don",
+          "ja": "右ドン",
+          "zh": "右咚",
+          "ko": "오른쪽 동"
+        },
+        "description": {
+          "en": "Gamepad button(s) for Player 1 right don.",
+          "ja": "プレイヤー1の右ドン用ゲームパッドボタン。",
+          "zh": "玩家1右咚的手柄按鍵。",
+          "ko": "플레이어 1 오른쪽 동의 게임패드 버튼."
+        },
+        "type": "keybind_controller",
+        "values": []
+      },
+      "right_kat": {
+        "path": "gamepad_1p/right_kat",
+        "name": {
+          "en": "Right Kat",
+          "ja": "右カッ",
+          "zh": "右咔",
+          "ko": "오른쪽 캇"
+        },
+        "description": {
+          "en": "Gamepad button(s) for Player 1 right kat.",
+          "ja": "プレイヤー1の右カッ用ゲームパッドボタン。",
+          "zh": "玩家1右咔的手柄按鍵。",
+          "ko": "플레이어 1 오른쪽 캇의 게임패드 버튼."
+        },
+        "type": "keybind_controller",
+        "values": []
+      }
+    }
+  },
+  "controller_2p": {
+    "name": {
+      "en": "Controller 2P",
+      "ja": "コントローラー 2P",
+      "zh": "手柄 2P",
+      "ko": "컨트롤러 2P"
+    },
+    "options": {
+      "left_kat": {
+        "path": "gamepad_2p/left_kat",
+        "name": {
+          "en": "Left Kat",
+          "ja": "左カッ",
+          "zh": "左咔",
+          "ko": "왼쪽 캇"
+        },
+        "description": {
+          "en": "Gamepad button(s) for Player 2 left kat.",
+          "ja": "プレイヤー2の左カッ用ゲームパッドボタン。",
+          "zh": "玩家2左咔的手柄按鍵。",
+          "ko": "플레이어 2 왼쪽 캇의 게임패드 버튼."
+        },
+        "type": "keybind_controller",
+        "values": []
+      },
+      "left_don": {
+        "path": "gamepad_2p/left_don",
+        "name": {
+          "en": "Left Don",
+          "ja": "左ドン",
+          "zh": "左咚",
+          "ko": "왼쪽 동"
+        },
+        "description": {
+          "en": "Gamepad button(s) for Player 2 left don.",
+          "ja": "プレイヤー2の左ドン用ゲームパッドボタン。",
+          "zh": "玩家2左咚的手柄按鍵。",
+          "ko": "플레이어 2 왼쪽 동의 게임패드 버튼."
+        },
+        "type": "keybind_controller",
+        "values": []
+      },
+      "right_don": {
+        "path": "gamepad_2p/right_don",
+        "name": {
+          "en": "Right Don",
+          "ja": "右ドン",
+          "zh": "右咚",
+          "ko": "오른쪽 동"
+        },
+        "description": {
+          "en": "Gamepad button(s) for Player 2 right don.",
+          "ja": "プレイヤー2の右ドン用ゲームパッドボタン。",
+          "zh": "玩家2右咚的手柄按鍵。",
+          "ko": "플레이어 2 오른쪽 동의 게임패드 버튼."
+        },
+        "type": "keybind_controller",
+        "values": []
+      },
+      "right_kat": {
+        "path": "gamepad_2p/right_kat",
+        "name": {
+          "en": "Right Kat",
+          "ja": "右カッ",
+          "zh": "右咔",
+          "ko": "오른쪽 캇"
+        },
+        "description": {
+          "en": "Gamepad button(s) for Player 2 right kat.",
+          "ja": "プレイヤー2の右カッ用ゲームパッドボタン。",
+          "zh": "玩家2右咔的手柄按鍵。",
+          "ko": "플레이어 2 오른쪽 캇의 게임패드 버튼."
+        },
+        "type": "keybind_controller",
+        "values": []
+      }
+    }
+  },
+  "audio": {
+    "name": {
+      "en": "Audio",
+      "ja": "音声",
+      "zh": "音訊",
+      "ko": "오디오"
+    },
+    "options": {
+      "device_type": {
+        "path": "audio/device_type",
+        "name": {
+          "en": "Device Type",
+          "ja": "デバイスタイプ",
+          "zh": "裝置類型",
+          "ko": "장치 유형"
+        },
+        "description": {
+          "en": "Audio backend. Default uses SDL3. ALSA/PulseAudio/JACK/OSS/CoreAudio/DirectSound/ASIO/WASAPI use RtAudio. WDM-KS/MME use PortAudio (Windows only).",
+          "ja": "オーディオバックエンド。デフォルトはSDL3を使用します。ALSA/PulseAudio/JACK/OSS/CoreAudio/DirectSound/ASIO/WASAPIはRtAudioを使用します。WDM-KS/MMEはPortAudio（Windowsのみ）を使用します。",
+          "zh": "音訊後端。預設使用 SDL3。ALSA/PulseAudio/JACK/OSS/CoreAudio/DirectSound/ASIO/WASAPI 使用 RtAudio。WDM-KS/MME 使用 PortAudio（僅限 Windows）。",
+          "ko": "오디오 백엔드. 기본값은 SDL3을 사용합니다. ALSA/PulseAudio/JACK/OSS/CoreAudio/DirectSound/ASIO/WASAPI는 RtAudio를 사용합니다. WDM-KS/MME는 PortAudio(Windows 전용)를 사용합니다."
+        },
+        "type": "int",
+        "values": {
+          "00": {
+            "en": "Default (SDL3)",
+            "ja": "デフォルト（SDL3）",
+            "zh": "預設（SDL3）",
+            "ko": "기본값(SDL3)"
+          },
+          "01": {
+            "en": "ALSA (RtAudio)",
+            "ja": "ALSA (RtAudio)",
+            "zh": "ALSA (RtAudio)",
+            "ko": "ALSA (RtAudio)"
+          },
+          "02": {
+            "en": "PulseAudio (RtAudio)",
+            "ja": "PulseAudio (RtAudio)",
+            "zh": "PulseAudio (RtAudio)",
+            "ko": "PulseAudio (RtAudio)"
+          },
+          "03": {
+            "en": "JACK (RtAudio)",
+            "ja": "JACK (RtAudio)",
+            "zh": "JACK (RtAudio)",
+            "ko": "JACK (RtAudio)"
+          },
+          "04": {
+            "en": "OSS (RtAudio)",
+            "ja": "OSS (RtAudio)",
+            "zh": "OSS (RtAudio)",
+            "ko": "OSS (RtAudio)"
+          },
+          "05": {
+            "en": "CoreAudio (RtAudio)",
+            "ja": "CoreAudio (RtAudio)",
+            "zh": "CoreAudio (RtAudio)",
+            "ko": "CoreAudio (RtAudio)"
+          },
+          "06": {
+            "en": "DirectSound (RtAudio)",
+            "ja": "DirectSound (RtAudio)",
+            "zh": "DirectSound (RtAudio)",
+            "ko": "DirectSound (RtAudio)"
+          },
+          "07": {
+            "en": "WASAPI (RtAudio)",
+            "ja": "WASAPI (RtAudio)",
+            "zh": "WASAPI (RtAudio)",
+            "ko": "WASAPI (RtAudio)"
+          },
+          "08": {
+            "en": "ASIO (RtAudio)",
+            "ja": "ASIO (RtAudio)",
+            "zh": "ASIO (RtAudio)",
+            "ko": "ASIO (RtAudio)"
+          },
+          "09": {
+            "en": "WDM-KS (PortAudio)",
+            "ja": "WDM-KS (PortAudio)",
+            "zh": "WDM-KS (PortAudio)",
+            "ko": "WDM-KS (PortAudio)"
+          },
+          "10": {
+            "en": "MME (PortAudio)",
+            "ja": "MME (PortAudio)",
+            "zh": "MME (PortAudio)",
+            "ko": "MME (PortAudio)"
+          }
+        }
+      },
+      "device": {
+        "path": "audio/device",
+        "name": {
+          "en": "Audio Device",
+          "ja": "オーディオデバイス",
+          "zh": "音訊裝置",
+          "ko": "오디오 장치"
+        },
+        "description": {
+          "en": "Output device to use for the selected backend. Default uses the system default device.",
+          "ja": "選択したバックエンドで使用する出力デバイス。デフォルトはシステムの既定デバイスを使用します。",
+          "zh": "為所選後端使用的輸出裝置。預設使用系統預設裝置。",
+          "ko": "선택한 백엔드에서 사용할 출력 장치. 기본값은 시스템 기본 장치를 사용합니다."
+        },
+        "type": "audiodevice",
+        "values": {
+          "": {
+            "en": "Default",
+            "ja": "デフォルト",
+            "zh": "預設",
+            "ko": "기본값"
+          }
+        }
+      },
+      "sample_rate": {
+        "path": "audio/sample_rate",
+        "name": {
+          "en": "Sample Rate",
+          "ja": "サンプルレート",
+          "zh": "取樣率",
+          "ko": "샘플레이트"
+        },
+        "description": {
+          "en": "Audio sample rate in Hz.",
+          "ja": "オーディオのサンプルレート（Hz）。",
+          "zh": "音訊取樣率（Hz）。",
+          "ko": "오디오 샘플레이트(Hz)."
+        },
+        "type": "int",
+        "values": {
+          "44100": {
+            "en": "44100hz",
+            "ja": "44100hz",
+            "zh": "44100hz",
+            "ko": "44100hz"
+          },
+          "48000": {
+            "en": "48000hz",
+            "ja": "48000hz",
+            "zh": "48000hz",
+            "ko": "48000hz"
+          }
+        }
+      },
+      "buffer_size": {
+        "path": "audio/buffer_size",
+        "name": {
+          "en": "Buffer Size",
+          "ja": "バッファサイズ",
+          "zh": "緩衝區大小",
+          "ko": "버퍼 크기"
+        },
+        "description": {
+          "en": "Audio buffer size in samples (0=driver default).",
+          "ja": "オーディオバッファサイズ（サンプル数、0=ドライバのデフォルト）。",
+          "zh": "音訊緩衝區大小（取樣數，0=驅動預設值）。",
+          "ko": "오디오 버퍼 크기(샘플 단위, 0=드라이버 기본값)."
+        },
+        "type": "int",
+        "values": []
+      },
+      "sound_volume": {
+        "path": "volume/sound",
+        "name": {
+          "en": "Sound Volume",
+          "ja": "効果音量",
+          "zh": "音效音量",
+          "ko": "효과음 음량"
+        },
+        "description": {
+          "en": "Overall sound effects volume (0.0 to 1.0).",
+          "ja": "全体的な効果音量（0.0～1.0）。",
+          "zh": "整體音效音量（0.0 至 1.0）。",
+          "ko": "전체 효과음 음량(0.0~1.0)."
+        },
+        "type": "float",
+        "values": []
+      },
+      "music_volume": {
+        "path": "volume/music",
+        "name": {
+          "en": "Music Volume",
+          "ja": "音楽音量",
+          "zh": "音樂音量",
+          "ko": "음악 음량"
+        },
+        "description": {
+          "en": "Music volume (0.0 to 1.0).",
+          "ja": "音楽の音量（0.0～1.0）。",
+          "zh": "音樂音量（0.0 至 1.0）。",
+          "ko": "음악 음량(0.0~1.0)."
+        },
+        "type": "float",
+        "values": []
+      },
+      "voice_volume": {
+        "path": "volume/voice",
+        "name": {
+          "en": "Voice Volume",
+          "ja": "ボイス音量",
+          "zh": "語音音量",
+          "ko": "보이스 음량"
+        },
+        "description": {
+          "en": "Voice volume (0.0 to 1.0).",
+          "ja": "ボイスの音量（0.0～1.0）。",
+          "zh": "語音音量（0.0 至 1.0）。",
+          "ko": "보이스 음량(0.0~1.0)."
+        },
+        "type": "float",
+        "values": []
+      },
+      "hitsound_volume": {
+        "path": "volume/hitsound",
+        "name": {
+          "en": "Hitsound Volume",
+          "ja": "打撃音量",
+          "zh": "打擊音效音量",
+          "ko": "타격음 음량"
+        },
+        "description": {
+          "en": "Hit sound volume (0.0 to 1.0).",
+          "ja": "打撃音の音量（0.0～1.0）。",
+          "zh": "打擊音效音量（0.0 至 1.0）。",
+          "ko": "타격음 음량(0.0~1.0)."
+        },
+        "type": "float",
+        "values": []
+      },
+      "attract_mode_volume": {
+        "path": "volume/attract_mode",
+        "name": {
+          "en": "Attract Mode Volume",
+          "ja": "アトラクトモード音量",
+          "zh": "演示模式音量",
+          "ko": "어트랙트 모드 음량"
+        },
+        "description": {
+          "en": "Attract mode volume (0.0 to 1.0).",
+          "ja": "アトラクトモードの音量（0.0～1.0）。",
+          "zh": "演示模式音量（0.0 至 1.0）。",
+          "ko": "어트랙트 모드 음량(0.0~1.0)."
+        },
+        "type": "float",
+        "values": []
+      }
+    }
+  },
+  "video": {
+    "name": {
+      "en": "Video",
+      "ja": "映像",
+      "zh": "畫面",
+      "ko": "화면"
+    },
+    "options": {
+      "fullscreen": {
+        "path": "video/fullscreen",
+        "name": {
+          "en": "Fullscreen",
+          "ja": "フルスクリーン",
+          "zh": "全屏",
+          "ko": "전체 화면"
+        },
+        "description": {
+          "en": "Enable fullscreen mode.",
+          "ja": "フルスクリーンモードを有効にします。",
+          "zh": "啟用全屏模式。",
+          "ko": "전체 화면 모드를 활성화합니다."
+        },
+        "type": "bool",
+        "values": {
+          "true": {
+            "en": "Enabled",
+            "ja": "オン",
+            "zh": "開啟",
+            "ko": "켜기"
+          },
+          "false": {
+            "en": "Disabled",
+            "ja": "オフ",
+            "zh": "關閉",
+            "ko": "끄기"
+          }
+        }
+      },
+      "borderless": {
+        "path": "video/borderless",
+        "name": {
+          "en": "Borderless",
+          "ja": "ボーダーレス",
+          "zh": "無邊框",
+          "ko": "테두리 없음"
+        },
+        "description": {
+          "en": "Enable borderless window mode.",
+          "ja": "ボーダーレスウィンドウモードを有効にします。",
+          "zh": "啟用無邊框視窗模式。",
+          "ko": "테두리 없는 창 모드를 활성화합니다."
+        },
+        "type": "bool",
+        "values": {
+          "true": {
+            "en": "Enabled",
+            "ja": "オン",
+            "zh": "開啟",
+            "ko": "켜기"
+          },
+          "false": {
+            "en": "Disabled",
+            "ja": "オフ",
+            "zh": "關閉",
+            "ko": "끄기"
+          }
+        }
+      },
+      "target_fps": {
+        "path": "video/target_fps",
+        "name": {
+          "en": "Target FPS",
+          "ja": "目標FPS",
+          "zh": "目標FPS",
+          "ko": "목표 FPS"
+        },
+        "description": {
+          "en": "Target frames per second",
+          "ja": "目標フレームレート",
+          "zh": "目標幀率",
+          "ko": "목표 프레임레이트"
+        },
+        "type": "int",
+        "values": {
+          "-1": {
+            "en": "Unlimited",
+            "ja": "無制限",
+            "zh": "無限制",
+            "ko": "무제한"
+          },
+          "30": {
+            "en": "30 FPS",
+            "ja": "30 FPS",
+            "zh": "30 FPS",
+            "ko": "30 FPS"
+          },
+          "60": {
+            "en": "60 FPS",
+            "ja": "60 FPS",
+            "zh": "60 FPS",
+            "ko": "60 FPS"
+          },
+          "120": {
+            "en": "120 FPS",
+            "ja": "120 FPS",
+            "zh": "120 FPS",
+            "ko": "120 FPS"
+          },
+          "144": {
+            "en": "144 FPS",
+            "ja": "144 FPS",
+            "zh": "144 FPS",
+            "ko": "144 FPS"
+          },
+          "165": {
+            "en": "165 FPS",
+            "ja": "165 FPS",
+            "zh": "165 FPS",
+            "ko": "165 FPS"
+          },
+          "240": {
+            "en": "240 FPS",
+            "ja": "240 FPS",
+            "zh": "240 FPS",
+            "ko": "240 FPS"
+          }
+        }
+      },
+      "vsync": {
+        "path": "video/vsync",
+        "name": {
+          "en": "VSync",
+          "ja": "VSync",
+          "zh": "VSync",
+          "ko": "VSync"
+        },
+        "description": {
+          "en": "Enable vertical synchronization.",
+          "ja": "垂直同期を有効にします。",
+          "zh": "啟用垂直同步。",
+          "ko": "수직 동기화를 활성화합니다."
+        },
+        "type": "bool",
+        "values": {
+          "true": {
+            "en": "Enabled",
+            "ja": "オン",
+            "zh": "開啟",
+            "ko": "켜기"
+          },
+          "false": {
+            "en": "Disabled",
+            "ja": "オフ",
+            "zh": "關閉",
+            "ko": "끄기"
+          }
+        }
+      }
+    }
+  },
+  "exit": {
+    "name": {
+      "en": "Exit",
+      "ja": "終了",
+      "zh": "退出",
+      "ko": "종료"
+    },
+    "options": []
+  }
+}

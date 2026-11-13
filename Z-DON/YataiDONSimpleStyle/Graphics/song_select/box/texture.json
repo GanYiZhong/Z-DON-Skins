@@ -1,0 +1,173 @@
+{
+  "background": {
+    "density": 1
+  },
+  "bar_genre": {
+    "density": 1
+  },
+  "folder_graphic": {
+    "density": 1
+  },
+  "bar_genre_back": {
+    "density": 1
+  },
+  "bar_genre_overlay": {
+    "density": 1
+  },
+  "box_chara": {},
+  "genre_overlay_large": {
+    "density": 1
+  },
+  "back_graphic": {
+    "x": -684,
+    "y": 750,
+    "density": 1
+  },
+  "back_icon": {
+    "x": 68,
+    "y": 386
+  },
+  "back_icon_highlight": {
+    "x": 68,
+    "y": 386
+  },
+  "folder_texture_left": {
+    "y": 284,
+    "frame_order": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "density": 1
+  },
+  "folder_texture": {
+    "x": 96,
+    "y": 284,
+    "frame_order": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "folder_texture_right": {
+    "x": 192,
+    "y": 284,
+    "frame_order": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "density": 1
+  },
+  "folder_clip": {
+    "x": 12,
+    "y": 266,
+    "frame_order": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "folder_top": {
+    "x": 1590,
+    "y": 566,
+    "x2": 662,
+    "frame_order": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "folder_top_edge": {
+    "x": 1448,
+    "y": 566,
+    "frame_order": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "folder_background": {
+    "x": 0,
+    "y": 74,
+    "frame_order": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "folder_background_edge": {
+    "x": 0,
+    "y": 74,
+    "frame_order": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "density": 1
+  },
+  "folder_background_folder": {
+    "x": 0,
+    "y": 74,
+    "frame_order": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "folder_background_folder_edge": {
+    "x": 0,
+    "y": 74,
+    "frame_order": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "density": 1
+  },
+  "genre_overlay": {
+    "x": 36,
+    "y": 330,
+    "density": 1
+  },
+  "diff_overlay": {
+    "x": 36,
+    "y": 330,
+    "density": 1
+  },
+  "diff_overlay_large": {
+    "x": 1368,
+    "y": 330,
+    "density": 1
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "good": {
+    "x": 0,
+    "y": 0,
+    "frame_order": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "density": 1
+  },
+  "ok": {
+    "x": 0,
+    "y": 0,
+    "frame_order": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "density": 1
+  },
+  "roll": {
+    "x": 0,
+    "y": 0,
+    "density": 1
+  }
+}

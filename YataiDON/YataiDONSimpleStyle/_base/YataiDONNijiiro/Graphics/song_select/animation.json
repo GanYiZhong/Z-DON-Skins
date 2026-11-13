@@ -1,0 +1,397 @@
+[
+  {
+    "id": 0,
+    "type": "move",
+    "duration": 15000,
+    "total_distance": 1920,
+    "loop": true,
+    "comment": "move the background"
+  },
+  {
+    "id": 1,
+    "type": "move",
+    "duration": 233,
+    "total_distance": 750,
+    "lock_input": true,
+    "comment": "move song select boxes out of view on select"
+  },
+  {
+    "id": 2,
+    "type": "fade",
+    "duration": 83,
+    "comment": "fade out difficulties from box on select"
+  },
+  {
+    "id": 3,
+    "type": "fade",
+    "duration": 33,
+    "delay": {
+      "reference_id": 1,
+      "property": "duration"
+    },
+    "comment": "fade out the top left text on select"
+  },
+  {
+    "id": 4,
+    "type": "fade",
+    "duration": 33,
+    "initial_opacity": 0.0,
+    "final_opacity": 1.0,
+    "delay": {
+      "reference_id": 3,
+      "property": "duration"
+    },
+    "comment": "fade in the new text for diff select"
+  },
+  {
+    "id": 5,
+    "type": "fade",
+    "duration": 200,
+    "comment": "fade in/out the genre background when changed"
+  },
+  {
+    "id": 6,
+    "type": "texture_change",
+    "duration": 133,
+    "textures": [
+      [
+        0,
+        32,
+        0
+      ],
+      [
+        32,
+        80,
+        1
+      ],
+      [
+        80,
+        112,
+        2
+      ],
+      [
+        112,
+        133,
+        3
+      ]
+    ],
+    "comment": "ura switch forwards"
+  },
+  {
+    "id": 7,
+    "type": "texture_change",
+    "duration": 133,
+    "textures": [
+      [
+        0,
+        32,
+        3
+      ],
+      [
+        32,
+        80,
+        2
+      ],
+      [
+        80,
+        112,
+        1
+      ],
+      [
+        112,
+        133,
+        0
+      ]
+    ],
+    "comment": "ura switch backwards"
+  },
+  {
+    "id": 8,
+    "type": "fade",
+    "duration": 166,
+    "delay": {
+      "reference_id": 6,
+      "property": "duration"
+    },
+    "comment": "ura switch fade out"
+  },
+  {
+    "id": 9,
+    "type": "move",
+    "duration": 83.33,
+    "start_position": 892,
+    "total_distance": -228,
+    "delay": 133.33,
+    "comment": "yellow box left out"
+  },
+  {
+    "id": 10,
+    "type": "move",
+    "duration": 83.33,
+    "start_position": 987,
+    "total_distance": 217,
+    "delay": 133.33,
+    "comment": "yellow box right out"
+  },
+  {
+    "id": 11,
+    "type": "move",
+    "duration": 83.33,
+    "start_position": 48,
+    "total_distance": 450,
+    "delay": 133.33,
+    "comment": "yellow box center out"
+  },
+  {
+    "id": 12,
+    "type": "fade",
+    "duration": 483,
+    "initial_opacity": 0.0,
+    "final_opacity": 1.0,
+    "delay": 400,
+    "comment": "yellow box fade in -- ROUND 18 (r18-misc), retimed to the cabinet's own change_courseselect. enso_normal/song_select/song_select_main_genre.nulm sprite #29 label change_courseselect = f45; kanban (the whole panel wheel) alpha 1->0 LINEAR over f45..f59 (233 ms), a 10-frame dead beat f59..f69 (167 ms), then course_select (backboard + cards) and option alpha 0->1 LINEAR over f69..f98 (483 ms). Total 54 f = 900 ms @60fps. Was duration 200 with delay 16.duration+13.duration = 500: the dead beat was 100 ms too long and the fade itself 283 ms too fast, so the board popped in instead of fading. Measured with lumen_anim_dump.exe --sprite 29 --all --range 45,98; full per-frame table in Graphics/song_select/MAPPING.md ROUND 18. Not routed through anim_export.py because the curve is consumed by the ENGINE's FadeAnimation, not by the Lua sampler -- two linear segments need no table."
+  },
+  {
+    "id": 13,
+    "type": "move",
+    "duration": 250,
+    "start_position": 664,
+    "total_distance": -319,
+    "comment": "yellow box left out 2"
+  },
+  {
+    "id": 14,
+    "type": "move",
+    "duration": 250,
+    "start_position": 1204,
+    "total_distance": 316,
+    "comment": "yellow box right out 2"
+  },
+  {
+    "id": 15,
+    "type": "move",
+    "duration": 250,
+    "start_position": 483,
+    "total_distance": 634,
+    "comment": "yellow box center out 2"
+  },
+  {
+    "id": 16,
+    "type": "move",
+    "duration": 250,
+    "start_position": 144,
+    "total_distance": -93,
+    "delay": {
+      "reference_id": 13,
+      "property": "duration"
+    },
+    "comment": "yellow box top out"
+  },
+  {
+    "id": 17,
+    "type": "move",
+    "duration": 250,
+    "start_position": 633,
+    "total_distance": 90,
+    "delay": {
+      "reference_id": 13,
+      "property": "duration"
+    },
+    "comment": "yellow box center h out"
+  },
+  {
+    "id": 18,
+    "type": "fade",
+    "duration": 250,
+    "initial_opacity": 0.0,
+    "final_opacity": 1.0,
+    "delay": {
+      "init_val": {
+        "init_val": 16.67,
+        "reference_id": 16,
+        "property": "duration"
+      },
+      "reference_id": 13,
+      "property": "duration"
+    },
+    "comment": "yellow box fade in 2"
+  },
+  {
+    "id": 19,
+    "type": "texture_resize",
+    "duration": 283,
+    "initial_size": 0.2,
+    "final_size": 1.0,
+    "ease_out": "quadratic",
+    "comment": "diff sort scale up"
+  },
+  {
+    "id": 20,
+    "type": "fade",
+    "duration": {
+      "reference_id": 19,
+      "property": "duration"
+    },
+    "initial_opacity": 0.0,
+    "final_opacity": 1.0,
+    "ease_out": "quadratic",
+    "lock_input": true,
+    "comment": "diff sort diff select fade in"
+  },
+  {
+    "id": 21,
+    "type": "fade",
+    "duration": 133,
+    "reverse_delay": 0,
+    "loop": true,
+    "comment": "box outline fade in/out"
+  },
+  {
+    "id": 22,
+    "type": "move",
+    "total_distance": 0,
+    "duration": 400,
+    "ease_in": "quadratic",
+    "waypoints": [
+      {
+        "at": 116.67,
+        "value": -45,
+        "ease_out": "quadratic"
+      },
+      {
+        "at": 233.34,
+        "value": 0,
+        "ease_in": "quadratic"
+      },
+      {
+        "at": 316.67,
+        "value": -15,
+        "ease_out": "quadratic"
+      }
+    ],
+    "comment": "diff sort confirmation double bounce (merged from old ids 22+23+24+25)"
+  },
+  {
+    "id": 26,
+    "type": "move",
+    "duration": 100,
+    "total_distance": 172,
+    "comment": "diff selector move between diffs"
+  },
+  {
+    "id": 27,
+    "type": "move",
+    "duration": 100,
+    "total_distance": 105,
+    "comment": "diff selector move between options"
+  },
+  {
+    "id": 28,
+    "type": "move",
+    "duration": 333.33,
+    "total_distance": 548,
+    "waypoints": [
+      {
+        "at": 245.6,
+        "value": 623
+      }
+    ],
+    "comment": "option/neiro panel slide IN. Arcade song_select_main_diff_option MC65 'board_left' label 'in' = 20 frames @60fps (333.33 ms), PIECEWISE LINEAR through an OVERSHOOT: y 650 -> -75 over frames 0..14, then -75 -> 0 over frames 14..19. Engine space: json y 1080, resting top 532 => total_distance 548, waypoint 548+75 = 623 at 14/19 = 0.7368. (MC64 'board_right' reaches -75 one frame later, at 15/19; not portable, the two boards share one animation id here.)"
+  },
+  {
+    "id": 29,
+    "type": "fade",
+    "duration": 1000,
+    "loop": true,
+    "comment": "neiro blue arrow fade out"
+  },
+  {
+    "id": 30,
+    "type": "move",
+    "duration": 1000,
+    "total_distance": 5,
+    "loop": true,
+    "comment": "option/neiro arrow bounce (arcade arrow select: 5 px)"
+  },
+  {
+    "id": 31,
+    "type": "move",
+    "duration": 250,
+    "total_distance": 70,
+    "ease_out": "quadratic",
+    "comment": "option value text slide (= skin_config option_text_in.x)"
+  },
+  {
+    "id": 32,
+    "type": "fade",
+    "duration": 250,
+    "ease_out": "quadratic",
+    "comment": "neiro fade sideways"
+  },
+  {
+    "id": 33,
+    "type": "move",
+    "duration": 200,
+    "total_distance": 150,
+    "ease_out": "quadratic",
+    "reverse_delay": 0,
+    "comment": "selected diff bounce"
+  },
+  {
+    "id": 34,
+    "type": "fade",
+    "duration": 200,
+    "initial_opacity": 0.0,
+    "final_opacity": 1.0,
+    "comment": "selected diff fade in"
+  },
+  {
+    "id": 35,
+    "type": "fade",
+    "duration": 466,
+    "initial_opacity": 0.0,
+    "final_opacity": 1.0,
+    "reverse_delay": 0,
+    "comment": "selected diff highlight fade"
+  },
+  {
+    "id": 36,
+    "type": "texture_resize",
+    "duration": 466,
+    "initial_size": 3.0,
+    "final_size": 1.0,
+    "delay": 466,
+    "ease_in": "quadratic",
+    "comment": "selected diff text resize"
+  },
+  {
+    "id": 37,
+    "type": "fade",
+    "duration": 466,
+    "initial_opacity": 0.0,
+    "final_opacity": 1.0,
+    "delay": 466,
+    "ease_in": "quadratic",
+    "comment": "selected diff text fade in"
+  },
+  {
+    "id": 38,
+    "type": "move",
+    "duration": 2300.0,
+    "total_distance": 1920,
+    "comment": "dan transition: length of the SONG_SELECT half of the dan shutter rig (ROUND 17). 2300 ms = the cabinet's own close (18 frames, loading_dani_intro f200->182 played backwards) plus its stamp (120 frames, f62->182), both 1:1 at 60 fps. It used to be 4383 ms - the WHOLE 263-frame movie - which parked 2.0 s of dead hold on frame 182 before hard-cutting to DAN_SELECT, and the cabinet's door OPEN (f187..200) was never played. The open now runs on DAN_SELECT through Indicator:draw_top, so the leftover time is the real dan_select load instead. The engine's own DanTransition quad stays invisible (dan_transition/texture.json y2=0); Scripts/song_select/dan_doors.lua draws both halves."
+  },
+  {
+    "id": 43,
+    "type": "move",
+    "duration": 333.33,
+    "total_distance": 548,
+    "waypoints": [
+      {
+        "at": 70.17,
+        "value": -75
+      }
+    ],
+    "comment": "option/neiro panel slide OUT (ModifierSelector/NeiroSelector pick this up on confirm when it exists; without it they replay id 28). Arcade MC65 label 'out' = frames 25..44: y 0 -> -75 over 4 frames, then -75 -> 650 over 15. Engine space the drawn y is `attribute + song_select_offset.x` (= -548 in this skin), so attribute runs 0 -> -75 at 4/19 = 0.2105 -> 548."
+  }
+]

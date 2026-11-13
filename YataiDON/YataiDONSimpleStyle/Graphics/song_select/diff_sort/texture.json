@@ -1,0 +1,214 @@
+{
+    "background": {
+        "x": 0,
+        "y": 0
+    },
+    "level_box": {
+        "x": 0,
+        "y": 0
+    },
+    "box_highlight": {
+        "x": 0,
+        "y": 0
+    },
+    "box_outline": {
+        "x": 0,
+        "y": 0
+    },
+    "arrow": {
+        "x": 0,
+        "y": 0
+    },
+    "diff": {
+        "x": 0,
+        "y": 0
+    },
+    "stat_num": {
+        "x": 0,
+        "y": 0
+    },
+    "star_select_text": {
+        "x": 0,
+        "y": 0
+    },
+    "back_en": {
+        "x": 442,
+        "y": 198
+    },
+    "back_ja": {
+        "x": 442,
+        "y": 198
+    },
+    "back_outline": {
+        "x": 442,
+        "y": 198
+    },
+    "box": {
+        "x": 582,
+        "y": 198
+    },
+    "box_diff": {
+        "x": 582,
+        "y": 138,
+        "frame_order": [
+            0,
+            0,
+            0,
+            0,
+            0
+        ]
+    },
+    "box_text": {
+        "x": 582,
+        "y": 198,
+        "frame_order": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ]
+    },
+    "box_text_highlight": {
+        "x": 582,
+        "y": 198,
+        "frame_order": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ]
+    },
+    "star_select_prompt": {
+        "x": 618,
+        "y": 75
+    },
+    "star_limit": {
+        "x": 682,
+        "y": 157,
+        "frame_order": [
+            0,
+            0,
+            0,
+            0,
+            0
+        ]
+    },
+    "star_num": {
+        "x": 1101,
+        "y": 262,
+        "frame_order": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ]
+    },
+    "star": {
+        "x": 652,
+        "y": 390
+    },
+    "pongos": {
+        "x": 738,
+        "y": 600
+    },
+    "small_box": {
+        "x": 438,
+        "y": 607
+    },
+    "small_box_outline": {
+        "x": 438,
+        "y": 607
+    },
+    "small_box_highlight": {
+        "x": 438,
+        "y": 607
+    },
+    "small_box_text": {
+        "x": 438,
+        "y": 607,
+        "frame_order": [
+            0,
+            0,
+            0
+        ]
+    },
+    "small_box_text_highlight": {
+        "x": 438,
+        "y": 607,
+        "frame_order": [
+            0,
+            0,
+            0
+        ]
+    },
+    "stat_bg_1p": {
+        "x": 37,
+        "y": 234
+    },
+    "stat_bg_2p": {
+        "x": 37,
+        "y": 234
+    },
+    "stat_overlay": {
+        "x": 37,
+        "y": 234
+    },
+    "stat_num_small": [
+        {
+            "x": 309,
+            "y": 519
+        },
+        {
+            "x": 309,
+            "y": 588
+        }
+    ],
+    "stat_num_star": [
+        {
+            "x": 249,
+            "y": 490
+        },
+        {
+            "x": 196,
+            "y": 490
+        },
+        {
+            "x": 196,
+            "y": 565
+        }
+    ],
+    "stat_diff": {
+        "x": 54,
+        "y": 292,
+        "frame_order": [
+            0,
+            0,
+            0,
+            0,
+            0
+        ]
+    },
+    "stat_starx": {
+        "x": 165,
+        "y": 292
+    },
+    "stat_recommend": {
+        "x": 37,
+        "y": 234
+    },
+    "stat_prev": {
+        "x": 37,
+        "y": 234
+    }
+}

@@ -1,0 +1,141 @@
+[
+  {
+    "id": 1,
+    "type": "move",
+    "duration": 3400,
+    "total_distance": -2884,
+    "ease_out": "quadratic",
+    "comment": "curtain pull out - arcade GameOver.nulm end_curtain_mc f4->f208 (204f), dx -2884, ease-out quadratic verified at u=0.25/0.5"
+  },
+  {
+    "id": 2,
+    "type": "move",
+    "duration": 16.67,
+    "delay": 3400,
+    "total_distance": 0,
+    "comment": "curtain pull in - the arcade rig has NO bounce-back; kept as a zero-distance no-op because game_over.cpp always reads animation 2"
+  },
+  {
+    "id": 3,
+    "type": "texture_change",
+    "duration": 833.33,
+    "textures": [
+      [
+        0,
+        83.33,
+        0
+      ],
+      [
+        83.33,
+        166.66,
+        1
+      ],
+      [
+        166.66,
+        250,
+        2
+      ],
+      [
+        250,
+        333.33,
+        3
+      ],
+      [
+        333.33,
+        416.66,
+        4
+      ],
+      [
+        416.66,
+        500,
+        5
+      ],
+      [
+        500,
+        583.33,
+        6
+      ],
+      [
+        583.33,
+        666.66,
+        7
+      ],
+      [
+        666.66,
+        750,
+        8
+      ],
+      [
+        750,
+        833.33,
+        9
+      ]
+    ],
+    "loop": true,
+    "comment": "kitsune texture change - arcade sprite 21 advances one shape every 5 frames (83.33 ms), 10 shapes = 833.33 ms loop"
+  },
+  {
+    "id": 4,
+    "type": "move",
+    "duration": 316.67,
+    "delay": 1433.33,
+    "total_distance": 390,
+    "ease_in": "quadratic",
+    "comment": "oshimai text drop - arcade lang_end_text f90->f109, screen y -214 -> 176, ease-in quadratic (direct feed rQDV7i9IdeY: the block is visible from the first frame of the drop and lands 300 ms later). Parked at -214; game_over.lua draws it only once the 1433 ms delay has passed.",
+    "start_position": -214
+  },
+  {
+    "id": 5,
+    "type": "move",
+    "duration": 166.67,
+    "delay": 1750,
+    "total_distance": -40,
+    "ease_out": "quadratic",
+    "comment": "oshimai text bounce up - arcade f109->f119, dy -40, ease-out quadratic exact at u=0.5"
+  },
+  {
+    "id": 6,
+    "type": "move",
+    "duration": 166.67,
+    "delay": 1916.67,
+    "total_distance": 40,
+    "ease_in": "quadratic",
+    "comment": "oshimai text bounce down 2 - arcade f119->f129, dy +40, ease-in quadratic exact at u=0.5"
+  },
+  {
+    "id": 7,
+    "type": "fade",
+    "duration": 316.67,
+    "delay": 0,
+    "initial_opacity": 0.0,
+    "final_opacity": 1.0,
+    "comment": "copyright blackout - arcade shape37 fades in over 19 frames from copyright_start (f210)"
+  },
+  {
+    "id": 8,
+    "type": "fade",
+    "duration": 233.33,
+    "delay": 100,
+    "initial_opacity": 0.0,
+    "final_opacity": 1.0,
+    "comment": "copyright plate (arcade end_curtain_mc__shape39, 1920x144 at screen y 468). Arcade: the blackout finishes on f229, the plate fades in f235..f249 (delay 6 f = 100 ms, duration 14 f = 233.33 ms) and the clip ends on f266. OPTIONAL - GameOverScreen only runs the copyright phase when BOTH this id and the global/copyright texture exist, otherwise it hands off to TITLE the moment the blackout finishes, exactly as before."
+  },
+  {
+    "id": 9,
+    "type": "fade",
+    "duration": 283.33,
+    "delay": 0,
+    "initial_opacity": 1.0,
+    "final_opacity": 1.0,
+    "comment": "copyright hold - arcade f249 (plate fully in) to f266 (end of end_curtain_mc) = 17 frames = 283.33 ms. Used only as a timer; attribute is ignored. OPTIONAL, same fail-soft rule as id 8."
+  },
+  {
+    "id": 10,
+    "type": "fade",
+    "duration": 3433.33,
+    "delay": 0,
+    "initial_opacity": 0.0,
+    "final_opacity": 1.0,
+    "comment": "blackout cue - arcade GameOver.nulm end_curtain_mc reaches the copyright_start label on f210 = 3433.33 ms after oshimai_start (f4). Timer only; attribute unused. OPTIONAL: without this id GameOverScreen falls back to its historical rule of 'the jingle stopped', which on the parent's 5.66 s jingle over-ran the arcade by 2.2 s."
+  }
+]

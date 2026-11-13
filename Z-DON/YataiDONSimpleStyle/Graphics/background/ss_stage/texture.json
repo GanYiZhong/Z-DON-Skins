@@ -1,0 +1,86 @@
+{
+  "horizon": {
+    "x": 0,
+    "y": 0,
+    "density": 1
+  },
+  "mount": {
+    "x": 0,
+    "y": 0,
+    "density": 1
+  },
+  "town": {
+    "x": 0,
+    "y": 0,
+    "density": 1
+  },
+  "town_lights": {
+    "x": 0,
+    "y": 0,
+    "density": 1
+  },
+  "town_win": {
+    "x": 0,
+    "y": 0,
+    "density": 1
+  },
+  "cloud_far": {
+    "x": 0,
+    "y": 0
+  },
+  "fw_rise": {
+    "x": 0,
+    "y": 0
+  },
+  "fw_0": {
+    "x": 0,
+    "y": 0,
+    "density": 1
+  },
+  "fw_1": {
+    "x": 0,
+    "y": 0,
+    "density": 1
+  },
+  "fw_2": {
+    "x": 0,
+    "y": 0,
+    "density": 1
+  },
+  "stage": {
+    "x": 0,
+    "y": 0,
+    "density": 1
+  },
+  "stage_2p": {
+    "x": 0,
+    "y": 0,
+    "density": 1
+  },
+  "stage_dan": {
+    "x": 0,
+    "y": 0,
+    "density": 1
+  },
+  "lantern": {
+    "x": 0,
+    "y": 0
+  },
+  "lantern_s": {
+    "x": 0,
+    "y": 0
+  },
+  "flame": {
+    "x": 0,
+    "y": 0,
+    "density": 1
+  },
+  "cloud_s": {
+    "x": 0,
+    "y": 0
+  },
+  "cloud_m": {
+    "x": 0,
+    "y": 0
+  }
+}

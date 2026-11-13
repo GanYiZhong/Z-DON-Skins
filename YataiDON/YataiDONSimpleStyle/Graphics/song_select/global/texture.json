@@ -1,0 +1,62 @@
+{
+    "background_diff": {
+        "frame_order": [
+            0,
+            0,
+            0,
+            0,
+            0
+        ]
+    },
+    "background_diff_highlight": {
+        "frame_order": [
+            0,
+            0,
+            0,
+            0
+        ]
+    },
+    "bg_diff_text": {
+        "frame_order": [
+            0,
+            0,
+            0,
+            0
+        ]
+    },
+    "bg_diff_text_bg": {},
+    "song_num_bg": {
+        "x": 0,
+        "y": 0
+    },
+    "song_select_ja": {
+        "x": 30,
+        "y": 30
+    },
+    "song_select_en": {
+        "x": 30,
+        "y": 30
+    },
+    "difficulty_select_ja": {
+        "x": 30,
+        "y": 30
+    },
+    "difficulty_select_en": {
+        "x": 30,
+        "y": 30
+    },
+    "footer": {
+        "x": 0,
+        "y": 852
+    },
+    "arrow": [
+        {
+            "x": 618,
+            "y": 435
+        },
+        {
+            "x": 1164,
+            "y": 435
+        }
+    ]
+}

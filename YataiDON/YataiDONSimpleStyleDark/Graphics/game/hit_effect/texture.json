@@ -1,0 +1,142 @@
+{
+    "judge_ok": {
+        "x": 546,
+        "y": -45
+    },
+    "judge_ok_en": {
+        "x": 546,
+        "y": -45
+    },
+    "judge_ok_zh": {
+        "x": 546,
+        "y": -45
+    },
+    "judge_ok_ko": {
+        "x": 546,
+        "y": -45
+    },
+    "judge_bad": {
+        "x": 546,
+        "y": -45
+    },
+    "judge_bad_en": {
+        "x": 546,
+        "y": -45
+    },
+    "judge_bad_zh": {
+        "x": 546,
+        "y": -45
+    },
+    "judge_bad_ko": {
+        "x": 546,
+        "y": -45
+    },
+    "judge_good": {
+        "x": 546,
+        "y": -45,
+        "frame_order": [
+            0,
+            0,
+            0,
+            0
+        ]
+    },
+    "judge_good_en": {
+        "x": 546,
+        "y": -45,
+        "frame_order": [
+            0,
+            0,
+            0,
+            0
+        ]
+    },
+    "judge_good_zh": {
+        "x": 546,
+        "y": -45,
+        "frame_order": [
+            0,
+            0,
+            0,
+            0
+        ]
+    },
+    "judge_good_ko": {
+        "x": 546,
+        "y": -45,
+        "frame_order": [
+            0,
+            0,
+            0,
+            0
+        ]
+    },
+    "hit_effect_good": {
+        "x": 510,
+        "y": 2
+    },
+    "hit_effect_ok": {
+        "x": 510,
+        "y": 2
+    },
+    "hit_effect_good_big": {
+        "x": 510,
+        "y": 2
+    },
+    "hit_effect_ok_big": {
+        "x": 510,
+        "y": 2
+    },
+    "outer_good": {
+        "x": 450,
+        "y": -58,
+        "frame_order": [
+            0,
+            0,
+            0,
+            0
+        ]
+    },
+    "outer_ok": {
+        "x": 450,
+        "y": -58,
+        "frame_order": [
+            0,
+            0,
+            0,
+            0
+        ]
+    },
+    "outer_good_big": {
+        "x": 450,
+        "y": -58,
+        "frame_order": [
+            0,
+            0,
+            0,
+            0
+        ]
+    },
+    "outer_ok_big": {
+        "x": 450,
+        "y": -58,
+        "frame_order": [
+            0,
+            0,
+            0,
+            0
+        ]
+    },
+    "firework": {},
+    "explosion": [
+        {}
+    ],
+    "outer_effect_ok": {
+        "x": 456,
+        "y": -61
+    },
+    "outer_effect_good": {
+        "x": 456,
+        "y": -61
+    }
+}

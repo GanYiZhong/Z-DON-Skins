@@ -1,0 +1,221 @@
+[
+  {
+    "id": 0,
+    "type": "fade",
+    "duration": 100,
+    "initial_opacity": 0.0,
+    "final_opacity": 1.0,
+    "delay": 20,
+    "lock_input": true,
+    "comment": "fade in the side select box"
+  },
+  {
+    "id": 1,
+    "type": "fade",
+    "duration": 500,
+    "initial_opacity": 0.5,
+    "final_opacity": 0.4,
+    "reverse_delay": 0,
+    "loop": true,
+    "comment": "background lights flicker"
+  },
+  {
+    "id": 2,
+    "type": "move",
+    "duration": 500,
+    "total_distance": -510,
+    "ease_in": "quadratic",
+    "lock_input": true,
+    "waypoints": [
+      {
+        "at": 317,
+        "value": -615,
+        "ease_out": "quadratic"
+      }
+    ],
+    "comment": "move donchan's drum up/down a little (merged from old ids 2+3)"
+  },
+  {
+    "id": 4,
+    "type": "move",
+    "duration": 333,
+    "total_distance": -255,
+    "delay": {
+      "reference_id": 2,
+      "property": "duration"
+    },
+    "ease_in": "quadratic",
+    "lock_input": true,
+    "comment": "move donchan's drum to the left/right"
+  },
+  {
+    "id": 5,
+    "type": "texture_resize",
+    "duration": 233,
+    "initial_size": 0.1,
+    "final_size": 1.2,
+    "ease_out": "quadratic",
+    "comment": "initial cloud puff, started with the drum"
+  },
+  {
+    "id": 6,
+    "type": "texture_resize",
+    "duration": 175,
+    "initial_size": 1.2,
+    "final_size": 1.1,
+    "reverse_delay": 0,
+    "loop": true,
+    "comment": "loop resize donchan cloud back and forth, started when id 5 ends"
+  },
+  {
+    "id": 7,
+    "type": "texture_change",
+    "duration": 383,
+    "delay": {
+      "init_val": {
+        "reference_id": 4,
+        "property": "duration"
+      },
+      "reference_id": 4,
+      "property": "delay"
+    },
+    "textures": [
+      [
+        0,
+        100,
+        0
+      ],
+      [
+        100,
+        183,
+        1
+      ],
+      [
+        183,
+        283,
+        2
+      ],
+      [
+        283,
+        383,
+        3
+      ]
+    ],
+    "comment": "cloud keyframes"
+  },
+  {
+    "id": 8,
+    "type": "fade",
+    "duration": 100,
+    "delay": {
+      "init_val": 283,
+      "reference_id": 7,
+      "property": "delay"
+    },
+    "comment": "fade out the cloud"
+  },
+  {
+    "id": 9,
+    "type": "fade",
+    "duration": 443,
+    "lock_input": true,
+    "comment": "mode select decide: 283 ms of flash blinks, then the boards fade out over 160 ms (see box.lua)"
+  },
+  {
+    "id": 10,
+    "type": "move",
+    "duration": 166.67,
+    "total_distance": 75,
+    "comment": "box movement"
+  },
+  {
+    "id": 11,
+    "type": "move",
+    "duration": 133.34,
+    "total_distance": 81,
+    "delay": 200,
+    "comment": "box opening"
+  },
+  {
+    "id": 12,
+    "type": "fade",
+    "duration": 200,
+    "initial_opacity": 0.0,
+    "final_opacity": 1.0,
+    "comment": "nameplate fade in"
+  },
+  {
+    "id": 13,
+    "type": "fade",
+    "duration": 1000,
+    "loop": true,
+    "comment": "costume menu blue arrow fade"
+  },
+  {
+    "id": 14,
+    "type": "move",
+    "duration": 1000,
+    "total_distance": 37,
+    "loop": true,
+    "comment": "costume menu blue arrow move"
+  },
+  {
+    "id": 15,
+    "type": "move",
+    "duration": 300,
+    "start_position": -135,
+    "total_distance": 135,
+    "ease_in": "quadratic",
+    "waypoints": [
+      {
+        "at": 250,
+        "value": 150,
+        "ease_out": "quadratic"
+      }
+    ],
+    "comment": "player entry banner slides in"
+  },
+  {
+    "id": 16,
+    "type": "fade",
+    "duration": 250,
+    "initial_opacity": 0.0,
+    "final_opacity": 1.0,
+    "ease_out": "quadratic",
+    "comment": "player entry banner fade in"
+  },
+  {
+    "id": 17,
+    "type": "move",
+    "duration": 1000,
+    "total_distance": -30,
+    "reverse_delay": 0,
+    "loop": true,
+    "comment": "waiting panel cloud bob"
+  },
+  {
+    "id": 18,
+    "type": "texture_resize",
+    "duration": 500,
+    "initial_size": 1.4,
+    "final_size": 1.2,
+    "reverse_delay": 0,
+    "loop": true,
+    "comment": "waiting panel cloud pulse"
+  },
+  {
+    "id": 19,
+    "type": "move",
+    "duration": 383,
+    "total_distance": -33,
+    "delay": {
+      "init_val": {
+        "reference_id": 4,
+        "property": "duration"
+      },
+      "reference_id": 4,
+      "property": "delay"
+    },
+    "comment": "cloud lifts while it dissipates (Lumen 100 -> 78)"
+  }
+]

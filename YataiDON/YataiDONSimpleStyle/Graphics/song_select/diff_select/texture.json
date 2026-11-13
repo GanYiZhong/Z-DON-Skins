@@ -1,0 +1,84 @@
+{
+    "difficulty_back": {},
+    "difficulty_bar": {},
+    "difficulty_select_bar": {},
+    "difficulty_select_bar2": {},
+    "difficulty_crown": {},
+    "difficulty_star": {
+        "x": 0,
+        "y": 0
+    },
+    "ura_oni_plate": {},
+    "disable": {},
+    "back_ja": {},
+    "option_ja": {},
+    "neiro_ja": {},
+    "back_en": {},
+    "option_en": {},
+    "neiro_en": {},
+    "1p_balloon": {
+        "x": 683,
+        "y": 308
+    },
+    "2p_balloon": {
+        "x": 683,
+        "y": 308
+    },
+    "diff_tower": {
+        "x": 0,
+        "y": 0
+    },
+    "diff_tower_shadow": {},
+    "ura_switch": {
+        "x": 0,
+        "y": 0,
+        "frame_order": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ]
+    },
+    "1p_outline": {
+        "x": 621,
+        "y": 379
+    },
+    "1p_outline_half": {
+        "x": 621,
+        "y": 379
+    },
+    "2p_outline": {
+        "x": 621,
+        "y": 379
+    },
+    "2p_outline_half": {
+        "x": 621,
+        "y": 379
+    },
+    "1p_outline_back": {
+        "x": 356,
+        "y": 378
+    },
+    "1p_outline_back_half": {
+        "x": 356,
+        "y": 378
+    },
+    "2p_outline_back": {
+        "x": 356,
+        "y": 378
+    },
+    "2p_outline_back_half": {
+        "x": 356,
+        "y": 378
+    },
+    "1p_balloon_half": {
+        "x": 643,
+        "y": 308
+    },
+    "2p_balloon_half": {
+        "x": 723,
+        "y": 308
+    }
+}

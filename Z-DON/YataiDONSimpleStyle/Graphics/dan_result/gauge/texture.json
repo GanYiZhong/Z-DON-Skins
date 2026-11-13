@@ -1,0 +1,48 @@
+{
+  "1p_unfilled": {
+    "x": 0,
+    "y": 0
+  },
+  "1p_bar": {
+    "x": 0,
+    "y": 0,
+    "x2": 0
+  },
+  "rainbow": {
+    "x": 0,
+    "y": 0,
+    "x2": 0
+  },
+  "2p_unfilled": {
+    "x": 0,
+    "y": 0
+  },
+  "2p_bar": {
+    "x": 0,
+    "y": 0
+  },
+  "overlay": {
+    "x": 0,
+    "y": 0
+  },
+  "footer": {
+    "x": 0,
+    "y": 0
+  },
+  "tamashii_fire": {
+    "x": 0,
+    "y": 0
+  },
+  "tamashii": {
+    "x": 0,
+    "y": 0
+  },
+  "tamashii_dark": {
+    "x": 0,
+    "y": 0
+  },
+  "tamashii_overlay": {
+    "x": 0,
+    "y": 0
+  }
+}

@@ -1,0 +1,293 @@
+{
+  "yellow_box_top_left": {
+    "x": 0,
+    "y": 0
+  },
+  "yellow_box_top_right": {
+    "x": 0,
+    "y": 0
+  },
+  "yellow_box_bottom_left": {
+    "x": 0,
+    "y": 0
+  },
+  "yellow_box_bottom_right": {
+    "x": 0,
+    "y": 0
+  },
+  "yellow_box_top": {
+    "x": 0,
+    "y": 0
+  },
+  "yellow_box_bottom": {
+    "x": 0,
+    "y": 0
+  },
+  "yellow_box_left": {
+    "x": 0,
+    "y": 0
+  },
+  "yellow_box_right": {
+    "x": 0,
+    "y": 0
+  },
+  "yellow_box_center": {
+    "x": 0,
+    "y": 0
+  },
+  "genre_banner": {
+    "x": 824,
+    "y": 468,
+    "frame_order": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "density": 1
+  },
+  "song_label": {
+    "x": 860,
+    "y": 492
+  },
+  "difficulty": {
+    "x": 1056,
+    "y": 484,
+    "frame_order": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "difficulty_level": {
+    "x": 1056,
+    "y": 564
+  },
+  "difficulty_star": {
+    "x": 1056,
+    "y": 580
+  },
+  "difficulty_num": {
+    "x": 1144,
+    "y": 576,
+    "frame_order": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "difficulty_x": {
+    "x": 2030,
+    "y": 192
+  },
+  "difficulty_ura": {
+    "x": 1748,
+    "y": 248
+  },
+  "total_notes_bg": {
+    "x": 660,
+    "y": 364,
+    "density": 1
+  },
+  "exam_box_top_left": {
+    "x": 840,
+    "y": 1204
+  },
+  "exam_box_top_right": {
+    "x": 3500,
+    "y": 1204
+  },
+  "exam_box_bottom_left": {
+    "x": 840,
+    "y": 1940
+  },
+  "exam_box_bottom_right": {
+    "x": 3500,
+    "y": 1940
+  },
+  "exam_box_top": {
+    "x": 920,
+    "y": 1204,
+    "x2": 2580
+  },
+  "exam_box_bottom": {
+    "x": 920,
+    "y": 1940,
+    "x2": 2580
+  },
+  "exam_box_left": {
+    "x": 840,
+    "y": 1284,
+    "y2": 656
+  },
+  "exam_box_right": {
+    "x": 3500,
+    "y": 1284,
+    "y2": 656
+  },
+  "exam_box_center": {
+    "x": 920,
+    "y": 1284,
+    "x2": 2580,
+    "y2": 656
+  },
+  "hidden_title": {
+    "x": 1854,
+    "y": 348,
+    "density": 1
+  },
+  "total_notes": {
+    "x": 2360,
+    "y": 380
+  },
+  "total_notes_counter": {
+    "x": 2940,
+    "y": 372
+  },
+  "judge_num": {
+    "x": 2900,
+    "y": 1310
+  },
+  "exam_percent": {
+    "x": 2900,
+    "y": 1324
+  },
+  "exam_less": {
+    "x": 2990,
+    "y": 1320
+  },
+  "exam_more": {
+    "x": 2990,
+    "y": 1320
+  },
+  "exam_header": {
+    "x": 840,
+    "y": 1122
+  },
+  "exam_frame": {
+    "x": 834,
+    "y": 1188,
+    "density": 1
+  },
+  "exam_gauge_box": {
+    "x": 0,
+    "y": 0,
+    "density": 1
+  },
+  "judge_box": {
+    "x": 880,
+    "y": 1220,
+    "density": 1
+  },
+  "exam_gauge": {
+    "x": 0,
+    "y": 0
+  },
+  "exam_combo": {
+    "x": 0,
+    "y": 0
+  },
+  "exam_score": {
+    "x": 0,
+    "y": 0
+  },
+  "exam_hit": {
+    "x": 0,
+    "y": 0
+  },
+  "exam_roll": {
+    "x": 0,
+    "y": 0
+  },
+  "exam_judgeperfect": {
+    "x": 0,
+    "y": 0
+  },
+  "exam_judgebad": {
+    "x": 0,
+    "y": 0
+  },
+  "exam_judgegood": {
+    "x": 0,
+    "y": 0
+  },
+  "exam_seg_label": {
+    "x": 0,
+    "y": 0,
+    "frame_order": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "exam_best_pill": {},
+  "exam_gauge_best_pill": {},
+  "rank_plate": {
+    "x": 234,
+    "y": 342,
+    "frame_order": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      2,
+      2,
+      2,
+      3,
+      3,
+      3,
+      4,
+      5,
+      6,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "density": 1
+  },
+  "frame": {
+    "x": 234,
+    "y": 342,
+    "frame_order": [
+      0,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "density": 1
+  },
+  "clear_mark": {
+    "x": 216,
+    "y": 864,
+    "density": 1
+  }
+}

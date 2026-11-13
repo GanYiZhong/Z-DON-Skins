@@ -1,0 +1,225 @@
+[
+  {
+    "id": 8,
+    "type": "fade",
+    "duration": 183.33,
+    "initial_opacity": 0.0,
+    "final_opacity": 1.0,
+    "delay": 183.33,
+    "comment": "confirmation box fade in"
+  },
+  {
+    "id": 9,
+    "type": "move",
+    "duration": 83.33,
+    "start_position": 960,
+    "total_distance": -630,
+    "delay": 83.33,
+    "comment": "yellow box left out -> arcade board left edge 330"
+  },
+  {
+    "id": 10,
+    "type": "move",
+    "duration": 83.33,
+    "start_position": 960,
+    "total_distance": 834,
+    "delay": 83.33,
+    "comment": "yellow box right out -> 1794 (= 1874 - 80 edge)"
+  },
+  {
+    "id": 11,
+    "type": "move",
+    "duration": 83.33,
+    "start_position": 0,
+    "total_distance": 1384,
+    "delay": 83.33,
+    "comment": "yellow box center out -> 1544 - 2*80"
+  },
+  {
+    "id": 12,
+    "type": "fade",
+    "duration": 83.33,
+    "initial_opacity": 0.0,
+    "final_opacity": 1.0,
+    "delay": 83.33,
+    "comment": "yellow box fade in"
+  },
+  {
+    "id": 13,
+    "type": "move",
+    "duration": 116.67,
+    "start_position": 960,
+    "total_distance": -630,
+    "comment": "yellow box left out 2 -> 330"
+  },
+  {
+    "id": 14,
+    "type": "move",
+    "duration": 116.67,
+    "start_position": 960,
+    "total_distance": 834,
+    "comment": "yellow box right out 2 -> 1794"
+  },
+  {
+    "id": 15,
+    "type": "move",
+    "duration": 116.67,
+    "start_position": 0,
+    "total_distance": 1384,
+    "comment": "yellow box center out 2 -> 1384"
+  },
+  {
+    "id": 16,
+    "type": "move",
+    "duration": 133.33,
+    "start_position": 540,
+    "total_distance": -358,
+    "delay": {
+      "reference_id": 13,
+      "property": "duration"
+    },
+    "comment": "yellow box top out -> arcade board top 182"
+  },
+  {
+    "id": 17,
+    "type": "move",
+    "duration": 133.33,
+    "start_position": 0,
+    "total_distance": 712,
+    "delay": {
+      "reference_id": 13,
+      "property": "duration"
+    },
+    "comment": "yellow box center h out -> 872 - 2*80"
+  },
+  {
+    "id": 18,
+    "type": "fade",
+    "duration": 116.67,
+    "initial_opacity": 0.0,
+    "final_opacity": 1.0,
+    "delay": {
+      "init_val": {
+        "init_val": 16.67,
+        "reference_id": 16,
+        "property": "duration"
+      },
+      "reference_id": 13,
+      "property": "duration"
+    },
+    "comment": "yellow box fade in 2"
+  },
+  {
+    "id": 28,
+    "type": "move",
+    "duration": 333.33,
+    "total_distance": 548,
+    "waypoints": [
+      {
+        "at": 245.6,
+        "value": 623
+      }
+    ],
+    "comment": "ROUND 17: copied verbatim from song_select/animation.json so the 演奏オプション panel the 段位道場 confirmation dialog's option chip opens runs identically on DAN_SELECT. ModifierSelector's constructor reads 28/29/30/31/32 (+39 optional) and get_animation THROWS on a missing id; a child animation.json replaces the parent's rather than merging, so DAN_SELECT had none of them. option/neiro panel slide IN. Arcade song_select_main_diff_option MC65 'board_left' label 'in' = 20 frames @60fps (333.33 ms), PIECEWISE LINEAR through an OVERSHOOT: y 650 -> -75 over frames 0..14, then -75 -> 0 over frames 14..19. Engine space: json y 1080, resting top 532 => total_distance 548, waypoint 548+75 = 623 at 14/19 = 0.7368. (MC64 'board_right' reaches -75 one frame later, at 15/19; not portable, the two boards share one animation id here.)"
+  },
+  {
+    "id": 29,
+    "type": "fade",
+    "duration": 1000,
+    "loop": true,
+    "comment": "ROUND 17: copied verbatim from song_select/animation.json so the 演奏オプション panel the 段位道場 confirmation dialog's option chip opens runs identically on DAN_SELECT. ModifierSelector's constructor reads 28/29/30/31/32 (+39 optional) and get_animation THROWS on a missing id; a child animation.json replaces the parent's rather than merging, so DAN_SELECT had none of them. neiro blue arrow fade out"
+  },
+  {
+    "id": 30,
+    "type": "move",
+    "duration": 1000,
+    "total_distance": 5,
+    "loop": true,
+    "comment": "ROUND 17: copied verbatim from song_select/animation.json so the 演奏オプション panel the 段位道場 confirmation dialog's option chip opens runs identically on DAN_SELECT. ModifierSelector's constructor reads 28/29/30/31/32 (+39 optional) and get_animation THROWS on a missing id; a child animation.json replaces the parent's rather than merging, so DAN_SELECT had none of them. option/neiro arrow bounce (arcade arrow select: 5 px)"
+  },
+  {
+    "id": 31,
+    "type": "move",
+    "duration": 250,
+    "total_distance": 70,
+    "ease_out": "quadratic",
+    "comment": "ROUND 17: copied verbatim from song_select/animation.json so the 演奏オプション panel the 段位道場 confirmation dialog's option chip opens runs identically on DAN_SELECT. ModifierSelector's constructor reads 28/29/30/31/32 (+39 optional) and get_animation THROWS on a missing id; a child animation.json replaces the parent's rather than merging, so DAN_SELECT had none of them. option value text slide (= skin_config option_text_in.x)"
+  },
+  {
+    "id": 32,
+    "type": "fade",
+    "duration": 250,
+    "ease_out": "quadratic",
+    "comment": "ROUND 17: copied verbatim from song_select/animation.json so the 演奏オプション panel the 段位道場 confirmation dialog's option chip opens runs identically on DAN_SELECT. ModifierSelector's constructor reads 28/29/30/31/32 (+39 optional) and get_animation THROWS on a missing id; a child animation.json replaces the parent's rather than merging, so DAN_SELECT had none of them. neiro fade sideways"
+  },
+  {
+    "id": 39,
+    "type": "move",
+    "duration": 333.33,
+    "total_distance": 548,
+    "waypoints": [
+      {
+        "at": 70.17,
+        "value": -75
+      }
+    ],
+    "comment": "ROUND 17: copied verbatim from song_select/animation.json so the 演奏オプション panel the 段位道場 confirmation dialog's option chip opens runs identically on DAN_SELECT. ModifierSelector's constructor reads 28/29/30/31/32 (+39 optional) and get_animation THROWS on a missing id; a child animation.json replaces the parent's rather than merging, so DAN_SELECT had none of them. option/neiro panel slide OUT (ModifierSelector/NeiroSelector pick this up on confirm when it exists; without it they replay id 28). Arcade MC65 label 'out' = frames 25..44: y 0 -> -75 over 4 frames, then -75 -> 650 over 15. Engine space the drawn y is `attribute + song_select_offset.x` (= -548 in this skin), so attribute runs 0 -> -75 at 4/19 = 0.2105 -> 548."
+  },
+  {
+    "id": 19,
+    "type": "move",
+    "duration": 450,
+    "total_distance": 1920,
+    "ease_in": "quadratic",
+    "comment": "dan transition slide in (PyTaikoGreen x1.5)"
+  },
+  {
+    "id": 20,
+    "type": "move",
+    "duration": 383,
+    "delay": 517,
+    "total_distance": -705,
+    "waypoints": [
+      {
+        "at": 200,
+        "value": -768,
+        "ease_in": "quadratic"
+      },
+      {
+        "at": 283,
+        "value": -689
+      }
+    ],
+    "comment": "dan transition don rises from the bottom, overshoots and settles (PyTaikoGreen x1.5)"
+  },
+  {
+    "id": 21,
+    "type": "fade",
+    "duration": 400,
+    "delay": 483,
+    "initial_opacity": 0.0,
+    "final_opacity": 1.0,
+    "ease_out": "quadratic",
+    "comment": "dan transition emblem fade in"
+  },
+  {
+    "id": 22,
+    "type": "move",
+    "duration": 500,
+    "delay": 983,
+    "start_position": 0,
+    "total_distance": 90,
+    "ease_in": "quadratic",
+    "comment": "dan transition emblem spin (degrees, not scaled)"
+  },
+  {
+    "id": 23,
+    "type": "fade",
+    "duration": 483,
+    "delay": 1000,
+    "initial_opacity": 0.13,
+    "final_opacity": 1.0,
+    "ease_out": "quadratic",
+    "comment": "dan transition white flash; its end is the end of the transition"
+  }
+]

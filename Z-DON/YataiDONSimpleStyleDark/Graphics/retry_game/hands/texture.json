@@ -1,0 +1,46 @@
+{
+  "fist_outline": {
+    "x": 1532,
+    "y": 398,
+    "frame_order": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "density": 1
+  },
+  "stick_outline": {
+    "x": 1532,
+    "y": 398,
+    "frame_order": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "density": 1
+  },
+  "fist_fill": {
+    "x": 1532,
+    "y": 398,
+    "frame_order": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "density": 1
+  },
+  "stick_fill": {
+    "x": 1532,
+    "y": 398,
+    "frame_order": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "density": 1
+  }
+}

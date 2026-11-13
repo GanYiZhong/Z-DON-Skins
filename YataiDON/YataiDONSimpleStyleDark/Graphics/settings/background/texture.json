@@ -1,0 +1,41 @@
+{
+    "background": {},
+    "overlay": {
+        "x": 580,
+        "y": 357
+    },
+    "blue_arrow": [
+        {
+            "x": 611,
+            "y": 144
+        },
+        {
+            "x": 1583,
+            "y": 144
+        }
+    ],
+    "background_en": {
+        "x": 0,
+        "y": 0
+    },
+    "background_zh": {
+        "x": 0,
+        "y": 0
+    },
+    "background_ko": {
+        "x": 0,
+        "y": 0
+    },
+    "footer": {
+        "x": 0,
+        "y": 0
+    },
+    "title": {
+        "x": 630,
+        "y": 0
+    },
+    "title_highlight": {
+        "x": 630,
+        "y": 0
+    }
+}

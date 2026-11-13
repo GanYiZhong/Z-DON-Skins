@@ -1,0 +1,21 @@
+{
+  "1p_shutter": {
+    "density": 1
+  },
+  "2p_shutter": {
+    "density": 1
+  },
+  "4p_shutter": {
+    "density": 1
+  },
+  "fade": {},
+  "1p_shutter_footer": {
+    "density": 1
+  },
+  "2p_shutter_footer": {
+    "density": 1
+  },
+  "4p_shutter_footer": {
+    "density": 1
+  }
+}

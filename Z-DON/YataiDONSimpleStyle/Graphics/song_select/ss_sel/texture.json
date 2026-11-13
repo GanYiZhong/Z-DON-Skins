@@ -1,0 +1,33 @@
+{
+  "cursor": {
+    "x": 0,
+    "y": 0
+  },
+  "cursor_down": {
+    "x": 0,
+    "y": 0
+  },
+  "count_max": {
+    "x": 0,
+    "y": 0,
+    "density": 1
+  },
+  "footer": {
+    "x": 0,
+    "y": 0,
+    "density": 1
+  },
+  "pattern": {
+    "x": 0,
+    "y": 0,
+    "density": 1
+  },
+  "cloud_s": {
+    "x": 0,
+    "y": 0
+  },
+  "cloud_m": {
+    "x": 0,
+    "y": 0
+  }
+}

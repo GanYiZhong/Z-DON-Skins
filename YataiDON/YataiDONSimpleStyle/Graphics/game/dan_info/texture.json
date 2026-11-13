@@ -1,0 +1,205 @@
+{
+    "gauge_border_plate": {
+        "x": 0,
+        "y": 0
+    },
+    "gauge_border_cell": {
+        "x": 0,
+        "y": 0
+    },
+    "exam_bg": {
+        "x": 120,
+        "y": 553
+    },
+    "exam_badge": {
+        "x": 150,
+        "y": 615
+    },
+    "exam_overlay_1": {
+        "x": 509,
+        "y": 569
+    },
+    "exam_overlay_2": {
+        "x": 509,
+        "y": 569
+    },
+    "exam_frame_back_all": {
+        "x": 507,
+        "y": 569
+    },
+    "exam_frame_front_all": {
+        "x": 507,
+        "y": 569
+    },
+    "exam_max": {
+        "x": 525,
+        "y": 590,
+        "x2": 0
+    },
+    "exam_gold": {
+        "x": 525,
+        "y": 590,
+        "x2": 0
+    },
+    "exam_red": {
+        "x": 525,
+        "y": 590,
+        "x2": 0
+    },
+    "exam_fail": {
+        "x": 525,
+        "y": 590,
+        "x2": 0
+    },
+    "exam_gauge": {
+        "x": 142,
+        "y": 564
+    },
+    "exam_combo": {
+        "x": 142,
+        "y": 564
+    },
+    "exam_drumroll": {
+        "x": 142,
+        "y": 564
+    },
+    "exam_hit": {
+        "x": 142,
+        "y": 564
+    },
+    "exam_judgebad": {
+        "x": 142,
+        "y": 564
+    },
+    "exam_judgegood": {
+        "x": 142,
+        "y": 564
+    },
+    "exam_judgeperfect": {
+        "x": 142,
+        "y": 564
+    },
+    "exam_score": {
+        "x": 142,
+        "y": 564
+    },
+    "exam_roll": {
+        "x": 142,
+        "y": 564
+    },
+    "exam_less": {
+        "x": 414,
+        "y": 613
+    },
+    "exam_more": {
+        "x": 414,
+        "y": 613
+    },
+    "exam_percent": [
+        {
+            "x": 358,
+            "y": 617
+        },
+        {
+            "x": 944,
+            "y": 597
+        }
+    ],
+    "exam_border_counter": {
+        "x": 406,
+        "y": 613
+    },
+    "value_counter": {
+        "x": 920,
+        "y": 577
+    },
+    "exam_failed": {
+        "x": 669,
+        "y": 585
+    },
+    "exam_sub_bg": {
+        "x": 1216,
+        "y": 580
+    },
+    "exam_sub_track": {
+        "x": 1251,
+        "y": 580
+    },
+    "exam_sub_front": {
+        "x": 1251,
+        "y": 580
+    },
+    "exam_sub_chip": {
+        "x": 1216,
+        "y": 588
+    },
+    "exam_sub_red": {
+        "x": 1262,
+        "y": 592,
+        "x2": 0
+    },
+    "exam_sub_gold": {
+        "x": 1262,
+        "y": 592,
+        "x2": 0
+    },
+    "exam_sub_max": {
+        "x": 1262,
+        "y": 592,
+        "x2": 0
+    },
+    "exam_sub_fail": {
+        "x": 1262,
+        "y": 592,
+        "x2": 0
+    },
+    "exam_sub_counter": {
+        "x": 1478,
+        "y": 588
+    },
+    "rank_plate": {
+        "x": 1535,
+        "y": 524
+    },
+    "frame": {
+        "x": 1700,
+        "y": 560
+    },
+    "total_notes": {
+        "x": 0,
+        "y": 540
+    },
+    "total_notes_counter": {
+        "x": 1560,
+        "y": 958
+    },
+    "exam_down80": {
+        "x": 525,
+        "y": 590,
+        "x2": 0
+    },
+    "exam_rainbow_all": {
+        "x": 525,
+        "y": 590,
+        "x2": 0
+    },
+    "exam_rainbow": {
+        "x": 525,
+        "y": 590,
+        "x2": 0
+    },
+    "exam_sub_down80": {
+        "x": 1262,
+        "y": 592,
+        "x2": 0
+    },
+    "exam_sub_rainbow": {
+        "x": 1262,
+        "y": 592,
+        "x2": 0
+    },
+    "exam_flash": {
+        "x": 472,
+        "y": 574
+    }
+}

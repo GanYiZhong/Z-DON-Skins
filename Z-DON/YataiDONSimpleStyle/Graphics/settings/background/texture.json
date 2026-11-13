@@ -1,0 +1,49 @@
+{
+  "background": {
+    "density": 1
+  },
+  "overlay": {
+    "x": 1160,
+    "y": 714,
+    "density": 1
+  },
+  "blue_arrow": [
+    {
+      "x": 1222,
+      "y": 288
+    },
+    {
+      "x": 3166,
+      "y": 288
+    }
+  ],
+  "background_en": {
+    "x": 0,
+    "y": 0
+  },
+  "background_zh": {
+    "x": 0,
+    "y": 0,
+    "density": 1
+  },
+  "background_ko": {
+    "x": 0,
+    "y": 0,
+    "density": 1
+  },
+  "footer": {
+    "x": 0,
+    "y": 0,
+    "density": 1
+  },
+  "title": {
+    "x": 1260,
+    "y": 0,
+    "density": 1
+  },
+  "title_highlight": {
+    "x": 1260,
+    "y": 0,
+    "density": 1
+  }
+}

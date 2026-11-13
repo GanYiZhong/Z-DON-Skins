@@ -1,0 +1,35 @@
+{
+  "scene": {
+    "x": 0,
+    "y": 0,
+    "density": 1
+  },
+  "band": {
+    "x": 0,
+    "y": 0,
+    "density": 1
+  },
+  "hint": {
+    "x": 0,
+    "y": 0,
+    "density": 1
+  },
+  "dojo_plate": {
+    "x": 0,
+    "y": 0
+  },
+  "game_over": {
+    "x": 0,
+    "y": 0,
+    "density": 1
+  },
+  "go_letters": {
+    "x": 0,
+    "y": 0,
+    "density": 1
+  },
+  "lamp": {
+    "x": 0,
+    "y": 0
+  }
+}

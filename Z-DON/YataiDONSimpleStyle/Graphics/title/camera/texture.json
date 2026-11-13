@@ -1,0 +1,174 @@
+{
+  "background": {
+    "x": -24,
+    "y": -24
+  },
+  "bana_advert_outline": {
+    "x": 0,
+    "y": 0
+  },
+  "bana_advert_background": {
+    "x": 14,
+    "y": 18
+  },
+  "banapassport": {
+    "x": 126,
+    "y": 86
+  },
+  "or": {
+    "x": 300,
+    "y": 480
+  },
+  "osaifukeitai": {
+    "x": 128,
+    "y": 582
+  },
+  "chara_0": {
+    "x": 60,
+    "y": 986
+  },
+  "reader": {
+    "x": 12,
+    "y": 18
+  },
+  "tap": {
+    "x": 888,
+    "y": 1472
+  },
+  "touch": {
+    "x": 12,
+    "y": 638
+  },
+  "touch_gleam": {
+    "x": 254,
+    "y": 888
+  },
+  "rewards": {
+    "x": 354,
+    "y": 264
+  },
+  "rewards_top_text": {
+    "x": 32,
+    "y": 42
+  },
+  "rewards_bottom_text": {
+    "x": 32,
+    "y": 978
+  },
+  "rewards_donchan": {
+    "x": 108,
+    "y": 488
+  },
+  "card_or_phone_bg": {
+    "x": -2,
+    "y": 62
+  },
+  "card_or_phone_card": {
+    "x": 68,
+    "y": 294
+  },
+  "card_or_phone_phone": {
+    "x": 200,
+    "y": 702
+  },
+  "get_chara_0": {
+    "x": 26,
+    "y": 546
+  },
+  "get_chara_1": {
+    "x": 140,
+    "y": 594
+  },
+  "get_text": {
+    "x": 2,
+    "y": 50
+  },
+  "camera_cloud": {
+    "x": 924,
+    "y": 554
+  },
+  "camera_cloud_text_1": {
+    "x": 1134,
+    "y": 836
+  },
+  "camera_cloud_text_2": {
+    "x": 1308,
+    "y": 746
+  },
+  "live_text": {
+    "x": 2588,
+    "y": 1638
+  },
+  "live_icon": {
+    "x": 2462,
+    "y": 1622
+  },
+  "dress_up_card": {
+    "x": 104,
+    "y": 1140
+  },
+  "dress_up_don": {
+    "x": 116,
+    "y": 384
+  },
+  "dress_up_title": {
+    "x": 50,
+    "y": 50
+  },
+  "dress_up_sparkle": {
+    "x": 534,
+    "y": 564
+  },
+  "dress_up_0": {
+    "x": 350,
+    "y": 230
+  },
+  "dress_up_1": {
+    "x": 26,
+    "y": 296
+  },
+  "dress_up_2": {
+    "x": 24,
+    "y": 702
+  },
+  "dress_up_3": {
+    "x": 344,
+    "y": 726
+  },
+  "dress_up_4": {
+    "x": 54,
+    "y": 908
+  },
+  "shiba": {
+    "x": 1362,
+    "y": 606
+  },
+  "shiba_tail": {
+    "x": 1790,
+    "y": 1808
+  },
+  "shiba_puff": {
+    "x": 1586,
+    "y": 906
+  },
+  "fox": {
+    "x": 738,
+    "y": 648
+  },
+  "bird_yellow": {
+    "x": 0,
+    "y": 0
+  },
+  "bird_pink": {
+    "x": 0,
+    "y": 0
+  },
+  "bird_green": {
+    "x": 0,
+    "y": 0
+  },
+  "bird_blue": {
+    "x": 0,
+    "y": 0
+  }
+}

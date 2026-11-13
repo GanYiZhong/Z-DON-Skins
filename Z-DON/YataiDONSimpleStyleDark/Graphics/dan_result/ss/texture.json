@@ -1,0 +1,145 @@
+{
+  "bg": {
+    "x": 0,
+    "y": 0,
+    "density": 1
+  },
+  "board": {
+    "x": 0,
+    "y": 0,
+    "density": 1
+  },
+  "plate": {
+    "x": 0,
+    "y": 0,
+    "density": 1
+  },
+  "song_row": {
+    "x": 0,
+    "y": 0,
+    "density": 1
+  },
+  "scorebox": {
+    "x": 0,
+    "y": 0,
+    "density": 1
+  },
+  "score_digit": {
+    "x": 0,
+    "y": 0
+  },
+  "totals": {
+    "x": 0,
+    "y": 0,
+    "density": 1
+  },
+  "exam_row": {
+    "x": 0,
+    "y": 0,
+    "density": 1
+  },
+  "stamp_ja": {
+    "x": 0,
+    "y": 0,
+    "frame_order": [
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      2
+    ],
+    "density": 1
+  },
+  "gokaku_ja": {
+    "x": 0,
+    "y": 0,
+    "density": 1
+  },
+  "stamp_en": {
+    "x": 0,
+    "y": 0,
+    "frame_order": [
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      2
+    ],
+    "density": 1
+  },
+  "gokaku_en": {
+    "x": 0,
+    "y": 0,
+    "density": 1
+  },
+  "stamp_zh": {
+    "x": 0,
+    "y": 0,
+    "frame_order": [
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      2
+    ],
+    "density": 1
+  },
+  "gokaku_zh": {
+    "x": 0,
+    "y": 0,
+    "density": 1
+  },
+  "stamp_ko": {
+    "x": 0,
+    "y": 0,
+    "frame_order": [
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      2
+    ],
+    "density": 1
+  },
+  "gokaku_ko": {
+    "x": 0,
+    "y": 0,
+    "density": 1
+  },
+  "soul": {
+    "x": 0,
+    "y": 0
+  },
+  "stage": {
+    "x": 0,
+    "y": 0,
+    "density": 1
+  },
+  "dialog": {
+    "x": 0,
+    "y": 0,
+    "density": 1
+  },
+  "fw_rise": {
+    "x": 0,
+    "y": 0
+  },
+  "fw_0": {
+    "x": 0,
+    "y": 0,
+    "density": 1
+  },
+  "fw_1": {
+    "x": 0,
+    "y": 0,
+    "density": 1
+  }
+}

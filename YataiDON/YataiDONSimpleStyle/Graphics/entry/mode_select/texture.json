@@ -1,0 +1,62 @@
+{
+    "box": {
+        "x": 380,
+        "y": 305
+    },
+    "box_highlight_center": {
+        "x": 380,
+        "y": 305
+    },
+    "box_highlight_left": {
+        "x": 0,
+        "y": 0
+    },
+    "box_highlight_right": {
+        "x": 0,
+        "y": 0
+    },
+    "arrow": {
+        "x": 0,
+        "y": 0
+    },
+    "flash": {
+        "x": 0,
+        "y": 0
+    },
+    "box_grey": {
+        "x": 0,
+        "y": 0
+    },
+    "box_highlight_grey_left": {
+        "x": 0,
+        "y": 0
+    },
+    "box_highlight_grey_right": {
+        "x": 0,
+        "y": 0
+    },
+    "box_highlight_grey_center": {
+        "x": 0,
+        "y": 0
+    },
+    "badge_new": {
+        "x": 0,
+        "y": 0
+    },
+    "star": {
+        "x": 0,
+        "y": 0
+    },
+    "badge_two_player": {
+        "x": 0,
+        "y": 0
+    },
+    "badge_one_player": {
+        "x": 0,
+        "y": 0
+    },
+    "badge_one_player_grey": {
+        "x": 0,
+        "y": 0
+    }
+}

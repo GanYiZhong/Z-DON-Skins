@@ -1,0 +1,229 @@
+{
+    "exam_bg": {
+        "x": 396,
+        "y": 345
+    },
+    "exam_overlay_1": {
+        "x": 783,
+        "y": 366
+    },
+    "exam_overlay_2": {
+        "x": 783,
+        "y": 366
+    },
+    "exam_max": {
+        "x": 801,
+        "y": 389,
+        "x2": 0
+    },
+    "exam_gold": {
+        "x": 801,
+        "y": 389,
+        "x2": 0
+    },
+    "exam_red": {
+        "x": 801,
+        "y": 389,
+        "x2": 0
+    },
+    "exam_gauge": {
+        "x": 501,
+        "y": 355
+    },
+    "exam_combo": {
+        "x": 501,
+        "y": 355
+    },
+    "exam_drumroll": {
+        "x": 501,
+        "y": 355
+    },
+    "exam_hit": {
+        "x": 501,
+        "y": 355
+    },
+    "exam_judgebad": {
+        "x": 501,
+        "y": 355
+    },
+    "exam_judgegood": {
+        "x": 501,
+        "y": 355
+    },
+    "exam_judgeperfect": {
+        "x": 501,
+        "y": 355
+    },
+    "exam_score": {
+        "x": 501,
+        "y": 355
+    },
+    "exam_roll": {
+        "x": 501,
+        "y": 355
+    },
+    "exam_less": [
+        {
+            "x": 498,
+            "y": 408
+        },
+        {
+            "x": 609,
+            "y": 455
+        }
+    ],
+    "exam_more": [
+        {
+            "x": 498,
+            "y": 408
+        },
+        {
+            "x": 609,
+            "y": 455
+        }
+    ],
+    "exam_percent": [
+        {
+            "x": 498,
+            "y": 407
+        },
+        {
+            "x": 822,
+            "y": 396
+        }
+    ],
+    "exam_border_counter": [
+        {
+            "x": 498,
+            "y": 408
+        },
+        {
+            "x": 609,
+            "y": 456
+        }
+    ],
+    "value_counter": [
+        {
+            "x": 498,
+            "y": 408
+        },
+        {
+            "x": 807,
+            "y": 346
+        }
+    ],
+    "exam_failed": {
+        "x": 999,
+        "y": 395
+    },
+    "fail": {
+        "x": 10,
+        "y": 476
+    },
+    "red_clear": {
+        "x": 7,
+        "y": 396
+    },
+    "gold_clear": {
+        "x": 7,
+        "y": 396
+    },
+    "exam_badge": {
+        "x": 420,
+        "y": 412
+    },
+    "exam_sub_bg": {
+        "x": 513,
+        "y": 412
+    },
+    "exam_sub_front": {
+        "x": 513,
+        "y": 412
+    },
+    "exam_sub_red": {
+        "x": 523,
+        "y": 423,
+        "x2": 0
+    },
+    "exam_sub_gold": {
+        "x": 523,
+        "y": 423,
+        "x2": 0
+    },
+    "exam_sub_max": {
+        "x": 523,
+        "y": 423,
+        "x2": 0
+    },
+    "exam_sub_fail": {
+        "x": 523,
+        "y": 423,
+        "x2": 0
+    },
+    "exam_sub_counter": {
+        "x": 527,
+        "y": 398
+    },
+    "gold_clear_02": {
+        "x": 7,
+        "y": 396
+    },
+    "gold_clear_03": {
+        "x": 7,
+        "y": 396
+    },
+    "red_clear_02": {
+        "x": 7,
+        "y": 396
+    },
+    "red_clear_03": {
+        "x": 7,
+        "y": 396
+    },
+    "exam_down80": {
+        "x": 801,
+        "y": 389,
+        "x2": 0
+    },
+    "exam_rainbow": {
+        "x": 801,
+        "y": 387,
+        "x2": 0
+    },
+    "exam_sub_down80": {
+        "x": 523,
+        "y": 423,
+        "x2": 0
+    },
+    "exam_sub_rainbow": {
+        "x": 523,
+        "y": 423,
+        "x2": 0
+    },
+    "value_counter_max": [
+        {
+            "x": 498,
+            "y": 408
+        },
+        {
+            "x": 807,
+            "y": 346
+        }
+    ],
+    "exam_sub_counter_max": {
+        "x": 527,
+        "y": 398
+    },
+    "exam_combo_text": {
+        "x": 0,
+        "y": 0
+    },
+    "exam_unit_hit": {
+        "x": 0,
+        "y": 0
+    },
+    "exam_unit_score": {
+        "x": 0,
+        "y": 0
+    }
+}

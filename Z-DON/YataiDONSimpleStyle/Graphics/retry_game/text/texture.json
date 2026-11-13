@@ -1,0 +1,50 @@
+{
+  "rule_ja": {
+    "x": 552,
+    "y": 72,
+    "density": 1
+  },
+  "ready_ja": {
+    "x": 1440,
+    "y": 888,
+    "density": 1
+  },
+  "go_ja": {
+    "x": 900,
+    "y": 816,
+    "density": 1
+  },
+  "success_ja": {
+    "x": 900,
+    "y": 680,
+    "density": 1
+  },
+  "failure_ja": {
+    "x": 900,
+    "y": 816,
+    "density": 1
+  },
+  "more_ja": {
+    "x": 900,
+    "y": 894,
+    "density": 1
+  },
+  "burst_ja": {
+    "x": 1140,
+    "y": 918,
+    "density": 1
+  },
+  "digits": {
+    "x": 1644,
+    "y": 66,
+    "frame_order": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "density": 1
+  }
+}

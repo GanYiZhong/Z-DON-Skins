@@ -1,0 +1,174 @@
+{
+    "1p_unfilled_hard": {
+        "x": 0,
+        "y": 0
+    },
+    "2p_unfilled_hard": {
+        "x": 0,
+        "y": 0
+    },
+    "overlay_hard": {
+        "x": 0,
+        "y": 0
+    },
+    "rainbow_hard": {
+        "x": 0,
+        "y": 0,
+        "frame_order": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ]
+    },
+    "1p_unfilled_normal": {
+        "x": 0,
+        "y": 0
+    },
+    "2p_unfilled_normal": {
+        "x": 0,
+        "y": 0
+    },
+    "overlay_normal": {
+        "x": 0,
+        "y": 0
+    },
+    "rainbow_normal": {
+        "x": 0,
+        "y": 0,
+        "frame_order": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ]
+    },
+    "1p_unfilled_easy": {
+        "x": 0,
+        "y": 0
+    },
+    "2p_unfilled_easy": {
+        "x": 0,
+        "y": 0
+    },
+    "overlay_easy": {
+        "x": 0,
+        "y": 0
+    },
+    "rainbow_easy": {
+        "x": 0,
+        "y": 0,
+        "frame_order": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ]
+    },
+    "clear": [
+        {
+            "x": 312,
+            "y": 12
+        },
+        {
+            "x": 364,
+            "y": 12
+        },
+        {
+            "x": 417,
+            "y": 12
+        }
+    ],
+    "clear_dark": [
+        {
+            "x": 312,
+            "y": 12
+        },
+        {
+            "x": 364,
+            "y": 12
+        },
+        {
+            "x": 417,
+            "y": 12
+        }
+    ],
+    "bar_clear_transition": {
+        "x": 6,
+        "y": 9
+    },
+    "bar_clear_top": {
+        "x": 7,
+        "y": 10
+    },
+    "bar_clear_bottom": {
+        "x": 7,
+        "y": 27
+    },
+    "1p_bar": {
+        "x": 7,
+        "y": 27
+    },
+    "2p_bar": {
+        "x": 7,
+        "y": 27
+    },
+    "bar_clear_transition_fade": {
+        "x": -3,
+        "y": 10
+    },
+    "bar_clear_fade": {
+        "x": -3,
+        "y": 10
+    },
+    "1p_bar_fade": {
+        "x": -3,
+        "y": 21
+    },
+    "2p_bar_fade": {
+        "x": -3,
+        "y": 21
+    },
+    "tamashii": {
+        "x": 525,
+        "y": 4
+    },
+    "tamashii_dark": {
+        "x": 525,
+        "y": 4
+    },
+    "tamashii_overlay": {
+        "x": 525,
+        "y": 4
+    },
+    "tamashii_fire": {
+        "x": 403,
+        "y": -184,
+        "frame_order": [
+            0,
+            1,
+            2,
+            3,
+            0,
+            1,
+            2,
+            3
+        ]
+    },
+    "footer": {
+        "x": 531,
+        "y": 7
+    }
+}

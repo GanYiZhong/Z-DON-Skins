@@ -1,0 +1,3374 @@
+{
+  "indicator_text": {
+    "text": {
+      "ja": "フチでえらんで       面で決定",
+      "en": "Rim: move           Face: OK",
+      "zh": "鼓邊：選擇          鼓面：決定",
+      "ko": "테두리: 선택       면: 결정"
+    },
+    "x": 169.5,
+    "font_size": 39
+  },
+  "indicator_text_skip": {
+    "text": {
+      "ja": "面をたたいてスキップ",
+      "en": "Hit the face to skip",
+      "zh": "敲鼓面跳過",
+      "ko": "면을 쳐서 스킵"
+    },
+    "x": 232.5,
+    "font_size": 39
+  },
+  "indicator_text_cancel": {
+    "text": {
+      "ja": "りょうほうの フチで もどる",
+      "en": "Both rims: back",
+      "zh": "敲兩側鼓邊返回",
+      "ko": "양쪽 테두리: 돌아가기"
+    },
+    "x": 180.0,
+    "font_size": 39
+  },
+  "indicator_text_wait": {
+    "text": {
+      "ja": "ちょっと まってね",
+      "en": "One moment...",
+      "zh": "請稍等",
+      "ko": "잠깐만 기다려 줘"
+    },
+    "x": 247.5,
+    "font_size": 39
+  },
+  "entry_game": {
+    "text": {
+      "ja": "演奏ゲーム",
+      "en": "Play",
+      "zh": "演奏遊戲",
+      "ko": "연주 게임"
+    }
+  },
+  "entry_practice": {
+    "text": {
+      "ja": "特訓モード",
+      "en": "Practice",
+      "zh": "特訓模式",
+      "ko": "특훈 모드"
+    }
+  },
+  "entry_settings": {
+    "text": {
+      "ja": "ゲーム設定",
+      "en": "Settings",
+      "zh": "遊戲設定",
+      "ko": "게임 설정"
+    }
+  },
+  "entry_ai_battle": {
+    "text": {
+      "ja": "AIバトル",
+      "en": "AI Battle",
+      "zh": "AI對戰",
+      "ko": "AI 배틀"
+    }
+  },
+  "entry_record": {
+    "text": {
+      "ja": "録画モード",
+      "en": "Recording",
+      "zh": "錄影模式",
+      "ko": "녹화 모드"
+    }
+  },
+  "entry_record_comment_1": {
+    "text": {
+      "ja": "えらんだ曲を 動画に",
+      "en": "Turn a song and course",
+      "zh": "把選好的歌曲和難度",
+      "ko": "고른 곡과 난이도를"
+    }
+  },
+  "entry_record_comment_2": {
+    "text": {
+      "ja": "書き出せるよ！",
+      "en": "into a video!",
+      "zh": "匯出成影片！",
+      "ko": "영상으로 저장!"
+    }
+  },
+  "entry_costume": {
+    "text": {
+      "ja": "きせかえ",
+      "en": "Costume",
+      "zh": "裝扮",
+      "ko": "옷 갈아입기"
+    }
+  },
+  "entry_game_desc": {
+    "text": {
+      "ja": "すきな 曲と むずかしさで\nあそべるよ！",
+      "en": "Pick a song and a course\nand play!",
+      "zh": "選喜歡的歌曲和難度\n來演奏吧！",
+      "ko": "좋아하는 곡과 난이도로\n플레이!"
+    }
+  },
+  "entry_dan_desc": {
+    "text": {
+      "ja": "段位道場で うでだめし！\n段位を めざそう",
+      "en": "Test your skill in the dan\ncourses!",
+      "zh": "在段位道場試試身手，\n衝擊段位吧！",
+      "ko": "단위도장에서 실력을\n시험해 보자!"
+    }
+  },
+  "entry_practice_desc": {
+    "text": {
+      "ja": "早送り・巻き戻し・テンポ変更で\nじっくり 特訓できるよ！",
+      "en": "Fast-forward, rewind and\nslow down to practise!",
+      "zh": "快進、倒帶、變速，\n慢慢特訓！",
+      "ko": "빨리감기·되감기·템포 변경으로\n차근차근 특훈!"
+    }
+  },
+  "entry_costume_desc": {
+    "text": {
+      "ja": "きせかえで\nイメチェンしよう！",
+      "en": "Dress up your\ncharacter!",
+      "zh": "換上新裝扮吧！",
+      "ko": "옷을 갈아입혀 보자!"
+    }
+  },
+  "entry_settings_desc": {
+    "text": {
+      "ja": "あそびかたや 画面の\nせっていを かえるよ",
+      "en": "Change how the game\nplays and looks",
+      "zh": "更改遊戲和畫面設定",
+      "ko": "게임과 화면 설정을\n바꿔요"
+    }
+  },
+  "entry_name_confirm": {
+    "text": {
+      "ja": "この なまえで いい？",
+      "en": "Use this name?",
+      "zh": "用這個名字嗎？",
+      "ko": "이 이름으로 할까?"
+    }
+  },
+  "entry_name_yes": {
+    "text": {
+      "ja": "はい",
+      "en": "Yes",
+      "zh": "是",
+      "ko": "예"
+    }
+  },
+  "entry_name_no": {
+    "text": {
+      "ja": "いいえ",
+      "en": "No",
+      "zh": "否",
+      "ko": "아니요"
+    }
+  },
+  "entry_name_back": {
+    "text": {
+      "ja": "もどる",
+      "en": "Back",
+      "zh": "返回",
+      "ko": "뒤로"
+    }
+  },
+  "entry_name_done": {
+    "text": {
+      "ja": "できた",
+      "en": "Done",
+      "zh": "完成",
+      "ko": "완료"
+    }
+  },
+  "entry_name_title": {
+    "text": {
+      "ja": "なまえを えらんでね",
+      "en": "Pick a name",
+      "zh": "請選擇名字",
+      "ko": "이름을 골라 줘"
+    }
+  },
+  "entry_costume_text_head": {
+    "text": {
+      "ja": "あたまを えらんでね",
+      "en": "Pick a head",
+      "zh": "選擇頭部",
+      "ko": "머리를 골라 줘"
+    }
+  },
+  "entry_costume_text_body": {
+    "text": {
+      "ja": "からだを えらんでね",
+      "en": "Pick a body",
+      "zh": "選擇身體",
+      "ko": "몸을 골라 줘"
+    }
+  },
+  "entry_costume_text_suit": {
+    "text": {
+      "ja": "きぐるみを えらんでね",
+      "en": "Pick a suit",
+      "zh": "選擇玩偶裝",
+      "ko": "인형옷을 골라 줘"
+    }
+  },
+  "entry_1p": {
+    "text": {
+      "ja": "左で あそぶ",
+      "en": "Left side",
+      "zh": "使用左側",
+      "ko": "왼쪽으로"
+    },
+    "x": 234.0,
+    "y": 60.0,
+    "font_size": 39
+  },
+  "entry_2p": {
+    "text": {
+      "ja": "右で あそぶ",
+      "en": "Right side",
+      "zh": "使用右側",
+      "ko": "오른쪽으로"
+    },
+    "x": 148.5,
+    "y": 60.0,
+    "font_size": 39
+  },
+  "entry_wait": {
+    "text": {
+      "ja": "太鼓をたたいてスタート！",
+      "en": "Hit the drum to start!",
+      "zh": "敲太鼓開始！",
+      "ko": "북을 쳐서 시작!"
+    },
+    "x": 376.5,
+    "y": 307.5,
+    "font_size": 49
+  },
+  "entry_question": {
+    "text": {
+      "ja": "どっちで あそぶ？",
+      "en": "Which side?",
+      "zh": "用哪一側？",
+      "ko": "어느 쪽으로 할까?"
+    },
+    "x": 954.0,
+    "y": 214.5,
+    "font_size": 49
+  },
+  "modifier_name_auto": {
+    "text": {
+      "ja": "オート",
+      "en": "Auto",
+      "zh": "自動",
+      "ko": "오토"
+    }
+  },
+  "modifier_name_speed": {
+    "text": {
+      "ja": "はやさ",
+      "en": "Speed",
+      "zh": "速度",
+      "ko": "속도"
+    }
+  },
+  "modifier_name_display": {
+    "text": {
+      "ja": "ドロン",
+      "en": "Display",
+      "zh": "隱身",
+      "ko": "도론"
+    }
+  },
+  "modifier_name_inverse": {
+    "text": {
+      "ja": "あべこべ",
+      "en": "Inverse",
+      "zh": "顛倒",
+      "ko": "아베코베"
+    }
+  },
+  "modifier_name_random": {
+    "text": {
+      "ja": "ランダム",
+      "en": "Random",
+      "zh": "隨機",
+      "ko": "랜덤"
+    }
+  },
+  "modifier_text_true": {
+    "text": {
+      "ja": "する",
+      "en": "On",
+      "zh": "開",
+      "ko": "켬"
+    }
+  },
+  "modifier_text_false": {
+    "text": {
+      "ja": "しない",
+      "en": "Off",
+      "zh": "關",
+      "ko": "끔"
+    }
+  },
+  "modifier_text_kimagure": {
+    "text": {
+      "ja": "きまぐれ",
+      "en": "Kimagure",
+      "zh": "隨意",
+      "ko": "기마구레"
+    }
+  },
+  "modifier_text_detarame": {
+    "text": {
+      "ja": "でたらめ",
+      "en": "Detarame",
+      "zh": "亂打",
+      "ko": "데타라메"
+    }
+  },
+  "leaderboard_title": {
+    "text": {
+      "ja": "じこベスト",
+      "en": "My Best",
+      "zh": "個人最佳",
+      "ko": "개인 최고"
+    }
+  },
+  "box_back_text": {
+    "text": {
+      "ja": "もどる",
+      "en": "Back",
+      "zh": "返回",
+      "ko": "뒤로"
+    },
+    "x": 70.5,
+    "y": 259.5,
+    "font_size": 60
+  },
+  "diff_tower_easy": {
+    "text": {
+      "ja": "かんたん",
+      "en": "Easy",
+      "zh": "簡單",
+      "ko": "쉬움"
+    }
+  },
+  "diff_tower_normal": {
+    "text": {
+      "ja": "ふつう",
+      "en": "Normal",
+      "zh": "普通",
+      "ko": "보통"
+    }
+  },
+  "diff_tower_hard": {
+    "text": {
+      "ja": "むずかしい",
+      "en": "Hard",
+      "zh": "困難",
+      "ko": "어려움"
+    }
+  },
+  "diff_tower_oni": {
+    "text": {
+      "ja": "おに",
+      "en": "Oni",
+      "zh": "魔王",
+      "ko": "오니"
+    }
+  },
+  "diff_tower_ura": {
+    "text": {
+      "ja": "おに",
+      "en": "Ura",
+      "zh": "裏魔王",
+      "ko": "우라"
+    }
+  },
+  "dan_exam_label_gauge": {
+    "text": {
+      "ja": "魂ゲージ",
+      "en": "Soul Gauge",
+      "zh": "魂槽",
+      "ko": "혼 게이지"
+    }
+  },
+  "dan_exam_label_judgeperfect": {
+    "text": {
+      "ja": "良の数",
+      "en": "Good",
+      "zh": "良數",
+      "ko": "양 수"
+    }
+  },
+  "dan_exam_label_judgegood": {
+    "text": {
+      "ja": "可の数",
+      "en": "OK",
+      "zh": "可數",
+      "ko": "가 수"
+    }
+  },
+  "dan_exam_label_judgebad": {
+    "text": {
+      "ja": "不可の数",
+      "en": "Bad",
+      "zh": "不可數",
+      "ko": "불가 수"
+    }
+  },
+  "dan_exam_label_combo": {
+    "text": {
+      "ja": "コンボ数",
+      "en": "Combo",
+      "zh": "連擊數",
+      "ko": "콤보 수"
+    }
+  },
+  "dan_exam_label_renda": {
+    "text": {
+      "ja": "連打数",
+      "en": "Drumroll",
+      "zh": "連打數",
+      "ko": "연타 수"
+    }
+  },
+  "dan_exam_label_hit": {
+    "text": {
+      "ja": "たたけた数",
+      "en": "Hits",
+      "zh": "擊中數",
+      "ko": "친 수"
+    }
+  },
+  "dan_exam_label_score": {
+    "text": {
+      "ja": "スコア",
+      "en": "Score",
+      "zh": "分數",
+      "ko": "점수"
+    }
+  },
+  "dan_game_total_notes_text": {
+    "text": {
+      "ja": "のこり音符",
+      "en": "Notes left",
+      "zh": "剩餘音符",
+      "ko": "남은 음표"
+    },
+    "x": 222.0,
+    "y": 748.5,
+    "width": 276.0,
+    "font_size": 54,
+    "outline": 4.0
+  },
+  "dan_exam_text_more": {
+    "text": {
+      "ja": "%s 以上",
+      "en": "%s or more",
+      "zh": "%s 以上",
+      "ko": "%s 이상"
+    }
+  },
+  "practice_menu_end_game": {
+    "text": {
+      "ja": "ゲームをおわる",
+      "en": "Quit",
+      "zh": "結束遊戲",
+      "ko": "게임 종료"
+    }
+  },
+  "practice_menu_another_song": {
+    "text": {
+      "ja": "ほかの曲にする",
+      "en": "Another song",
+      "zh": "換一首歌",
+      "ko": "다른 곡"
+    }
+  },
+  "practice_menu_restart": {
+    "text": {
+      "ja": "さいしょから",
+      "en": "From the top",
+      "zh": "從頭開始",
+      "ko": "처음부터"
+    }
+  },
+  "practice_menu_auto_play": {
+    "text": {
+      "ja": "オート演奏",
+      "en": "Auto play",
+      "zh": "自動演奏",
+      "ko": "오토 연주"
+    }
+  },
+  "practice_menu_jump_to_mark": {
+    "text": {
+      "ja": "ジャンプポイントへ",
+      "en": "Go to mark",
+      "zh": "跳到標記",
+      "ko": "마크로 이동"
+    }
+  },
+  "practice_menu_set_mark": {
+    "text": {
+      "ja": "ジャンプポイントをおく",
+      "en": "Set mark",
+      "zh": "設定標記",
+      "ko": "마크 설정"
+    }
+  },
+  "practice_menu_close": {
+    "text": {
+      "ja": "メニューをとじる",
+      "en": "Close",
+      "zh": "關閉選單",
+      "ko": "메뉴 닫기"
+    }
+  },
+  "practice_menu_confirm_end": {
+    "text": {
+      "ja": "特訓モードを おわる？",
+      "en": "Leave practice?",
+      "zh": "結束特訓嗎？",
+      "ko": "특훈을 끝낼까?"
+    }
+  },
+  "practice_menu_confirm_another": {
+    "text": {
+      "ja": "ほかの曲に する？",
+      "en": "Pick another song?",
+      "zh": "換一首歌嗎？",
+      "ko": "다른 곡으로 할까?"
+    }
+  },
+  "practice_menu_confirm_restart": {
+    "text": {
+      "ja": "さいしょから 演奏する？",
+      "en": "Start over?",
+      "zh": "從頭演奏嗎？",
+      "ko": "처음부터 할까?"
+    }
+  },
+  "practice_menu_confirm_auto": {
+    "text": {
+      "ja": "オート演奏を せっていするよ",
+      "en": "Set auto play",
+      "zh": "設定自動演奏",
+      "ko": "오토 연주 설정"
+    }
+  },
+  "practice_menu_yes": {
+    "text": {
+      "ja": "はい",
+      "en": "Yes",
+      "zh": "是",
+      "ko": "예"
+    }
+  },
+  "practice_menu_no": {
+    "text": {
+      "ja": "いいえ",
+      "en": "No",
+      "zh": "否",
+      "ko": "아니요"
+    }
+  },
+  "practice_menu_auto_on": {
+    "text": {
+      "ja": "ON",
+      "en": "ON",
+      "zh": "ON",
+      "ko": "ON"
+    }
+  },
+  "practice_menu_auto_off": {
+    "text": {
+      "ja": "OFF",
+      "en": "OFF",
+      "zh": "OFF",
+      "ko": "OFF"
+    }
+  },
+  "network_msg_clear_reading": {
+    "text": {
+      "ja": "通信中…",
+      "en": "Connecting...",
+      "zh": "通訊中…",
+      "ko": "통신 중…"
+    }
+  },
+  "network_msg_clear_reading_ok": {
+    "text": {
+      "ja": "よみこみ せいこう！\nカードの とりわすれに 気をつけてね",
+      "en": "Read OK!\nRemember to take your card.",
+      "zh": "讀取成功！\n別忘了取回卡片哦",
+      "ko": "읽기 성공!\n카드를 잊지 말고 챙겨 가세요"
+    }
+  },
+  "network_msg_error_reading_ng": {
+    "text": {
+      "ja": "よみこみに しっぱいしました\nカードの とりわすれに 気をつけてね",
+      "en": "Read failed.\nRemember to take your card.",
+      "zh": "讀取失敗\n別忘了取回卡片哦",
+      "ko": "읽기에 실패했습니다\n카드를 잊지 말고 챙겨 가세요"
+    }
+  },
+  "network_msg_error_data_ban": {
+    "text": {
+      "ja": "このデータは つかえません\nカードサイトに おといあわせください",
+      "en": "This data cannot be used.\nPlease contact the card site.",
+      "zh": "此資料無法使用\n請聯絡卡片網站",
+      "ko": "이 데이터는 사용할 수 없습니다\n카드 사이트에 문의해 주세요"
+    }
+  },
+  "network_msg_error_disconnect": {
+    "text": {
+      "ja": "オフラインのため カードは つかえません\nカードを おとりください",
+      "en": "Offline: cards cannot be used.\nPlease take your card.",
+      "zh": "離線中，無法使用卡片\n請取回卡片",
+      "ko": "오프라인이라 카드를 쓸 수 없습니다\n카드를 빼 주세요"
+    }
+  },
+  "network_msg_error_assign_limit": {
+    "text": {
+      "ja": "これいじょう タッチできません\nカードを おとりください",
+      "en": "No more cards can be added.\nPlease take your card.",
+      "zh": "無法再新增卡片\n請取回卡片",
+      "ko": "더 이상 터치할 수 없습니다\n카드를 빼 주세요"
+    }
+  },
+  "network_msg_error_cannot_assign": {
+    "text": {
+      "ja": "このデータは もう よみこんでいます\nカードを おとりください",
+      "en": "This data is already loaded.\nPlease take your card.",
+      "zh": "此資料已經讀取過了\n請取回卡片",
+      "ko": "이 데이터는 이미 읽었습니다\n카드를 빼 주세요"
+    }
+  },
+  "network_msg_notice_pickup_card": {
+    "text": {
+      "ja": "カードの とりわすれに 注意！",
+      "en": "Don't forget your card!",
+      "zh": "別忘了取回卡片！",
+      "ko": "카드를 잊지 마세요!"
+    }
+  },
+  "network_msg_clear_reading_maybe": {
+    "text": {
+      "ja": "通信中…\n~通信状態によっては プレイデータの更新が おくれることがあります",
+      "en": "Connecting...\n~Play data may update late on a slow connection.",
+      "zh": "通訊中…\n~網路狀況不佳時，遊玩資料可能延遲更新",
+      "ko": "통신 중…\n~통신 상태에 따라 플레이 데이터 갱신이 늦어질 수 있습니다"
+    }
+  },
+  "network_msg_error_lost_card": {
+    "text": {
+      "ja": "しっかり タッチしてね",
+      "en": "Please hold the card still.",
+      "zh": "請好好貼住卡片",
+      "ko": "카드를 확실히 대 주세요"
+    }
+  },
+  "network_msg_error_userdata": {
+    "text": {
+      "ja": "プレイデータを うけとれませんでした\nオフラインモードに きりかえます",
+      "en": "Could not load play data.\nSwitching to offline mode.",
+      "zh": "無法取得遊玩資料\n切換為離線模式",
+      "ko": "플레이 데이터를 받지 못했습니다\n오프라인 모드로 전환합니다"
+    }
+  },
+  "network_msg_error_already_gasha": {
+    "text": {
+      "ja": "ガシャは きょう もう まわしたよ\n~※ガシャは 1日1回です",
+      "en": "You already spun today.\n~*One spin per day.",
+      "zh": "今天已經抽過扭蛋了\n~※扭蛋每天一次",
+      "ko": "오늘은 이미 뽑기를 했어요\n~※뽑기는 하루 1회입니다"
+    }
+  },
+  "network_msg_error_not_play": {
+    "text": {
+      "ja": "まだ 一度も あそんでいないよ\n~※あたらしいカードは 一度あそんでから つかえます",
+      "en": "Play a game first.\n~*New cards need one play first.",
+      "zh": "還沒有玩過一次哦\n~※新卡片需要先遊玩一次才能使用",
+      "ko": "아직 한 번도 플레이하지 않았어요\n~※새 카드는 한 번 플레이한 뒤 쓸 수 있습니다"
+    }
+  },
+  "network_msg_error_touch_again": {
+    "text": {
+      "ja": "もう一度 しっかり タッチしてね",
+      "en": "Please touch the card again.",
+      "zh": "請再好好貼一次卡片",
+      "ko": "한 번 더 카드를 확실히 대 주세요"
+    }
+  },
+  "network_msg_error_close_shop": {
+    "text": {
+      "ja": "まもなく 閉店時間です\n閉店後は ガシャが できません",
+      "en": "Closing time is near.\nThe gacha closes with the shop.",
+      "zh": "即將到達打烊時間\n打烊後無法抽扭蛋",
+      "ko": "곧 폐점 시간입니다\n폐점 후에는 뽑기를 할 수 없습니다"
+    }
+  },
+  "network_msg_error_offline_gasha": {
+    "text": {
+      "ja": "オフラインのため 大会ガシャは できません\nネットワークを たしかめてください",
+      "en": "Offline: no event gacha.\nPlease check the network.",
+      "zh": "離線中，無法進行大會扭蛋\n請檢查網路",
+      "ko": "오프라인이라 대회 뽑기를 할 수 없습니다\n네트워크를 확인해 주세요"
+    }
+  },
+  "network_msg_error_card_gasha": {
+    "text": {
+      "ja": "カードが つかえないため 大会ガシャは できません\nカードリーダーを たしかめてください",
+      "en": "Card unavailable: no event gacha.\nPlease check the card reader.",
+      "zh": "卡片無法使用，無法進行大會扭蛋\n請檢查讀卡器",
+      "ko": "카드를 쓸 수 없어 대회 뽑기를 할 수 없습니다\n카드 리더를 확인해 주세요"
+    }
+  },
+  "network_msg_error_end_gasha": {
+    "text": {
+      "ja": "大会ガシャは おわりました\n~※もとに もどすには テストモードで 大会ガシャを OFF にしてください",
+      "en": "The event gacha has ended.\n~*Turn it OFF in test mode to return to normal.",
+      "zh": "大會扭蛋已結束\n~※要恢復原狀，請在測試模式中將大會扭蛋設為 OFF",
+      "ko": "대회 뽑기가 끝났습니다\n~※원래대로 돌리려면 테스트 모드에서 대회 뽑기를 OFF로 해 주세요"
+    }
+  },
+  "network_msg_error_bnid": {
+    "text": {
+      "ja": "このIDは つかえません",
+      "en": "This ID cannot be used.",
+      "zh": "此ID無法使用",
+      "ko": "이 ID는 사용할 수 없습니다"
+    }
+  },
+  "network_msg_error_shop_already": {
+    "text": {
+      "ja": "もう もっているよ\n~ごほうびの じょうたいを 更新しました",
+      "en": "You already have this.\n~Rewards updated.",
+      "zh": "已經擁有了哦\n~已更新獎勵狀態",
+      "ko": "이미 가지고 있어요\n~보상 상태를 갱신했습니다"
+    }
+  },
+  "network_msg_error_shop_failed": {
+    "text": {
+      "ja": "通信に しっぱいしました\n~ごほうびを もらえていないかもしれません\n~サイトで たしかめてください",
+      "en": "Connection failed.\n~The reward may be missing.\n~Please check online.",
+      "zh": "通訊失敗\n~可能沒有拿到獎勵\n~請在網站上確認",
+      "ko": "통신에 실패했습니다\n~보상을 받지 못했을 수 있습니다\n~사이트에서 확인해 주세요"
+    }
+  },
+  "network_msg_error_shop_shortage": {
+    "text": {
+      "ja": "メダルが たりません\n~メダルの数を 更新しました",
+      "en": "Not enough medals.\n~Medal count updated.",
+      "zh": "獎牌不足\n~已更新獎牌數量",
+      "ko": "메달이 부족합니다\n~메달 수를 갱신했습니다"
+    }
+  },
+  "network_msg_shop_get_OK": {
+    "text": {
+      "ja": "ごほうびを ゲット！\n~きせかえは 次のプレイから つかえるよ",
+      "en": "Reward get!\n~New costumes are usable from your next play.",
+      "zh": "獲得獎勵！\n~換裝從下次遊玩開始可以使用哦",
+      "ko": "보상 획득!\n~옷 갈아입기는 다음 플레이부터 쓸 수 있어요"
+    }
+  },
+  "network_msg_error_offline_shop": {
+    "text": {
+      "ja": "通信エラーが おきました\n~ショップを とじて オフラインモードに きりかえます",
+      "en": "Connection error.\n~Closing the shop and going offline.",
+      "zh": "發生通訊錯誤\n~關閉商店並切換為離線模式",
+      "ko": "통신 오류가 발생했습니다\n~상점을 닫고 오프라인 모드로 전환합니다"
+    }
+  },
+  "ss_h_select": {
+    "text": {
+      "ja": "えらぶ",
+      "en": "Select",
+      "zh": "選擇",
+      "ko": "선택"
+    }
+  },
+  "ss_h_decide": {
+    "text": {
+      "ja": "決定",
+      "en": "Decide",
+      "zh": "決定",
+      "ko": "결정"
+    }
+  },
+  "ss_h_back": {
+    "text": {
+      "ja": "もどる",
+      "en": "Back",
+      "zh": "返回",
+      "ko": "뒤로"
+    }
+  },
+  "ss_h_option": {
+    "text": {
+      "ja": "オプション",
+      "en": "Options",
+      "zh": "選項",
+      "ko": "옵션"
+    }
+  },
+  "ss_h_change": {
+    "text": {
+      "ja": "かえる",
+      "en": "Change",
+      "zh": "更改",
+      "ko": "변경"
+    }
+  },
+  "ss_h_start": {
+    "text": {
+      "ja": "スタート",
+      "en": "Start",
+      "zh": "開始",
+      "ko": "시작"
+    }
+  },
+  "ss_h_esc_back": {
+    "text": {
+      "ja": "ESC もどる",
+      "en": "ESC Back",
+      "zh": "ESC 返回",
+      "ko": "ESC 뒤로"
+    }
+  },
+  "ss_good": {
+    "text": {
+      "ja": "良",
+      "en": "GOOD",
+      "zh": "良",
+      "ko": "양"
+    }
+  },
+  "ss_ok": {
+    "text": {
+      "ja": "可",
+      "en": "OK",
+      "zh": "可",
+      "ko": "가"
+    }
+  },
+  "ss_bad": {
+    "text": {
+      "ja": "不可",
+      "en": "BAD",
+      "zh": "不可",
+      "ko": "불가"
+    }
+  },
+  "ss_roll": {
+    "text": {
+      "ja": "連打",
+      "en": "Roll",
+      "zh": "連打",
+      "ko": "연타"
+    }
+  },
+  "ss_maxcombo": {
+    "text": {
+      "ja": "最大コンボ",
+      "en": "Max Combo",
+      "zh": "最大連擊",
+      "ko": "최대 콤보"
+    }
+  },
+  "ss_acc": {
+    "text": {
+      "ja": "精度",
+      "en": "Accuracy",
+      "zh": "精度",
+      "ko": "정확도"
+    }
+  },
+  "ss_bpm": {
+    "text": {
+      "ja": "BPM",
+      "en": "BPM",
+      "zh": "BPM",
+      "ko": "BPM"
+    }
+  },
+  "ss_time": {
+    "text": {
+      "ja": "経過",
+      "en": "Time",
+      "zh": "經過",
+      "ko": "경과"
+    }
+  },
+  "ss_offset": {
+    "text": {
+      "ja": "平均タイミング",
+      "en": "Avg Timing",
+      "zh": "平均時機",
+      "ko": "평균 타이밍"
+    }
+  },
+  "ss_early": {
+    "text": {
+      "ja": "早",
+      "en": "Early",
+      "zh": "早",
+      "ko": "빠름"
+    }
+  },
+  "ss_late": {
+    "text": {
+      "ja": "遅",
+      "en": "Late",
+      "zh": "晚",
+      "ko": "느림"
+    }
+  },
+  "ss_level": {
+    "text": {
+      "ja": "★",
+      "en": "★",
+      "zh": "★",
+      "ko": "★"
+    }
+  },
+  "ss_ms": {
+    "text": {
+      "ja": "ms",
+      "en": "ms",
+      "zh": "ms",
+      "ko": "ms"
+    }
+  },
+  "ss_gauge": {
+    "text": {
+      "ja": "魂ゲージ",
+      "en": "Soul Gauge",
+      "zh": "魂槽",
+      "ko": "혼 게이지"
+    }
+  },
+  "ss_combo": {
+    "text": {
+      "ja": "コンボ",
+      "en": "Combo",
+      "zh": "連擊",
+      "ko": "콤보"
+    }
+  },
+  "ss_score": {
+    "text": {
+      "ja": "スコア",
+      "en": "Score",
+      "zh": "分數",
+      "ko": "점수"
+    }
+  },
+  "ss_course0": {
+    "text": {
+      "ja": "かんたん",
+      "en": "Easy",
+      "zh": "簡單",
+      "ko": "쉬움"
+    }
+  },
+  "ss_course1": {
+    "text": {
+      "ja": "ふつう",
+      "en": "Normal",
+      "zh": "普通",
+      "ko": "보통"
+    }
+  },
+  "ss_course2": {
+    "text": {
+      "ja": "むずかしい",
+      "en": "Hard",
+      "zh": "困難",
+      "ko": "어려움"
+    }
+  },
+  "ss_course3": {
+    "text": {
+      "ja": "おに",
+      "en": "Oni",
+      "zh": "魔王",
+      "ko": "오니"
+    }
+  },
+  "ss_course4": {
+    "text": {
+      "ja": "おに(裏)",
+      "en": "Ura Oni",
+      "zh": "裏魔王",
+      "ko": "오니(우라)"
+    }
+  },
+  "ss_course_tower": {
+    "text": {
+      "ja": "タワー",
+      "en": "Tower",
+      "zh": "塔",
+      "ko": "타워"
+    }
+  },
+  "ss_course_dan": {
+    "text": {
+      "ja": "段位",
+      "en": "Dan",
+      "zh": "段位",
+      "ko": "단위"
+    }
+  },
+  "ss_rank_iki": {
+    "text": {
+      "ja": "粋",
+      "en": "粋",
+      "zh": "粋",
+      "ko": "粋"
+    }
+  },
+  "ss_rank_miyabi": {
+    "text": {
+      "ja": "雅",
+      "en": "雅",
+      "zh": "雅",
+      "ko": "雅"
+    }
+  },
+  "ss_rank_kiwami": {
+    "text": {
+      "ja": "極",
+      "en": "極",
+      "zh": "極",
+      "ko": "極"
+    }
+  },
+  "ss_zenryo": {
+    "text": {
+      "ja": "全良",
+      "en": "All Good",
+      "zh": "全良",
+      "ko": "올 양"
+    }
+  },
+  "ss_full_combo": {
+    "text": {
+      "ja": "フルコンボ",
+      "en": "Full Combo",
+      "zh": "全連擊",
+      "ko": "풀 콤보"
+    }
+  },
+  "ss_clear": {
+    "text": {
+      "ja": "クリア",
+      "en": "Clear",
+      "zh": "通關",
+      "ko": "클리어"
+    }
+  },
+  "ss_best": {
+    "text": {
+      "ja": "自己ベスト更新",
+      "en": "New Best!",
+      "zh": "重新整理個人最佳",
+      "ko": "개인 최고 갱신"
+    }
+  },
+  "ss_score_shinuchi": {
+    "text": {
+      "ja": "真打スコア",
+      "en": "Shin-uchi Score",
+      "zh": "真打分數",
+      "ko": "신우치 점수"
+    }
+  },
+  "ss_judge_breakdown": {
+    "text": {
+      "ja": "判定の内訳",
+      "en": "Judgements",
+      "zh": "判定明細",
+      "ko": "판정 내역"
+    }
+  },
+  "ss_player_1p": {
+    "text": {
+      "ja": "1P",
+      "en": "1P",
+      "zh": "1P",
+      "ko": "1P"
+    }
+  },
+  "ss_player_2p": {
+    "text": {
+      "ja": "2P",
+      "en": "2P",
+      "zh": "2P",
+      "ko": "2P"
+    }
+  },
+  "ss_ai": {
+    "text": {
+      "ja": "AI",
+      "en": "AI",
+      "zh": "AI",
+      "ko": "AI"
+    }
+  },
+  "ss_computer": {
+    "text": {
+      "ja": "コンピュータ",
+      "en": "Computer",
+      "zh": "電腦",
+      "ko": "컴퓨터"
+    }
+  },
+  "ss_title_invite": {
+    "text": {
+      "ja": "いっしょに たたこう！",
+      "en": "Let's drum together!",
+      "zh": "一起來打鼓吧！",
+      "ko": "같이 두드리자!"
+    }
+  },
+  "ss_warn_title": {
+    "text": {
+      "ja": "ちゅうい",
+      "en": "Caution",
+      "zh": "注意",
+      "ko": "주의"
+    }
+  },
+  "ss_warn_line1": {
+    "text": {
+      "ja": "まわりの人に あたらないように",
+      "en": "Mind the people around you,",
+      "zh": "小心不要碰到周圍的人，",
+      "ko": "주변 사람에게 부딪히지 않도록"
+    }
+  },
+  "ss_warn_line2": {
+    "text": {
+      "ja": "すこし はなれて あそんでね。",
+      "en": "keep a little space.",
+      "zh": "請保持一點距離。",
+      "ko": "조금 떨어져서 놀아 줘."
+    }
+  },
+  "ss_warn_line3": {
+    "text": {
+      "ja": "ゆびわや アクセサリーは はずそう。",
+      "en": "Take off rings and accessories.",
+      "zh": "請摘下戒指和飾品。",
+      "ko": "반지나 액세서리는 빼 두자."
+    }
+  },
+  "ss_warn_line4": {
+    "text": {
+      "ja": "バチは 太鼓だけを たたいてね。",
+      "en": "Hit only the drum with the sticks.",
+      "zh": "鼓棒只能敲太鼓哦。",
+      "ko": "북채로는 북만 두드려 줘."
+    }
+  },
+  "ss_entry_player": {
+    "text": {
+      "ja": "プレイヤー エントリー",
+      "en": "Player Entry",
+      "zh": "玩家登入",
+      "ko": "플레이어 엔트리"
+    }
+  },
+  "ss_entry_name": {
+    "text": {
+      "ja": "なまえを きめよう",
+      "en": "Choose your name",
+      "zh": "來取個名字吧",
+      "ko": "이름을 정하자"
+    }
+  },
+  "ss_entry_start_don": {
+    "text": {
+      "ja": "ドン！で スタート",
+      "en": "Hit Don! to start",
+      "zh": "敲咚！開始",
+      "ko": "쿵! 으로 시작"
+    }
+  },
+  "ss_settings_title": {
+    "text": {
+      "ja": "せってい",
+      "en": "Settings",
+      "zh": "設定",
+      "ko": "설정"
+    }
+  },
+  "ss_settings_pick": {
+    "text": {
+      "ja": "こうもくを えらんでね",
+      "en": "Pick an item",
+      "zh": "請選擇專案",
+      "ko": "항목을 골라 줘"
+    }
+  },
+  "ss_settings_howto": {
+    "text": {
+      "ja": "ドンで ひらいて、あたいを かえよう。",
+      "en": "Don opens it; change the value.",
+      "zh": "敲咚開啟，更改數值吧。",
+      "ko": "쿵으로 열고 값을 바꾸자."
+    }
+  },
+  "ss_loading": {
+    "text": {
+      "ja": "よみこみちゅう…",
+      "en": "Loading…",
+      "zh": "讀取中…",
+      "ko": "불러오는 중…"
+    }
+  },
+  "ss_auto": {
+    "text": {
+      "ja": "オート",
+      "en": "Auto",
+      "zh": "自動",
+      "ko": "오토"
+    }
+  },
+  "ss_note_don": {
+    "text": {
+      "ja": "ドン",
+      "en": "Don",
+      "zh": "咚",
+      "ko": "쿵"
+    }
+  },
+  "ss_note_do": {
+    "text": {
+      "ja": "ド",
+      "en": "Do",
+      "zh": "咚",
+      "ko": "쿵"
+    }
+  },
+  "ss_note_ko": {
+    "text": {
+      "ja": "コ",
+      "en": "Ko",
+      "zh": "咚",
+      "ko": "쿵"
+    }
+  },
+  "ss_note_ka": {
+    "text": {
+      "ja": "カッ",
+      "en": "Ka",
+      "zh": "咔",
+      "ko": "딱"
+    }
+  },
+  "ss_note_ka_small": {
+    "text": {
+      "ja": "カ",
+      "en": "Ka",
+      "zh": "咔",
+      "ko": "딱"
+    }
+  },
+  "ss_note_don_big": {
+    "text": {
+      "ja": "ドン(大)",
+      "en": "DON",
+      "zh": "咚(大)",
+      "ko": "쿵(대)"
+    }
+  },
+  "ss_note_ka_big": {
+    "text": {
+      "ja": "カッ(大)",
+      "en": "KA",
+      "zh": "咔(大)",
+      "ko": "딱(대)"
+    }
+  },
+  "ss_note_roll": {
+    "text": {
+      "ja": "連打",
+      "en": "Roll",
+      "zh": "連打",
+      "ko": "연타"
+    }
+  },
+  "ss_note_roll_big": {
+    "text": {
+      "ja": "連打(大)",
+      "en": "ROLL",
+      "zh": "連打(大)",
+      "ko": "연타(대)"
+    }
+  },
+  "ss_note_balloon": {
+    "text": {
+      "ja": "ふうせん",
+      "en": "Balloon",
+      "zh": "氣球",
+      "ko": "풍선"
+    }
+  },
+  "ss_note_kusudama": {
+    "text": {
+      "ja": "くすだま",
+      "en": "Kusudama",
+      "zh": "綵球",
+      "ko": "쿠스다마"
+    }
+  },
+  "ss_note_tsu": {
+    "text": {
+      "ja": "っ!!",
+      "en": "!!",
+      "zh": "!!",
+      "ko": "!!"
+    }
+  },
+  "ss_balloon_left": {
+    "text": {
+      "ja": "あと",
+      "en": "Left",
+      "zh": "還剩",
+      "ko": "남은"
+    }
+  },
+  "ss_branch_normal": {
+    "text": {
+      "ja": "普通譜面",
+      "en": "Normal",
+      "zh": "普通譜面",
+      "ko": "보통 보면"
+    }
+  },
+  "ss_branch_expert": {
+    "text": {
+      "ja": "玄人譜面",
+      "en": "Expert",
+      "zh": "玄人譜面",
+      "ko": "현인 보면"
+    }
+  },
+  "ss_branch_master": {
+    "text": {
+      "ja": "達人譜面",
+      "en": "Master",
+      "zh": "達人譜面",
+      "ko": "달인 보면"
+    }
+  },
+  "ss_branch_up": {
+    "text": {
+      "ja": "譜面アップ!",
+      "en": "Level Up!",
+      "zh": "譜面升級!",
+      "ko": "보면 업!"
+    }
+  },
+  "ss_branch_down": {
+    "text": {
+      "ja": "譜面ダウン",
+      "en": "Level Down",
+      "zh": "譜面降級",
+      "ko": "보면 다운"
+    }
+  },
+  "ss_branch_mark": {
+    "text": {
+      "ja": "分",
+      "en": "Br",
+      "zh": "分",
+      "ko": "분"
+    }
+  },
+  "ss_ura_mark": {
+    "text": {
+      "ja": "裏",
+      "en": "Ura",
+      "zh": "裏",
+      "ko": "우라"
+    }
+  },
+  "ss_combo_word": {
+    "text": {
+      "ja": "コンボ",
+      "en": "Combo",
+      "zh": "連擊",
+      "ko": "콤보"
+    }
+  },
+  "ss_combo_announce": {
+    "text": {
+      "ja": "コンボ!",
+      "en": "Combo!",
+      "zh": "連擊!",
+      "ko": "콤보!"
+    }
+  },
+  "ss_soul": {
+    "text": {
+      "ja": "魂",
+      "en": "Soul",
+      "zh": "魂",
+      "ko": "혼"
+    }
+  },
+  "ss_end_clear": {
+    "text": {
+      "ja": "クリア!",
+      "en": "Clear!",
+      "zh": "通關!",
+      "ko": "클리어!"
+    }
+  },
+  "ss_end_fail": {
+    "text": {
+      "ja": "クリア失敗",
+      "en": "Failed",
+      "zh": "未通關",
+      "ko": "클리어 실패"
+    }
+  },
+  "ss_end_full_combo": {
+    "text": {
+      "ja": "フルコンボ!",
+      "en": "Full Combo!",
+      "zh": "全連擊!",
+      "ko": "풀 콤보!"
+    }
+  },
+  "ss_end_donderful": {
+    "text": {
+      "ja": "ぜんぶ良!",
+      "en": "All Good!",
+      "zh": "全良!",
+      "ko": "올 양!"
+    }
+  },
+  "ss_mod_inverse": {
+    "text": {
+      "ja": "逆",
+      "en": "Inv",
+      "zh": "反",
+      "ko": "반"
+    }
+  },
+  "ss_mod_random": {
+    "text": {
+      "ja": "乱",
+      "en": "Rnd",
+      "zh": "亂",
+      "ko": "랜"
+    }
+  },
+  "ss_mod_kimagure": {
+    "text": {
+      "ja": "気",
+      "en": "Kim",
+      "zh": "隨",
+      "ko": "기"
+    }
+  },
+  "ss_mod_hidden": {
+    "text": {
+      "ja": "隠",
+      "en": "Hid",
+      "zh": "隱",
+      "ko": "숨"
+    }
+  },
+  "ss_mod_inverse_sel": {
+    "text": {
+      "ja": "反",
+      "en": "Inv",
+      "zh": "反",
+      "ko": "반"
+    }
+  },
+  "ss_mod_auto_sel": {
+    "text": {
+      "ja": "自",
+      "en": "Auto",
+      "zh": "自",
+      "ko": "자"
+    }
+  },
+  "ss_mod_doron_sel": {
+    "text": {
+      "ja": "ド",
+      "en": "Hid",
+      "zh": "隱",
+      "ko": "숨"
+    }
+  },
+  "ss_opt_inverse": {
+    "text": {
+      "ja": "あべこべ",
+      "en": "Inverse",
+      "zh": "顛倒",
+      "ko": "아베코베"
+    }
+  },
+  "ss_opt_detarame": {
+    "text": {
+      "ja": "でたらめ",
+      "en": "Detarame",
+      "zh": "亂打",
+      "ko": "데타라메"
+    }
+  },
+  "ss_opt_doron": {
+    "text": {
+      "ja": "ドロン",
+      "en": "Doron",
+      "zh": "隱身",
+      "ko": "도론"
+    }
+  },
+  "ss_opt_kimagure": {
+    "text": {
+      "ja": "きまぐれ",
+      "en": "Kimagure",
+      "zh": "隨意",
+      "ko": "기마구레"
+    }
+  },
+  "ss_skip": {
+    "text": {
+      "ja": "演奏スキップ",
+      "en": "Skip Song",
+      "zh": "跳過演奏",
+      "ko": "연주 스킵"
+    }
+  },
+  "ss_skip_used": {
+    "text": {
+      "ja": "演奏スキップをつかいました",
+      "en": "Used Skip Song",
+      "zh": "使用了跳過演奏",
+      "ko": "연주 스킵을 사용했습니다"
+    }
+  },
+  "ss_kusudama_hint": {
+    "text": {
+      "ja": "連打で わろう!",
+      "en": "Roll to break it!",
+      "zh": "連打擊破吧!",
+      "ko": "연타로 깨자!"
+    }
+  },
+  "ss_ai_win": {
+    "text": {
+      "ja": "勝ち",
+      "en": "WIN",
+      "zh": "勝利",
+      "ko": "승리"
+    }
+  },
+  "ss_ai_lose": {
+    "text": {
+      "ja": "負け",
+      "en": "LOSE",
+      "zh": "落敗",
+      "ko": "패배"
+    }
+  },
+  "ss_pr_menu": {
+    "text": {
+      "ja": "メニュー",
+      "en": "Menu",
+      "zh": "選單",
+      "ko": "메뉴"
+    }
+  },
+  "ss_pr_menu_panel": {
+    "text": {
+      "ja": "とっくんメニュー",
+      "en": "Practice Menu",
+      "zh": "特訓選單",
+      "ko": "특훈 메뉴"
+    }
+  },
+  "ss_pause_menu": {
+    "text": {
+      "ja": "メニュー",
+      "en": "Menu",
+      "zh": "選單",
+      "ko": "메뉴"
+    }
+  },
+  "ss_pr_pause": {
+    "text": {
+      "ja": "一時停止",
+      "en": "Pause",
+      "zh": "暫停",
+      "ko": "일시정지"
+    }
+  },
+  "ss_pr_resume": {
+    "text": {
+      "ja": "さいかい",
+      "en": "Resume",
+      "zh": "繼續",
+      "ko": "재개"
+    }
+  },
+  "ss_pr_back": {
+    "text": {
+      "ja": "もどる",
+      "en": "Back",
+      "zh": "後退",
+      "ko": "뒤로"
+    }
+  },
+  "ss_pr_forward": {
+    "text": {
+      "ja": "すすむ",
+      "en": "Forward",
+      "zh": "前進",
+      "ko": "앞으로"
+    }
+  },
+  "ss_pr_slower": {
+    "text": {
+      "ja": "おそく",
+      "en": "Slower",
+      "zh": "減速",
+      "ko": "느리게"
+    }
+  },
+  "ss_pr_faster": {
+    "text": {
+      "ja": "はやく",
+      "en": "Faster",
+      "zh": "加速",
+      "ko": "빠르게"
+    }
+  },
+  "ss_pr_confirm": {
+    "text": {
+      "ja": "けってい",
+      "en": "OK",
+      "zh": "決定",
+      "ko": "결정"
+    }
+  },
+  "ss_pr_delete": {
+    "text": {
+      "ja": "けす",
+      "en": "Delete",
+      "zh": "刪除",
+      "ko": "삭제"
+    }
+  },
+  "ss_pr_finish": {
+    "text": {
+      "ja": "おわる",
+      "en": "Finish",
+      "zh": "結束",
+      "ko": "끝내기"
+    }
+  },
+  "ss_pr_bar": {
+    "text": {
+      "ja": "小節",
+      "en": "Bar",
+      "zh": "小節",
+      "ko": "마디"
+    }
+  },
+  "ss_pr_tempo": {
+    "text": {
+      "ja": "曲テンポ",
+      "en": "Tempo",
+      "zh": "歌曲速度",
+      "ko": "곡 템포"
+    }
+  },
+  "ss_pr_times": {
+    "text": {
+      "ja": "倍",
+      "en": "x",
+      "zh": "倍",
+      "ko": "배"
+    }
+  },
+  "ss_pr_jump_edit": {
+    "text": {
+      "ja": "ジャンプポイント へんしゅう中",
+      "en": "Editing jump points",
+      "zh": "正在編輯跳躍點",
+      "ko": "점프 포인트 편집 중"
+    }
+  },
+  "ss_pr_mode": {
+    "text": {
+      "ja": "特訓",
+      "en": "Practice",
+      "zh": "特訓",
+      "ko": "특훈"
+    }
+  },
+  "ss_pr_left": {
+    "text": {
+      "ja": "のこり",
+      "en": "Left",
+      "zh": "剩餘",
+      "ko": "남은 시간"
+    }
+  },
+  "ss_pr_min": {
+    "text": {
+      "ja": "分",
+      "en": "min",
+      "zh": "分",
+      "ko": "분"
+    }
+  },
+  "ss_pr_sec": {
+    "text": {
+      "ja": "秒",
+      "en": "s",
+      "zh": "秒",
+      "ko": "초"
+    }
+  },
+  "ss_pr_timeup": {
+    "text": {
+      "ja": "じかんぎれ！",
+      "en": "Time's up!",
+      "zh": "時間到！",
+      "ko": "시간 종료!"
+    }
+  },
+  "ss_dan_dojo": {
+    "text": {
+      "ja": "段位道場",
+      "en": "Dan-i Dojo",
+      "zh": "段位道場",
+      "ko": "단위도장"
+    }
+  },
+  "ss_dan_all_songs": {
+    "text": {
+      "ja": "全曲",
+      "en": "All",
+      "zh": "全曲",
+      "ko": "전곡"
+    }
+  },
+  "ss_dan_song_1": {
+    "text": {
+      "ja": "1曲目",
+      "en": "Song 1",
+      "zh": "第1首",
+      "ko": "1곡째"
+    }
+  },
+  "ss_dan_song_2": {
+    "text": {
+      "ja": "2曲目",
+      "en": "Song 2",
+      "zh": "第2首",
+      "ko": "2곡째"
+    }
+  },
+  "ss_dan_song_3": {
+    "text": {
+      "ja": "3曲目",
+      "en": "Song 3",
+      "zh": "第3首",
+      "ko": "3곡째"
+    }
+  },
+  "ss_dan_song_n": {
+    "text": {
+      "ja": "曲目",
+      "en": "Song",
+      "zh": "首",
+      "ko": "곡째"
+    }
+  },
+  "ss_dan_total": {
+    "text": {
+      "ja": "全体",
+      "en": "Total",
+      "zh": "全體",
+      "ko": "전체"
+    }
+  },
+  "ss_dan_failed": {
+    "text": {
+      "ja": "達成失敗",
+      "en": "Failed",
+      "zh": "未達成",
+      "ko": "달성 실패"
+    }
+  },
+  "ss_dan_unreached": {
+    "text": {
+      "ja": "未到達",
+      "en": "Not reached",
+      "zh": "未達到",
+      "ko": "미도달"
+    }
+  },
+  "ss_dan_ex_gauge": {
+    "text": {
+      "ja": "魂ゲージ",
+      "en": "Soul Gauge",
+      "zh": "魂槽",
+      "ko": "혼 게이지"
+    }
+  },
+  "ss_dan_ex_good": {
+    "text": {
+      "ja": "良の数",
+      "en": "GOOD",
+      "zh": "良數",
+      "ko": "양 수"
+    }
+  },
+  "ss_dan_ex_ok": {
+    "text": {
+      "ja": "可の数",
+      "en": "OK",
+      "zh": "可數",
+      "ko": "가 수"
+    }
+  },
+  "ss_dan_ex_bad": {
+    "text": {
+      "ja": "不可の数",
+      "en": "BAD",
+      "zh": "不可數",
+      "ko": "불가 수"
+    }
+  },
+  "ss_dan_ex_combo": {
+    "text": {
+      "ja": "最大コンボ数",
+      "en": "Max Combo",
+      "zh": "最大連擊數",
+      "ko": "최대 콤보 수"
+    }
+  },
+  "ss_dan_ex_roll": {
+    "text": {
+      "ja": "連打数",
+      "en": "Rolls",
+      "zh": "連打數",
+      "ko": "연타 수"
+    }
+  },
+  "ss_dan_ex_hit": {
+    "text": {
+      "ja": "叩けた数",
+      "en": "Hits",
+      "zh": "擊中數",
+      "ko": "친 수"
+    }
+  },
+  "ss_dan_ex_score": {
+    "text": {
+      "ja": "スコア",
+      "en": "Score",
+      "zh": "分數",
+      "ko": "점수"
+    }
+  },
+  "ss_dan_less": {
+    "text": {
+      "ja": "未満",
+      "en": "under",
+      "zh": "未滿",
+      "ko": "미만"
+    }
+  },
+  "ss_dan_more": {
+    "text": {
+      "ja": "以上",
+      "en": "or more",
+      "zh": "以上",
+      "ko": "이상"
+    }
+  },
+  "ss_dan_fmt_less": {
+    "text": {
+      "ja": "%s 未満",
+      "en": "under %s",
+      "zh": "%s 未滿",
+      "ko": "%s 미만"
+    }
+  },
+  "ss_dan_fmt_more": {
+    "text": {
+      "ja": "%s 以上",
+      "en": "%s or more",
+      "zh": "%s 以上",
+      "ko": "%s 이상"
+    }
+  },
+  "ss_dan_gold_more": {
+    "text": {
+      "ja": "金合格 {0}%以上",
+      "en": "Gold: {0}% or more",
+      "zh": "金合格 {0}%以上",
+      "ko": "금합격 {0}% 이상"
+    }
+  },
+  "ss_dan_notes_left": {
+    "text": {
+      "ja": "のこり音符",
+      "en": "Notes left",
+      "zh": "剩餘音符",
+      "ko": "남은 음표"
+    }
+  },
+  "ss_dan_total_notes": {
+    "text": {
+      "ja": "総ノーツ数",
+      "en": "Total notes",
+      "zh": "總音符數",
+      "ko": "총 노트 수"
+    }
+  },
+  "ss_dan_conditions": {
+    "text": {
+      "ja": "合格条件",
+      "en": "To pass",
+      "zh": "合格條件",
+      "ko": "합격 조건"
+    }
+  },
+  "ss_dan_pass": {
+    "text": {
+      "ja": "合格",
+      "en": "Pass",
+      "zh": "合格",
+      "ko": "합격"
+    }
+  },
+  "ss_dan_pass_gold": {
+    "text": {
+      "ja": "金合格",
+      "en": "Gold Pass",
+      "zh": "金合格",
+      "ko": "금합격"
+    }
+  },
+  "ss_dan_pass_mark": {
+    "text": {
+      "ja": "合",
+      "en": "P",
+      "zh": "合",
+      "ko": "합"
+    }
+  },
+  "ss_dan_unplayed": {
+    "text": {
+      "ja": "未",
+      "en": "–",
+      "zh": "未",
+      "ko": "미"
+    }
+  },
+  "ss_dan_hidden_title": {
+    "text": {
+      "ja": "？？？",
+      "en": "???",
+      "zh": "？？？",
+      "ko": "???"
+    }
+  },
+  "ss_dan_song_label": {
+    "text": {
+      "ja": "曲目",
+      "en": "Song",
+      "zh": "曲目",
+      "ko": "곡"
+    }
+  },
+  "ss_dan_confirm": {
+    "text": {
+      "ja": "この段位に挑戦しますか？",
+      "en": "Take on this dan?",
+      "zh": "要挑戰這個段位嗎？",
+      "ko": "이 단위에 도전할까요?"
+    }
+  },
+  "ss_dan_yes": {
+    "text": {
+      "ja": "挑戦する",
+      "en": "Go!",
+      "zh": "挑戰",
+      "ko": "도전"
+    }
+  },
+  "ss_dan_no": {
+    "text": {
+      "ja": "やめる",
+      "en": "Cancel",
+      "zh": "取消",
+      "ko": "그만두기"
+    }
+  },
+  "ss_dan_congrats": {
+    "text": {
+      "ja": "おめでとう！",
+      "en": "Congratulations!",
+      "zh": "恭喜！",
+      "ko": "축하해!"
+    }
+  },
+  "ss_dan_promo": {
+    "text": {
+      "ja": "昇段",
+      "en": "Promoted",
+      "zh": "升段",
+      "ko": "승단"
+    }
+  },
+  "ss_dan_top": {
+    "text": {
+      "ja": "合格！ さいこうの だんいに とうたつしました！",
+      "en": "Passed! You reached the top dan!",
+      "zh": "合格！ 達到了最高段位！",
+      "ko": "합격! 최고 단위에 도달했어요!"
+    }
+  },
+  "ss_dan_nosave": {
+    "text": {
+      "ja": "今回の挑戦は記録されません",
+      "en": "This attempt will not be recorded",
+      "zh": "本次挑戰不會被記錄",
+      "ko": "이번 도전은 기록되지 않습니다"
+    }
+  },
+  "ss_dan_kyu_10": {
+    "text": {
+      "ja": "十級",
+      "en": "10th Kyu",
+      "zh": "十級",
+      "ko": "10급"
+    }
+  },
+  "ss_dan_kyu_9": {
+    "text": {
+      "ja": "九級",
+      "en": "9th Kyu",
+      "zh": "九級",
+      "ko": "9급"
+    }
+  },
+  "ss_dan_kyu_8": {
+    "text": {
+      "ja": "八級",
+      "en": "8th Kyu",
+      "zh": "八級",
+      "ko": "8급"
+    }
+  },
+  "ss_dan_kyu_7": {
+    "text": {
+      "ja": "七級",
+      "en": "7th Kyu",
+      "zh": "七級",
+      "ko": "7급"
+    }
+  },
+  "ss_dan_kyu_6": {
+    "text": {
+      "ja": "六級",
+      "en": "6th Kyu",
+      "zh": "六級",
+      "ko": "6급"
+    }
+  },
+  "ss_dan_kyu_5": {
+    "text": {
+      "ja": "五級",
+      "en": "5th Kyu",
+      "zh": "五級",
+      "ko": "5급"
+    }
+  },
+  "ss_dan_kyu_4": {
+    "text": {
+      "ja": "四級",
+      "en": "4th Kyu",
+      "zh": "四級",
+      "ko": "4급"
+    }
+  },
+  "ss_dan_kyu_3": {
+    "text": {
+      "ja": "三級",
+      "en": "3rd Kyu",
+      "zh": "三級",
+      "ko": "3급"
+    }
+  },
+  "ss_dan_kyu_2": {
+    "text": {
+      "ja": "二級",
+      "en": "2nd Kyu",
+      "zh": "二級",
+      "ko": "2급"
+    }
+  },
+  "ss_dan_kyu_1": {
+    "text": {
+      "ja": "一級",
+      "en": "1st Kyu",
+      "zh": "一級",
+      "ko": "1급"
+    }
+  },
+  "ss_dan_shodan": {
+    "text": {
+      "ja": "初段",
+      "en": "1st Dan",
+      "zh": "初段",
+      "ko": "초단"
+    }
+  },
+  "ss_dan_2": {
+    "text": {
+      "ja": "二段",
+      "en": "2nd Dan",
+      "zh": "二段",
+      "ko": "2단"
+    }
+  },
+  "ss_dan_3": {
+    "text": {
+      "ja": "三段",
+      "en": "3rd Dan",
+      "zh": "三段",
+      "ko": "3단"
+    }
+  },
+  "ss_dan_4": {
+    "text": {
+      "ja": "四段",
+      "en": "4th Dan",
+      "zh": "四段",
+      "ko": "4단"
+    }
+  },
+  "ss_dan_5": {
+    "text": {
+      "ja": "五段",
+      "en": "5th Dan",
+      "zh": "五段",
+      "ko": "5단"
+    }
+  },
+  "ss_dan_6": {
+    "text": {
+      "ja": "六段",
+      "en": "6th Dan",
+      "zh": "六段",
+      "ko": "6단"
+    }
+  },
+  "ss_dan_7": {
+    "text": {
+      "ja": "七段",
+      "en": "7th Dan",
+      "zh": "七段",
+      "ko": "7단"
+    }
+  },
+  "ss_dan_8": {
+    "text": {
+      "ja": "八段",
+      "en": "8th Dan",
+      "zh": "八段",
+      "ko": "8단"
+    }
+  },
+  "ss_dan_9": {
+    "text": {
+      "ja": "九段",
+      "en": "9th Dan",
+      "zh": "九段",
+      "ko": "9단"
+    }
+  },
+  "ss_dan_10": {
+    "text": {
+      "ja": "十段",
+      "en": "10th Dan",
+      "zh": "十段",
+      "ko": "10단"
+    }
+  },
+  "ss_dan_kuroto": {
+    "text": {
+      "ja": "玄人",
+      "en": "Kuroto",
+      "zh": "玄人",
+      "ko": "현인"
+    }
+  },
+  "ss_dan_meijin": {
+    "text": {
+      "ja": "名人",
+      "en": "Meijin",
+      "zh": "名人",
+      "ko": "명인"
+    }
+  },
+  "ss_dan_chojin": {
+    "text": {
+      "ja": "超人",
+      "en": "Chojin",
+      "zh": "超人",
+      "ko": "초인"
+    }
+  },
+  "ss_dan_tatsujin": {
+    "text": {
+      "ja": "達人",
+      "en": "Tatsujin",
+      "zh": "達人",
+      "ko": "달인"
+    }
+  },
+  "ss_dan_sousaku": {
+    "text": {
+      "ja": "創作",
+      "en": "Custom",
+      "zh": "創作",
+      "ko": "창작"
+    }
+  },
+  "ss_dan_gaiden": {
+    "text": {
+      "ja": "外伝",
+      "en": "Gaiden",
+      "zh": "外傳",
+      "ko": "외전"
+    }
+  },
+  "ss_dan_shokyu": {
+    "text": {
+      "ja": "初級",
+      "en": "Beginner",
+      "zh": "初級",
+      "ko": "초급"
+    }
+  },
+  "ss_card_ok": {
+    "text": {
+      "ja": "OK",
+      "en": "OK",
+      "zh": "OK",
+      "ko": "OK"
+    }
+  },
+  "ss_status_off": {
+    "text": {
+      "ja": "オフ",
+      "en": "Off",
+      "zh": "離線",
+      "ko": "오프"
+    }
+  },
+  "ss_dan_none": {
+    "text": {
+      "ja": "なし",
+      "en": "None",
+      "zh": "無",
+      "ko": "없음"
+    }
+  },
+  "ss_fast": {
+    "text": {
+      "ja": "はやい",
+      "en": "FAST",
+      "zh": "快",
+      "ko": "빠름"
+    }
+  },
+  "ss_slow": {
+    "text": {
+      "ja": "おそい",
+      "en": "SLOW",
+      "zh": "慢",
+      "ko": "느림"
+    }
+  },
+  "ss_res_timing": {
+    "text": {
+      "ja": "タイミング",
+      "en": "Timing",
+      "zh": "打擊時機",
+      "ko": "타이밍"
+    }
+  },
+  "ss_res_avg": {
+    "text": {
+      "ja": "平均",
+      "en": "Avg",
+      "zh": "平均",
+      "ko": "평균"
+    }
+  },
+  "ss_res_spread": {
+    "text": {
+      "ja": "ばらつき",
+      "en": "Spread",
+      "zh": "穩定度",
+      "ko": "편차"
+    }
+  },
+  "ss_res_accuracy": {
+    "text": {
+      "ja": "精度",
+      "en": "Acc.",
+      "zh": "精準度",
+      "ko": "정확도"
+    }
+  },
+  "ss_res_best": {
+    "text": {
+      "ja": "自己ベスト",
+      "en": "Best",
+      "zh": "最佳",
+      "ko": "최고"
+    }
+  },
+  "ss_ds_bpm": {
+    "text": {
+      "ja": "BPM",
+      "en": "BPM",
+      "zh": "BPM",
+      "ko": "BPM"
+    }
+  },
+  "ss_ds_notes": {
+    "text": {
+      "ja": "ノーツ",
+      "en": "Notes",
+      "zh": "音符",
+      "ko": "노트"
+    }
+  },
+  "ss_ds_length": {
+    "text": {
+      "ja": "長さ",
+      "en": "Length",
+      "zh": "時長",
+      "ko": "길이"
+    }
+  },
+  "ss_ai_battle": {
+    "text": {
+      "ja": "AIバトル",
+      "en": "AI battle",
+      "zh": "AI對戰",
+      "ko": "AI 배틀"
+    }
+  },
+  "ss_ai_support_title": {
+    "text": {
+      "ja": "えらべるむずかしさのレベル",
+      "en": "Choose a chart level",
+      "zh": "選擇譜面等級",
+      "ko": "보면 레벨 선택"
+    }
+  },
+  "ss_ai_support_usual": {
+    "text": {
+      "ja": "いつもの",
+      "en": "Original",
+      "zh": "原譜面",
+      "ko": "원래 보면"
+    }
+  },
+  "ss_ai_draw": {
+    "text": {
+      "ja": "引き分け",
+      "en": "DRAW",
+      "zh": "平局",
+      "ko": "무승부"
+    }
+  },
+  "ss_outfit_title": {
+    "text": {
+      "ja": "きせかえ",
+      "en": "Costume",
+      "zh": "裝扮",
+      "ko": "옷 갈아입기"
+    }
+  },
+  "ss_chara_momo": {
+    "text": {
+      "ja": "モモ",
+      "en": "Momo",
+      "zh": "桃桃",
+      "ko": "모모"
+    }
+  },
+  "ss_chara_hoshi": {
+    "text": {
+      "ja": "ホシ",
+      "en": "Hoshi",
+      "zh": "小星",
+      "ko": "호시"
+    }
+  },
+  "ss_outfit_plain": {
+    "text": {
+      "ja": "いつもの",
+      "en": "Usual",
+      "zh": "平常",
+      "ko": "평소"
+    }
+  },
+  "ss_outfit_happi": {
+    "text": {
+      "ja": "はっぴ",
+      "en": "Happi",
+      "zh": "法被",
+      "ko": "핫피"
+    }
+  },
+  "ss_outfit_yukata": {
+    "text": {
+      "ja": "ゆかた",
+      "en": "Yukata",
+      "zh": "浴衣",
+      "ko": "유카타"
+    }
+  },
+  "ss_outfit_school": {
+    "text": {
+      "ja": "せいふく",
+      "en": "Uniform",
+      "zh": "制服",
+      "ko": "교복"
+    }
+  },
+  "ss_outfit_chef": {
+    "text": {
+      "ja": "コック",
+      "en": "Chef",
+      "zh": "廚師",
+      "ko": "요리사"
+    }
+  },
+  "ss_outfit_pirate": {
+    "text": {
+      "ja": "かいぞく",
+      "en": "Pirate",
+      "zh": "海盜",
+      "ko": "해적"
+    }
+  },
+  "ss_outfit_winter": {
+    "text": {
+      "ja": "ふゆ",
+      "en": "Winter",
+      "zh": "冬裝",
+      "ko": "겨울옷"
+    }
+  },
+  "ss_outfit_ninja": {
+    "text": {
+      "ja": "にんじゃ",
+      "en": "Ninja",
+      "zh": "忍者",
+      "ko": "닌자"
+    }
+  },
+  "ss_outfit_santa": {
+    "text": {
+      "ja": "サンタ",
+      "en": "Santa",
+      "zh": "聖誕",
+      "ko": "산타"
+    }
+  },
+  "ss_outfit_idol": {
+    "text": {
+      "ja": "アイドル",
+      "en": "Idol",
+      "zh": "偶像",
+      "ko": "아이돌"
+    }
+  },
+  "ss_ds_recent": {
+    "text": {
+      "ja": "最近のプレイ",
+      "en": "Recent plays",
+      "zh": "最近遊玩",
+      "ko": "최근 플레이"
+    }
+  },
+  "ss_pr_loop": {
+    "text": {
+      "ja": "区間ループ",
+      "en": "Section loop",
+      "zh": "區段循環",
+      "ko": "구간 반복"
+    }
+  },
+  "ss_pr_pass": {
+    "text": {
+      "ja": "%d周目",
+      "en": "Pass %d",
+      "zh": "第%d輪",
+      "ko": "%d회차"
+    }
+  },
+  "ss_pr_last": {
+    "text": {
+      "ja": "前回",
+      "en": "Last pass",
+      "zh": "上一輪",
+      "ko": "지난 회차"
+    }
+  },
+  "ss_per_play": {
+    "text": {
+      "ja": "1プレイ 4曲",
+      "en": "4 songs per play",
+      "zh": "每局 4 首",
+      "ko": "1플레이 4곡"
+    }
+  },
+  "ss_game_hint": {
+    "text": {
+      "ja": "ゲームのヒント",
+      "en": "Hints",
+      "zh": "遊戲提示",
+      "ko": "게임의 힌트"
+    }
+  },
+  "ss_timer_left": {
+    "text": {
+      "ja": "のこり",
+      "en": "Left",
+      "zh": "剩餘",
+      "ko": "남은"
+    }
+  },
+  "ss_go_title": {
+    "text": {
+      "ja": "おつかれさま！",
+      "en": "Thanks for playing!",
+      "zh": "辛苦了！",
+      "ko": "수고했어!"
+    }
+  },
+  "ss_go_line": {
+    "text": {
+      "ja": "また あそんでね！",
+      "en": "Come play again!",
+      "zh": "下次再來玩哦！",
+      "ko": "또 놀러 와!"
+    }
+  },
+  "ss_go_cheer": {
+    "text": {
+      "ja": "ドンマイ！",
+      "en": "Don't mind!",
+      "zh": "別在意！",
+      "ko": "괜찮아!"
+    }
+  },
+  "ss_dot": {
+    "text": {
+      "ja": "・",
+      "en": "・",
+      "zh": "・",
+      "ko": "・"
+    }
+  },
+  "ss_result_title": {
+    "text": {
+      "ja": "せいせき はっぴょう",
+      "en": "Results",
+      "zh": "成績發表",
+      "ko": "성적 발표"
+    }
+  },
+  "ss_retry_rule": {
+    "text": {
+      "ja": "{0}回 たたいて ふっかつ！",
+      "en": "Hit {0} times to revive!",
+      "zh": "敲 {0} 次就能復活！",
+      "ko": "{0}번 두드려 부활!"
+    }
+  },
+  "ss_retry_ready": {
+    "text": {
+      "ja": "よーい…",
+      "en": "Ready…",
+      "zh": "預備…",
+      "ko": "준비…"
+    }
+  },
+  "ss_retry_go": {
+    "text": {
+      "ja": "ドン！",
+      "en": "Don!",
+      "zh": "咚！",
+      "ko": "쿵!"
+    }
+  },
+  "ss_retry_ok": {
+    "text": {
+      "ja": "ふっかつ成功！",
+      "en": "Revived!",
+      "zh": "復活成功！",
+      "ko": "부활 성공!"
+    }
+  },
+  "ss_retry_ng": {
+    "text": {
+      "ja": "ざんねん…",
+      "en": "Too bad…",
+      "zh": "可惜…",
+      "ko": "아쉽다…"
+    }
+  },
+  "ss_res_bub_0": {
+    "text": {
+      "ja": "つぎは がんばろう！",
+      "en": "Next time!",
+      "zh": "下次加油！",
+      "ko": "다음엔 힘내자!"
+    }
+  },
+  "ss_res_bub_1": {
+    "text": {
+      "ja": "おしい！ あとすこし！",
+      "en": "So close!",
+      "zh": "可惜！ 就差一點！",
+      "ko": "아깝다! 조금만 더!"
+    }
+  },
+  "ss_res_bub_2": {
+    "text": {
+      "ja": "クリア！ やったね！",
+      "en": "Clear! Nice!",
+      "zh": "通關！ 太好了！",
+      "ko": "클리어! 해냈다!"
+    }
+  },
+  "ss_res_bub_3": {
+    "text": {
+      "ja": "たましい まんたん！",
+      "en": "Soul gauge full!",
+      "zh": "魂槽全滿！",
+      "ko": "혼 게이지 가득!"
+    }
+  },
+  "ss_res_bub_4": {
+    "text": {
+      "ja": "フルコンボ！ すごい！",
+      "en": "Full Combo! Wow!",
+      "zh": "全連擊！ 好厲害！",
+      "ko": "풀 콤보! 대단해!"
+    }
+  },
+  "ss_res_bub_5": {
+    "text": {
+      "ja": "ぜんりょう！ かんぺき！",
+      "en": "All Good! Perfect!",
+      "zh": "全良！ 完美！",
+      "ko": "올 양! 완벽해!"
+    }
+  },
+  "ss_sel_song": {
+    "text": {
+      "ja": "曲をえらぶ",
+      "en": "Select a song",
+      "zh": "選擇歌曲",
+      "ko": "곡 선택"
+    }
+  },
+  "ss_sel_course": {
+    "text": {
+      "ja": "むずかしさをえらぶ",
+      "en": "Select difficulty",
+      "zh": "選擇難度",
+      "ko": "난이도 선택"
+    }
+  },
+  "ss_sel_back": {
+    "text": {
+      "ja": "もどる",
+      "en": "Back",
+      "zh": "返回",
+      "ko": "뒤로"
+    }
+  },
+  "ss_sel_options": {
+    "text": {
+      "ja": "オプション",
+      "en": "Options",
+      "zh": "選項",
+      "ko": "옵션"
+    }
+  },
+  "ss_sel_neiro": {
+    "text": {
+      "ja": "音色",
+      "en": "Sound",
+      "zh": "音色",
+      "ko": "음색"
+    }
+  },
+  "ss_sel_points": {
+    "text": {
+      "ja": "点",
+      "en": "pts",
+      "zh": "分",
+      "ko": "점"
+    }
+  },
+  "ss_sel_say_pick": {
+    "text": {
+      "ja": "どれに する？",
+      "en": "Which one?",
+      "zh": "選哪個？",
+      "ko": "뭘로 할까?"
+    }
+  },
+  "ss_sel_say_oni": {
+    "text": {
+      "ja": "ほんきで いくよ！",
+      "en": "Going all out!",
+      "zh": "全力以赴！",
+      "ko": "전력으로 간다!"
+    }
+  },
+  "ss_sel_new_song": {
+    "text": {
+      "ja": "新曲",
+      "en": "NEW",
+      "zh": "新曲",
+      "ko": "신곡"
+    }
+  },
+  "ss_sel_new_audio": {
+    "text": {
+      "ja": "新音源",
+      "en": "New audio",
+      "zh": "新音源",
+      "ko": "신음원"
+    }
+  },
+  "ss_sel_old_audio": {
+    "text": {
+      "ja": "旧音源",
+      "en": "Old audio",
+      "zh": "舊音源",
+      "ko": "구음원"
+    }
+  },
+  "ss_sel_limited": {
+    "text": {
+      "ja": "期間限定",
+      "en": "Limited",
+      "zh": "期間限定",
+      "ko": "기간 한정"
+    }
+  },
+  "ss_sel_fav_1p": {
+    "text": {
+      "ja": "1Pのお気に入り",
+      "en": "1P favorite",
+      "zh": "1P的收藏",
+      "ko": "1P 즐겨찾기"
+    }
+  },
+  "ss_sel_fav_2p": {
+    "text": {
+      "ja": "2Pのお気に入り",
+      "en": "2P favorite",
+      "zh": "2P的收藏",
+      "ko": "2P 즐겨찾기"
+    }
+  },
+  "ss_say_start_0": {
+    "text": {
+      "ja": "いくよー！",
+      "en": "Here we go!",
+      "zh": "要開始啦！",
+      "ko": "간다~!"
+    }
+  },
+  "ss_say_start_1": {
+    "text": {
+      "ja": "リズムに のって！",
+      "en": "Feel the rhythm!",
+      "zh": "跟上節奏！",
+      "ko": "리듬을 타자!"
+    }
+  },
+  "ss_say_start_2": {
+    "text": {
+      "ja": "がんばろうね！",
+      "en": "Let's do this!",
+      "zh": "加油吧！",
+      "ko": "힘내자!"
+    }
+  },
+  "ss_say_start_3": {
+    "text": {
+      "ja": "さあ はじめよう！",
+      "en": "Let's begin!",
+      "zh": "來，開始吧！",
+      "ko": "자, 시작하자!"
+    }
+  },
+  "ss_say_combo_50_0": {
+    "text": {
+      "ja": "50コンボ！",
+      "en": "50 combo!",
+      "zh": "50連擊！",
+      "ko": "50 콤보!"
+    }
+  },
+  "ss_say_combo_50_1": {
+    "text": {
+      "ja": "50コンボ！ ナイス！",
+      "en": "50 combo! Nice!",
+      "zh": "50連擊！ 漂亮！",
+      "ko": "50 콤보! 나이스!"
+    }
+  },
+  "ss_say_combo_50_2": {
+    "text": {
+      "ja": "50コンボ たっせい！",
+      "en": "50 combo reached!",
+      "zh": "達成50連擊！",
+      "ko": "50 콤보 달성!"
+    }
+  },
+  "ss_say_combo_100_0": {
+    "text": {
+      "ja": "100コンボ！",
+      "en": "100 combo!",
+      "zh": "100連擊！",
+      "ko": "100 콤보!"
+    }
+  },
+  "ss_say_combo_100_1": {
+    "text": {
+      "ja": "100コンボ！ すごい！",
+      "en": "100 combo! Wow!",
+      "zh": "100連擊！ 好厲害！",
+      "ko": "100 콤보! 대단해!"
+    }
+  },
+  "ss_say_combo_100_2": {
+    "text": {
+      "ja": "100コンボ とっぱ！",
+      "en": "Past 100 combo!",
+      "zh": "突破100連擊！",
+      "ko": "100 콤보 돌파!"
+    }
+  },
+  "ss_say_combo_100_3": {
+    "text": {
+      "ja": "100コンボだ！",
+      "en": "That's 100 combo!",
+      "zh": "100連擊了！",
+      "ko": "100 콤보다!"
+    }
+  },
+  "ss_say_combo_200_0": {
+    "text": {
+      "ja": "200コンボ！",
+      "en": "200 combo!",
+      "zh": "200連擊！",
+      "ko": "200 콤보!"
+    }
+  },
+  "ss_say_combo_200_1": {
+    "text": {
+      "ja": "200コンボ！ そのまま！",
+      "en": "200! Keep it up!",
+      "zh": "200連擊！ 保持住！",
+      "ko": "200 콤보! 그대로!"
+    }
+  },
+  "ss_say_combo_200_2": {
+    "text": {
+      "ja": "200コンボ とっぱ！",
+      "en": "Past 200 combo!",
+      "zh": "突破200連擊！",
+      "ko": "200 콤보 돌파!"
+    }
+  },
+  "ss_say_combo_300_0": {
+    "text": {
+      "ja": "300コンボ！",
+      "en": "300 combo!",
+      "zh": "300連擊！",
+      "ko": "300 콤보!"
+    }
+  },
+  "ss_say_combo_300_1": {
+    "text": {
+      "ja": "300コンボ！ すごすぎ！",
+      "en": "300! Amazing!",
+      "zh": "300連擊！ 太強了！",
+      "ko": "300 콤보! 굉장해!"
+    }
+  },
+  "ss_say_combo_300_2": {
+    "text": {
+      "ja": "300コンボ とっぱ！",
+      "en": "Past 300 combo!",
+      "zh": "突破300連擊！",
+      "ko": "300 콤보 돌파!"
+    }
+  },
+  "ss_say_combo_400_0": {
+    "text": {
+      "ja": "400コンボ！",
+      "en": "400 combo!",
+      "zh": "400連擊！",
+      "ko": "400 콤보!"
+    }
+  },
+  "ss_say_combo_400_1": {
+    "text": {
+      "ja": "400コンボ！ ノってる！",
+      "en": "400! On fire!",
+      "zh": "400連擊！ 狀態正好！",
+      "ko": "400 콤보! 신났다!"
+    }
+  },
+  "ss_say_combo_400_2": {
+    "text": {
+      "ja": "400コンボ とっぱ！",
+      "en": "Past 400 combo!",
+      "zh": "突破400連擊！",
+      "ko": "400 콤보 돌파!"
+    }
+  },
+  "ss_say_combo_500_0": {
+    "text": {
+      "ja": "500コンボ！",
+      "en": "500 combo!",
+      "zh": "500連擊！",
+      "ko": "500 콤보!"
+    }
+  },
+  "ss_say_combo_500_1": {
+    "text": {
+      "ja": "500コンボ！ たつじん！",
+      "en": "500! A true master!",
+      "zh": "500連擊！ 達人！",
+      "ko": "500 콤보! 달인!"
+    }
+  },
+  "ss_say_combo_500_2": {
+    "text": {
+      "ja": "500コンボ とっぱ！",
+      "en": "Past 500 combo!",
+      "zh": "突破500連擊！",
+      "ko": "500 콤보 돌파!"
+    }
+  },
+  "ss_say_combo_many_0": {
+    "text": {
+      "ja": "コンボ つづいてる！",
+      "en": "The combo goes on!",
+      "zh": "連擊還在繼續！",
+      "ko": "콤보 계속 중!"
+    }
+  },
+  "ss_say_combo_many_1": {
+    "text": {
+      "ja": "まだまだ つづく！",
+      "en": "Keep it going!",
+      "zh": "還要繼續！",
+      "ko": "아직 계속!"
+    }
+  },
+  "ss_say_combo_many_2": {
+    "text": {
+      "ja": "コンボ こうしん中！",
+      "en": "Combo climbing!",
+      "zh": "連擊重新整理中！",
+      "ko": "콤보 갱신 중!"
+    }
+  },
+  "ss_say_dan_next_0": {
+    "text": {
+      "ja": "つぎの きょく！",
+      "en": "Next song!",
+      "zh": "下一首！",
+      "ko": "다음 곡!"
+    }
+  },
+  "ss_say_dan_next_1": {
+    "text": {
+      "ja": "その ちょうしで つぎ！",
+      "en": "Keep it up, next!",
+      "zh": "保持狀態，下一首！",
+      "ko": "그 기세로 다음!"
+    }
+  },
+  "ss_say_dan_next_2": {
+    "text": {
+      "ja": "まだまだ いくよ！",
+      "en": "Still going!",
+      "zh": "繼續前進！",
+      "ko": "아직 더 간다!"
+    }
+  },
+  "ss_say_donderful_0": {
+    "text": {
+      "ja": "ぜんぶ 良！ さいこう！",
+      "en": "All GOOD! The best!",
+      "zh": "全是良！ 最棒了！",
+      "ko": "전부 양! 최고!"
+    }
+  },
+  "ss_say_donderful_1": {
+    "text": {
+      "ja": "ドンダフルコンボ！",
+      "en": "Donderful Combo!",
+      "zh": "全良連擊！",
+      "ko": "동더풀 콤보!"
+    }
+  },
+  "ss_say_donderful_2": {
+    "text": {
+      "ja": "パーフェクト！",
+      "en": "Perfect!",
+      "zh": "完美！",
+      "ko": "퍼펙트!"
+    }
+  },
+  "ss_say_fail_0": {
+    "text": {
+      "ja": "おしい！ つぎは いける！",
+      "en": "So close! Next time!",
+      "zh": "可惜！ 下次能行！",
+      "ko": "아깝다! 다음엔 된다!"
+    }
+  },
+  "ss_say_fail_1": {
+    "text": {
+      "ja": "ざんねん…",
+      "en": "Too bad…",
+      "zh": "可惜…",
+      "ko": "아쉽다…"
+    }
+  },
+  "ss_say_fail_2": {
+    "text": {
+      "ja": "もう いっかい やろう！",
+      "en": "Let's try again!",
+      "zh": "再來一次吧！",
+      "ko": "한 번 더 하자!"
+    }
+  },
+  "ss_say_full_combo_0": {
+    "text": {
+      "ja": "フルコンボ！ すごい！",
+      "en": "Full Combo! Wow!",
+      "zh": "全連擊！ 好厲害！",
+      "ko": "풀 콤보! 대단해!"
+    }
+  },
+  "ss_say_full_combo_1": {
+    "text": {
+      "ja": "フルコンボだ！",
+      "en": "Full Combo!",
+      "zh": "全連擊了！",
+      "ko": "풀 콤보다!"
+    }
+  },
+  "ss_say_full_combo_2": {
+    "text": {
+      "ja": "かんぺき フルコンボ！",
+      "en": "A perfect Full Combo!",
+      "zh": "完美全連擊！",
+      "ko": "완벽한 풀 콤보!"
+    }
+  },
+  "ss_say_gogo_0": {
+    "text": {
+      "ja": "ゴーゴータイム！",
+      "en": "GO-GO Time!",
+      "zh": "GOGO時間！",
+      "ko": "고고 타임!"
+    }
+  },
+  "ss_say_gogo_1": {
+    "text": {
+      "ja": "ゴーゴー！ もりあがれ！",
+      "en": "GO-GO! Turn it up!",
+      "zh": "GOGO！ 嗨起來！",
+      "ko": "고고! 달아올라라!"
+    }
+  },
+  "ss_say_gogo_2": {
+    "text": {
+      "ja": "ゴーゴータイムだ！",
+      "en": "It's GO-GO Time!",
+      "zh": "GOGO時間到！",
+      "ko": "고고 타임이다!"
+    }
+  },
+  "ss_say_gogo_3": {
+    "text": {
+      "ja": "ここが みせば！",
+      "en": "Show them now!",
+      "zh": "現在是看點！",
+      "ko": "여기가 하이라이트!"
+    }
+  },
+  "ss_say_miss_0": {
+    "text": {
+      "ja": "ドンマイ！",
+      "en": "Don't mind!",
+      "zh": "別在意！",
+      "ko": "괜찮아!"
+    }
+  },
+  "ss_say_miss_1": {
+    "text": {
+      "ja": "おちついて！",
+      "en": "Stay calm!",
+      "zh": "冷靜點！",
+      "ko": "침착하게!"
+    }
+  },
+  "ss_say_miss_2": {
+    "text": {
+      "ja": "まだまだ いける！",
+      "en": "You've still got it!",
+      "zh": "還能行！",
+      "ko": "아직 할 수 있어!"
+    }
+  },
+  "ss_say_miss_3": {
+    "text": {
+      "ja": "リズムを よく きいて！",
+      "en": "Listen to the beat!",
+      "zh": "仔細聽節奏！",
+      "ko": "리듬을 잘 들어!"
+    }
+  },
+  "ss_say_norma_0": {
+    "text": {
+      "ja": "クリアライン とっぱ！",
+      "en": "Past the clear line!",
+      "zh": "突破通關線！",
+      "ko": "클리어 라인 돌파!"
+    }
+  },
+  "ss_say_norma_1": {
+    "text": {
+      "ja": "ノルマ クリア！",
+      "en": "Norma cleared!",
+      "zh": "達成目標！",
+      "ko": "노르마 클리어!"
+    }
+  },
+  "ss_say_norma_2": {
+    "text": {
+      "ja": "その ちょうし！",
+      "en": "That's it!",
+      "zh": "就是這樣！",
+      "ko": "그 기세야!"
+    }
+  },
+  "ss_say_roll_0": {
+    "text": {
+      "ja": "れんだ れんだー！",
+      "en": "Roll, roll!",
+      "zh": "連打連打！",
+      "ko": "연타 연타~!"
+    }
+  },
+  "ss_say_roll_1": {
+    "text": {
+      "ja": "連打チャンス！",
+      "en": "Roll chance!",
+      "zh": "連打機會！",
+      "ko": "연타 찬스!"
+    }
+  },
+  "ss_say_roll_2": {
+    "text": {
+      "ja": "たたけ たたけー！",
+      "en": "Hit, hit, hit!",
+      "zh": "敲啊敲！",
+      "ko": "두드려 두드려~!"
+    }
+  },
+  "ss_say_balloon_0": {
+    "text": {
+      "ja": "ふうせん わって！",
+      "en": "Pop the balloon!",
+      "zh": "打破氣球！",
+      "ko": "풍선을 터뜨려!"
+    }
+  },
+  "ss_say_balloon_1": {
+    "text": {
+      "ja": "ふうせんだ！",
+      "en": "A balloon!",
+      "zh": "是氣球！",
+      "ko": "풍선이다!"
+    }
+  },
+  "ss_say_balloon_2": {
+    "text": {
+      "ja": "いっきに わろう！",
+      "en": "Pop it in one go!",
+      "zh": "一口氣打破！",
+      "ko": "단숨에 터뜨리자!"
+    }
+  },
+  "ss_say_clear_0": {
+    "text": {
+      "ja": "クリア おめでとう！",
+      "en": "Clear, congrats!",
+      "zh": "恭喜通關！",
+      "ko": "클리어 축하해!"
+    }
+  },
+  "ss_say_clear_1": {
+    "text": {
+      "ja": "やったね！ クリア！",
+      "en": "You did it! Clear!",
+      "zh": "太好了！ 通關！",
+      "ko": "해냈다! 클리어!"
+    }
+  },
+  "ss_say_clear_2": {
+    "text": {
+      "ja": "ナイス えんそう！",
+      "en": "Nice playing!",
+      "zh": "演奏得真棒！",
+      "ko": "멋진 연주!"
+    }
+  },
+  "ss_title_start": {
+    "text": {
+      "ja": "太鼓をたたいてスタート！",
+      "en": "HIT THE TAIKO!",
+      "zh": "敲打太鼓開始！",
+      "ko": "북을 쳐서 시작!"
+    }
+  },
+  "ss_dan_fail": {
+    "text": {
+      "ja": "不合格",
+      "en": "Fail",
+      "zh": "不合格",
+      "ko": "불합격"
+    }
+  },
+  "ss_sel_folder_count": {
+    "text": {
+      "ja": "全{0}曲",
+      "en": "{0} songs",
+      "zh": "共{0}首",
+      "ko": "전 {0}곡"
+    }
+  },
+  "ss_sort_window_diff": {
+    "text": {
+      "ja": "むずかしさ",
+      "en": "Difficulty",
+      "zh": "難度",
+      "ko": "난이도"
+    }
+  },
+  "ss_sort_window_star": {
+    "text": {
+      "ja": "★の数",
+      "en": "Number of ★",
+      "zh": "★的個數",
+      "ko": "★ 개수"
+    }
+  },
+  "ss_sort_window_order": {
+    "text": {
+      "ja": "表示順",
+      "en": "Sort by",
+      "zh": "排序",
+      "ko": "정렬"
+    }
+  },
+  "ss_sort_window_order_0": {
+    "text": {
+      "ja": "いつもどおり",
+      "en": "Default",
+      "zh": "預設",
+      "ko": "기본"
+    }
+  },
+  "ss_sort_window_order_1": {
+    "text": {
+      "ja": "未クリア優先",
+      "en": "Not cleared first",
+      "zh": "未通關優先",
+      "ko": "미클리어 우선"
+    }
+  },
+  "ss_sort_window_order_2": {
+    "text": {
+      "ja": "未フルコンボ優先",
+      "en": "No Full Combo first",
+      "zh": "未全連優先",
+      "ko": "미풀콤보 우선"
+    }
+  },
+  "ss_sort_window_order_3": {
+    "text": {
+      "ja": "未ドンダフルコンボ優先",
+      "en": "No Donderful first",
+      "zh": "未全良優先",
+      "ko": "미동더풀 우선"
+    }
+  },
+  "ss_folder_sort_select": {
+    "text": {
+      "ja": "むずかしさからえらぶ",
+      "en": "Select by difficulty",
+      "zh": "按難度選擇",
+      "ko": "난이도로 선택"
+    }
+  },
+  "ss_sort_window_songs": {
+    "text": {
+      "ja": "曲",
+      "en": "songs",
+      "zh": "首",
+      "ko": "곡"
+    }
+  }
+}

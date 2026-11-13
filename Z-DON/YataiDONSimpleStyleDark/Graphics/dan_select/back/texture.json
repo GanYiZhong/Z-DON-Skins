@@ -1,0 +1,35 @@
+{
+  "folder": {
+    "x": -84,
+    "y": 30
+  },
+  "chip": {
+    "x": 60,
+    "y": 810,
+    "density": 1
+  },
+  "board_tl": {},
+  "board_t": {},
+  "board_tr": {},
+  "board_r": {},
+  "board_br": {},
+  "board_b": {},
+  "board_bl": {},
+  "board_l": {},
+  "board_c": {},
+  "graphic": {
+    "x": 1434,
+    "y": 564,
+    "density": 1
+  },
+  "text": {
+    "x": 1932,
+    "y": 414,
+    "density": 1
+  },
+  "pill": {
+    "x": 1412,
+    "y": 390,
+    "density": 1
+  }
+}

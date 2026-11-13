@@ -1,0 +1,153 @@
+{
+    "background": {},
+    "bar_genre": {},
+    "folder_graphic": {},
+    "bar_genre_back": {},
+    "bar_genre_overlay": {},
+    "box_chara": {},
+    "genre_overlay_large": {},
+    "back_graphic": {
+        "x": -342,
+        "y": 375
+    },
+    "back_icon": {
+        "x": 34,
+        "y": 193
+    },
+    "back_icon_highlight": {
+        "x": 34,
+        "y": 193
+    },
+    "folder_texture_left": {
+        "y": 142,
+        "frame_order": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ]
+    },
+    "folder_texture": {
+        "x": 48,
+        "y": 142,
+        "frame_order": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ]
+    },
+    "folder_texture_right": {
+        "x": 96,
+        "y": 142,
+        "frame_order": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ]
+    },
+    "folder_clip": {
+        "x": 6,
+        "y": 133,
+        "frame_order": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ]
+    },
+    "folder_top": {
+        "x": 795,
+        "y": 283,
+        "x2": 331,
+        "frame_order": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ]
+    },
+    "folder_top_edge": {
+        "x": 724,
+        "y": 283,
+        "frame_order": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ]
+    },
+    "folder_background": {
+        "x": 0,
+        "y": 37,
+        "frame_order": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ]
+    },
+    "folder_background_edge": {
+        "x": 0,
+        "y": 37,
+        "frame_order": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ]
+    },
+    "folder_background_folder": {
+        "x": 0,
+        "y": 37,
+        "frame_order": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ]
+    },
+    "folder_background_folder_edge": {
+        "x": 0,
+        "y": 37,
+        "frame_order": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ]
+    },
+    "genre_overlay": {
+        "x": 18,
+        "y": 165
+    },
+    "diff_overlay": {
+        "x": 18,
+        "y": 165
+    },
+    "diff_overlay_large": {
+        "x": 684,
+        "y": 165
+    }
+}
