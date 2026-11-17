@@ -26,7 +26,7 @@
         "y": 0
     },
     "screen": {
-        "parent": "YataiDONSimpleStyle/_base/YataiDONNijiiro",
+        "parent": "YataiDONNijiiro",
         "width": 1920,
         "height": 1080,
         "options": {

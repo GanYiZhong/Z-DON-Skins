@@ -3,8 +3,8 @@
 [English](README.md) | 繁體中文
 
 給 [Z-DON](https://github.com/GanYiZhong/Z-DON)（[YataiDON](https://github.com/Yonokid/YataiDON) 的 AI 開發分支）做的
-skin。每個 skin 有兩個版本：Z-DON 用的，和上游 YataiDON 用的。兩個版本都是**獨立版**：把資料夾複製到 `Skins/`、在設定裡
-選它就能用，不需要另外安裝其他 skin。
+skin。每個 skin 有兩個版本：Z-DON 用的，和上游 YataiDON 用的。兩個版本都需要另外安裝父 skin
+YataiDONNijiiro 和 PyTaikoGreen（見[父 skin](#父-skin)）。
 
 | Skin | 風格 |
 |---|---|
@@ -29,39 +29,39 @@ skin。每個 skin 有兩個版本：Z-DON 用的，和上游 YataiDON 用的。
    [`Z-DON-Skins-Z-DON.zip`](https://github.com/GanYiZhong/Z-DON-Skins/releases/latest/download/Z-DON-Skins-Z-DON.zip)
    或 [`Z-DON-Skins-YataiDON.zip`](https://github.com/GanYiZhong/Z-DON-Skins/releases/latest/download/Z-DON-Skins-YataiDON.zip)。
    `main` 每次更新都會自動重新打包（rolling release）。也可以下載或 clone 整個 repo。
-2. 把 zip 解壓出來的（或 repo 的 `Z-DON/`、`YataiDON/` 裡的） `YataiDONSimpleStyle`（要夜晚版就再加 `YataiDONSimpleStyleDark`）複製到遊戲的
+2. 確認遊戲的 `Skins/` 資料夾裡有 `YataiDONNijiiro` 和 `PyTaikoGreen`。
+3. 把 zip 解壓出來的（或 repo 的 `Z-DON/`、`YataiDON/` 裡的） `YataiDONSimpleStyle`（要夜晚版就再加 `YataiDONSimpleStyleDark`）複製到遊戲的
    `Skins/` 資料夾。
-3. 在遊戲設定裡選這個 skin。
+4. 在遊戲設定裡選這個 skin。
 
-Z-DON 的安裝包已經內附這兩個 skin 的 Z-DON 版。
+Z-DON 的安裝包已經內附這兩個 skin 的 Z-DON 版；第一次啟動的畫面會下載父 skin。
 
-## `_base/` 是什麼
+## 父 skin
 
-YataiDONSimpleStyle 沿用 **YataiDONNijiiro** 的版面和畫面流程，而 YataiDONNijiiro 又建立在 **PyTaikoGreen** 上。
-為了做成獨立版，它還會用到的那兩個 skin 的檔案被複製到 `YataiDONSimpleStyle/_base/`（它的 `skin_config.json`
-把 `YataiDONSimpleStyle/_base/YataiDONNijiiro` 設為父 skin），所以引擎找檔案的方式跟原本完全一樣。只複製真的用到的；
-父 skin 的背景系統、3D 角色模型，以及 SimpleStyle 沒畫的模式（上游 AI 對戰、わいわい、活動、獎勵商店、扭蛋、比賽）
-的圖都沒有放。這些檔案屬於 YataiDONNijiiro 和 PyTaikoGreen 的作者。
+YataiDONSimpleStyle 沿用 **YataiDONNijiiro** 的版面和畫面流程，而 YataiDONNijiiro 又建立在 **PyTaikoGreen** 上，
+所以這兩個也要安裝（`skin_config.json` 把 `YataiDONNijiiro` 設為父 skin）。它們屬於各自的作者，不放在這個 repo；
+請從 [YataiDONNijiiro](https://ese.tjadataba.se/Yonokid/YataiDONNijiiro) 和
+[PyTaikoGreen](https://ese.tjadataba.se/Yonokid/PyTaikoGreen) 取得（Z-DON 第一次啟動的畫面會連同父 skin 一起安裝）。
 
 ## 重建
 
 - [`generator/`](generator)：畫出 SimpleStyle 每一張圖、寫出它的腳本的 Python 產生器（`python build.py`；
   `--theme dark` 是夜晚配色，`--density 1` 是 1080p）。父 skin 從環境變數 `SS_SKINS`（含 YataiDONNijiiro 和
   PyTaikoGreen 的 `Skins` 資料夾）讀。說明在 `SCREEN_GUIDE_V2.md`、`STYLE_GUIDE.md`、`README_dark.md`。
-- [`tools/zdon_standalone_skin.py`](tools/zdon_standalone_skin.py)：把 skin 和它用到的父 skin 檔案（放在 `_base/`）
-  一起複製出來。
+- [`tools/zdon_standalone_skin.py`](tools/zdon_standalone_skin.py)：從 `Skins` 資料夾複製出一個 skin
+  （`--keep-parent`：只有它自己的檔案，不含更新器的記錄檔）。
 - [`tools/zdon_skin_upstream.py`](tools/zdon_skin_upstream.py)：把 Z-DON 版轉成上游版（skin 自己的圖和 texture.json
   數字減半，只留基本字型）。
 
 ```bash
-python tools/zdon_standalone_skin.py <Z-DON>/build/bin/Skins YataiDONSimpleStyle Z-DON --exclude 'Models/*' ...
+python tools/zdon_standalone_skin.py <Z-DON>/build/bin/Skins YataiDONSimpleStyle Z-DON --keep-parent
 python tools/zdon_skin_upstream.py Z-DON/YataiDONSimpleStyle YataiDON/YataiDONSimpleStyle
 ```
 
-完整的排除清單在 Z-DON 的 `tools/zdon_bundle_simplestyle.sh`。
+Z-DON 的安裝包用 `tools/zdon_bundle_simplestyle.sh` 做同樣的事。
 
 ## 授權
 
 GPL-3.0，跟 YataiDON 一樣（見 [LICENSE](LICENSE)）：SimpleStyle 的圖、腳本和產生器。SimpleStyle 的圖全部是原創、用程式
 產生的。像素字型是 [Fusion Pixel Font](https://github.com/TakWolf/fusion-pixel-font)，採用 SIL Open Font License 1.1
-（`Fonts/OFL.txt`、`Fonts/LICENSES/`）。`_base/` 底下的檔案來自 YataiDONNijiiro 和 PyTaikoGreen，依各自作者的條款。
+（`Fonts/OFL.txt`、`Fonts/LICENSES/`）。
