@@ -127,7 +127,7 @@ function AISupportMenu:draw(ms, course, cursor, choosing, branching, player, ten
     -- Z-DON (Green): the AI's tension balloon in Z-DON's art and spot (song_select/ai_battle/upai_tension = the
     -- official tension frames, 872,575 = the direct feed Tl7g8XXXvAM). Upstream's cropped "tension" sheet drew nothing
     -- in a zh session. tension = the condition tier 0..4 (0.90..0.99) = メチャワル .. メチャヨイ
-    tex.draw_texture(self:id("upai_tension"), { x = 872 * S_SCALE, y = 575 * S_SCALE, frame = tension })
+    if tension >= 0 then tex.draw_texture(self:id("upai_tension"), { x = 872 * S_SCALE, y = 575 * S_SCALE, frame = tension }) end
     self:draw_rank_panels(ms)
     if course < 0 then self:draw_rank_todo(ms) end
 
@@ -170,7 +170,7 @@ function AISupportMenu:draw(ms, course, cursor, choosing, branching, player, ten
         draw("box_1")
     end
 
-    local info = COURSES[self.course]
+    local info = COURSES[self.course] or COURSES[3]
     local offsets = BOARD_OFFSETS[info.count]
     local row = info.count == 1 and 1 or 0
     for i = 0, info.count - 1 do

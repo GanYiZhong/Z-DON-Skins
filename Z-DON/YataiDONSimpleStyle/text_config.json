@@ -3370,5 +3370,573 @@
       "zh": "首",
       "ko": "곡"
     }
+  },
+  "entry_enso_battle": {
+    "text": {
+      "ja": "演奏バトル",
+      "en": "Enso Battle",
+      "zh": "演奏對戰",
+      "ko": "연주 배틀"
+    }
+  },
+  "entry_enso_battle_comment_1": {
+    "text": {
+      "ja": "たいこを たたいて",
+      "en": "Drum the monsters",
+      "zh": "敲太鼓",
+      "ko": "북을 쳐서"
+    }
+  },
+  "entry_enso_battle_comment_2": {
+    "text": {
+      "ja": "モンスターを やっつけよう!",
+      "en": "out of the field!",
+      "zh": "打倒怪物吧！",
+      "ko": "몬스터를 물리치자!"
+    }
+  },
+  "ss_bt_mode": {
+    "text": {
+      "ja": "演奏バトル",
+      "en": "Enso Battle",
+      "zh": "演奏對戰",
+      "ko": "연주 배틀"
+    }
+  },
+  "ss_bt_kills": {
+    "text": {
+      "ja": "たおした数",
+      "en": "Defeated",
+      "zh": "擊倒數",
+      "ko": "쓰러뜨린 수"
+    }
+  },
+  "ss_bt_power": {
+    "text": {
+      "ja": "バトルパワー",
+      "en": "Battle Power",
+      "zh": "對戰力",
+      "ko": "배틀 파워"
+    }
+  },
+  "ss_bt_skill": {
+    "text": {
+      "ja": "ひっさつわざ",
+      "en": "Special",
+      "zh": "必殺技",
+      "ko": "필살기"
+    }
+  },
+  "ss_bt_skill_ready": {
+    "text": {
+      "ja": "ひっさつわざ!",
+      "en": "Special!",
+      "zh": "必殺技！",
+      "ko": "필살기!"
+    }
+  },
+  "ss_bt_stage": {
+    "text": {
+      "ja": "ステージ {0}",
+      "en": "Stage {0}",
+      "zh": "第 {0} 關",
+      "ko": "스테이지 {0}"
+    }
+  },
+  "ss_bt_stage_ex": {
+    "text": {
+      "ja": "EXステージ",
+      "en": "EX Stage",
+      "zh": "EX 關卡",
+      "ko": "EX 스테이지"
+    }
+  },
+  "ss_bt_zone_0": {
+    "text": {
+      "ja": "はらっぱ",
+      "en": "Meadow",
+      "zh": "草原",
+      "ko": "들판"
+    }
+  },
+  "ss_bt_zone_1": {
+    "text": {
+      "ja": "うみべ",
+      "en": "Seaside",
+      "zh": "海邊",
+      "ko": "바닷가"
+    }
+  },
+  "ss_bt_zone_2": {
+    "text": {
+      "ja": "よるの森",
+      "en": "Night Forest",
+      "zh": "夜之森",
+      "ko": "밤의 숲"
+    }
+  },
+  "ss_bt_zone_3": {
+    "text": {
+      "ja": "いわやま",
+      "en": "Rocky Hills",
+      "zh": "岩山",
+      "ko": "바위산"
+    }
+  },
+  "ss_bt_zone_4": {
+    "text": {
+      "ja": "おまつり城",
+      "en": "Festival Castle",
+      "zh": "祭典城",
+      "ko": "축제의 성"
+    }
+  },
+  "ss_bt_boss_2": {
+    "text": {
+      "ja": "もちキング",
+      "en": "King Mochi",
+      "zh": "麻糬國王",
+      "ko": "떡 킹"
+    }
+  },
+  "ss_bt_boss_4": {
+    "text": {
+      "ja": "カニせんちょう",
+      "en": "Captain Crab",
+      "zh": "螃蟹船長",
+      "ko": "게 선장"
+    }
+  },
+  "ss_bt_boss_6": {
+    "text": {
+      "ja": "ちょうちんおばけ",
+      "en": "Lantern Ghost",
+      "zh": "燈籠妖怪",
+      "ko": "등롱 유령"
+    }
+  },
+  "ss_bt_boss_8": {
+    "text": {
+      "ja": "いわゴーレム",
+      "en": "Rock Golem",
+      "zh": "岩石魔像",
+      "ko": "바위 골렘"
+    }
+  },
+  "ss_bt_boss_10": {
+    "text": {
+      "ja": "かみなりぐも",
+      "en": "Thunder Cloud",
+      "zh": "雷雲怪",
+      "ko": "천둥 구름"
+    }
+  },
+  "ss_bt_boss_11": {
+    "text": {
+      "ja": "かげだいこ",
+      "en": "Shadow Drum",
+      "zh": "影之太鼓",
+      "ko": "그림자 북"
+    }
+  },
+  "ss_bt_boss_hp": {
+    "text": {
+      "ja": "ボスのたいりょく",
+      "en": "Boss HP",
+      "zh": "頭目體力",
+      "ko": "보스 체력"
+    }
+  },
+  "ss_bt_bond": {
+    "text": {
+      "ja": "きずなレベル",
+      "en": "Bond Level",
+      "zh": "羈絆等級",
+      "ko": "유대 레벨"
+    }
+  },
+  "ss_bt_best": {
+    "text": {
+      "ja": "ベストパワー",
+      "en": "Best Power",
+      "zh": "最佳對戰力",
+      "ko": "베스트 파워"
+    }
+  },
+  "ss_bt_stones": {
+    "text": {
+      "ja": "ひみつの石",
+      "en": "Stones",
+      "zh": "祕密寶石",
+      "ko": "비밀의 돌"
+    }
+  },
+  "ss_bt_orbs": {
+    "text": {
+      "ja": "ふしぎな玉",
+      "en": "Orbs",
+      "zh": "神祕寶珠",
+      "ko": "신비한 구슬"
+    }
+  },
+  "ss_bt_all_moves": {
+    "text": {
+      "ja": "わざ コンプリート",
+      "en": "All specials",
+      "zh": "必殺技全收集",
+      "ko": "필살기 컴플리트"
+    }
+  },
+  "ss_bt_pick_title": {
+    "text": {
+      "ja": "ひっさつわざを えらぶ",
+      "en": "Choose specials",
+      "zh": "選擇必殺技",
+      "ko": "필살기 선택"
+    }
+  },
+  "ss_bt_slot": {
+    "text": {
+      "ja": "{0}ばんめ",
+      "en": "Slot {0}",
+      "zh": "第 {0} 招",
+      "ko": "{0}번째"
+    }
+  },
+  "ss_bt_move_0": {
+    "text": {
+      "ja": "うさぎダッシュ",
+      "en": "Bunny Dash",
+      "zh": "兔子衝刺",
+      "ko": "토끼 대시"
+    }
+  },
+  "ss_bt_move_1": {
+    "text": {
+      "ja": "ほしだいこ",
+      "en": "Star Drum",
+      "zh": "星星太鼓",
+      "ko": "별 북"
+    }
+  },
+  "ss_bt_move_2": {
+    "text": {
+      "ja": "つきジャンプ",
+      "en": "Moon Hop",
+      "zh": "月亮跳躍",
+      "ko": "달 점프"
+    }
+  },
+  "ss_bt_move_3": {
+    "text": {
+      "ja": "もちつきアタック",
+      "en": "Mochi Pound",
+      "zh": "搗麻糬攻擊",
+      "ko": "떡방아 어택"
+    }
+  },
+  "ss_bt_move_4": {
+    "text": {
+      "ja": "おまつりクラッカー",
+      "en": "Party Popper",
+      "zh": "祭典拉炮",
+      "ko": "축제 폭죽"
+    }
+  },
+  "ss_bt_move_5": {
+    "text": {
+      "ja": "かみなり連打",
+      "en": "Thunder Roll",
+      "zh": "雷鳴連打",
+      "ko": "천둥 연타"
+    }
+  },
+  "ss_bt_move_6": {
+    "text": {
+      "ja": "ホシのとおぼえ",
+      "en": "Hoshi Howl",
+      "zh": "星星長嚎",
+      "ko": "호시의 하울"
+    }
+  },
+  "ss_bt_move_7": {
+    "text": {
+      "ja": "ちょうちんウェーブ",
+      "en": "Lantern Wave",
+      "zh": "燈籠波浪",
+      "ko": "등롱 웨이브"
+    }
+  },
+  "ss_bt_move_8": {
+    "text": {
+      "ja": "にじいろビート",
+      "en": "Rainbow Beat",
+      "zh": "彩虹節拍",
+      "ko": "무지개 비트"
+    }
+  },
+  "ss_bt_move_9": {
+    "text": {
+      "ja": "だいまつり",
+      "en": "Grand Festival",
+      "zh": "大祭典",
+      "ko": "대축제"
+    }
+  },
+  "ss_bt_move_10": {
+    "text": {
+      "ja": "おまかせ",
+      "en": "Random",
+      "zh": "隨機",
+      "ko": "랜덤"
+    }
+  },
+  "ss_bt_move_11": {
+    "text": {
+      "ja": "なし",
+      "en": "None",
+      "zh": "無",
+      "ko": "없음"
+    }
+  },
+  "ss_bt_full_combo": {
+    "text": {
+      "ja": "フルコンボ!",
+      "en": "Full Combo!",
+      "zh": "全連擊!",
+      "ko": "풀 콤보!"
+    }
+  },
+  "ss_bt_battle_end": {
+    "text": {
+      "ja": "バトルしゅうりょう!",
+      "en": "Battle over!",
+      "zh": "戰鬥結束！",
+      "ko": "배틀 종료!"
+    }
+  },
+  "ss_bt_boss_down": {
+    "text": {
+      "ja": "ボスを たおした!",
+      "en": "Boss defeated!",
+      "zh": "擊敗頭目！",
+      "ko": "보스 격파!"
+    }
+  },
+  "ss_bt_new_best": {
+    "text": {
+      "ja": "ベストこうしん!",
+      "en": "New best!",
+      "zh": "刷新紀錄！",
+      "ko": "베스트 갱신!"
+    }
+  },
+  "ss_bt_result_title": {
+    "text": {
+      "ja": "バトルせいせき",
+      "en": "Battle Results",
+      "zh": "對戰成績",
+      "ko": "배틀 성적"
+    }
+  },
+  "ss_bt_song_n": {
+    "text": {
+      "ja": "{0}曲目",
+      "en": "Song {0}",
+      "zh": "第 {0} 首",
+      "ko": "{0}곡째"
+    }
+  },
+  "ss_bt_damage": {
+    "text": {
+      "ja": "ダメージ",
+      "en": "Damage",
+      "zh": "傷害",
+      "ko": "대미지"
+    }
+  },
+  "ss_bt_chests": {
+    "text": {
+      "ja": "たからばこ",
+      "en": "Chests",
+      "zh": "寶箱",
+      "ko": "보물상자"
+    }
+  },
+  "ss_bt_exp": {
+    "text": {
+      "ja": "けいけんち",
+      "en": "EXP",
+      "zh": "經驗值",
+      "ko": "경험치"
+    }
+  },
+  "ss_bt_level_up": {
+    "text": {
+      "ja": "レベルアップ!",
+      "en": "Level up!",
+      "zh": "升級！",
+      "ko": "레벨 업!"
+    }
+  },
+  "ss_bt_new_move": {
+    "text": {
+      "ja": "あたらしい ひっさつわざ!",
+      "en": "New special!",
+      "zh": "學會新必殺技！",
+      "ko": "새 필살기!"
+    }
+  },
+  "ss_bt_reward_song": {
+    "text": {
+      "ja": "あたらしい曲",
+      "en": "New song",
+      "zh": "新歌曲",
+      "ko": "새 곡"
+    }
+  },
+  "ss_bt_reward_costume": {
+    "text": {
+      "ja": "きせかえ",
+      "en": "Costume",
+      "zh": "裝扮",
+      "ko": "옷 갈아입기"
+    }
+  },
+  "ss_bt_reward_title": {
+    "text": {
+      "ja": "しょうごう",
+      "en": "Title",
+      "zh": "稱號",
+      "ko": "칭호"
+    }
+  },
+  "ss_bt_reward_get": {
+    "text": {
+      "ja": "ごほうび ゲット!",
+      "en": "Reward get!",
+      "zh": "獲得獎勵！",
+      "ko": "보상 획득!"
+    }
+  },
+  "ss_bt_stage_open": {
+    "text": {
+      "ja": "つぎのステージへ!",
+      "en": "Next stage open!",
+      "zh": "開啟下一關！",
+      "ko": "다음 스테이지로!"
+    }
+  },
+  "ss_bt_boss_left": {
+    "text": {
+      "ja": "ボスは まだ げんき…",
+      "en": "The boss holds on...",
+      "zh": "頭目還撐得住…",
+      "ko": "보스가 아직 버틴다…"
+    }
+  },
+  "ss_bt_offline": {
+    "text": {
+      "ja": "きろくは のこりません",
+      "en": "Not saved",
+      "zh": "本次成績不會保存",
+      "ko": "기록되지 않음"
+    }
+  },
+  "ss_bt_next": {
+    "text": {
+      "ja": "つぎへ",
+      "en": "Next",
+      "zh": "下一步",
+      "ko": "다음"
+    }
+  },
+  "lane_course_name_0": {
+    "text": {
+      "ja": "",
+      "en": "",
+      "zh": "",
+      "ko": ""
+    }
+  },
+  "lane_course_name_1": {
+    "text": {
+      "ja": "",
+      "en": "",
+      "zh": "",
+      "ko": ""
+    }
+  },
+  "lane_course_name_2": {
+    "text": {
+      "ja": "",
+      "en": "",
+      "zh": "",
+      "ko": ""
+    }
+  },
+  "lane_course_name_3": {
+    "text": {
+      "ja": "",
+      "en": "",
+      "zh": "",
+      "ko": ""
+    }
+  },
+  "lane_course_name_4": {
+    "text": {
+      "ja": "",
+      "en": "",
+      "zh": "",
+      "ko": ""
+    }
+  },
+  "lane_course_name_6": {
+    "text": {
+      "ja": "",
+      "en": "",
+      "zh": "",
+      "ko": ""
+    }
+  },
+  "ss_pm_title": {
+    "text": {
+      "ja": "いちじ停止",
+      "en": "Paused",
+      "zh": "暫停中",
+      "ko": "일시 정지"
+    }
+  },
+  "ss_pm_resume": {
+    "text": {
+      "ja": "演奏にもどる",
+      "en": "Resume",
+      "zh": "繼續演奏",
+      "ko": "계속 연주"
+    }
+  },
+  "ss_pm_restart": {
+    "text": {
+      "ja": "最初から",
+      "en": "Restart",
+      "zh": "從頭開始",
+      "ko": "처음부터"
+    }
+  },
+  "ss_pm_quit": {
+    "text": {
+      "ja": "やめる",
+      "en": "Quit",
+      "zh": "結束演奏",
+      "ko": "그만두기"
+    }
+  },
+  "ss_pm_note": {
+    "text": {
+      "ja": "この成績は のこりません",
+      "en": "This score will not be saved",
+      "zh": "這次的成績不會保存",
+      "ko": "이 점수는 저장되지 않습니다"
+    }
   }
 }

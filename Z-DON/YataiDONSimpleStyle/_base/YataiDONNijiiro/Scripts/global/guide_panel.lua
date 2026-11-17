@@ -23,6 +23,20 @@ GuidePanel.has_large = HAS_LARGE
 
 GuidePanel.Loop = { ALL = 1, DECIDE = 2 }
 
+-- Pill labels use the arcade face (FOT-Seurat). Its Latin ink is as wide as font.ttf's CJK and ~1.7x the skin's
+-- English default (font_en.ttf): English keeps the old optical size, and Korean falls back to the default font
+-- because FOT-Seurat has no Hangul.
+local LABEL_FONT = "FOT-Seurat_Pro_B.otf"
+local LABEL_LATIN_SCALE = 0.8
+
+function GuidePanel.label_font()
+    return tex.language() == "ko" and "" or LABEL_FONT
+end
+
+function GuidePanel.label_size(size)
+    return tex.language() == "en" and math.floor(size * LABEL_LATIN_SCALE + 0.5) or size
+end
+
 function GuidePanel.new()
     local self  = setmetatable({}, GuidePanel)
     self.plate  = tex.get_texture("global/indicator/guide_plate")
@@ -35,8 +49,9 @@ function GuidePanel.new()
                            pad = (m.tex == BLINK_TEX) and LARGE_BLINK_PAD or 0 }
     end
     self.t0     = tex.get_current_ms()
-    self.decide = text.create_raw_text(tex.skin_text("guide_decide_label"), 24, { 30, 30, 30, 255 },
-                                       { 30, 30, 30, 255 }, false, 0, 1.0, "FOT-Seurat_Pro_B.otf")
+    self.decide = text.create_raw_text(tex.skin_text("guide_decide_label"), GuidePanel.label_size(24),
+                                       { 30, 30, 30, 255 }, { 30, 30, 30, 255 }, false, 0, 1.0, 0.0,
+                                       GuidePanel.label_font())
     return self
 end
 
@@ -69,8 +84,9 @@ end
 function GuidePanel:draw_large(loop, scale, fade)
     local f = self:frame(loop)
     if not self.decide_large then
-        self.decide_large = text.create_raw_text(tex.skin_text("guide_decide_label"), 48, { 30, 30, 30, 255 },
-                                                 { 30, 30, 30, 255 }, false, 0, 1.0, "FOT-Seurat_Pro_B.otf")
+        self.decide_large = text.create_raw_text(tex.skin_text("guide_decide_label"), GuidePanel.label_size(48),
+                                                 { 30, 30, 30, 255 }, { 30, 30, 30, 255 }, false, 0, 1.0, 0.0,
+                                                 GuidePanel.label_font())
     end
     for _, l in ipairs(self.layers) do
         local tx, ty, sc, rot, a = clip:at(l.path, f)

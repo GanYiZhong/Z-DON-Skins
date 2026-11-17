@@ -25,8 +25,11 @@ skin。每個 skin 有兩個版本：Z-DON 用的，和上游 YataiDON 用的。
 
 ## 安裝
 
-1. 下載這個 repo（Code → Download ZIP）或 clone 下來。
-2. 從 `Z-DON/` 或 `YataiDON/` 把 `YataiDONSimpleStyle`（要夜晚版就再加 `YataiDONSimpleStyleDark`）複製到遊戲的
+1. 從 [Releases](https://github.com/GanYiZhong/Z-DON-Skins/releases/latest) 下載最新的 zip：
+   [`Z-DON-Skins-Z-DON.zip`](https://github.com/GanYiZhong/Z-DON-Skins/releases/latest/download/Z-DON-Skins-Z-DON.zip)
+   或 [`Z-DON-Skins-YataiDON.zip`](https://github.com/GanYiZhong/Z-DON-Skins/releases/latest/download/Z-DON-Skins-YataiDON.zip)。
+   `main` 每次更新都會自動重新打包（rolling release）。也可以下載或 clone 整個 repo。
+2. 把 zip 解壓出來的（或 repo 的 `Z-DON/`、`YataiDON/` 裡的） `YataiDONSimpleStyle`（要夜晚版就再加 `YataiDONSimpleStyleDark`）複製到遊戲的
    `Skins/` 資料夾。
 3. 在遊戲設定裡選這個 skin。
 

@@ -24,6 +24,7 @@ local CLOUD_STEP = 3                    -- clouds drift 1U ...
 local CLOUD_MS   = 500                  -- ... every 500 ms
 local CLOUDS = { { "cloud_m", 150, 33 }, { "cloud_s", 810, 99 }, { "cloud_m", 1290, 51 } }
 local DS_SLOT_X = { [-3] = 440, [-2] = 572, [-1] = 440, [0] = 745, [1] = 960, [2] = 1175, [3] = 1390, [4] = 1390 }
+M.DS_SLOT_X = DS_SLOT_X   -- box_base ds_layout() rewrites it in place for the enso battle
 -- course select board (song_select/diff_select/difficulty_back): outer border box, shadow excluded
 -- r3: 60 px shorter (header 144 tall, the cards / buttons / marker lane moved up 60; box_base DS_* patch)
 local BACK_W, BACK_H = 1224, 718
@@ -300,8 +301,26 @@ end
 
 -- the backboard: frames 1-2 of the open are the dialog chrome at 33 / 66 % height (no texture
 -- stretching), frame 3 the baked board at alpha 1; while closing it is shown until the fade passes 0.5
+-- Z-DON enso battle: a wider board (its row has the special-move column too), drawn as the same chrome as the
+-- baked board: dialog 2U, header plate at (30, 48) 144 tall with a 1U border and shadow; same centre (936)
+local WIDE_W = 1344
+function M:draw_wide_backboard()
+    local x, y = 936 - WIDE_W / 2, 48
+    if self.ds_closing then
+        if UI.solid(self.ds_last) ~= 1 then return end
+        UI.chrome.dialog(x, y, WIDE_W, BACK_H)
+        UI.frame(x + 30, y + 48, WIDE_W - 48, 144, { fill = UI.P.bg2 })
+        return
+    end
+    local rx, ry, rw, rh, done = UI.open_rect(x, y, WIDE_W, BACK_H, tex.get_current_ms() - self.ds_t0)
+    if not rx then return end
+    UI.chrome.dialog(rx, ry, rw, rh)
+    if done then UI.frame(x + 30, y + 48, WIDE_W - 48, 144, { fill = UI.P.bg2 }) end
+end
+
 function M:draw_backboard(id, frame, x, y)
     if not self.ds_t0 then return end
+    if self.ds_wide then return self:draw_wide_backboard() end
     if self.ds_closing then
         if UI.solid(self.ds_last) == 1 then tex.draw_texture(id, { frame = frame, x = x, y = y }) end
         return
@@ -394,6 +413,13 @@ local function button_label(key, cx, cy)
         UI.draw_text(UI.text(ch, 24, "ink"), cx, y0 + (i - 1) * BTN_PITCH, "c", 1)
     end
 end
+-- Z-DON enso battle: the special-move column's label (box_song.lua draws the column)
+function M:skill_label(x, by, a)
+    if not shown(a) then return end
+    local dy, vis = self:card_pose(-1)
+    if vis then button_label("bt_skill", x - 2.5, by - 180 + 274.5 + dy) end
+end
+
 function M:button_labels(back_x, opt_x, by, a, back_shown)
     if not shown(a) then return end
     local y = by - 180 + 274.5

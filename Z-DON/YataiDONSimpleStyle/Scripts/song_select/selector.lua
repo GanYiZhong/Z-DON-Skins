@@ -86,7 +86,8 @@ function SongSelect:draw_selector(player, is_half, fade_in, pass)
             if SS_SEL then SS_SEL:marker_label(p, sx + cursor_dx, DS_CURSOR_Y + bal_dy, fade * bal_a) end
         end
     else
-        local by = (diff == DIFF_NEIRO) and DS_NEIRO_Y or DS_BTN_Y
+        -- Z-DON enso battle: the special-move column sits on the button row
+        local by = (diff == DIFF_NEIRO and not (base.ds_battle and base.ds_battle())) and DS_NEIRO_Y or DS_BTN_Y
         local ss_dy, ss_on = 0, true
         if SS_SEL and diff ~= DIFF_NEIRO then ss_dy, ss_on = SS_SEL:ring(p, diff) end
         if under and ss_on then draw_centered(self._id_btn_glow, sx, by + ss_dy, 168, 400, { fade = fade }) end   -- r3: tall

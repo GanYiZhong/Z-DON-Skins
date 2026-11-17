@@ -524,6 +524,13 @@ local function rank_glyphs(di)
     return 13 + math.min(di - 21, 3), 17
 end
 
+local DRUM_X = 482.3
+local CHARA_ON_DRUM = {dx = 165.0, dy = 45.0, scale = 1.0}
+
+local function drum_y(f)
+    return 737.0 + (557.0 - 737.0) * ease_out(math.min(1.0, math.max(0.0, (f - 1.0) / 14.0)))
+end
+
 local function put_c(id, ox, oy, extra, cx, cy)
     local p = extra or {}
     p.x = (cx or POP_CX) + ox
@@ -573,7 +580,7 @@ function DanResultDraw:draw_celebration(s)
 
     -- drum (sprite 1214 red / 1217 blue): rises from the bottom over f1-15 (ease-out) and holds
     if f >= 1.0 then
-        local y = 737.0 + (557.0 - 737.0) * ease_out((f - 1.0) / 14.0)
+        local y = drum_y(f)
         local drum = (rd.player_num == 2) and self.t_sd_drum_blue or self.t_sd_drum_red
         put_c(drum, 0, 0, nil, 482.3, y)
     end
@@ -688,6 +695,7 @@ function DanResultDraw:draw(s)
     self.stamp_at = s.stamp_at
     self.voice_at = s.voice_at
     self.popup_up = s.celebrating or s.congrats_showing
+    self.celebrate_f = s.celebrating and (s.now - s.celebrate_start_ms) / FRAME_MS or nil
     self.congrats_up = s.congrats_showing
 
     if not s.congrats_showing then
@@ -699,6 +707,9 @@ function DanResultDraw:draw(s)
 end
 
 function DanResultDraw:chara_pos()
+    if self.celebrate_f and self.celebrate_f >= 1.0 then
+        return {DRUM_X + CHARA_ON_DRUM.dx, drum_y(self.celebrate_f) + CHARA_ON_DRUM.dy, CHARA_ON_DRUM.scale}
+    end
     if self.popup_up then return {-2000.0, -2000.0, 1.0} end
     return nil
 end

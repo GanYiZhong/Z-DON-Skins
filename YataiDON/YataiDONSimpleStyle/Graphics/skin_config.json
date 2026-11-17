@@ -517,6 +517,9 @@
     "game_drumroll_width_offset": {
         "width": -70.5
     },
+    "game_balloon_counter_margin": {
+        "x": 72
+    },
     "game_balloon_offset": {
         "x": 18.0
     },

@@ -168,15 +168,16 @@ end
 function SongSelect:draw_footer()
 end
 
--- 「M曲」: the blue right half of the number_of_songs plate (only when a limit is set).
-local SONG_MAX_CX = 1831
-
 -- The arcade draws the song-number chip in its jp_32_DB bitmap typeface with FULL-WIDTH digits (wide, thin rounded
--- strokes, white fill + black outline). Baked from the arcade glyph atlas (lumen3906/font/jp_32_DB) into
+-- strokes, white fill + black outline) from MS UI Gothic records (common_song_select_number_of_songs c4 32 px /
+-- outline 4.5, c3 24 px / outline 3.5). Baked from the arcade glyph atlas (lumen3906/font/jp_32_DB) into
 -- yellow_box/chip_l (size 32) and chip_s (size 24 = 0.75x); frame 0-9 = digits, 10 = 曲, 11 = 目.
 -- Positions are glyph-cell origins measured on direct feed TajqEDSGlAs (N曲目 left half, M曲 right half).
 local CHIP_L = { y = 250, num_x = 1655.5, adv = 32, ku_x = 1696.5, me_x = 1728,  pad = 6 }
 local CHIP_S = { y = 259, num_x = 1804.25, adv = 24, ku_x = 1835.25,             pad = 5 }
+local SONG_MAX_CX = 1831   -- 「M曲」 centre on the plate's blue half
+local SONG_FONT = "FOT-Seurat_Pro_B.otf"   -- en / ko fallback: the game HUD's song-number face
+local WHITE, BLACK, RED = { 255, 255, 255, 255 }, { 0, 0, 0, 255 }, { 255, 0, 0, 255 }
 
 local function chip_digits(self, tx, c, n)
     local s = tostring(n)
@@ -197,41 +198,62 @@ function SongSelect:chip_sprites_ok()
     return self._chip_ok
 end
 
--- Engine hook (song_select.cpp): true = the skin drew the chip text, so the engine's own FOT-Seurat text is skipped.
--- en / ko keep the engine text ("Song N" / "N곡째" have no arcade glyph art here).
-function SongSelect:draw_song_num()
-    if not self:chip_sprites_ok() then return false end
-    local n = (tex.songs_played and tex.songs_played() or 0) + 1
-    local c = CHIP_L
-    chip_digits(self, self._chip_l, c, n)
-    tex.draw_texture(self._chip_l, { frame = 10, x = math.floor(c.ku_x - c.pad + 0.5), y = math.floor(c.y - c.pad + 0.5) })
-    tex.draw_texture(self._chip_l, { frame = 11, x = math.floor(c.me_x - c.pad + 0.5), y = math.floor(c.y - c.pad + 0.5) })
-    local limit = tex.song_limit and tex.song_limit() or 0
-    if limit > 0 then
-        local s = CHIP_S
-        chip_digits(self, self._chip_s, s, limit)
-        tex.draw_texture(self._chip_s, { frame = 10, x = math.floor(s.ku_x - s.pad + 0.5), y = math.floor(s.y - s.pad + 0.5) })
+-- en / ko ("Song N" / "N곡째") have no arcade glyphs: draw them like the game HUD's song_info, shrunk to fit
+-- the plate's half (140 px wide, 120 px usable).
+local PLATE_HALF_W = 120
+
+local function fitting_text(str, size, colour, outline)
+    local t = text.create_raw_text(str, size, WHITE, colour, false, outline, 2.0, 1.0, SONG_FONT)
+    if t.width > PLATE_HALF_W then
+        size = math.max(12, math.floor(size * PLATE_HALF_W / t.width))
+        t = text.create_raw_text(str, size, WHITE, colour, false, outline, 2.0, 1.0, SONG_FONT)
     end
-    return true
+    return t
 end
 
-function SongSelect:draw_song_max()
-    if self:chip_sprites_ok() then return end   -- drawn by draw_song_num
-    if not tex.song_limit then return end
-    local limit = tex.song_limit()
-    if not limit or limit <= 0 then return end
-    if self._song_max_n ~= limit then
-        local sc = tex.get_skin_config("song_num") or {}
-        local sm = tex.get_skin_config("song_num_max") or {}   -- the M曲 half has its own size and baseline
-        self._song_max_y = (sc.y or 252) + 6   -- sits lower than the N曲目 half (direct feed TajqEDSGlAs)
-        self._song_max   = text.create_raw_text((tex.skin_text("song_num_max"):gsub("{0}", tostring(limit))),
-            sm.font_size or sc.font_size or 24, { 255, 255, 255, 255 }, { 0, 0, 0, 255 }, false, outline(3.5), 2.0, 1.0, "FOT-Seurat_Pro_B.otf")
-        self._song_max_n = limit
+-- Engine hook (song_select.cpp): true = the skin drew 「N曲目」/「M曲」, so the engine's own text is skipped.
+function SongSelect:draw_song_num()
+    local n = (tex.songs_played and tex.songs_played() or 0) + 1
+    local limit = tex.song_limit and tex.song_limit() or 0
+    if self:chip_sprites_ok() then
+        local c = CHIP_L
+        chip_digits(self, self._chip_l, c, n)
+        tex.draw_texture(self._chip_l, { frame = 10, x = math.floor(c.ku_x - c.pad + 0.5), y = math.floor(c.y - c.pad + 0.5) })
+        tex.draw_texture(self._chip_l, { frame = 11, x = math.floor(c.me_x - c.pad + 0.5), y = math.floor(c.y - c.pad + 0.5) })
+        if limit > 0 then
+            local s = CHIP_S
+            chip_digits(self, self._chip_s, s, limit)
+            tex.draw_texture(self._chip_s, { frame = 10, x = math.floor(s.ku_x - s.pad + 0.5), y = math.floor(s.y - s.pad + 0.5) })
+        end
+        return true
     end
-    local t = self._song_max
-    if not t then return end
-    t:draw({ x = math.floor(SONG_MAX_CX - (t.width - 2.0) / 2 + 0.5),
-             y = math.floor(self._song_max_y + 0.5) })
+
+    local key = n .. "/" .. limit
+    if self._song_num_key ~= key then
+        local sc = tex.get_skin_config("song_num") or { x = 1748, y = 252, font_size = 32, outline = 3.0 }
+        local fmt = tex.skin_text("song_num")
+        if fmt == "" then fmt = "{0}" end
+        self._song_num = fitting_text(fmt:gsub("{0}", tostring(n)), sc.font_size,
+                                      (limit > 0 and limit == n) and RED or BLACK,
+                                      sc.outline >= 0 and sc.outline or 5.0)
+        self._song_max = nil
+        if limit > 0 then
+            local sm = tex.get_skin_config("song_num_max") or sc
+            local mfmt = tex.skin_text("song_num_max")
+            if mfmt == "" then mfmt = "{0}" end
+            self._song_max = fitting_text(mfmt:gsub("{0}", tostring(limit)), sm.font_size, BLACK,
+                                          sm.outline >= 0 and sm.outline or 3.5)
+        end
+        self._song_num_cfg = sc
+        self._song_num_key = key
+    end
+    local sc = self._song_num_cfg
+    self._song_num:draw({ x = sc.x - self._song_num.width, y = sc.y })
+    if self._song_max then
+        self._song_max:draw({ x = math.floor(SONG_MAX_CX - (self._song_max.width - 2.0) / 2 + 0.5),
+                              y = math.floor(sc.y + 6 + 0.5) })
+    end
+    return true
 end
 
 -- 段位道場 shutter doors, drawn on the top-most skin slot.
@@ -246,11 +268,10 @@ function SongSelect:draw_overlays(state)
     elseif tex.current_screen() == "SONG_SELECT" then PlayerBoard.draw() end
     self:draw_decided_bridge()
     if dan_transition_ok then dan_transition.arm(state == STATE_DAN_SELECTED) end
-    -- number_of_songs plate, under the engine's own song_num text.
+    -- number_of_songs plate, under the skin's song-number hook
     if self._id_song_counter then
         tex.draw_texture(self._id_song_counter, { x = 1754 - 140, y = 270 - 36 })
     end
-    self:draw_song_max()
     local label_fade = self.text_fade_in.attribute
     -- control_guide panel (browse only; fades with the header swap)
     if self._id_guide_panel then
@@ -375,9 +396,11 @@ end
 function SongSelect:guide_labels()
     if not self._guide_labels then
         local function mk(key)
-            if tex.get_skin_config(key) then
-                return text.create_text(key, { 40, 40, 40, 255 }, { 0, 0, 0, 0 }, false, 0, 2.0, 1.0, "FOT-Seurat_Pro_B.otf")
-            end
+            local cfg = tex.get_skin_config(key)
+            if not cfg then return end
+            return text.create_raw_text(tex.skin_text(key), GuidePanel.label_size(cfg.font_size or 24),
+                                        { 40, 40, 40, 255 }, { 0, 0, 0, 0 }, false, 2.0, 1.0, 0.0,
+                                        GuidePanel.label_font())
         end
         self._guide_labels = { select = mk("guide_select_label"), decide = mk("guide_decide_label") }
     end
@@ -402,8 +425,6 @@ function SongSelect:draw_box(box)
     local kind, state = box:lua_kind(), box:draw_state()
     if (state == "open" or state == "diff_select") and tex.current_screen() == "AI_SELECT" then
         require("global.ai_battle").set_focus(box, kind)   -- Z-DON AI battle: the player board's best score
-    elseif (state == "open" or state == "diff_select") and tex.current_screen() == "SONG_SELECT" then
-        PlayerBoard.set_focus(box, kind)
     end
 
     if kind == "song" then

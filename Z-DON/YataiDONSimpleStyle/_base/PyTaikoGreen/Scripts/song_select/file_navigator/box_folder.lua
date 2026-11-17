@@ -95,6 +95,10 @@ local function draw_folder_crown(box, bx, by)
     end
 end
 
+local function G(box, name)
+    return (box:has_gradient() and box:gradient_texture(name)) or T("box", name)
+end
+
 function SongSelect:draw_folder_closed(box)
     if tex.zdon_ai_select() and require("global.ai_battle").list_mode() then return end
     draw_base_closed(box)
@@ -103,7 +107,7 @@ function SongSelect:draw_folder_closed(box)
     local by = box:box_y()
     local fade = box.fade.attribute
     local tex_index = box:texture_index()
-    local use_shader = box:has_recolor()
+    local use_shader = box:has_flat_recolor()
 
     if use_shader then box:begin_recolor() end
     tex.draw_texture(T("box", "folder_clip"), { frame = tex_index, x = bx - (1.0 * tex.get_screen_scale()), y = by, fade = fade })
@@ -157,17 +161,18 @@ local function draw_open_bg(self, box, fade)
     local open_anim = box.open_anim.attribute
 
     if open_anim >= (100.0 * tex.get_screen_scale()) then
-        if use_shader then box:begin_recolor() end
+        local top_shader = box:has_flat_recolor()
+        if top_shader then box:begin_recolor() end
         tex.draw_texture(T("box", "folder_top_edge"), { frame = tex_index, mirror = "horizontal", x = aox, y = by - open_anim, fade = fade })
         tex.draw_texture(T("box", "folder_top"),      { frame = tex_index, x = aox, y = by - open_anim, fade = fade })
         tex.draw_texture(T("box", "folder_top_edge"), { frame = tex_index, x = 268 * tex.get_screen_scale() + aox, y = by - open_anim, fade = fade })
-        if use_shader then box:end_recolor() end
+        if top_shader then box:end_recolor() end
     end
 
     if use_shader then box:begin_recolor() end
-    tex.draw_texture(T("box", "folder_texture_left"),  { frame = tex_index, x = bx - open_anim, y = by, fade = fade })
-    tex.draw_texture(T("box", "folder_texture"),       { frame = tex_index, x = bx - open_anim, y = by, x2 = (open_anim * 2.0) + base.song_box_bg_width(), fade = fade })
-    tex.draw_texture(T("box", "folder_texture_right"), { frame = tex_index, x = bx + open_anim, y = by, fade = fade })
+    tex.draw_texture(G(box, "folder_texture_left"),  { frame = tex_index, x = bx - open_anim, y = by, fade = fade })
+    tex.draw_texture(G(box, "folder_texture"),       { frame = tex_index, x = bx - open_anim, y = by, x2 = (open_anim * 2.0) + base.song_box_bg_width(), fade = fade })
+    tex.draw_texture(G(box, "folder_texture_right"), { frame = tex_index, x = bx + open_anim, y = by, fade = fade })
     if use_shader then box:end_recolor() end
 end
 
@@ -202,7 +207,7 @@ local function draw_open_fg(self, box, fade)
         end
     end
 
-    if box:texture_index() == base.TI_DEFAULT then
+    if box.collab then
         tex.draw_texture(T("box", "genre_overlay_large"), { fade = fade })
     end
     if box:genre_index() == base.GI_DIFFICULTY then
@@ -232,7 +237,7 @@ local function draw_open_fg(self, box, fade)
             max_h = 424 * s,
             fade = fade
         })
-    elseif box:texture_index() ~= base.TI_DEFAULT then
+    elseif not box.collab then
         tex.draw_texture(T("box", "folder_graphic"), { frame = box:genre_index(), x = aox, y = aoy, fade = fade })
 
         local s = tex.get_screen_scale()

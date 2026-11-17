@@ -62,6 +62,17 @@
       "ko": "잠시만 기다려 주세요"
     }
   },
+  "kusudama_renda": {
+    "x": 640,
+    "y": 244,
+    "font_size": 72,
+    "text": {
+      "ja": "連打!!",
+      "en": "Drumroll!!",
+      "zh": "连打!!",
+      "ko": "연타!!"
+    }
+  },
   "song_num": {
     "x": 1110,
     "y": 28,
@@ -79,6 +90,14 @@
       "ja": "演奏ゲーム",
       "zh": "節奏遊戲",
       "ko": "연주 게임"
+    }
+  },
+  "entry_waiwai": {
+    "text": {
+      "en": "Waiwai Play",
+      "ja": "ワイワイ演奏",
+      "zh": "一起哇哇演奏",
+      "ko": "와이와이 연주"
     }
   },
   "entry_practice": {
@@ -105,12 +124,44 @@
       "ko": "AI 배틀"
     }
   },
+  "entry_enso_battle": {
+    "text": {
+      "en": "Enso Battle",
+      "ja": "演奏バトル",
+      "zh": "演奏战斗",
+      "ko": "연주 배틀"
+    }
+  },
   "entry_costume": {
     "text": {
       "en": "Costume",
       "ja": "きせかえ",
       "zh": "裝扮",
       "ko": "옷 갈아입기"
+    }
+  },
+  "entry_shop": {
+    "text": {
+      "en": "Reward Shop",
+      "ja": "ごほうびショップ",
+      "zh": "奖励商店",
+      "ko": "보상 상점"
+    }
+  },
+  "entry_shop_desc": {
+    "text": {
+      "en": "Spend your Don medals\non costumes!",
+      "ja": "どんメダルで\nきせかえをゲットしよう！",
+      "zh": "用咚奖牌兑换服装！",
+      "ko": "동 메달로\n의상을 받아요!"
+    }
+  },
+  "reward_shop_telop": {
+    "text": {
+      "en": "Get new costumes with your Don medals! The lineup changes every day.",
+      "ja": "どんメダルできせかえをゲットしよう！ラインナップは毎日かわるよ！",
+      "zh": "用咚奖牌兑换新服装吧！商品每日更新！",
+      "ko": "동 메달로 새 의상을 받아요! 상품은 매일 바뀌어요!"
     }
   },
   "entry_costume_text": {
@@ -240,6 +291,17 @@
       "ko": "북을 쳐서 시작!"
     }
   },
+  "entry_wait_pill": {
+    "x": 638,
+    "y": 472,
+    "font_size": 30,
+    "text": {
+      "en": "Hit the drum to start!",
+      "ja": "太鼓をたたいてスタート！",
+      "zh": "敲击太鼓开始！",
+      "ko": "북을 쳐서 시작!"
+    }
+  },
   "entry_afk": {
     "x": 640,
     "y": 190,
@@ -350,6 +412,14 @@
       "ko": "데타라메"
     }
   },
+  "modifier_text_muon": {
+    "text": {
+      "en": "No sound",
+      "ja": "無音",
+      "zh": "无声",
+      "ko": "무음"
+    }
+  },
   "entry_game_desc": {
     "text": {
       "en": "Pick any song and\ndifficulty to play!",
@@ -374,6 +444,22 @@
       "ko": "AI 동이와 이기느냐 지느냐,\n아슬아슬한 배틀을 즐겨요!\n점수와 왕관 기록도 저장돼요!"
     }
   },
+  "entry_enso_battle_desc": {
+    "text": {
+      "en": "Hit notes to damage monsters!\nFill the gauge to unleash\na special move!",
+      "ja": "音符をたたいてモンスターに\nダメージをあたえよう！\nゲージがたまると必殺技！",
+      "zh": "敲击音符对怪物造成伤害！\n槽满后释放必杀技！",
+      "ko": "음표를 쳐서 몬스터에게\n대미지를 줘요!\n게이지가 차면 필살기!"
+    }
+  },
+  "entry_waiwai_desc": {
+    "text": {
+      "en": "Two players play together\nand match their breath!",
+      "ja": "2人で息を合わせて\nいっしょに演奏しよう！",
+      "zh": "两人一起配合\n默契演奏！",
+      "ko": "둘이서 호흡을 맞춰\n함께 연주해요!"
+    }
+  },
   "entry_practice_desc": {
     "text": {
       "en": "Practice with fast-forward,\nrewind and tempo changes!",
@@ -396,6 +482,14 @@
       "ja": "あそびかたや画面の\nせっていをかえるよ！",
       "zh": "更改遊戲和顯示設定！",
       "ko": "게임과 화면 설정을\n바꿔요!"
+    }
+  },
+  "entry_access_code_desc": {
+    "text": {
+      "en": "Show your access code\nand login QR code!",
+      "ja": "アクセスコードと\nログイン用QRコードを\nひょうじするよ！",
+      "zh": "显示访问码和登录二维码！",
+      "ko": "액세스 코드와\n로그인 QR 코드를 봐요!"
     }
   },
   "song_count": {
@@ -571,6 +665,38 @@
       "ko": "점프 지점 설정"
     }
   },
+  "pause_menu_resume": {
+    "text": {
+      "ja": "とじる",
+      "zh": "继续",
+      "en": "Resume",
+      "ko": "계속하기"
+    }
+  },
+  "pause_menu_restart": {
+    "text": {
+      "ja": "最初から",
+      "zh": "重新开始",
+      "en": "Restart",
+      "ko": "처음부터"
+    }
+  },
+  "pause_menu_quit": {
+    "text": {
+      "ja": "終了",
+      "zh": "退出",
+      "en": "Quit",
+      "ko": "그만두기"
+    }
+  },
+  "pause_menu_note": {
+    "text": {
+      "ja": "この成績は保存されません",
+      "zh": "这个成绩将不会保存",
+      "en": "This score will not be saved",
+      "ko": "이 점수는 저장되지 않습니다."
+    }
+  },
   "practice_menu_close": {
     "text": {
       "ja": "メニューをとじる",
@@ -585,6 +711,14 @@
       "zh": "要結束特訓模式嗎鏘？",
       "en": "End practice mode?",
       "ko": "특훈 모드를 종료할까?"
+    }
+  },
+  "practice_menu_confirm_review_end": {
+    "text": {
+      "ja": "ふりかえりタイムを終了しますカッ？",
+      "zh": "要结束回顾时间吗锵？",
+      "en": "End review time?",
+      "ko": "되돌아보기 타임을 종료할까?"
     }
   },
   "practice_menu_confirm_another": {
@@ -865,6 +999,42 @@
       "ko": "의상 (몸)"
     }
   },
+  "battle_reward_costume": {
+    "font_size": 26,
+    "text": {
+      "ja": "きせかえ",
+      "en": "Costume",
+      "zh": "服装",
+      "ko": "의상"
+    }
+  },
+  "battle_reward_move": {
+    "font_size": 26,
+    "text": {
+      "ja": "必殺技",
+      "en": "Special move",
+      "zh": "必杀技",
+      "ko": "필살기"
+    }
+  },
+  "battle_tip_move": {
+    "font_size": 20,
+    "text": {
+      "ja": "曲の【むずかしさをえらぶ】画面の\n【必殺技をえらぶ】で設定しよう!",
+      "en": "Set it in [Choose a special move]\non the [Choose difficulty] screen!",
+      "zh": "在乐曲的【选择难度】画面的\n【选择必杀技】中设置吧!",
+      "ko": "곡의 【난이도 선택】 화면의\n【필살기 선택】에서 설정하자!"
+    }
+  },
+  "battle_tip_maou": {
+    "font_size": 20,
+    "text": {
+      "ja": "次のプレイからボス「マオウ」と\nバトルできるよ!",
+      "en": "From your next play you can\nbattle the boss Maou!",
+      "zh": "下次游玩起就能和\n头目「魔王」对战了!",
+      "ko": "다음 플레이부터 보스 「마오우」와\n배틀할 수 있어!"
+    }
+  },
   "ai_reward_title": {
     "font_size": 26,
     "text": {
@@ -1127,76 +1297,6 @@
       "ko": "챠오"
     }
   },
-  "kusudama_renda": {
-    "x": 640,
-    "y": 244,
-    "font_size": 72,
-    "text": {
-      "ja": "連打!!",
-      "en": "Drumroll!!",
-      "zh": "连打!!",
-      "ko": "연타!!"
-    }
-  },
-  "entry_waiwai": {
-    "text": {
-      "en": "Waiwai Play",
-      "ja": "ワイワイ演奏",
-      "zh": "一起哇哇演奏",
-      "ko": "와이와이 연주"
-    }
-  },
-  "entry_shop": {
-    "text": {
-      "en": "Reward Shop",
-      "ja": "ごほうびショップ",
-      "zh": "奖励商店",
-      "ko": "보상 상점"
-    }
-  },
-  "entry_shop_desc": {
-    "text": {
-      "en": "Spend your Don medals\non costumes!",
-      "ja": "どんメダルで\nきせかえをゲットしよう！",
-      "zh": "用咚奖牌兑换服装！",
-      "ko": "동 메달로\n의상을 받아요!"
-    }
-  },
-  "reward_shop_telop": {
-    "text": {
-      "en": "Get new costumes with your Don medals! The lineup changes every day.",
-      "ja": "どんメダルできせかえをゲットしよう！ラインナップは毎日かわるよ！",
-      "zh": "用咚奖牌兑换新服装吧！商品每日更新！",
-      "ko": "동 메달로 새 의상을 받아요! 상품은 매일 바뀌어요!"
-    }
-  },
-  "entry_wait_pill": {
-    "x": 638,
-    "y": 472,
-    "font_size": 30,
-    "text": {
-      "en": "Hit the drum to start!",
-      "ja": "太鼓をたたいてスタート！",
-      "zh": "敲击太鼓开始！",
-      "ko": "북을 쳐서 시작!"
-    }
-  },
-  "entry_waiwai_desc": {
-    "text": {
-      "en": "Two players play together\nand match their breath!",
-      "ja": "2人で息を合わせて\nいっしょに演奏しよう！",
-      "zh": "两人一起配合\n默契演奏！",
-      "ko": "둘이서 호흡을 맞춰\n함께 연주해요!"
-    }
-  },
-  "practice_menu_confirm_review_end": {
-    "text": {
-      "ja": "ふりかえりタイムを終了しますカッ？",
-      "zh": "要结束回顾时间吗锵？",
-      "en": "End review time?",
-      "ko": "되돌아보기 타임을 종료할까?"
-    }
-  },
   "kinotake_result_caption": {
     "text": {
       "en": "* Today's Kinotake Battle standings across every cabinet.\n* Standings are tallied each day.",
@@ -1375,6 +1475,259 @@
       "en": "Perfectly in sync!",
       "zh": "默契十足咚!",
       "ko": "호흡이 딱 맞아 쿵!"
+    }
+  },
+  "lane_course_name": {
+    "x": 44,
+    "y": 52,
+    "font_size": 15,
+    "outline": 2,
+    "text": {}
+  },
+  "lane_course_name_0": {
+    "text": {
+      "ja": "かんたん",
+      "en": "Easy",
+      "zh": "简单",
+      "ko": "쉬움"
+    }
+  },
+  "lane_course_name_1": {
+    "text": {
+      "ja": "ふつう",
+      "en": "Normal",
+      "zh": "普通",
+      "ko": "보통"
+    }
+  },
+  "lane_course_name_2": {
+    "text": {
+      "ja": "むずかしい",
+      "en": "Hard",
+      "zh": "困难",
+      "ko": "어려움"
+    }
+  },
+  "lane_course_name_3": {
+    "text": {
+      "ja": "おに",
+      "en": "Oni",
+      "zh": "魔王",
+      "ko": "오니"
+    }
+  },
+  "lane_course_name_4": {
+    "text": {
+      "ja": "おに",
+      "en": "Ura",
+      "zh": "魔王",
+      "ko": "오니"
+    }
+  },
+  "lane_course_name_6": {
+    "text": {
+      "ja": "段位道場",
+      "en": "Dan-i Dojo",
+      "zh": "段位道场",
+      "ko": "단위도장"
+    }
+  },
+  "battle_partner_amitie": {
+    "font_size": 18,
+    "text": {
+      "ja": "アミティ",
+      "en": "Amitie",
+      "zh": "阿米提",
+      "ko": "아미티"
+    }
+  },
+  "battle_stage_1": {
+    "font_size": 16,
+    "text": {
+      "ja": "はじまりの草原",
+      "en": "Plains of Beginnings",
+      "zh": "起始草原",
+      "ko": "시작의 초원"
+    }
+  },
+  "battle_stage_2": {
+    "font_size": 16,
+    "text": {
+      "ja": "草原の結界",
+      "en": "Plains Barrier",
+      "zh": "草原结界",
+      "ko": "초원의 결계"
+    }
+  },
+  "battle_stage_3": {
+    "font_size": 16,
+    "text": {
+      "ja": "ゆうやけの岩山",
+      "en": "Sunset Rocky Mountain",
+      "zh": "夕阳岩山",
+      "ko": "노을의 바위산"
+    }
+  },
+  "battle_stage_4": {
+    "font_size": 16,
+    "text": {
+      "ja": "岩山の結界",
+      "en": "Rocky Mountain Barrier",
+      "zh": "岩山结界",
+      "ko": "바위산의 결계"
+    }
+  },
+  "battle_stage_5": {
+    "font_size": 16,
+    "text": {
+      "ja": "しおさいの海辺",
+      "en": "Seaside of Tidal Breeze",
+      "zh": "潮声海边",
+      "ko": "파도 소리의 해변"
+    }
+  },
+  "battle_stage_6": {
+    "font_size": 16,
+    "text": {
+      "ja": "海辺の結界",
+      "en": "Seaside Barrier",
+      "zh": "海边结界",
+      "ko": "해변의 결계"
+    }
+  },
+  "battle_stage_7": {
+    "font_size": 16,
+    "text": {
+      "ja": "しゃくねつの火山",
+      "en": "Scorching Volcano",
+      "zh": "灼热火山",
+      "ko": "작열의 화산"
+    }
+  },
+  "battle_stage_8": {
+    "font_size": 16,
+    "text": {
+      "ja": "火山の結界",
+      "en": "Volcano Barrier",
+      "zh": "火山结界",
+      "ko": "화산의 결계"
+    }
+  },
+  "battle_stage_9": {
+    "font_size": 16,
+    "text": {
+      "ja": "さいはての大地",
+      "en": "Land's End",
+      "zh": "天涯大地",
+      "ko": "끝없는 대지"
+    }
+  },
+  "battle_stage_10": {
+    "font_size": 16,
+    "text": {
+      "ja": "最終決戦 竜王",
+      "en": "Final Battle: Dragon King",
+      "zh": "最终决战 龙王",
+      "ko": "최종 결전 용왕"
+    }
+  },
+  "battle_stage_11": {
+    "font_size": 16,
+    "text": {
+      "ja": "対決!マオウ",
+      "en": "Showdown! Maou",
+      "zh": "对决!魔王",
+      "ko": "대결! 마오우"
+    }
+  },
+  "battle_story_stage": {
+    "font_size": 18,
+    "text": {
+      "ja": "ステージ",
+      "en": "Stage",
+      "zh": "关卡",
+      "ko": "스테이지"
+    }
+  },
+  "battle_story_barrier": {
+    "font_size": 18,
+    "text": {
+      "ja": "結界",
+      "en": "Barrier",
+      "zh": "结界",
+      "ko": "결계"
+    }
+  },
+  "battle_story_next": {
+    "font_size": 22,
+    "text": {
+      "ja": "フチでセリフをおくる",
+      "en": "Rim: next line",
+      "zh": "敲鼓边：下一句",
+      "ko": "테두리: 다음 대사"
+    }
+  },
+  "battle_story_page": {
+    "font_size": 20,
+    "text": {
+      "ja": "フチでページいどう",
+      "en": "Rim: turn page",
+      "zh": "敲鼓边：翻页",
+      "ko": "테두리: 페이지 이동"
+    }
+  },
+  "battle_story_end": {
+    "font_size": 22,
+    "text": {
+      "ja": "面でおしまい",
+      "en": "Face: finish",
+      "zh": "敲鼓面：结束",
+      "ko": "면: 끝내기"
+    }
+  },
+  "battle_story_first_half": {
+    "font_size": 18,
+    "text": {
+      "ja": "前半",
+      "en": "First Half",
+      "zh": "前半",
+      "ko": "전반"
+    }
+  },
+  "battle_story_second_half": {
+    "font_size": 18,
+    "text": {
+      "ja": "後半",
+      "en": "Second Half",
+      "zh": "后半",
+      "ko": "후반"
+    }
+  },
+  "battle_story_final": {
+    "font_size": 24,
+    "text": {
+      "ja": "ファイナル",
+      "en": "Final",
+      "zh": "最终",
+      "ko": "파이널"
+    }
+  },
+  "battle_story_epilogue": {
+    "font_size": 24,
+    "text": {
+      "ja": "エピローグ",
+      "en": "Epilogue",
+      "zh": "尾声",
+      "ko": "에필로그"
+    }
+  },
+  "battle_story_next_bond": {
+    "font_size": 26,
+    "text": {
+      "ja": "つづきは、絆レベル<c=#ff7a00>{bond}</c>で!",
+      "en": "Continued at Bond Lv <c=#ff7a00>{bond}</c>!",
+      "zh": "后续请在羁绊等级<c=#ff7a00>{bond}</c>观看!",
+      "ko": "다음 이야기는 인연 레벨 <c=#ff7a00>{bond}</c>에서!"
     }
   }
 }

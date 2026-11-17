@@ -1,0 +1,376 @@
+{
+    "amitie": {
+        "x": 40,
+        "y": 480,
+        "crop": [[0, 0, 180, 190], [180, 0, 180, 190], [360, 0, 180, 190], [540, 0, 180, 190]]
+    },
+    "basil_bird": {},
+    "basil_dust": {},
+    "basil_dust_alt": {},
+    "basil_rock": {},
+    "basil_rock_big": {},
+    "basil_rock_big_alt": {},
+    "basil_rock_mid": {},
+    "basil_rock_small": {},
+    "battle_end_banner": {},
+    "beam": {},
+    "beam_alt": {},
+    "beam_charge": {},
+    "beam_flash": {},
+    "beam_petals": {},
+    "beam_petals_green": {},
+    "beam_sparks": {
+        "crop": [[0, 0, 1280, 368], [1280, 0, 1280, 368], [2560, 0, 1280, 368]]
+    },
+    "beam_tint": {},
+    "boss_basilisk": {},
+    "boss_basilisk_breath": {},
+    "boss_basilisk_breath_small": {},
+    "boss_chick": {},
+    "boss_dragon_breath": {},
+    "boss_dragon_claw": {},
+    "boss_dragon_claw_glow": {},
+    "boss_dragon_head": {},
+    "boss_dragon_head_glow": {},
+    "boss_dragon_king": {},
+    "boss_dragon_king_fall": {},
+    "boss_dragon_wing": {},
+    "boss_dragon_wing_glow": {},
+    "boss_gauge_back": {
+        "x": 22,
+        "y": 35
+    },
+    "boss_gauge_frame": {
+        "x": 22,
+        "y": 35
+    },
+    "boss_gauge_high": {
+        "x": 43,
+        "y": 76
+    },
+    "boss_gauge_lost": {
+        "x": 43,
+        "y": 76
+    },
+    "boss_gauge_low": {
+        "x": 43,
+        "y": 76
+    },
+    "boss_gauge_mid": {
+        "x": 43,
+        "y": 76
+    },
+    "boss_gauge_needle": {
+        "x": 28,
+        "y": 60
+    },
+    "boss_gauge_warn": {
+        "x": 22,
+        "y": 35
+    },
+    "boss_gauge_warn_glow": {
+        "x": 22,
+        "y": 35
+    },
+    "best_banner_cloud": {},
+    "best_banner_glow": {},
+    "best_banner_text": {},
+    "boss_ghost_wood": {},
+    "boss_ghost_wood_glow": {},
+    "boss_ghost_wood_leaves": {},
+    "boss_hit": {},
+    "boss_hit_ring": {},
+    "boss_hit_spark": {
+        "crop": [[0, 0, 180, 180], [180, 0, 180, 180], [360, 0, 180, 180], [540, 0, 180, 180]]
+    },
+    "boss_maou_finger": {},
+    "boss_maou_head": {},
+    "boss_maou_head_outline": {},
+    "boss_maou_legs": {},
+    "boss_maou_sob_hand": {},
+    "boss_maou_sob_head": {},
+    "boss_maou_sob_legs": {},
+    "boss_maou_thumb": {},
+    "boss_maou_thumb_outline": {},
+    "boss_phoenix": {},
+    "boss_phoenix_glow": {},
+    "boss_scylla": {},
+    "boss_scylla_bright": {},
+    "boss_scylla_bubbles": {},
+    "boss_scylla_hurt": {},
+    "boss_seal": {},
+    "boss_seal_shards": {
+        "crop": [[0, 0, 340, 340], [340, 0, 340, 340], [680, 0, 340, 340], [1020, 0, 340, 340]]
+    },
+    "boss_seal_slash": {},
+    "boss_win_band": {},
+    "boss_win_banner": {},
+    "boss_win_glow": {},
+    "boss_win_line": {},
+    "bubble": {
+        "crop": [[0, 0, 320, 320], [320, 0, 320, 320], [640, 0, 320, 320], [960, 0, 320, 320]]
+    },
+    "bubble_pop": {
+        "crop": [[0, 0, 320, 320], [320, 0, 320, 320], [640, 0, 320, 320]]
+    },
+    "bubble_sparkles": {
+        "crop": [[0, 0, 656, 656], [656, 0, 656, 656]]
+    },
+    "chest": {},
+    "chest_beam": {},
+    "chest_count_badge": {
+        "x": -10
+    },
+    "chest_count_digits": {
+        "crop": [[0, 0, 56, 56], [56, 0, 56, 56], [112, 0, 56, 56], [168, 0, 56, 56], [224, 0, 56, 56], [280, 0, 56, 56], [336, 0, 56, 56]],
+        "x": -10
+    },
+    "chest_count_glow": {},
+    "chest_count_icon": {
+        "x": -10,
+        "y": -3
+    },
+    "chest_count_icon_glow": {},
+    "chest_count_orb_badge": {},
+    "chest_count_ring": {},
+    "chest_count_sparkle": {},
+    "chest_halo": {},
+    "chest_ring": {},
+    "chest_sparkle": {},
+    "critical_digits": {
+        "crop": [[0, 0, 28, 36], [28, 0, 28, 36], [56, 0, 28, 36], [84, 0, 28, 36], [112, 0, 28, 36], [140, 0, 28, 36], [168, 0, 28, 36], [196, 0, 28, 36], [224, 0, 28, 36], [252, 0, 28, 36]]
+    },
+    "cutin_amitie": {},
+    "cutin_band": {
+        "crop": [[0, 0, 1280, 370], [1280, 0, 1280, 370], [2560, 0, 1280, 370], [0, 370, 1280, 370], [1280, 370, 1280, 370], [2560, 370, 1280, 370], [0, 740, 1280, 370], [1280, 740, 1280, 370], [2560, 740, 1280, 370], [0, 1110, 1280, 370]]
+    },
+    "cutin_band_alt": {
+        "crop": [[0, 0, 1280, 370], [1280, 0, 1280, 370], [2560, 0, 1280, 370], [0, 370, 1280, 370], [1280, 370, 1280, 370], [2560, 370, 1280, 370], [0, 740, 1280, 370], [1280, 740, 1280, 370], [2560, 740, 1280, 370], [0, 1110, 1280, 370]]
+    },
+    "cutin_don": {},
+    "cutin_don_fist": {},
+    "cutin_don_punch": {},
+    "cutin_lines": {},
+    "cutin_lines_alt": {},
+    "cutin_rulco": {
+        "crop": [[0, 0, 1280, 370], [1280, 0, 1280, 370], [2560, 0, 1280, 370], [0, 370, 1280, 370]]
+    },
+    "defeat_flash": {},
+    "dragon_aura": {},
+    "dragon_crystal_cluster": {},
+    "dragon_crystal_dark": {},
+    "dragon_crystal_dark_small": {},
+    "dragon_crystal_small": {},
+    "dragon_dark_burst": {},
+    "dragon_explosion": {},
+    "dragon_flash": {},
+    "dragon_haze_a": {},
+    "dragon_haze_b": {},
+    "dragon_haze_c": {},
+    "dragon_haze_d": {},
+    "dragon_rays": {},
+    "dragon_smoke_dark": {},
+    "dragon_smoke_purple": {},
+    "dust_left": {},
+    "dust_mid": {},
+    "dust_puff": {},
+    "dust_right": {},
+    "dust_ring": {},
+    "enemy_bandit": {},
+    "enemy_cactus": {},
+    "enemy_chameleon": {},
+    "enemy_crab": {},
+    "enemy_crystal_drop": {},
+    "enemy_dark_beast": {},
+    "enemy_dark_robo_fish": {},
+    "enemy_fang_bird": {},
+    "enemy_fire_bear": {},
+    "enemy_fire_bee": {},
+    "enemy_fire_bird": {},
+    "enemy_golem": {},
+    "enemy_hermit": {},
+    "enemy_jellyfish": {},
+    "enemy_magma_slime": {},
+    "enemy_miner_snake": {},
+    "enemy_moth": {},
+    "enemy_pebble": {},
+    "enemy_poison_slime": {},
+    "enemy_red_golem": {},
+    "enemy_robo_fish": {},
+    "enemy_seaweed_eye": {},
+    "enemy_shadow_bird": {},
+    "enemy_shell_turtle": {},
+    "enemy_spout_fish": {},
+    "enemy_sprout": {},
+    "enemy_starfish": {},
+    "enemy_turtle": {},
+    "enemy_volcano_bull": {},
+    "enemy_wave_croc": {},
+    "enemy_wolf": {},
+    "faust_blast": {},
+    "faust_fire": {},
+    "faust_flame": {},
+    "faust_flare": {},
+    "faust_ring": {},
+    "faust_sparks": {},
+    "fc_band_flash": {},
+    "fc_text": {},
+    "fc_text_flash": {},
+    "fc_text_glow": {},
+    "good_digits": {
+        "crop": [[0, 0, 22, 26], [22, 0, 22, 26], [44, 0, 22, 26], [66, 0, 22, 26], [88, 0, 22, 26], [110, 0, 22, 26], [132, 0, 22, 26], [154, 0, 22, 26], [176, 0, 22, 26], [198, 0, 22, 26]]
+    },
+    "hacchake_embers": {
+        "crop": [[0, 0, 672, 344], [672, 0, 672, 344]]
+    },
+    "hacchake_fire": {
+        "crop": [[0, 0, 976, 370], [976, 0, 976, 370], [1952, 0, 976, 370]]
+    },
+    "hacchake_haze": {},
+    "hit_critical_don": {},
+    "hit_critical_don_big": {},
+    "hit_critical_kat": {},
+    "hit_critical_kat_big": {},
+    "hit_critical_rays": {},
+    "hit_good": {},
+    "hit_good_big": {},
+    "hit_ok": {},
+    "hit_ok_big": {},
+    "holy_burst": {},
+    "holy_dome": {
+        "crop": [[0, 0, 498, 450], [498, 0, 498, 450], [996, 0, 498, 450]]
+    },
+    "holy_glow": {},
+    "holy_orb": {},
+    "holy_pillar": {},
+    "holy_pillar_core": {},
+    "holy_smoke": {},
+    "holy_sparkles": {
+        "crop": [[0, 0, 140, 371], [140, 0, 140, 371]]
+    },
+    "holy_wisps": {},
+    "kill_add_digits": {
+        "crop": [[0, 0, 34, 42], [34, 0, 34, 42], [68, 0, 34, 42], [102, 0, 34, 42], [136, 0, 34, 42], [170, 0, 34, 42], [204, 0, 34, 42], [238, 0, 34, 42], [272, 0, 34, 42], [306, 0, 34, 42], [340, 0, 34, 42]]
+    },
+    "kill_digits": {
+        "crop": [[0, 0, 54, 70], [54, 0, 54, 70], [108, 0, 54, 70], [162, 0, 54, 70], [216, 0, 54, 70], [270, 0, 54, 70], [324, 0, 54, 70], [378, 0, 54, 70], [432, 0, 54, 70], [486, 0, 54, 70]]
+    },
+    "kill_panel": {
+        "y": 33
+    },
+    "kill_puff": {},
+    "kill_skill_digits": {
+        "crop": [[0, 0, 36, 44], [36, 0, 36, 44], [72, 0, 36, 44], [108, 0, 36, 44], [144, 0, 36, 44], [180, 0, 36, 44], [216, 0, 36, 44], [252, 0, 36, 44], [288, 0, 36, 44], [324, 0, 36, 44], [360, 0, 36, 44]]
+    },
+    "kill_sparkle": {},
+    "kill_sparkle_small": {},
+    "leaf": {
+        "crop": [[0, 0, 64, 560], [64, 0, 64, 560], [128, 0, 64, 560], [192, 0, 64, 560], [256, 0, 64, 560], [320, 0, 64, 560], [384, 0, 64, 560], [448, 0, 64, 560], [512, 0, 64, 560]]
+    },
+    "leaf_burst": {},
+    "leaf_glow": {},
+    "leaf_streak": {},
+    "leaf_wind": {
+        "crop": [[0, 0, 64, 560], [64, 0, 64, 560], [128, 0, 64, 560]]
+    },
+    "maou_face": {},
+    "maou_head": {},
+    "maou_reel": {},
+    "ok_digits": {
+        "crop": [[0, 0, 22, 26], [22, 0, 22, 26], [44, 0, 22, 26], [66, 0, 22, 26], [88, 0, 22, 26], [110, 0, 22, 26], [132, 0, 22, 26], [154, 0, 22, 26], [176, 0, 22, 26], [198, 0, 22, 26]]
+    },
+    "orb_chest": {},
+    "orb_chest_ring": {},
+    "phoenix_embers": {},
+    "phoenix_fireball": {},
+    "phoenix_fireball_alt": {},
+    "phoenix_fireball_small": {},
+    "phoenix_flame_bits": {},
+    "phoenix_flame_low": {},
+    "phoenix_flame_tall": {},
+    "phoenix_flame_wide": {},
+    "phoenix_smoke": {},
+    "power_digits": {
+        "y": -2,
+        "x2": 22,
+        "crop": [[0, 0, 24, 30], [24, 0, 24, 30], [48, 0, 24, 30], [72, 0, 24, 30], [96, 0, 24, 30], [120, 0, 24, 30], [144, 0, 24, 30], [168, 0, 24, 30], [192, 0, 24, 30], [216, 0, 24, 30]]
+    },
+    "power_panel": {
+        "x": -1,
+        "y": 165
+    },
+    "rock_burst": {},
+    "rock_chips": {},
+    "rock_debris": {},
+    "rock_pebbles": {},
+    "rocks_back": {},
+    "rocks_left": {},
+    "rocks_right": {},
+    "rocks_tall": {},
+    "roll_burst": {},
+    "scylla_bubble_big": {},
+    "scylla_bubble_heart": {},
+    "scylla_bubble_heart_small": {},
+    "scylla_bubble_small": {},
+    "scylla_bubble_specks": {},
+    "scylla_ink_blue": {},
+    "scylla_ink_drops": {},
+    "scylla_ink_drops_pink": {},
+    "scylla_ink_drops_purple": {},
+    "scylla_ink_magenta": {},
+    "scylla_ink_pink": {},
+    "scylla_ink_purple": {},
+    "scylla_ink_skull": {},
+    "scylla_ink_skull_drops": {},
+    "skill_gauge_bubble": {
+        "x": 45,
+        "y": 351
+    },
+    "skill_gauge_dot": {
+        "x": 45,
+        "y": 351
+    },
+    "skill_gauge_fill": {
+        "x": 75,
+        "y": 400
+    },
+    "skill_gauge_frame": {
+        "x": 45,
+        "y": 351
+    },
+    "skill_gauge_full": {
+        "x": 45,
+        "y": 351
+    },
+    "skill_gauge_glow": {
+        "x": 30,
+        "y": 336,
+        "crop": [[0, 0, 330, 150], [330, 0, 330, 150], [660, 0, 330, 150], [990, 0, 330, 150], [1320, 0, 330, 150]]
+    },
+    "slash": {},
+    "slash_blur": {},
+    "slash_glow": {},
+    "slash_start": {},
+    "thunder_bolt": {},
+    "thunder_bolt_long": {},
+    "thunder_bolts": {},
+    "thunder_bolts_glow": {},
+    "thunder_crawl": {},
+    "thunder_glow": {},
+    "thunder_haze": {},
+    "thunder_sparks": {},
+    "true_arc": {},
+    "true_arc_alt": {},
+    "true_flare": {},
+    "true_glow": {},
+    "true_rays": {},
+    "true_slash": {},
+    "true_slash_glow": {},
+    "true_slash_halo": {},
+    "true_slash_start": {},
+    "true_sparkle": {},
+    "true_specks": {},
+    "wood_chick": {},
+    "wood_chick_anger": {},
+    "wood_chick_blink": {}
+}

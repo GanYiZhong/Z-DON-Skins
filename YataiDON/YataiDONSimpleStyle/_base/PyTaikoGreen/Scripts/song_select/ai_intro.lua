@@ -8,12 +8,73 @@ local SKIP_WAIT, FORCED_SKIP = 30, 1200
 local INPUT_WAIT = 60
 local OUT_FRAMES = 30
 local OX, OY = 640, 324
+local FONT = "FOT-Seurat_Pro_B.otf"
+local WHITE = { 255, 255, 255, 255 }
+local INK = { 24, 24, 24, 255 }
+local LINE_X, LINE_Y, LINE_GAP, LINE_WIDTH = 640, 553, 54, 1000
+local ICON_SCALE = 2
+local STYLES = {
+    line = { color = INK, em = { color = { 40, 170, 110, 255 } } },
+    caption = { color = INK, outline = WHITE, thickness = 5,
+        em = { color = { 255, 160, 0, 255 }, outline = { 90, 30, 0, 255 }, thickness = 5 } },
+    bubble = { color = INK, em = { color = { 255, 140, 0, 255 }, outline = { 90, 30, 0, 255 }, thickness = 3 } },
+    bubble_blue = { color = INK, em = { color = { 40, 150, 255, 255 }, outline = { 10, 30, 90, 255 }, thickness = 3 } },
+}
 
 local function clamp01(v) return math.max(0, math.min(1, v)) end
 local function ramp(f, at, len) return clamp01((f - at) / len) end
 local function lerp(a, b, u) return a + (b - a) * u end
 
 -- rows: { from, to, scale_from, scale_to, y_from, y_to }
+local function pick(t)
+    return t[tex.language()] or t.en or t.ja or ""
+end
+
+local function make_text(str, size, style)
+    local color = style.color
+    return text.create_raw_text(str, math.floor(size * S), color, style.outline or color, false, style.thickness or 0,
+        0, 1, FONT)
+end
+
+-- runs of plain text, *emphasis* and {win} icons; widths in screen px
+local function make_row(str, size, style)
+    local row = { runs = {}, width = 0 }
+    local icon_w = size * ICON_SCALE * S
+    local i, em = 1, false
+    while i <= #str do
+        local a = str:find("[*{]", i)
+        local plain = str:sub(i, (a or #str + 1) - 1)
+        if plain ~= "" then
+            local t = make_text(plain, size, em and style.em or style)
+            row.runs[#row.runs + 1] = { text = t }
+            row.width = row.width + t.width
+        end
+        if not a then break end
+        if str:sub(a, a) == "*" then
+            em, i = not em, a + 1
+        else
+            row.runs[#row.runs + 1] = { icon = icon_w }
+            row.width = row.width + icon_w
+            i = (str:find("}", a, true) or #str) + 1
+        end
+    end
+    return row
+end
+
+local function make_block(str, size, style, width)
+    local rows
+    repeat
+        rows = {}
+        local widest = 0
+        for line in (str .. "\n"):gmatch("(.-)\n") do
+            rows[#rows + 1] = make_row(line, size, style)
+            widest = math.max(widest, rows[#rows].width)
+        end
+        size = size - 1
+    until widest <= width * S or size < 12
+    return rows
+end
+
 local function track(rows, f)
     if rows then
         for _, r in ipairs(rows) do
@@ -50,22 +111,70 @@ local AIDON_BIG_JUMP = {
     { 115, 118, 0.977, 0.906, -0.25, -1 }, { 119, 121, 0.938, 1, -0.65, 0 },
 }
 
+-- text: { ja = ..., en = ... }, rows split on \n, *name* in green
 local PHRASES = {
-    { bubble = "bubble_don", line = "line_don_where", se = "se_absurd", don = { "don_idle", DON_HOP }, bgm = true },
-    { bubble = "bubble_aidon", line = "line_aidon_awake", aidon = AIDON_HOP },
-    { bubble = "bubble_makina", line = "line_makina_hello", se = "se_norm", vo = "vo_makina_hello", makina = { "open", MAKINA_HOP } },
-    { bubble = "bubble_don", line = "line_don_dream", se = "se_absurd" },
-    { bubble = "bubble_makina", line = "line_makina_not_dream", se = "se_norm", makina = { "smile", MAKINA_DOUBLE } },
-    { bubble = "bubble_makina", line = "line_makina_future", se = "se_norm", makina = { "blink" } },
-    { bubble = "bubble_makina", line = "line_makina_sudden", se = "se_norm" },
-    { bubble = "bubble_makina", line = "line_makina_challenge", se = "se_norm" },
-    { bubble = "bubble_don", line = "line_don_strongest", se = "se_don_jump", don = { "don_cheer", DON_JUMP } },
-    { bubble = "bubble_makina", line = "line_makina_yes", se = "se_norm", don = { "don_idle" }, makina = { "glad", MAKINA_HOP } },
-    { bubble = "bubble_makina", line = "line_makina_learning", se = "se_norm" },
-    { bubble = "bubble_makina", line = "line_makina_close_battle", se = "se_norm" },
-    { bubble = "bubble_don", line = "line_don_confident", se = "se_norm", don = { "don_cheer", DON_JUMP } },
-    { bubble = "bubble_aidon", line = "line_aidon_greeting", se = "se_norm", vo = "vo_aidon_thanks", aidon = AIDON_TRIPLE },
-    { bubble = "bubble_makina", line = "line_makina_lets_go", se = "se_norm", vo = "vo_makina_thanks", makina = { "glad", MAKINA_HOP }, stop_bgm = true },
+    { bubble = "bubble_don", se = "se_absurd", don = { "don_idle", DON_HOP }, bgm = true,
+        text = { ja = "むにゃ・・・ここはどこカッ?", en = "Mnya... Where am I, ka?" } },
+    { bubble = "bubble_aidon", aidon = AIDON_HOP,
+        text = { ja = "目が覚めたようだゾ", en = "Looks like you are awake." } },
+    { bubble = "bubble_makina", se = "se_norm", vo = "vo_makina_hello", makina = { "open", MAKINA_HOP },
+        text = { ja = "は、はじめまして! わたしは*「まきな」*\n未来からきた、ドンだー研究者です。",
+            en = "N-nice to meet you! I'm *Makina*,\na Don-der researcher from the future." } },
+    { bubble = "bubble_don", se = "se_absurd",
+        text = { ja = "未来? ドンだー研究者?\nこれは夢カッ? 二度寝だドン…",
+            en = "The future? A Don-der researcher?\nIs this a dream, ka? Back to sleep, Don..." } },
+    { bubble = "bubble_makina", se = "se_norm", makina = { "smile", MAKINA_DOUBLE },
+        text = { ja = "ね、寝ないでください〜!\n夢ではないのです…!",
+            en = "P-please don't go back to sleep!\nThis isn't a dream...!" } },
+    { bubble = "bubble_makina", se = "se_norm", makina = { "blink" },
+        text = { ja = "わたし達は、\n2765年からタイムトラベルしてきました。",
+            en = "We traveled back in time\nfrom the year 2765." } },
+    { bubble = "bubble_makina", se = "se_norm",
+        text = { ja = "いきなりですけど…", en = "This is sudden, but..." } },
+    { bubble = "bubble_makina", se = "se_norm",
+        text = { ja = "この「AIどん」と、演奏勝負をして\n最強のドンだーを目指してみませんか!",
+            en = "Why not battle this \"AI Don\"\nand aim to be the strongest Don-der?" } },
+    { bubble = "bubble_don", se = "se_don_jump", don = { "don_cheer", DON_JUMP },
+        text = { ja = "最強・・・? ボクがなれるのカッ!?", en = "The strongest...? Could I really be, ka?!" } },
+    { bubble = "bubble_makina", se = "se_norm", don = { "don_idle" }, makina = { "glad", MAKINA_HOP },
+        text = { ja = "なれますよ!!!", en = "You can!!!" } },
+    { bubble = "bubble_makina", se = "se_norm",
+        text = { ja = "わたしが開発した「AIどん」は、\nアナタとバトルするたび学習するので、",
+            en = "The \"AI Don\" I built learns\nevery time it battles you," } },
+    { bubble = "bubble_makina", se = "se_norm",
+        text = { ja = "つねに勝つか負けるかの\n熱いバトルが楽しめちゃうんです!",
+            en = "so every battle is a heated one\nthat could go either way!" } },
+    { bubble = "bubble_don", se = "se_norm", don = { "don_cheer", DON_JUMP },
+        text = { ja = "ボクとバトルすると学習する…\n最強になれる気がするドン!",
+            en = "It learns by battling me...\nI feel like I could be the strongest, Don!" } },
+    { bubble = "bubble_aidon", se = "se_norm", vo = "vo_aidon_thanks", aidon = AIDON_TRIPLE,
+        text = { ja = "ヨロシクたのム", en = "Pleased to meet you." } },
+    { bubble = "bubble_makina", se = "se_norm", vo = "vo_makina_thanks", makina = { "glad", MAKINA_HOP },
+        stop_bgm = true,
+        text = { ja = "では早速いってみましょう〜っ!\nこれからよろしくおねがいしますねっ♪",
+            en = "Let's jump right in!\nI'm looking forward to working with you!" } },
+}
+
+-- *word* takes the style's emphasis colours, {win} is the win icon. x, y on the board; align = "left" / "right"
+local CAPTIONS = {
+    good = { x = -266, y = -175, size = 30, width = 230, style = "bubble",
+        text = { ja = "*良*をとるほど", en = "The more *GOOD*s you hit" } },
+    miss = { x = -244, y = -167, size = 30, width = 250, style = "bubble_blue",
+        text = { ja = "*ミス*するほど", en = "The more you *MISS*" } },
+    sections = { x = -59, y = -141, size = 22, width = 400, style = "bubble",
+        text = { ja = "1曲は*3*or*5**区間*にわかれています", en = "A song is split into *3* or *5* *sections*" } },
+    section_reward = { x = 0, y = -209, size = 40, width = 780,
+        text = { ja = "*優勢*でいると*区間*ごとに{win}がもらえます", en = "Stay *ahead* to earn a {win} each *section*" } },
+    more_wins = { x = -242, y = 180, size = 30, width = 300, gap = 56,
+        text = { ja = "演奏終了時に\n{win}が多ければ", en = "Whoever has more {win}\nat the end wins" } },
+    rank_means = { x = 0, y = -166, size = 40, width = 780, gap = 70,
+        text = { ja = "*ランク*とは、\n演奏のうまさを*数値*にしたものだよ", en = "Your *rank* is a *number*\nfor how well you play" } },
+    rank_needs = { x = 0, y = -201, size = 40, width = 780,
+        text = { ja = "*ランク*をあげるためには、", en = "To raise your *rank*," } },
+    in_addition = { x = -242, y = 194, size = 30, width = 170, align = "right",
+        text = { ja = "加えて、", en = "Also," } },
+    needed = { x = 185, y = 192, size = 30, width = 200, align = "left",
+        text = { ja = "が必要だよ", en = "are needed" } },
 }
 
 local PAGE_END = { [0] = 0, 168, 183, 319, 0, 88, 209 }
@@ -87,6 +196,16 @@ function AIIntro.new()
     self.draw_background = require("song_select/ai_background").new()
     self.hint_page = text.create_text("ai_intro_hint_page", { 255, 255, 255, 255 }, { 0, 0, 0, 255 }, false, 5, 2)
     self.hint_end = text.create_text("ai_intro_hint_end", { 255, 255, 255, 255 }, { 0, 0, 0, 255 }, false, 5, 2)
+    self.icon_h = tex.get_texture_info("ai_intro", "icon_win").height
+    local latin = tex.language() ~= "ja" and tex.language() ~= "zh"
+    self.lines = {}
+    for i, p in ipairs(PHRASES) do
+        self.lines[i] = make_block(pick(p.text), latin and 32 or 38, STYLES.line, LINE_WIDTH)
+    end
+    self.captions = {}
+    for name, c in pairs(CAPTIONS) do
+        self.captions[name] = make_block(pick(c.text), c.size, STYLES[c.style or "caption"], c.width)
+    end
     self.now = tex.get_current_ms()
     self.mode = "story"
     self.story_t0 = self.now
@@ -217,6 +336,31 @@ function AIIntro:board(key, x, y, o)
     self:put(key, OX + x, OY + y, o)
 end
 
+function AIIntro:draw_rows(rows, cx, cy, gap, o)
+    o = o or {}
+    local top = cy - (#rows - 1) * gap / 2
+    for i, row in ipairs(rows) do
+        local x = cx * S - row.width / 2
+        if o.align == "left" then x = cx * S elseif o.align == "right" then x = cx * S - row.width end
+        local y = top + (i - 1) * gap
+        for _, run in ipairs(row.runs) do
+            if run.icon then
+                local s = run.icon / (S * self.icon_h)
+                self:put("icon_win", (x + run.icon / 2) / S, y, { s = s, fade = o.fade })
+                x = x + run.icon
+            else
+                run.text:draw({ x = x, y = y * S - run.text.height / 2, fade = o.fade })
+                x = x + run.text.width
+            end
+        end
+    end
+end
+
+function AIIntro:caption(name)
+    local c = CAPTIONS[name]
+    self:draw_rows(self.captions[name], OX + c.x, OY + c.y, c.gap or 0, { align = c.align })
+end
+
 local function draw_hint_text(hint, cx, cy, fade)
     hint:draw({ x = (cx - hint.width / (2 * S)) * S, y = (cy - hint.height / (2 * S)) * S, fade = fade })
 end
@@ -280,7 +424,7 @@ function AIIntro:draw_story()
         self:put(key, 1074, OY_S - 36 + y)
     end
     self:put(p.bubble, 640, OY_S + 216)
-    self:put(p.line, 640, OY_S + 219)
+    self:draw_rows(self.lines[self.phrase], LINE_X, LINE_Y, LINE_GAP)
     local f = self:frame_since(self.phrase_t0)
     if self.phrase == #PHRASES then
         self:draw_decide_hint(993, 671, f)
@@ -393,7 +537,10 @@ function AIIntro:draw_page_1(f)
     self:draw_note(99.1, f, 0, 51)
     self:draw_note(-6.45, f, 60, 113)
     self:draw_note(99.1, f, 60, 113)
-    if f >= 53 then self:board("bubble_good", -253, -142) end
+    if f >= 53 then
+        self:board("bubble_good", -253, -142)
+        self:caption("good")
+    end
     if f >= 156 then
         local t = f - 156
         local s, a
@@ -432,7 +579,10 @@ function AIIntro:draw_page_2(f)
     self:draw_note(99.1, f, 0, 53)
     self:draw_note(-6.45, f, 60, 113)
     self:draw_note(99.1, f, 60, 113)
-    if f >= 53 then self:board("bubble_miss", -243, -142) end
+    if f >= 53 then
+        self:board("bubble_miss", -243, -142)
+        self:caption("miss")
+    end
     if f >= 170 then self:board("text_behind", 180, 58, { fade = ramp(f, 170, 13) }) end
 end
 
@@ -447,9 +597,12 @@ function AIIntro:draw_page_3(f)
     self:board("lane_section", 0, 61.05)
     self:draw_blink("frame_section", -182, -23, f, 150, 20, 40)
     self:board("duel_small", 0, -31.1)
-    self:board("text_section_reward", 0, -188)
-    if f >= 79 then self:board("bubble_sections", -61, -149) end
-    if f >= 184 then self:board("text_more_wins", -242, 185) end
+    self:caption("section_reward")
+    if f >= 79 then
+        self:board("bubble_sections", -61, -149)
+        self:caption("sections")
+    end
+    if f >= 184 then self:caption("more_wins") end
     if f >= 264 then
         local t = f - 264
         local s, a = 1, 1
@@ -465,7 +618,7 @@ end
 
 function AIIntro:draw_page_5(f)
     self:board("panel", 0, 0)
-    self:board("text_rank_means", 0, -188)
+    self:caption("rank_means")
     self:board("shot_song_select", 206, 71)
     self:draw_blink("frame_section", 82, 2, f, 39, 20, 40)
     if f >= 88 then self:board("rank_panel", -157, 14) end
@@ -473,12 +626,12 @@ end
 
 function AIIntro:draw_page_6(f)
     self:board("panel", 0, 0)
-    self:board("text_rank_needs", 0, -188)
+    self:caption("rank_needs")
     self:board("shot_song_select", 189, -10)
     self:draw_blink("frame_rank", 108, -132, f, 39, 19, 40)
     if f >= 149 then
-        self:board("text_in_addition", 0, 208)
-        self:board("text_needed", 0, 208)
+        self:caption("in_addition")
+        self:caption("needed")
     end
     if f >= 181 then
         local u = clamp01((f - 181) / 4)

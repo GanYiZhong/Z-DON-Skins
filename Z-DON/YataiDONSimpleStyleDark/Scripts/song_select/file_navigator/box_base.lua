@@ -517,6 +517,26 @@ local URA_CELLS     = 90
 local DS_BTN_Y   = 523   -- SimpleStyle r3: card-tall buttons
 local DS_CURSOR_Y = 310
 local DS_NEIRO_Y = 602
+-- Z-DON enso battle (BATTLE_SELECT): the hitsound slot (DIFF_NEIRO) opens the special-move picker there, so it
+-- gets its own card-tall column right of オプション and the courses move right; the board grows to 1344 wide
+-- (ss_sel.lua draws it as chrome then). ds_layout() rewrites DS_SLOT_X (and ss_sel.lua's copy) in place.
+local DS_SLOT_X_NORMAL = {}
+for k, v in pairs(DS_SLOT_X) do DS_SLOT_X_NORMAL[k] = v end
+local DS_SLOT_X_BATTLE = { [DIFF_BACK] = 382, [DIFF_MODIFIER] = 518, [DIFF_NEIRO] = 654,
+                           [DIFF_EASY] = 830, [DIFF_NORMAL] = 1038, [DIFF_HARD] = 1246, [DIFF_ONI] = 1454 }
+local ds_battle_on = false
+local function ds_battle() return ds_battle_on end
+local function ds_layout()
+    ds_battle_on = (tex.current_screen and tex.current_screen() == "BATTLE_SELECT") or false
+    local src = ds_battle_on and DS_SLOT_X_BATTLE or DS_SLOT_X_NORMAL
+    for k, v in pairs(src) do DS_SLOT_X[k] = v end
+    if SS_SEL then SS_SEL.ds_wide = ds_battle_on end
+    local ss = SS_SEL and SS_SEL.DS_SLOT_X
+    if ss then
+        for k, v in pairs(src) do ss[k] = v end
+        ss[4] = src[DIFF_ONI]
+    end
+end
 
 -- main_diff_mark: 680x680, drawn under the buttons/cards.
 local DS_MARK_X = { [1] = 200, [2] = 1794 }   -- SimpleStyle fix1029: 2P mirrors 1P
@@ -580,6 +600,7 @@ return {
     MOD_SLIDE = MOD_SLIDE, MOD_SLIDE_MS = MOD_SLIDE_MS, MOD_JSON_Y = MOD_JSON_Y,
     MOD_HEADER_CY = MOD_HEADER_CY, MOD_CX = MOD_CX,
     DS_SLOT_X = DS_SLOT_X, DS_BOARD_Y = DS_BOARD_Y, DS_COURSE_NAME_DY = DS_COURSE_NAME_DY,
+    ds_layout = ds_layout, ds_battle = ds_battle,
     URA_ANIM_MS = URA_ANIM_MS, URA_SWAP_MS = URA_SWAP_MS, URA_CELLS = URA_CELLS,
     DS_BTN_Y = DS_BTN_Y, DS_CURSOR_Y = DS_CURSOR_Y, DS_NEIRO_Y = DS_NEIRO_Y,
     DS_MARK_X = DS_MARK_X, DS_MARK_Y = DS_MARK_Y, DS_MARK_DECIDE = DS_MARK_DECIDE,

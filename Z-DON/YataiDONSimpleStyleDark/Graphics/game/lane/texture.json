@@ -298,5 +298,11 @@
   "timer": {
     "y": 498,
     "density": 1
+  },
+  "battle_1p_lane_cover": {
+    "density": 1
+  },
+  "battle_2p_lane_cover": {
+    "density": 1
   }
 }

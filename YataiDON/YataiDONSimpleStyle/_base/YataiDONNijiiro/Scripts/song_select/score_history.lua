@@ -1,126 +1,71 @@
-local SKIN = {
-    score_info_counter_margin = { x = 28, width = 21 },
-}
-
 ScoreHistory = {}
 ScoreHistory.__index = ScoreHistory
 
-local DIFF_URA = 4
+local S = 0.95
+local DIGIT_O = 40
+local PANEL_CX, PANEL_CY = 186.5, 621.0
+local BEST_RIGHT, BEST_Y, BEST_STEP = 282.0, 631.0, 19.0
+local ICON_X, ICON_Y = 80.0, 630.0
+local TITLE_CX, TITLE_CY = 185.0, 604.5
+local DIFF_ONI, DIFF_URA = 3, 4
+local URA_SWAP_MS = 1500
+local SHOW_DELAY_MS = 0
+
+local T = {}
+local function tx(name)
+    local t = T[name]
+    if t == nil then
+        local id = tex.get_texture("player_board/" .. name)
+        local info = id and tex.get_texture_info("player_board", name)
+        t = id and { t = id, w = info and info.width or 0, h = info and info.height or 0 } or false
+        T[name] = t
+    end
+    return t or nil
+end
+
+local function put(name, cx, cy, frame)
+    local t = tx(name)
+    if not t then return end
+    tex.draw_texture(t.t, { x = cx - t.w / 2, y = cy - t.h / 2, center = true, scale = S, frame = frame })
+end
+
+local title
 
 function ScoreHistory.new(available, is_shinuchi, current_ms)
     local self = setmetatable({}, ScoreHistory)
-
-    self.available   = available
-    self.is_shinuchi = is_shinuchi
-    self.last_ms     = current_ms
-    self.curr_index  = #available > 0 and ((1 % #available) + 1) or 0
-
-    local s = tex.get_screen_scale()
-    local margin = SKIN.score_info_counter_margin
-    self.offset_y = 50 * s
-    self.margin_w = margin and margin.width or 0
-    self.margin_x = margin and margin.x or 0
-
-    local title_cfg = { x = 76 * s, y = 275 * s, width = 134 * s, height = 27 * s }
-    self.title_pos = title_cfg
-    self.title = nil
-    local label = tex.skin_text("leaderboard_title")
-    if label ~= "" then
-        local font_size = title_cfg.height
-        while font_size > 8 do
-            local t = text.create_raw_text(label, font_size, { 0, 0, 0, 255 }, { 0, 0, 0, 0 }, false, 0, 2.0)
-            if t.width <= title_cfg.width then
-                self.title = t
-                break
-            end
-            font_size = font_size - 1
-        end
-        if not self.title then
-            self.title = text.create_raw_text(label, 8, { 0, 0, 0, 255 }, { 0, 0, 0, 0 }, false, 0, 2.0)
-        end
-    end
-
-    self.t_background_2 = tex.get_texture("song_select/leaderboard/background_2")
-    self.t_shinuchi     = tex.get_texture("song_select/leaderboard/shinuchi")
-    self.t_shinuchi_ura = tex.get_texture("song_select/leaderboard/shinuchi_ura")
-    self.t_pts          = tex.get_texture("song_select/leaderboard/pts")
-    self.t_normal       = tex.get_texture("song_select/leaderboard/normal")
-    self.t_difficulty   = tex.get_texture("song_select/leaderboard/difficulty")
-    self.t_judge_good   = tex.get_texture("song_select/leaderboard/judge_good")
-    self.t_judge_ok     = tex.get_texture("song_select/leaderboard/judge_ok")
-    self.t_judge_bad    = tex.get_texture("song_select/leaderboard/judge_bad")
-    self.t_judge_drumroll = tex.get_texture("song_select/leaderboard/judge_drumroll")
-    self.t_counter      = tex.get_texture("song_select/leaderboard/counter")
-    self.t_judge_num    = tex.get_texture("song_select/leaderboard/judge_num")
-
+    self.t0 = current_ms
+    self.now = current_ms
+    self.best = {}
+    for _, e in ipairs(available) do self.best[e.diff] = e.score end
+    self.has_ura = self.best[DIFF_URA] ~= nil
     return self
 end
 
 function ScoreHistory:update(current_ms)
-    if #self.available == 0 then return end
-    if current_ms >= self.last_ms + 1000.0 then
-        self.last_ms = current_ms
-        self.curr_index = (self.curr_index % #self.available) + 1
+    self.now = current_ms
+end
+
+function ScoreHistory:draw(open_ms)
+    if open_ms < SHOW_DELAY_MS then return end
+    if tex.get_skin_config("player_board_on") == nil or tex.current_screen() ~= "SONG_SELECT" then return end
+    local ura = self.has_ura and (math.floor((self.now - self.t0) / URA_SWAP_MS) % 2 == 1)
+    put("best_panel", PANEL_CX, PANEL_CY)
+    put("best_icon", ICON_X, ICON_Y, ura and 4 or 3)
+    if title == nil then
+        local s = tex.skin_text("pboard_best")
+        title = (s and s ~= "") and text.create_raw_text(s, 18, { 255, 255, 255, 255 }, { 0, 0, 0, 255 }, false,
+                                                         3.0 / tex.get_screen_scale(), 1.0) or false
+    end
+    if title then
+        title:draw({ x = math.floor(TITLE_CX - title.width / 2 + 0.5), y = math.floor(TITLE_CY - title.height / 2 + 0.5) })
+    end
+    local s = tostring(math.max(0, math.min(99999999, self.best[ura and DIFF_URA or DIFF_ONI] or 0)))
+    local sd = tx("sdigit")
+    if not sd then return end
+    for i = 1, #s do
+        tex.draw_texture(sd.t, { x = BEST_RIGHT - BEST_STEP * (i - 1) - DIGIT_O, y = BEST_Y - DIGIT_O, center = true,
+                                 scale = S, frame = s:byte(#s - i + 1) - 48 })
     end
 end
 
-function ScoreHistory:draw()
-    if #self.available == 0 then return end
-
-    local entry = self.available[self.curr_index]
-    local diff  = entry.diff
-
-    if self.t_background_2 then tex.draw_texture(self.t_background_2) end
-    if self.title then self.title:draw({ x = self.title_pos.x, y = self.title_pos.y }) end
-
-    if self.is_shinuchi then
-        if diff == DIFF_URA then
-            if self.t_shinuchi_ura then tex.draw_texture(self.t_shinuchi_ura, { index = 1 }) end
-        else
-            if self.t_shinuchi then tex.draw_texture(self.t_shinuchi, { index = 1 }) end
-        end
-        if self.t_pts then tex.draw_texture(self.t_pts, { color = { 255, 255, 255, 255 }, index = 1 }) end
-    else
-        if self.t_normal then tex.draw_texture(self.t_normal, { index = 1 }) end
-        if self.t_pts then tex.draw_texture(self.t_pts, { color = { 0, 0, 0, 255 }, index = 1 }) end
-    end
-
-    if self.t_difficulty then tex.draw_texture(self.t_difficulty, { frame = diff, index = 1 }) end
-
-    for i = 0, 3 do
-        if self.t_normal then
-            tex.draw_texture(self.t_normal, { y = self.offset_y + i * self.offset_y, index = 1 })
-        end
-    end
-
-    if self.t_judge_good then tex.draw_texture(self.t_judge_good) end
-    if self.t_judge_ok then tex.draw_texture(self.t_judge_ok) end
-    if self.t_judge_bad then tex.draw_texture(self.t_judge_bad) end
-    if self.t_judge_drumroll then tex.draw_texture(self.t_judge_drumroll) end
-
-    local values = { entry.score, entry.good, entry.ok, entry.bad, entry.drumroll }
-    local score_color = self.is_shinuchi and { 255, 255, 255, 255 } or { 0, 0, 0, 255 }
-
-    for j = 1, 5 do
-        local counter = tostring(values[j])
-        local len = #counter
-        if j == 1 then
-            for i = 1, len do
-                local digit = tonumber(string.sub(counter, i, i)) or 0
-                local x = -((len * self.margin_w) / 2.0) + ((i - 1) * self.margin_w)
-                if self.t_counter then
-                    tex.draw_texture(self.t_counter, { color = score_color, frame = digit, x = x, index = 1 })
-                end
-            end
-        else
-            for i = 1, len do
-                local digit = tonumber(string.sub(counter, i, i)) or 0
-                local x = -(len - i + 1) * self.margin_x
-                local y = (j - 1) * self.offset_y
-                if self.t_judge_num then
-                    tex.draw_texture(self.t_judge_num, { frame = digit, x = x, y = y })
-                end
-            end
-        end
-    end
-end
+return ScoreHistory

@@ -7,7 +7,6 @@ function GameOver.new(overlay)
     self.ad_played = false
     self.voice_played = false
     self.finished = false
-    self.over_result = tex.get_skin_config("zdon_end_over_result") ~= nil
 
     self.curtain_pull_out = tex.get_animation(1, "game_over")
     self.curtain_pull_in = tex.get_animation(2, "game_over")
@@ -113,11 +112,8 @@ function GameOver:is_finished()
 end
 
 function GameOver:draw()
-    -- the arcade pulls the curtain over the frozen result board (skin_config zdon_end_over_result: the engine
-    -- holds the result's last frame, no fade); without it the red backdrop
-    if not (self.over_result and tex.draw_frozen_screen()) then
-        if self.t_bana_ad then tex.draw_texture(self.t_bana_ad) end
-    end
+    -- the overlay host keeps drawing live underneath, so only the ad screen needs its own backdrop
+    if self.t_bana_ad then tex.draw_texture(self.t_bana_ad) end
     tex.draw_texture(self.t_kitsune, {
         frame = math.floor(self.kitsune_texture_change.attribute), x = self.curtain_pull_out.attribute,
     })

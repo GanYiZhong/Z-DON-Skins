@@ -1,10 +1,7 @@
--- The combo counter on the lane: the number (stretching on every hit), the "COMBO" label, the
--- silver / gold digit tiers and, from 100, the three glimmers sweeping over the number.
--- The engine's Combo (combo.h) calls update every frame with the player's combo; this draws it.
-
 local SKIN = {
     color_tiers = true,   -- silver digits from 50 combo
     margin = { x = 52, y = 52 },
+    label = { x = 400, y = 153, size = 28, outline = 4.25 },   -- centre of the label
     glimmer = {
         { x = 337.5, y = 315 },
         { x = 300, y = 345 },
@@ -18,6 +15,7 @@ Combo.__index = Combo
 local TOTAL_TIME = 250
 local CYCLE_TIME = TOTAL_TIME * 2
 local WHITE = { 255, 255, 255 }
+local LABEL_FILL, LABEL_RIM = { 255, 255, 255, 255 }, { 40, 20, 10, 255 }
 
 function Combo.new(combo, current_ms)
     local self = setmetatable({}, Combo)
@@ -34,6 +32,9 @@ function Combo.new(combo, current_ms)
     self.t_counter_gold = tex.get_texture("combo/counter_gold")
     self.t_counter_100  = tex.get_texture("combo/counter_100")
     self.t_gleam        = tex.get_texture("combo/gleam")
+    local l = SKIN.label
+    self.label = text.create_raw_text(tex.skin_text("combo_label"), l.size, LABEL_FILL, LABEL_RIM, false,
+                                      l.outline, 2.0, 1.0)
     return self
 end
 
@@ -59,13 +60,6 @@ end
 
 function Combo:draw(y)
     if self.combo < 3 then return end
-    local lang = tex.language()
-    if lang ~= self.lang then
-        self.lang = lang
-        self.t_combo     = tex.get_texture("combo/combo_" .. lang)
-        self.t_combo_100 = tex.get_texture("combo/combo_100_" .. lang)
-    end
-
     local str = tostring(self.combo)
     local tiers = SKIN.color_tiers
     local gold = self.combo >= 100
@@ -80,7 +74,8 @@ function Combo:draw(y)
 
     local margin = gold and SKIN.margin.y or SKIN.margin.x
     local stretch = self.stretch.attribute
-    tex.draw_texture(gold and self.t_combo_100 or self.t_combo, { y = y })
+    local l = SKIN.label
+    self.label:draw({ x = l.x - self.label.width / 2, y = y + l.y - self.label.height / 2 })
     for i = 1, #str do
         tex.draw_texture(digits, {
             frame = str:byte(i) - 48, x = -(#str * margin / 2) + (i - 1) * margin,

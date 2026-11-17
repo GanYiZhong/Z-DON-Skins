@@ -1,8 +1,15 @@
 local S = tex.get_screen_scale()
 local DIR, SUB = "waiwai_result/reveal", "reveal"
 local F = 1000 / 60
+local WHITE, BLACK = { 255, 255, 255, 255 }, { 0, 0, 0, 255 }
 
-local INIT, GAUGE, WORD, PANEL, DUET, DRUM, MSG, FINISH = 1, 2, 3, 4, 5, 6, 7, 8
+local INIT, GAUGE, WORD, PANEL, DUET, RARE, DRUM, MSG, FINISH = 1, 2, 3, 4, 5, 6, 7, 8, 9
+local RARE_LEN = 72
+local RARE_Y, RARE_LABEL_Y, RARE_SCALE = 675, 593, 0.6
+local RARE_SLOTS = { { 0 }, { -70, 70 }, { -130, 0, 130 }, { -180, -60, 60, 180 }, { -220, -110, 0, 110, 220 } }
+local RARE_STARS = { { "rare_star_0", -61, -82 }, { "rare_star_1", 62, -62 }, { "rare_star_1", -68, 68 },
+    { "rare_star_2", 56, 63 }, { "rare_star_2", -80, 10 }, { "rare_star_3", 80, -10 }, { "rare_star_3", 10, 80 },
+    { "rare_star_3", -10, -80 } }
 local WAIT = 60
 local DIGIT_ROLL = 40
 local CLEAR_POINT, MAX_POINT = 35, 50
@@ -17,6 +24,8 @@ local SPARKLES = {
     { 58, 156.35, 33.35 }, { 67, -161.65, 30 }, { 76, 68.35, 48 },
 }
 local MSG_KEYS = { [0] = "vbad", "bad", "good", "excellent" }
+-- collabs whose message plates are another collab's, line for line
+local PLATE_ALIAS = { poptep = "taiko" }
 local RAYS = {
     { "ray_thin_teal", 10.0, 13.8, 1, 2, -562, -349, -518, -339, false, 0.70 },
     { "ray_wide_lime", 17.1, 18.8, 1, 2, -481, -329, -461, -323, false, 0.80 },
@@ -65,10 +74,38 @@ function WaiwaiResult.new()
     return self
 end
 
-function WaiwaiResult:set_result(point, duet, msg, revive)
+function WaiwaiResult:set_result(point, duet, msg, revive, collab, rare_total, rare_mask)
     self.point, self.duet, self.msg, self.revive = point, duet, msg, revive
     self.word = point < CLEAR_POINT and WORD_FAIL or (point < MAX_POINT and WORD_CLEAR or WORD_AMAZING)
-    self.text = text.create_text("waiwai_result_msg_" .. MSG_KEYS[msg], { 255, 255, 255, 255 }, { 0, 0, 0, 255 }, false, 6, -1)
+    collab = collab or "taiko"
+    local plate = (PLATE_ALIAS[collab] or collab) .. "_" .. MSG_KEYS[msg]
+    tex.load_folder("waiwai_result", "messages/" .. plate)
+    local info = tex.get_texture_info(plate, "plate")
+    if info then
+        self.plate = { id = tex.get_texture("waiwai_result/" .. plate .. "/plate"), w = info.x2[1] / S, h = info.y2[1] / S,
+            frame = math.random(0, info.frame_count - 1) }
+    else
+        self.text = text.create_text("waiwai_result_msg_" .. MSG_KEYS[msg], WHITE, BLACK, false, 6, -1)
+    end
+    self:set_rare(collab, rare_total or 0, rare_mask or 0)
+end
+
+function WaiwaiResult:set_rare(collab, total, mask)
+    self.rare = nil
+    if total <= 0 then return end
+    tex.load_folder("waiwai_game", "rare/" .. collab)
+    local kinds = {}
+    for k = 0, 2 do
+        local info = tex.get_texture_info(collab, "note_" .. k)
+        if info then kinds[#kinds + 1] = { id = tex.get_texture("waiwai_game/" .. collab .. "/note_" .. k),
+            w = info.x2[1] / S, h = info.y2[1] / S } end
+    end
+    if #kinds == 0 then return end
+    self.rare = { slots = {} }
+    local xs = RARE_SLOTS[math.min(total, #RARE_SLOTS)]
+    for i, dx in ipairs(xs) do
+        self.rare.slots[i] = { x = 640 + dx, art = kinds[(i - 1) % #kinds + 1], hit = (mask >> (i - 1)) & 1 == 1 }
+    end
 end
 
 function WaiwaiResult:t(key)
@@ -134,7 +171,7 @@ function WaiwaiResult:step_duet()
         local i = self.roll_id
         self.digits[i] = tonumber(value:sub(#value - i + 1, #value - i + 1))
         self.roll_id, self.roll_count = i + 1, 0
-        if self.roll_id > #value then self:next_state(DRUM); return end
+        if self.roll_id > #value then self:next_state(self.rare and RARE or DRUM); return end
     end
 end
 
@@ -163,6 +200,13 @@ function WaiwaiResult:step()
     elseif st == DUET then
         self:step_duet()
         if self.st == DUET then self.c = c + 1 end
+    elseif st == RARE then
+        if c == 0 then
+            self.rare_f0 = self.frame
+            play("se_rare_jump", "sound")
+        end
+        self.c = c + 1
+        if self.c >= RARE_LEN then self:next_state(DRUM) end
     elseif st == DRUM then
         if c == 0 then play("se_drumroll1", "sound") end
         self.c = c + 1
@@ -191,6 +235,7 @@ function WaiwaiResult:skip()
     local value = tostring(self.duet)
     for i = 1, #value do self.digits[i] = tonumber(value:sub(#value - i + 1, #value - i + 1)) end
     self.roll_id = #value + 1
+    if self.rare then self.rare_f0 = self.rare_f0 or self.frame - RARE_LEN end
     self.msg_f0 = self.msg_f0 or self.frame
     self:finish()
 end
@@ -312,6 +357,50 @@ function WaiwaiResult:draw_panel()
         end
         if n then self:D("digit_" .. n, xs[i], 528, { a = a }) end
     end
+    if self.rare then
+        self:D("rare_note_label", 640, RARE_LABEL_Y, { a = a })
+        local rf = self.rare_f0 and math.min(self.frame - self.rare_f0, RARE_LEN) or nil
+        for _, slot in ipairs(self.rare.slots) do self:draw_rare_slot(slot, rf, a) end
+    end
+end
+
+function WaiwaiResult:draw_art(art, cx, cy, o)
+    local s, a = (o.s or 1), o.a or 1
+    if a <= 0 or s <= 0 then return end
+    local w, h = art.w * s, art.h * s
+    tex.draw_texture(art.id, { x = cx * S, y = cy * S, x2 = (w - art.w) * S, y2 = (h - art.h) * S,
+        origin = { w / 2 * S, h / 2 * S }, rotation = o.rot or 0, fade = a, frame = o.frame })
+end
+
+-- one slot per rare note: hit notes jump up and land with a star burst, missed ones jump and tumble away
+function WaiwaiResult:draw_rare_slot(slot, rf, a)
+    local y, s, rot, show = RARE_Y, RARE_SCALE, 0, rf ~= nil
+    local base = not rf or not slot.hit or rf < 39
+    if base then self:draw_art(slot.art, slot.x, RARE_Y, { s = RARE_SCALE, a = 0.3 * a }) end
+    if not show then return end
+    if rf < 22 then
+        y = RARE_Y + 175 + (-235) * (1 - (1 - rf / 22) ^ 2)
+    elseif rf < 30 then
+        y = ease_in(rf, 22, 30, RARE_Y - 59, RARE_Y)
+    elseif slot.hit then
+        if rf < 39 then s = ease_in(rf, 30, 39, RARE_SCALE, RARE_SCALE * 1.2)
+        elseif rf < 45 then s = seg(rf, 39, 45, RARE_SCALE * 1.167, RARE_SCALE) end
+    else
+        if rf < 36 then
+            y = seg(rf, 30, 36, RARE_Y, RARE_Y - 11)
+        else
+            local t = clamp01((rf - 36) / 20)
+            y, s, rot = lerp(RARE_Y - 6, RARE_Y + 175, t * t), RARE_SCALE * (1 - t * t), 90 * t * t
+        end
+    end
+    self:draw_art(slot.art, slot.x, y, { s = s, rot = rot, a = a })
+    if slot.hit and rf >= 38 and rf < 66 then
+        local t = (rf - 38) / 28
+        for _, st in ipairs(RARE_STARS) do
+            self:D(st[1], slot.x + st[2] * (1 - (1 - t) ^ 2), RARE_Y + st[3] * (1 - (1 - t) ^ 2),
+                { s = 1 - 0.7 * t, a = t > 0.7 and (1 - t) / 0.3 * 0.875 or 1 })
+        end
+    end
 end
 
 function WaiwaiResult:draw_message()
@@ -335,7 +424,9 @@ function WaiwaiResult:draw_message()
             self:D(st[1], cx + st[2] * s, cy + st[3] * s, { s = st[4] * s * 0.75 * pulse, a = a })
         end
     end
-    if self.text then
+    if self.plate then
+        self:draw_art(self.plate, cx, cy, { s = s, a = a, frame = self.plate.frame })
+    elseif self.text then
         local w, h = self.text.width * s, self.text.height * s
         self.text:draw({ x = (cx * S) - w / 2, y = (cy * S) - h / 2, x2 = w - self.text.width, y2 = h - self.text.height, fade = a })
     end

@@ -26,6 +26,7 @@ local COMMENTS = {
     entry_dan      = { "mode_dan_comment_1", "mode_dan_comment_2", "mode_dan_comment_3" },
     entry_settings = { "entry_settings_comment_1", "entry_settings_comment_2" },
     entry_ai_battle = { "entry_ai_battle_comment_1", "entry_ai_battle_comment_2" },
+    entry_enso_battle = { "entry_enso_battle_comment_1", "entry_enso_battle_comment_2" },
     entry_record = { "entry_record_comment_1", "entry_record_comment_2" },
 }
 

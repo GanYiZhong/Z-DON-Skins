@@ -1,0 +1,22 @@
+return {
+    kind = "chat", stage = 9, node = 5,
+    half = "final",
+    lines = {
+        { amitie = "spin", don = "normal", bubble = "wide_r", se = "norm",
+            text = { ja = "感じるわ、\n竜王はすぐ近くにいる!", en = "I can feel it.\nThe Dragon King is close!" } },
+        { don = "angry", bubble = "wide", se = "anger",
+            text = { ja = "ボクも感じるドン、\nまがまがしい気配を…!", en = "I feel it too, don.\nAn evil presence...!" } },
+        { amitie = "dragon_shadow", bubble = "wide_r", se = "growl",
+            text = { ja = "待ちわびたぞ…", en = "I have been waiting..." } },
+        { amitie = "sword", bubble = "burst_big_r", se = "sword",
+            text = { ja = "決着の時よ!!\nこの剣(つるぎ)で平和をとりもどす!", en = "This is where it ends!!\nWith this sword, I'll bring back peace!" } },
+        { don = "cheer", bubble = "burst_big_r", se = "donjump",
+            text = { ja = "世界をハカイなんかさせないドン!", en = "We won't let you destroy the world, don!" } },
+        { amitie = "dragon_shadow", bubble = "wide_r", se = "norm",
+            text = { ja = "その剣(つるぎ)の力は、\nヒトの手にあまる力…", en = "The power of that sword\nis too much for human hands..." } },
+        { bubble = "wide_r", se = "norm",
+            text = { ja = "この世界のハカイをもって、\nすべての力を無に帰す…", en = "With the destruction of this world,\nall power shall return to nothing..." } },
+        { bubble = "burst_r", se = "frighten",
+            text = { ja = "かかってくるがよい!\nすべてハカイしてくれる!", en = "Come at me!\nI shall destroy everything!" } },
+    },
+}

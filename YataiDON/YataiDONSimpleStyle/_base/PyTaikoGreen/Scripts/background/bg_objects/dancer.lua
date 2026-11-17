@@ -105,23 +105,24 @@ function BaseDancer:draw(x)
     local t, at = self:part_time(), self.spec.at or NO_AT
     local move = self.spec[self.state].move and pose_at(self.spec[self.state].move, t)
     local mx, my = move and move.x or 0, move and move.y or 0
+    local msy, mrot = move and move.sy or 1, move and move.rot or 0
     for _, layer in ipairs(self.parts[self.state]) do
         local pose = pose_at(layer, t)
         if pose then
             local tx = self:texture(pose.key or layer.key or DEFAULT_KEY[self.state])
             local info = tx.info
             if info and info.width then
-                local w, h = info.width, info.height
-                local W, H = w * math.abs(pose.sx), h * pose.sy
+                local w, h, sy = info.width, info.height, pose.sy * msy
+                local W, H = w * math.abs(pose.sx), h * sy
                 local o = layer.origin or self:origin(pose.key or layer.key or DEFAULT_KEY[self.state])
-                ORIGIN[1], ORIGIN[2] = o[1] * math.abs(pose.sx), o[2] * pose.sy
+                ORIGIN[1], ORIGIN[2] = o[1] * math.abs(pose.sx), o[2] * sy
                 PARAMS.frame    = pose.frame
                 PARAMS.x        = x + self:origin("loop")[1] + (pose.x or at[1]) - at[1] + mx
                 PARAMS.y        = (pose.y or at[2]) + my
                 PARAMS.x2       = W - w
                 PARAMS.y2       = H - h
                 PARAMS.origin   = ORIGIN
-                PARAMS.rotation = pose.rot
+                PARAMS.rotation = pose.rot + mrot
                 PARAMS.mirror   = (pose.mirror or pose.sx < 0) and "horizontal" or nil
                 PARAMS.fade     = pose.alpha
                 PARAMS.blend    = (pose.blend == nil and layer.blend or pose.blend) or nil

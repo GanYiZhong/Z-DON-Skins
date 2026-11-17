@@ -1,0 +1,174 @@
+{
+  "background_1p": [
+    {
+      "x": 0,
+      "y": 0
+    },
+    {
+      "x": 960,
+      "y": 0
+    }
+  ],
+  "background_2p": [
+    {
+      "x": 0,
+      "y": 0
+    },
+    {
+      "x": 960,
+      "y": 0
+    }
+  ],
+  "footer_1p": {
+    "x": 76,
+    "y": 176
+  },
+  "footer_2p": [
+    {
+      "x": 0,
+      "y": 165
+    },
+    {
+      "x": 960,
+      "y": 165
+    }
+  ],
+  "gradient_clear": {
+    "x": 0,
+    "y": 0
+  },
+  "gradient_fail": {
+    "x": 0,
+    "y": 0
+  },
+  "result_text_ja": {
+    "x": 0,
+    "y": 0
+  },
+  "result_text_en": {
+    "x": 0,
+    "y": 0
+  },
+  "bg_fuji": {
+    "x": 0,
+    "y": 0
+  },
+  "bg_fuji_clear": {
+    "x": 0,
+    "y": 0
+  },
+  "bg_cloud_0": {
+    "x": 0,
+    "y": 0
+  },
+  "bg_cloud_clear_0": {
+    "x": 0,
+    "y": 0
+  },
+  "bg_cloud_1": {
+    "x": 0,
+    "y": 0
+  },
+  "bg_cloud_clear_1": {
+    "x": 0,
+    "y": 0
+  },
+  "bg_cloud_2": {
+    "x": 0,
+    "y": 0
+  },
+  "bg_cloud_clear_2": {
+    "x": 0,
+    "y": 0
+  },
+  "bg_cloud_3": {
+    "x": 0,
+    "y": 0
+  },
+  "bg_cloud_clear_3": {
+    "x": 0,
+    "y": 0
+  },
+  "bg_cloud_4": {
+    "x": 0,
+    "y": 0
+  },
+  "bg_cloud_clear_4": {
+    "x": 0,
+    "y": 0
+  },
+  "bg_cloud_5": {
+    "x": 0,
+    "y": 0
+  },
+  "bg_cloud_clear_5": {
+    "x": 0,
+    "y": 0
+  },
+  "bg_cloud_6": {
+    "x": 0,
+    "y": 0
+  },
+  "bg_cloud_clear_6": {
+    "x": 0,
+    "y": 0
+  },
+  "bg_cloud_7": {
+    "x": 0,
+    "y": 0
+  },
+  "bg_cloud_clear_7": {
+    "x": 0,
+    "y": 0
+  },
+  "bg_header": {
+    "x": 0,
+    "y": 0
+  },
+  "bg_sky_clear": [
+    {
+      "x": 960,
+      "y": 0
+    },
+    {
+      "x": 0,
+      "y": 0
+    }
+  ],
+  "bg_fuji_2p": {
+    "x": 0,
+    "y": 0
+  },
+  "bg_cloud_0_2p": {
+    "x": 0,
+    "y": 0
+  },
+  "bg_cloud_1_2p": {
+    "x": 0,
+    "y": 0
+  },
+  "bg_cloud_2_2p": {
+    "x": 0,
+    "y": 0
+  },
+  "bg_cloud_3_2p": {
+    "x": 0,
+    "y": 0
+  },
+  "bg_cloud_4_2p": {
+    "x": 0,
+    "y": 0
+  },
+  "bg_cloud_5_2p": {
+    "x": 0,
+    "y": 0
+  },
+  "bg_cloud_6_2p": {
+    "x": 0,
+    "y": 0
+  },
+  "bg_cloud_7_2p": {
+    "x": 0,
+    "y": 0
+  }
+}

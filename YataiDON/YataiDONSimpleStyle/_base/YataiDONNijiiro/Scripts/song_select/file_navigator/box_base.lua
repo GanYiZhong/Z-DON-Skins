@@ -54,9 +54,6 @@ local function draw_title(text, bx, cy, fade, max_w, min_scale)
     text:draw({ x = math.floor(bx - w / 2 + 0.5), y = math.floor(cy - text.height / 2 + 0.5),
                 x2 = w - text.width, fade = fade })
 end
--- Size factor for board / header titles. Only English gets the condensed font_en; every other
--- language's font (font.ttf, font_cn, font_tw, font_kr) is a full-width design whose titles read
--- much larger at the same point size, so they are drawn smaller.
 -- Song-wheel box titles: one size for every language, matched to the AC wheel (≈0.66 of the old base).
 local TITLE_SCALE = 0.66
 local function title_scale()

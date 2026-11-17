@@ -29,9 +29,12 @@ pictures by itself.
 
 ## Installing
 
-1. Download this repository (Code → Download ZIP) or clone it.
-2. Copy `YataiDONSimpleStyle` (and `YataiDONSimpleStyleDark` if you want the dark one) from `Z-DON/` or
-   `YataiDON/` into your game's `Skins/` folder.
+1. Download the latest zip from [Releases](https://github.com/GanYiZhong/Z-DON-Skins/releases/latest):
+   [`Z-DON-Skins-Z-DON.zip`](https://github.com/GanYiZhong/Z-DON-Skins/releases/latest/download/Z-DON-Skins-Z-DON.zip)
+   or [`Z-DON-Skins-YataiDON.zip`](https://github.com/GanYiZhong/Z-DON-Skins/releases/latest/download/Z-DON-Skins-YataiDON.zip).
+   It is rebuilt on every update of `main` (rolling release). Or download / clone this repository.
+2. Copy `YataiDONSimpleStyle` (and `YataiDONSimpleStyleDark` if you want the dark one) from the zip (or
+   this repository's `Z-DON/` or `YataiDON/`) into your game's `Skins/` folder.
 3. Choose the skin in the game's settings.
 
 The Z-DON install zip already contains the Z-DON build of both.

@@ -259,10 +259,12 @@ function DanSelect:draw_dan_closed(box)
     local name = box:chip_name()
     if name then
         local nb = cfg("dan_select_chip_name") or cfg("song_select_box_name") or { x = 0, y = 0, height = 0 }
+        local box_h = nb.height or name.height
+        local h = math.min(name.height, box_h)
         name:draw({
             x = bx + nb.x - name.width / 2,
-            y = nb.y,
-            y2 = math.min(name.height, nb.height or name.height) - name.height,
+            y = nb.y + (box_h - h) / 2,
+            y2 = h - name.height,
             fade = fade,
         })
     end
@@ -334,10 +336,6 @@ function DanSelect:draw_dan_open(box)
         end
     end
 
-    if box.clear_mark > 0 and T("yellow_box", "clear_mark") then
-        tex.draw_texture(T("yellow_box", "clear_mark"), { frame = box.clear_mark - 1, fade = f })
-    end
-
     -- Total notes
     tex.draw_texture(T("yellow_box", "total_notes_bg"), { fade = f })
     tex.draw_texture(T("yellow_box", "total_notes"), { fade = f })
@@ -362,6 +360,10 @@ function DanSelect:draw_dan_open(box)
     end
 
     self:draw_exam_box(box, f)
+
+    if box.clear_mark > 0 and T("yellow_box", "clear_mark") then
+        tex.draw_texture(T("yellow_box", "clear_mark"), { frame = box.clear_mark - 1, fade = f })
+    end
 end
 
 -- ---------------------------------------------------------------------------

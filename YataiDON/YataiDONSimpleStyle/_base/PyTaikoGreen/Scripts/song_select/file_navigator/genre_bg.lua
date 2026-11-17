@@ -9,6 +9,10 @@ local function T(name)
     return tex.get_texture("song_select/box/" .. name)
 end
 
+local function G(gb, name)
+    return (gb:has_gradient() and gb:gradient_texture(name)) or T(name)
+end
+
 local _bg_edge_width, _bg_folder_edge_width
 local function bg_edge_width()
     if _bg_edge_width == nil then
@@ -27,6 +31,7 @@ end
 
 -- draw_anim (folder still entering; box's bounds drive the growing span).
 local function draw_anim(gb, box)
+    local frame = gb:texture_frame()
     if not box then return end
     local s = gb.scale.attribute
     local offset = 5 * s
@@ -39,24 +44,23 @@ local function draw_anim(gb, box)
     local start_position = exiting and (base_start + gb.move_left.attribute) or base_start
     local end_position = exiting and (base_end + gb.move_right.attribute) or (base_end + gb.move.attribute)
 
-    local frame = gb:texture_frame()
     local fade = gb.fade.attribute
     local sy = -(gb.stretch.attribute * s)
     local recolor = gb:has_recolor()
 
     if recolor then gb:begin_recolor() end
-    tex.draw_texture(T("folder_background_edge"), { frame = frame, scale = s, center = true, mirror = "horizontal", x = start_position - offset, y = sy, y2 = gb.stretch.attribute * s, fade = fade })
-    tex.draw_texture(T("folder_background"), { frame = frame, scale = s, center = true, x = start_position + edge_width - offset, y = sy, x2 = end_position - start_position - edge_width - offset, y2 = gb.stretch.attribute * s, fade = fade })
-    tex.draw_texture(T("folder_background_edge"), { frame = frame, scale = s, center = true, x = end_position - edge_width + offset, y = sy, y2 = gb.stretch.attribute * s, fade = fade })
+    tex.draw_texture(G(gb, "folder_background_edge"), { frame = frame, scale = s, center = true, mirror = "horizontal", x = start_position - offset, y = sy, y2 = gb.stretch.attribute * s, fade = fade })
+    tex.draw_texture(G(gb, "folder_background"), { frame = frame, scale = s, center = true, x = start_position + edge_width - offset, y = sy, x2 = end_position - start_position - edge_width - offset, y2 = gb.stretch.attribute * s, fade = fade })
+    tex.draw_texture(G(gb, "folder_background_edge"), { frame = frame, scale = s, center = true, x = end_position - edge_width + offset, y = sy, y2 = gb.stretch.attribute * s, fade = fade })
 
     local edge_width_top = bg_folder_edge_width() * s
     local title_cfg = SKIN.genre_bg_title or { y = 0, width = 300 }
     local name = gb:name()
     local dest_width = math.min(title_cfg.width, name.width) * s
 
-    tex.draw_texture(T("folder_background_folder_edge"), { frame = frame, scale = s, center = true, mirror = "horizontal", x = center - dest_width / 2 - edge_width_top, y = sy, y2 = gb.stretch.attribute * s, fade = fade })
-    tex.draw_texture(T("folder_background_folder"), { frame = frame, scale = s, center = true, x = center - dest_width / 2, y = sy, x2 = dest_width, y2 = gb.stretch.attribute * s, fade = fade })
-    tex.draw_texture(T("folder_background_folder_edge"), { frame = frame, scale = s, center = true, x = center + dest_width / 2, y = sy, y2 = gb.stretch.attribute * s, fade = fade })
+    tex.draw_texture(G(gb, "folder_background_folder_edge"), { frame = frame, scale = s, center = true, mirror = "horizontal", x = center - dest_width / 2 - edge_width_top, y = sy, y2 = gb.stretch.attribute * s, fade = fade })
+    tex.draw_texture(G(gb, "folder_background_folder"), { frame = frame, scale = s, center = true, x = center - dest_width / 2, y = sy, x2 = dest_width, y2 = gb.stretch.attribute * s, fade = fade })
+    tex.draw_texture(G(gb, "folder_background_folder_edge"), { frame = frame, scale = s, center = true, x = center + dest_width / 2, y = sy, y2 = gb.stretch.attribute * s, fade = fade })
     if recolor then gb:end_recolor() end
 
     name:draw({ center = true, x = center - dest_width / 2, y = title_cfg.y - gb.stretch.attribute * s, x2 = dest_width - name.width, y2 = gb.stretch.attribute * s, fade = fade })
@@ -64,19 +68,19 @@ end
 
 -- draw_exit_anim (folder closing; move_left/move_right drive the shrink).
 local function draw_exit_anim(gb)
+    local frame = gb:texture_frame()
     local s = gb.scale.attribute
     local offset = 5 * s
     local edge_width = bg_edge_width() * s
     local anim_start = gb.move_left.attribute
     local anim_end = gb.move_right.attribute
-    local frame = gb:texture_frame()
     local fade = gb.fade.attribute
     local recolor = gb:has_recolor()
 
     if recolor then gb:begin_recolor() end
-    tex.draw_texture(T("folder_background_edge"), { frame = frame, scale = s, mirror = "horizontal", x = anim_start - offset, fade = fade })
-    tex.draw_texture(T("folder_background"), { frame = frame, scale = s, x = anim_start + edge_width - offset, x2 = anim_end - anim_start - edge_width - offset, fade = fade })
-    tex.draw_texture(T("folder_background_edge"), { frame = frame, scale = s, x = anim_end - edge_width + offset, fade = fade })
+    tex.draw_texture(G(gb, "folder_background_edge"), { frame = frame, scale = s, mirror = "horizontal", x = anim_start - offset, fade = fade })
+    tex.draw_texture(G(gb, "folder_background"), { frame = frame, scale = s, x = anim_start + edge_width - offset, x2 = anim_end - anim_start - edge_width - offset, fade = fade })
+    tex.draw_texture(G(gb, "folder_background_edge"), { frame = frame, scale = s, x = anim_end - edge_width + offset, fade = fade })
 
     local edge_width_top = bg_folder_edge_width()
     local title_cfg = SKIN.genre_bg_title or { width = 300 }
@@ -84,9 +88,9 @@ local function draw_exit_anim(gb)
     local dest_width = math.min(title_cfg.width, name.width)
     local center = 638.5 * tex.get_screen_scale()
 
-    tex.draw_texture(T("folder_background_folder_edge"), { frame = frame, mirror = "horizontal", x = center - dest_width / 2 - edge_width_top, fade = fade })
-    tex.draw_texture(T("folder_background_folder"), { frame = frame, x = center - dest_width / 2, x2 = dest_width, fade = fade })
-    tex.draw_texture(T("folder_background_folder_edge"), { frame = frame, x = center + dest_width / 2, fade = fade })
+    tex.draw_texture(G(gb, "folder_background_folder_edge"), { frame = frame, mirror = "horizontal", x = center - dest_width / 2 - edge_width_top, fade = fade })
+    tex.draw_texture(G(gb, "folder_background_folder"), { frame = frame, x = center - dest_width / 2, x2 = dest_width, fade = fade })
+    tex.draw_texture(G(gb, "folder_background_folder_edge"), { frame = frame, x = center + dest_width / 2, fade = fade })
     if recolor then gb:end_recolor() end
 
     name:draw({ x = center - dest_width / 2, y = title_cfg.y, x2 = dest_width - name.width, fade = fade })
@@ -95,6 +99,7 @@ end
 function SongSelect:draw_genre_bg(gb, start_position, end_position, folder)
     -- Z-DON AI battle (zdon_ai_arcade_flow): the arcade's red band + header replace the folder band over the filtered list
     if tex.zdon_ai_select() and require("global.ai_battle").draw_list_band() then return end
+    local frame = gb:texture_frame()
     if not gb:is_finished() then
         draw_anim(gb, folder)
         return
@@ -105,7 +110,6 @@ function SongSelect:draw_genre_bg(gb, start_position, end_position, folder)
 
     -- Steady state: fill the span between the first and last song's bounds.
     local screen_width = tex.get_screen_width()
-    local frame = gb:texture_frame()
     local fade = gb.fade.attribute
     local name = gb:name()
     local title_cfg = SKIN.genre_bg_title or { y = 0, width = 300 }
@@ -134,19 +138,19 @@ function SongSelect:draw_genre_bg(gb, start_position, end_position, folder)
         local draw_end_l = math.min(bg_end_pos, screen_width)
         if 0 < draw_end_l then
             if bg_end_pos < screen_width then
-                tex.draw_texture(T("folder_background"), { frame = frame, x = 0, x2 = draw_end_l - edge_width + offset, fade = fade })
-                tex.draw_texture(T("folder_background_edge"), { frame = frame, x = draw_end_l - edge_width + offset, fade = fade })
+                tex.draw_texture(G(gb, "folder_background"), { frame = frame, x = 0, x2 = draw_end_l - edge_width + offset, fade = fade })
+                tex.draw_texture(G(gb, "folder_background_edge"), { frame = frame, x = draw_end_l - edge_width + offset, fade = fade })
             else
-                tex.draw_texture(T("folder_background"), { frame = frame, x = 0, x2 = draw_end_l, fade = fade })
+                tex.draw_texture(G(gb, "folder_background"), { frame = frame, x = 0, x2 = draw_end_l, fade = fade })
             end
         end
         local draw_start_r = math.max(bg_start_pos, 0)
         if draw_start_r < screen_width then
             if bg_start_pos > 0 then
-                tex.draw_texture(T("folder_background"), { frame = frame, x = draw_start_r + edge_width - offset, x2 = screen_width, fade = fade })
-                tex.draw_texture(T("folder_background_edge"), { frame = frame, mirror = "horizontal", x = draw_start_r - offset, fade = fade })
+                tex.draw_texture(G(gb, "folder_background"), { frame = frame, x = draw_start_r + edge_width - offset, x2 = screen_width, fade = fade })
+                tex.draw_texture(G(gb, "folder_background_edge"), { frame = frame, mirror = "horizontal", x = draw_start_r - offset, fade = fade })
             else
-                tex.draw_texture(T("folder_background"), { frame = frame, x = draw_start_r, x2 = screen_width, fade = fade })
+                tex.draw_texture(G(gb, "folder_background"), { frame = frame, x = draw_start_r, x2 = screen_width, fade = fade })
             end
         end
     else
@@ -158,15 +162,15 @@ function SongSelect:draw_genre_bg(gb, start_position, end_position, folder)
             local fill_start = draw_start
             local fill_end = draw_end
             if bg_start_pos > 0 then
-                tex.draw_texture(T("folder_background_edge"), { frame = frame, mirror = "horizontal", x = draw_start - offset, fade = fade })
+                tex.draw_texture(G(gb, "folder_background_edge"), { frame = frame, mirror = "horizontal", x = draw_start - offset, fade = fade })
                 fill_start = draw_start + edge_width - offset
             end
             if bg_end_pos < screen_width then
-                tex.draw_texture(T("folder_background_edge"), { frame = frame, x = draw_end - edge_width + offset, fade = fade })
+                tex.draw_texture(G(gb, "folder_background_edge"), { frame = frame, x = draw_end - edge_width + offset, fade = fade })
                 fill_end = draw_end - edge_width + offset
             end
             if fill_start < fill_end then
-                tex.draw_texture(T("folder_background"), { frame = frame, x = fill_start, x2 = fill_end - fill_start, fade = fade })
+                tex.draw_texture(G(gb, "folder_background"), { frame = frame, x = fill_start, x2 = fill_end - fill_start, fade = fade })
             end
         end
     end
@@ -179,9 +183,9 @@ function SongSelect:draw_genre_bg(gb, start_position, end_position, folder)
         return
     end
 
-    tex.draw_texture(T("folder_background_folder_edge"), { frame = frame, mirror = "horizontal", x = center - dest_width / 2 - edge_width_top, fade = fade })
-    tex.draw_texture(T("folder_background_folder"), { frame = frame, x = center - dest_width / 2, x2 = dest_width, fade = fade })
-    tex.draw_texture(T("folder_background_folder_edge"), { frame = frame, x = center + dest_width / 2, fade = fade })
+    tex.draw_texture(G(gb, "folder_background_folder_edge"), { frame = frame, mirror = "horizontal", x = center - dest_width / 2 - edge_width_top, fade = fade })
+    tex.draw_texture(G(gb, "folder_background_folder"), { frame = frame, x = center - dest_width / 2, x2 = dest_width, fade = fade })
+    tex.draw_texture(G(gb, "folder_background_folder_edge"), { frame = frame, x = center + dest_width / 2, fade = fade })
 
     if recolor then gb:end_recolor() end
 

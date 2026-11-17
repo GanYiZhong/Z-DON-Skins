@@ -1,0 +1,23 @@
+return {
+    kind = "chat", stage = 7, node = 3,
+    half = "first",
+    next_bond = 46,
+    lines = {
+        { amitie = "phoenix", don = "angry", bubble = "shout_r", se = "roar",
+            text = { ja = "ギャオーーーーーン!", en = "Gyaoooooon!" } },
+        { amitie = "katsu", bubble = "don_r", se = "norm",
+            text = { ja = "まずい…\nこの火山のヌシがお怒りのようだ…", en = "This is bad...\nThe lord of this volcano is angry..." } },
+        { don = "normal", bubble = "cloud", se = "norm",
+            text = { ja = "戦うのカッ!?\nすごく強そうだドン…!!", en = "Do we fight it, ka!?\nIt looks really strong, don...!!" } },
+        { amitie = "sword", bubble = "burst_r", se = "norm",
+            text = { ja = "覚悟はできているわ…!!", en = "I'm ready for this...!!" } },
+        { amitie = "katsu", bubble = "don_r", se = "norm",
+            text = { ja = "いや、ここは我にまかせよ…\nオマエ達は、竜王のもとに急げ…", en = "No, leave this to me...\nYou two, hurry to the Dragon King..." } },
+        { amitie = "sword", bubble = "wide_r", se = "norm",
+            text = { ja = "そんな…!\n一緒に戦いましょう!!", en = "No...!\nLet's fight together!!" } },
+        { amitie = "katsu", bubble = "wide_r", se = "norm",
+            text = { ja = "ヤツは強い…\nここで我がおさえる…", en = "It is strong...\nI will hold it here..." } },
+        { don = "angry", bubble = "burst", se = "surprise1",
+            text = { ja = "とか言っている間に、\nおそってきたドンギャーー!!", en = "While we were talking,\nit attacked, dongyaaah!!" } },
+    },
+}

@@ -459,6 +459,10 @@ local function find_key(keys, f)
     return keys[lo]
 end
 
+local arcade_params = {}
+local arcade_origin = {}
+arcade_params.origin = arcade_origin
+
 function ArcadeDancer:draw(px, py, g)
     local f = self:frame_at(g)
     if not f then return end
@@ -474,17 +478,17 @@ function ArcadeDancer:draw(px, py, g)
         -- d[8] = 1: a mirroring placement (collab rigs); the frame flips inside its
         -- rect, so the origin moves to the other side of the png
         local mir = d[8] == 1
-        tex.draw_texture(self.tex, {
-            frame    = d[1],
-            x        = px + d[2],
-            y        = py + d[3],
-            x2       = vd.w * (sx - 1),
-            y2       = vd.h * (sy - 1),
-            origin   = { (mir and (vd.w - o[1]) or o[1]) * sx, o[2] * sy },
-            rotation = d[6],
-            fade     = d[7],
-            mirror   = mir and "horizontal" or nil,
-        })
+        arcade_origin[1] = (mir and (vd.w - o[1]) or o[1]) * sx
+        arcade_origin[2] = o[2] * sy
+        arcade_params.frame    = d[1]
+        arcade_params.x        = px + d[2]
+        arcade_params.y        = py + d[3]
+        arcade_params.x2       = vd.w * (sx - 1)
+        arcade_params.y2       = vd.h * (sy - 1)
+        arcade_params.rotation = d[6]
+        arcade_params.fade     = d[7]
+        arcade_params.mirror   = mir and "horizontal" or nil
+        tex.draw_texture(self.tex, arcade_params)
     end
 end
 

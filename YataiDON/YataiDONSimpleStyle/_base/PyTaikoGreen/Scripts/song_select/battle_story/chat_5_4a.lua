@@ -1,0 +1,22 @@
+return {
+    kind = "chat", stage = 5, node = 4,
+    half = "first",
+    next_bond = 36,
+    bgm = "info3",
+    lines = {
+        { amitie = "none", don = "angry", bubble = "wide", se = "anger",
+            text = { ja = "かっちゃんをはなすドン!", en = "Let go of Katsu-chan, don!" } },
+        { amitie = "scylla", bubble = "wide_r", se = "norm",
+            text = { ja = "ウフフ…", en = "Ufufu..." } },
+        { bubble = "wide_r", se = "norm",
+            text = { ja = "このコはワタシの巣に\nお持ち帰りさせてもらうワァ", en = "I'll be taking this one\nback to my nest~" } },
+        { amitie = "spin", bubble = "wide_r", se = "sword",
+            text = { ja = "逃げる気ね!\n待ちなさい!!", en = "Running away!?\nWait!!" } },
+        { amitie = "scylla", bubble = "wide_r", bgm = "stop", se = "disap",
+            text = { ja = "返してほしかったら\nアナタ達もイラッシャ〜イ", en = "If you want him back,\ncome and get him~" } },
+        { amitie = "none", don = "shock", bubble = "wide", bgm = "info2", se = "absurd",
+            text = { ja = "行っちゃったドン…\nたすけに行くしかないドン!", en = "She's gone, don...\nWe have to go save him, don!" } },
+        { amitie = "worried", bubble = "don_r", se = "norm",
+            text = { ja = "巣に行くって言ってたけど\nいったいどこにあるのかしら…", en = "She said she was going to her nest,\nbut where could it be..." } },
+    },
+}

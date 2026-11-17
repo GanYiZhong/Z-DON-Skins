@@ -1,0 +1,21 @@
+return {
+    kind = "chat", stage = 7, node = 1,
+    half = "first",
+    next_bond = 41,
+    lines = {
+        { amitie = "bust", don = "shock", bubble = "wide", se = { "magma", "absurd" },
+            text = { ja = "あっつい…ドン…\n汗がとまらないドン…", en = "So hot... don...\nI can't stop sweating, don..." } },
+        { amitie = "think", bubble = "don_r", se = "norm",
+            text = { ja = "ここはしゃくねつの火山、\n人が来るようなところじゃないわ…", en = "This is the Scorching Volcano.\nNo place for people to come..." } },
+        { bubble = "don", se = "norm",
+            text = { ja = "けむりもひどくて、目もいたいドン…", en = "The smoke is awful, my eyes sting, don..." } },
+        { bubble = "don_r", se = "norm",
+            text = { ja = "ここを越えた先に、竜王がいるはずよ", en = "The Dragon King should be past here." } },
+        { don = "angry", bubble = "don", se = "surprise1",
+            text = { ja = "竜王…ついに戦うのカッ!?", en = "The Dragon King... we finally fight him, ka!?" } },
+        { amitie = "spin", bubble = "don_r", se = "norm",
+            text = { ja = "どうかしら…結界の気配も感じるわ。\nきをつけてすすみましょう!", en = "Who knows... I sense a barrier, too.\nLet's go carefully!" } },
+        { don = "cheer", bubble = "don", se = "donjump",
+            text = { ja = "わかったドン!\n(海辺のあつさが、なつかしいドン)", en = "Got it, don!\n(I miss the heat of the beach, don)" } },
+    },
+}

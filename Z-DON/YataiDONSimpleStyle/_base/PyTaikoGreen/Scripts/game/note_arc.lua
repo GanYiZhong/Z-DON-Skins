@@ -20,8 +20,9 @@ local SYNCHRO_ARMS_X = { -17, 21 }
 
 local function trunc(v) return v < 0 and math.ceil(v) or math.floor(v) end
 
-function NoteArc.new(note_tex_type, big, is_balloon, player_num, start_x, start_y, rainbow_arc, synchro)
+function NoteArc.new(note_tex_type, big, is_balloon, player_num, start_x, start_y, rainbow_arc, synchro, fade, rare_key)
     local self = setmetatable({}, NoteArc)
+    self.fade = fade
     self.big = big
     self.is_balloon = is_balloon
     self.p2 = player_num == 2
@@ -41,7 +42,8 @@ function NoteArc.new(note_tex_type, big, is_balloon, player_num, start_x, start_
         self.cy = math.min(sy, ey) - curve_height   -- arc upward
     end
 
-    self.t_note = tex.get_texture("game/notes/" .. note_tex_type)
+    self.t_note = rare_key and rare_key ~= "" and tex.get_texture("waiwai_game/" .. rare_key)
+        or tex.get_texture("game/notes/" .. note_tex_type)
     self.note_width = tex.get_texture_info("notes", tostring(note_tex_type)).width
     self.t_firework = big and tex.get_texture("game/hit_effect/firework") or nil
     self.firework_frames = self.t_firework and tex.get_texture_info("hit_effect", "firework").frame_count or 0
@@ -190,7 +192,7 @@ function NoteArc:draw(y, elapsed_ms, duration_ms)
     end
 
     if progress < 1 then
-        tex.draw_texture(self.t_note, { x = x_i, y = y + y_i })
+        tex.draw_texture(self.t_note, { x = x_i, y = y + y_i, fade = self.fade and 1 - progress or nil })
     end
 end
 

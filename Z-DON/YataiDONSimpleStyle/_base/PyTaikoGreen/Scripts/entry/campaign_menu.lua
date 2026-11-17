@@ -101,6 +101,7 @@ function CampaignMenu.new(ids, opts)
     self.now = self.t0
     self.turn = nil
     self.decided = nil
+    self.voices = opts.voices or {}
     local sound = opts.sound or "campaign_entry"
     if audio.has_sound(sound) then audio.play_sound(sound, "sound") end
     return self
@@ -110,6 +111,12 @@ function CampaignMenu:update(current_ms)
     self.now = current_ms
     if not self.decided and current_ms - self.t0 >= WAIT_MS + SELECT_MS then
         self:decide()
+    end
+    local turn = self.turn
+    if turn and not turn.voiced and current_ms - turn.t0 >= OUT_MS then
+        turn.voiced = true
+        local voice = self.voices[self.ids[self.current]]
+        if voice and audio.has_sound(voice) then audio.play_sound(voice, "voice") end
     end
     if self.turn and current_ms - self.turn.t0 >= OUT_MS + IN_MS then
         self.turn = nil

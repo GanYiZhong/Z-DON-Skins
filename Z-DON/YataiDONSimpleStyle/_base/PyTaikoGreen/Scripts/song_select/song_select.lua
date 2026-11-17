@@ -27,6 +27,9 @@ function SongSelect.new()
     if tex.current_screen() == "AI_SELECT" and not tex.zdon_ai_select() then
         self.draw_background = require("song_select/ai_background").new()
     end
+    if tex.current_screen() == "BATTLE_SELECT" then
+        self.draw_background = require("song_select/battle_background").new()
+    end
 
     -- Animations (IDs from song_select/animation.json)
     self.text_fade_in    = tex.get_animation(4)   -- fade in/out the top-left label text
@@ -38,7 +41,8 @@ function SongSelect.new()
     self.text_fade_in:start()
 
     -- Cached texture IDs
-    self._id_footer            = tex.get_texture("song_select/global/footer")            or 0
+    local battle_footer = tex.current_screen() == "BATTLE_SELECT" and tex.get_texture("song_select/enso_battle/footer")
+    self._id_footer            = battle_footer or tex.get_texture("song_select/global/footer") or 0
     self._id_arrow             = tex.get_texture("song_select/global/arrow")             or 0
     self._id_song_num_bg       = tex.get_texture("song_select/global/song_num_bg")       or 0
 

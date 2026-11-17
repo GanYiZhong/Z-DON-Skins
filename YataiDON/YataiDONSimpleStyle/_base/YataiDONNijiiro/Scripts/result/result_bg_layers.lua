@@ -36,17 +36,36 @@ local FUJI_TRACK   = "huji_1p_l_mc/#84@0"
 function ResultBgLayers.new(player_num)
     local self = setmetatable({}, ResultBgLayers)
     self.player_num = player_num
-    self.two_player = (player_num == 3)
+    -- player_num: P1=1 (solo P1), P2=2 (solo P2), TWO_PLAYER=3 (P1+P2)
     self.t0 = nil
     self.fuji_t0 = nil
 
-    if self.two_player then
-        -- 2P: single baked plate (no clouds or Fuji) + header
+    -- FAIL SOFT: `anim.safe` returns a NULL clip whose readers return nil, so a missing or
+    -- malformed table degrades to the LAYERS constants instead of raising.
+    self.clip = anim.safe("anim/result_bg")
+    self.fuji = anim.safe("anim/result_bg_fuji")
+
+    -- solo P2 seat: full-screen P2 theme (teal plate, teal clouds, teal Fuji) + header
+    if player_num == 2 then
         self.t_bg     = tex.get_texture("result/background/background_2p")
+        self.t_header = tex.get_texture("result/background/bg_header")
+        self.t_fuji   = tex.get_texture("result/background/bg_fuji_2p")
+        self.t_cloud  = {}
+        for i = 0, 7 do
+            self.t_cloud[i] = tex.get_texture("result/background/bg_cloud_" .. i .. "_2p")
+        end
+        return self
+    end
+
+    -- P1 + P2: background_1p on the left half, background_2p on the right half, + header
+    if player_num == 3 then
+        self.t_bg_1p  = tex.get_texture("result/background/background_1p")
+        self.t_bg_2p  = tex.get_texture("result/background/background_2p")
         self.t_header = tex.get_texture("result/background/bg_header")
         return self
     end
 
+    -- solo P1: animated sky / Fuji / clouds + header
     self.t_sky        = tex.get_texture("result/background/background_1p")
     self.t_sky_clear  = tex.get_texture("result/background/bg_sky_clear")
     self.t_fuji       = tex.get_texture("result/background/bg_fuji")
@@ -57,11 +76,6 @@ function ResultBgLayers.new(player_num)
         self.t_cloud[i]       = tex.get_texture("result/background/bg_cloud_" .. i)
         self.t_cloud_clear[i] = tex.get_texture("result/background/bg_cloud_clear_" .. i)
     end
-
-    -- FAIL SOFT: `anim.safe` returns a NULL clip whose readers return nil, so a missing or
-    -- malformed table degrades to the LAYERS constants instead of raising.
-    self.clip = anim.safe("anim/result_bg")
-    self.fuji = anim.safe("anim/result_bg_fuji")
     return self
 end
 
@@ -99,8 +113,45 @@ function ResultBgLayers:draw(fade, clear)
     clear = clear or 0.0
     if fade <= 0 then return end
 
-    if self.two_player then
-        if self.t_bg then tex.draw_texture(self.t_bg, { fade = fade }) end
+    if self.player_num == 2 then
+        -- solo P2 seat: full-screen P2 theme -- P2's half upright on the right, mirrored on the left
+        if self.t_bg then
+            tex.draw_texture(self.t_bg, { index = 0, fade = fade, mirror = "horizontal" })
+            tex.draw_texture(self.t_bg, { index = 1, fade = fade })
+        end
+
+        local f = self:frame()
+        for i = 1, #LAYERS do
+            local L = LAYERS[i]
+            local idx, y, scale, mirror, w, track = L[2], L[3], L[4], L[5], L[6], L[7]
+            local tx, a = self.clip:at(track, f)
+            tx = tx or L[8]
+            a  = a  or L[9]
+            draw_cloud(self.t_cloud[idx], w, tx, y, scale, mirror, fade * a)
+        end
+
+        -- P2 Fuji (base, fades out as clear fades in)
+        if self.t_fuji and clear < 1.0 then
+            tex.draw_texture(self.t_fuji, { x = FUJI_X, y = FUJI_Y, fade = fade * (1.0 - clear) })
+        end
+        -- P2 clear Fuji (already teal in the source art)
+        if clear > 0 and self.t_fuji_clear then
+            local ty, sy = self.fuji:at(FUJI_TRACK, self:fuji_frame(clear))
+            ty = ty or FUJI_Y
+            sy = sy or 1.0
+            tex.draw_texture(self.t_fuji_clear, {
+                x = FUJI_CLEAR_X, y = ty, y2 = FUJI_H * sy - FUJI_H, fade = fade * clear,
+            })
+        end
+
+        if self.t_header then tex.draw_texture(self.t_header, { fade = fade }) end
+        return
+    end
+
+    if self.player_num == 3 then
+        -- P1 + P2: P1's half on the left, P2's half on the right, + header
+        if self.t_bg_1p then tex.draw_texture(self.t_bg_1p, { index = 0, fade = fade }) end
+        if self.t_bg_2p then tex.draw_texture(self.t_bg_2p, { index = 1, fade = fade }) end
         if self.t_header then tex.draw_texture(self.t_header, { fade = fade }) end
         return
     end

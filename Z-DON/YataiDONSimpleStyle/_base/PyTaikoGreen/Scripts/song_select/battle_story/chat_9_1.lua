@@ -1,0 +1,22 @@
+return {
+    kind = "chat", stage = 9, node = 1,
+    next_bond = 54,
+    lines = {
+        { amitie = "think", don = "normal", bubble = "wide_r", se = "norm",
+            text = { ja = "ついにここまできたわね…\nこの旅も、もう少し…", en = "We've finally made it this far...\nOur journey is almost over..." } },
+        { bubble = "don", se = "norm",
+            text = { ja = "ここが、さいはての大地カッ。\n大地というよりは…", en = "So this is the Land's End, ka.\nMore like..." } },
+        { amitie = "worried", bubble = "don_r", se = "norm",
+            text = { ja = "竜王の力で、\n変わり果ててしまったのね…", en = "The Dragon King's power\nhas ruined it..." } },
+        { bubble = "wide_r", se = "norm",
+            text = { ja = "こんな力をもつ、竜王に\n勝てるかしら…", en = "Can we really win against\na Dragon King with such power..." } },
+        { don = "angry", bubble = "wide", se = "anger",
+            text = { ja = "やるしかないドン!\nかっちゃんの分も!", en = "We have to, don!\nFor Katsu-chan, too!" } },
+        { amitie = "spin", bubble = "don_r", se = "sword",
+            text = { ja = "そうね…!\nこの王国のみんなの分もね!", en = "You're right...!\nAnd for everyone in the kingdom!" } },
+        { don = "cheer", bubble = "wide", se = "donjump",
+            text = { ja = "2人で力をあわせれば\nきっと大丈夫だドン!!", en = "If the two of us join forces,\nwe'll be fine, don!!" } },
+        { amitie = "smile", bubble = "don_r", se = "norm",
+            text = { ja = "ええ!ありがとう、どんちゃん!\n竜王を倒しにいきましょう!", en = "Yes! Thank you, Don-chan!\nLet's go defeat the Dragon King!" } },
+    },
+}

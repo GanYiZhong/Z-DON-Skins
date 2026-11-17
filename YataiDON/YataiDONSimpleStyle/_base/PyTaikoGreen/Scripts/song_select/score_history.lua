@@ -122,7 +122,8 @@ function ScoreHistory:draw_ranking()
     end
 end
 
-function ScoreHistory:draw()
+function ScoreHistory:draw(open_ms)
+    if open_ms < 3000 then return end
     if self.show_ranking then return self:draw_ranking() end
     if #self.available == 0 then return end
 

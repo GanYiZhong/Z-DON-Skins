@@ -58,9 +58,30 @@ function DanGameDraw.new(title)
     end
 
     self.captions = {}
+    self.threshold = {}
+    self.infos = {}
     local ds = tex.get_skin_config("dan_select_title")
     self.hori_name = text.create_raw_text(title, ds and ds.font_size or 40, WHITE, BLACK, false)
     return self
+end
+
+function DanGameDraw:info(name)
+    local c = self.infos[name]
+    if c == nil then
+        c = tex.get_texture_info("dan_info", name) or false
+        self.infos[name] = c
+    end
+    return c
+end
+
+function DanGameDraw:threshold_caption(info, size, outline)
+    local key = tostring(info.exam_type) .. "\31" .. tostring(info.exam_range) .. "\31" .. tostring(info.red_value)
+    local c = self.threshold[key]
+    if not c then
+        c = self:caption(exam_threshold_text(info.exam_type, info.exam_range, info.red_value), size, outline)
+        self.threshold[key] = c
+    end
+    return c
 end
 
 function DanGameDraw:digit_counter(digits, margin_x, t, index, y, x_offset)
@@ -93,7 +114,7 @@ function DanGameDraw:fill(state, w, fy, sub, all, frame_ms)
     local p100 = sub and "exam_sub_max"    or "exam_max"
     if state == "max" and fb[rb] then
         local rb_tex = fb[rb]
-        local info = tex.get_texture_info("dan_info", rb)
+        local info = self:info(rb)
         local th, tw = info.height, info.width
         local perd = tw * 0.5
         local ph = perd - math.fmod(frame_ms / 1000.0 * (perd * 60.0 / 80.0), perd)
@@ -145,8 +166,7 @@ function DanGameDraw:exam_row(info, y, song_index, frame_ms)
     bt_ol = 4.0 / tex.get_screen_scale()
     if bt then
         if bt.outline >= 0 then bt_ol = bt.outline end
-        cap = self:caption(exam_threshold_text(info.exam_type, info.exam_range, info.red_value),
-                           bt.font_size > 0 and bt.font_size or 36, bt_ol)
+        cap = self:threshold_caption(info, bt.font_size > 0 and bt.font_size or 36, bt_ol)
     end
     if cap then
         local pad = pad_for(bt_ol, tex.get_screen_scale())
@@ -169,14 +189,14 @@ function DanGameDraw:exam_row(info, y, song_index, frame_ms)
         local vl = { x = 528 }
         local live = tostring(info.counter_value)
         if vl then
-            local vc = tex.get_texture_info("dan_info", "value_counter")
+            local vc = self:info("value_counter")
             local json_x = (vc and vc.x[1]) or 920.0
             for j = 1, #live do
                 tex.draw_texture(t.value_counter, { frame = live:byte(j) - 48,
                                                     x = vl.x + (j - 1) * value_margin - json_x, y = y })
             end
             if info.exam_type == "gauge" then
-                local pc = tex.get_texture_info("dan_info", "exam_percent")
+                local pc = self:info("exam_percent")
                 local pjson = (pc and pc.x[2]) or 944.0
                 tex.draw_texture(t.exam_percent, { x = vl.x + #live * value_margin - pjson, y = y, index = 1 })
             end

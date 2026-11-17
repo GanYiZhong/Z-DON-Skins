@@ -1,92 +1,4 @@
 {
-    "zdon_ai_arcade_flow": {
-        "x": 1
-    },
-    "zdon_ai_board_dissolve": {
-        "x": 1
-    },
-    "zdon_ai_instant_page0": {
-        "x": 1
-    },
-    "zdon_ai_card_hold_ms": {
-        "x": 483
-    },
-    "zdon_ai_level_panel_ms": {
-        "x": 1000
-    },
-    "zdon_ai_gauge_fade_ms": {
-        "x": 220
-    },
-    "zdon_ai_arena": {
-        "x": 0
-    },
-    "zdon_ai_bgm_after_announce": {
-        "x": 4700
-    },
-    "zdon_ai_announce_at_fade": {
-        "x": 1
-    },
-    "zdon_ai_board_voice_ms": {
-        "x": 990
-    },
-    "zdon_ai_no_enter_voice": {
-        "x": 1
-    },
-    "zdon_ai_start_delay_ms": {
-        "x": 4070
-    },
-    "zdon_ai_ready_se_ms": {
-        "x": 2450
-    },
-    "zdon_ai_ready_voice_ms": {
-        "x": 800
-    },
-    "zdon_ai_end_delay": {
-        "x": 1
-    },
-    "zdon_ai_result_hold": {
-        "x": 3200
-    },
-    "zdon_ai_wipe_in": {
-        "x": 196
-    },
-    "zdon_ai_result_tl": {
-        "x": 1200,
-        "y": 650,
-        "width": 333
-    },
-    "zdon_ai_result_delay": {
-        "x": 12300
-    },
-    "zdon_green_strict": {
-        "x": 1
-    },
-    "zdon_ai_judge_offset": {
-        "x": -3,
-        "y": 2
-    },
-    "zdon_ai_lane": {
-        "x": 0
-    },
-    "zdon_ai_rules": {
-        "x": 100
-    },
-    "zdon_ai_tuning": {
-        "x": 1
-    },
-    "zdon_ai_drumroll": {
-        "x": 325,
-        "y": 20
-    },
-    "zdon_upai_arena": {
-        "x": 1
-    },
-    "zdon_ai_song_info": {
-        "x": -28,
-        "y": 604,
-        "font_size": 38,
-        "width": 1
-    },
     "screen": {
         "width": 1280,
         "height": 720,
@@ -100,8 +12,7 @@
             "disable_chara_3d": false,
             "crop_result_screenshot": true,
             "loading_countdown": false,
-            "hidden_oni": false,
-            "entry_credit_arcade": false
+            "hidden_oni": false
         }
     },
     "chara_3d": {
@@ -125,9 +36,13 @@
             150,
             300
         ],
+        "total_result": [
+            105,
+            590
+        ],
         "dan_result": [
             150,
-            480
+            590
         ],
         "game_p1": [
             160,
@@ -140,10 +55,6 @@
         "game_balloon": [
             420,
             120
-        ],
-        "total_result": [
-            105,
-            590
         ]
     },
     "nameplate": {
@@ -291,6 +202,10 @@
         "y": 50,
         "font_size": 40
     },
+    "ai_game_song_info": {
+        "x": -24,
+        "y": 605
+    },
     "game_song_info_subtitle": {
         "y": 88,
         "font_size": 22
@@ -331,6 +246,94 @@
     },
     "game_gogo_explosion_tilt": {
         "x": 6
+    },
+    "zdon_ai_arcade_flow": {
+        "x": 1
+    },
+    "zdon_ai_board_dissolve": {
+        "x": 1
+    },
+    "zdon_ai_instant_page0": {
+        "x": 1
+    },
+    "zdon_ai_card_hold_ms": {
+        "x": 483
+    },
+    "zdon_ai_level_panel_ms": {
+        "x": 1000
+    },
+    "zdon_ai_gauge_fade_ms": {
+        "x": 220
+    },
+    "zdon_ai_arena": {
+        "x": 0
+    },
+    "zdon_ai_bgm_after_announce": {
+        "x": 4700
+    },
+    "zdon_ai_announce_at_fade": {
+        "x": 1
+    },
+    "zdon_ai_board_voice_ms": {
+        "x": 990
+    },
+    "zdon_ai_no_enter_voice": {
+        "x": 1
+    },
+    "zdon_ai_start_delay_ms": {
+        "x": 4070
+    },
+    "zdon_ai_ready_se_ms": {
+        "x": 2450
+    },
+    "zdon_ai_ready_voice_ms": {
+        "x": 800
+    },
+    "zdon_ai_end_delay": {
+        "x": 1
+    },
+    "zdon_ai_result_hold": {
+        "x": 3200
+    },
+    "zdon_ai_wipe_in": {
+        "x": 196
+    },
+    "zdon_ai_result_tl": {
+        "x": 1200,
+        "y": 650,
+        "width": 333
+    },
+    "zdon_ai_result_delay": {
+        "x": 12300
+    },
+    "zdon_green_strict": {
+        "x": 1
+    },
+    "zdon_ai_judge_offset": {
+        "x": -3,
+        "y": 2
+    },
+    "zdon_ai_lane": {
+        "x": 0
+    },
+    "zdon_ai_rules": {
+        "x": 100
+    },
+    "zdon_ai_tuning": {
+        "x": 1
+    },
+    "zdon_ai_drumroll": {
+        "x": 325,
+        "y": 20
+    },
+    "zdon_upai_arena": {
+        "x": 1
+    },
+    "zdon_ai_song_info": {
+        "x": -28,
+        "y": 604,
+        "font_size": 38,
+        "width": 1
     },
     "zdon_ai_green_gauge": {
         "x": 1
@@ -387,9 +390,5 @@
     "zdon_ai_off_nameplate": {
         "x": 30,
         "y": -2
-    },
-    "ai_game_song_info": {
-        "x": -24,
-        "y": 605
     }
 }

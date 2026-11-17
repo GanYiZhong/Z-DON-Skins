@@ -1,0 +1,23 @@
+return {
+    kind = "chat", stage = 5, node = 1,
+    half = "second",
+    next_bond = 30,
+    lines = {
+        { amitie = "bust", don = "normal", bubble = "cloud", se = "absurd",
+            text = { ja = "海辺でたたかうと、\nあつ〜いドン…", en = "Fighting on the beach\nis sooo hot, don..." } },
+        { amitie = "worried", don = "hop", bubble = "wide_r", se = "norm",
+            text = { ja = "海で泳いだら\n気持ちよさそうね…", en = "A swim in the sea\nwould feel so nice..." } },
+        { don = "cheer", bubble = "cloud_big", se = "donjump",
+            text = { ja = "アミティと一緒に泳ぎたいドン!\n(どんな水着を着るのカッ!?)", en = "I want to swim with you, Amitie, don!\n(What swimsuit will she wear, ka!?)" } },
+        { amitie = "joy", bubble = "wide_r", se = "shine",
+            text = { ja = "ドラゴンをたおしたら、\nまたここの海にきましょう!", en = "Once we beat the dragon,\nlet's come back to this sea!" } },
+        { bubble = "wide", se = "donjump",
+            text = { ja = "やったドーン!\n早くドラゴンをたおすドン!!", en = "Yaaay, don!\nLet's beat that dragon quick, don!!" } },
+        { amitie = "smile", bubble = "don_r", se = "norm",
+            text = { ja = "ええ!頑張りましょう!\n(この海は何か嫌な感じがするわ…)", en = "Yes! Let's do our best!\n(Something about this sea feels wrong...)" } },
+        { amitie = "lakis", don = "angry", bubble = "shout_r", se = "scream",
+            text = { ja = "キャーーーーー!!", en = "Kyaaaaaah!!" } },
+        { amitie = "spin", bubble = "wide_r", se = "sword",
+            text = { ja = "だれかがおそわれているわ!\nたすけましょう!!", en = "Someone's being attacked!\nLet's help them!!" } },
+    },
+}

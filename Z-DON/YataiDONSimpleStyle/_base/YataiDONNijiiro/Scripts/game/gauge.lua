@@ -1,13 +1,3 @@
--- This skin's gauge: the parent's script with render() replaced. The parent's render() is laid
--- out for its 87-cell flash gauge; this skin's 50 x 21 px grid fades each new cell in:
---  * fade_in: the fading sprite is the new cell itself, so it sits on cell
---    length-1 (at length it left a dark gap cell before it)
---  * the clear mark sits gauge_clear_mark_offset cells (skin_config: 1, the cell edge) before
---    the exact clear fraction, not the parent's 87/60
--- The dan gauge is drawn as the cabinet's tamashii_gauge (see draw_dan below).
--- Everything else is the parent's file, loaded from its own copy.
-
--- the parent skin's copy of a script: the second match on package.path (the first is this file)
 local function load_parent(name)
     local seen = false
     for tmpl in package.path:gmatch("[^;]+") do
@@ -23,14 +13,26 @@ assert(load_parent("game/gauge"), "game/gauge: the parent skin has no gauge scri
 
 local function clamp(v, lo, hi) return math.max(lo, math.min(hi, v)) end
 
+local CLEAR_LABEL = { x = { 1350, 1455, 1560 }, y = { -42, -36 }, size = 24, outline = 4 }
+local BLACK = { 0, 0, 0, 255 }
+
 local parent_new = Gauge.new
 function Gauge.new(is_2p, dan, string_diff, opts)
     local self = parent_new(is_2p, dan, string_diff, opts)
     self.clear_mark_offset = 1
     self.fade_in = true
+    if not dan and not (opts and opts.folder) then
+        local label, l = tex.skin_text("gauge_clear_label"), CLEAR_LABEL
+        local function mk(fill)
+            return text.create_raw_text(label, l.size, fill, BLACK, false, l.outline, 2.0, 1.0)
+        end
+        self.clear_text, self.clear_text_dark = mk({ 255, 255, 255, 255 }), mk({ 128, 128, 128, 255 })
+    end
     if dan then
         local screen = (opts and opts.screen) or "game"
-        local p = (opts and opts.player_str and (opts.player_str .. "_")) or (is_2p and "2p_" or "1p_")
+        -- `is_2p` is false for a single player seated as P2; key all 1p/2p dan gauge art off the
+        -- actual seat so the unfilled bar, bar and lamp are blue for P2, not red.
+        local p = (opts and opts.player_str and (opts.player_str .. "_")) or (tex.player_num() == 2 and "2p_" or "1p_")
         local function t(name) return tex.get_texture(screen .. "/gauge_dan/" .. name) end
         self.cab = {
             track_red  = t("track_red"),
@@ -38,6 +40,9 @@ function Gauge.new(is_2p, dan, string_diff, opts)
             lamp_clear = t("lamp_clear"),
             fade_clear = t("bar_fade_clear"),
         }
+        self.unfilled = t(p .. "unfilled")
+        self.bar      = t(p .. "bar")
+        self.bar_fade = t(p .. "bar_fade")
     end
     return self
 end
@@ -102,14 +107,20 @@ function Gauge:render(y, mirror, idx, points, previous_points, max_points, clear
     self:draw_fire(y, idx, is_rainbow, fire_frame)
 
     local label = self.art_tier + idx * 3
+    local label_text = is_clear and self.clear_text or self.clear_text_dark
+    if label_text then
+        local l = CLEAR_LABEL
+        label_text:draw({ x = l.x[self.art_tier + 1], y = y + l.y[idx + 1] - label_text.height / 2,
+                          fade = self.base_fade })
+    end
     if is_clear then
-        self:blit(self.clear, nil, nil, y, nil, nil, nil, label)
+        if not label_text then self:blit(self.clear, nil, nil, y, nil, nil, nil, label) end
         self:blit(self.tamashii, nil, nil, y, nil, nil, nil, idx)
         if is_rainbow and (fire_frame == 0 or fire_frame == 1 or fire_frame == 4 or fire_frame == 5) then
             self:blit(self.tamashii_overlay, nil, nil, y, nil, 0.5, nil, idx, nil, nil, true)
         end
     else
-        self:blit(self.clear_dark, nil, nil, y, nil, nil, nil, label)
+        if not label_text then self:blit(self.clear_dark, nil, nil, y, nil, nil, nil, label) end
         self:blit(self.tamashii_dark, nil, nil, y, nil, nil, nil, idx)
     end
 end

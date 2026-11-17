@@ -3,11 +3,12 @@ local SKIN = {
     attract_camera_viewport = { x = 320 * SKIN_S, y = 110 * SKIN_S, width = 640 * SKIN_S, height = 480 * SKIN_S },
 }
 require("title/attract_chara")
+require("title/camera_faces")
 
 AttractCamera = {}
 AttractCamera.__index = AttractCamera
 
-function AttractCamera.new()
+function AttractCamera.new(face_set)
     local self = setmetatable({}, AttractCamera)
     self.start_ms = tex.get_current_ms()
     self.finished = false
@@ -28,12 +29,14 @@ function AttractCamera.new()
 
     self.viewport = SKIN.attract_camera_viewport
     self.chara = AttractChara.new()
+    self.faces = CameraFaces.new(self.viewport, face_set)
 
     return self
 end
 
 function AttractCamera:update(current_ms)
     camera.update()
+    self.faces:update(current_ms)
     self.chara:update(current_ms)
     self.live_icon_texture_change:update(current_ms)
     if self.scene_timer then
@@ -48,6 +51,7 @@ function AttractCamera:draw()
     -- the video and costume characters sit under the frame, which has a transparent window
     if self.viewport then
         camera.draw(self.viewport.x, self.viewport.y, self.viewport.width, self.viewport.height)
+        self.faces:draw()
     end
     self.chara:draw()
     tex.draw_texture(self.t_background)

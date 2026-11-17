@@ -28,20 +28,26 @@ local function chars(s)
 end
 
 
+-- kana for Japanese, Latin letters for every other language (picked per entry, so a language change applies)
 local ROWS = {
-    "あいうえお", "かきくけこ", "さしすせそ", "たちつてと", "なにぬねの",
-    "はひふへほ", "まみむめも", "やゆよ", "らりるれろ", "わゐゑをんゎ", "～ー？！",
+    ja = {
+        "あいうえお", "かきくけこ", "さしすせそ", "たちつてと", "なにぬねの",
+        "はひふへほ", "まみむめも", "やゆよ", "らりるれろ", "わゐゑをんゎ", "～ー？！",
+    },
+    latin = { "ABCDE", "FGHIJ", "KLMNO", "PQRST", "UVWXY", "Z-.!?", "01234", "56789" },
 }
 -- base char followed by its other forms
 local VARIANTS = {}
-for _, group in ipairs({
+local groups = {
     "あぁ", "いぃ", "うぅ", "えぇ", "おぉ",
     "かが", "きぎ", "くぐ", "けげ", "こご",
     "さざ", "しじ", "すず", "せぜ", "そぞ",
     "ただ", "ちぢ", "つづっ", "てで", "とど",
     "はばぱ", "ひびぴ", "ふぶぷ", "へべぺ", "ほぼぽ",
     "やゃ", "ゆゅ", "よょ", "わゎ",
-}) do
+}
+for c in ("ABCDEFGHIJKLMNOPQRSTUVWXYZ"):gmatch(".") do groups[#groups + 1] = c .. c:lower() end
+for _, group in ipairs(groups) do
     local list = chars(group)
     VARIANTS[list[1]] = list
 end
@@ -75,7 +81,7 @@ function NameEntry.new(is_2p)
     self.title        = text.create_raw_text(tex.skin_text("entry_name_title"), 36, { 255, 255, 255, 255 }, { 0, 0, 0, 255 }, false, 5, 2.0)
 
     self.rows = {}
-    for _, row in ipairs(ROWS) do
+    for _, row in ipairs(ROWS[tex.language() == "ja" and "ja" or "latin"]) do
         local list = chars(row)
         self.rows[#self.rows + 1] = { str = list[1], chars = list }
     end

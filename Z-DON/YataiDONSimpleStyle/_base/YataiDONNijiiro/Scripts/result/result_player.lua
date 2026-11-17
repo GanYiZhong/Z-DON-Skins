@@ -4,6 +4,8 @@ ResultPlayer = {}
 ResultPlayer.__index = ResultPlayer
 
 local GAUGE_SCALE   = 0.7           -- arcade places tamashii_gage at 0.7 on the result board
+local CLEAR_LABEL_X = { 513, 580, 658, 1460, 1527, 1605 }
+local CLEAR_LABEL_Y = 232
 local GAUGE_CELLS   = 50                 -- the cabinet's gauge is 50 cells (kMaxGage_), like the game HUD
 local GAUGE_UNIT    = 21 * GAUGE_SCALE   -- one 21 px cell of the groove, at the board's 0.7
 local OPTION_PITCH  = 43
@@ -114,6 +116,9 @@ function ResultPlayer.new(player_num, is_2p, has_2p,
     local self = setmetatable({}, ResultPlayer)
 
     self.player_num          = player_num
+    -- seat is the actual cabinet seat (player_num), not `is_2p`: result.cpp always passes
+    -- is_2p=false, so a single player seated as P2 must still get the 2P board/Don/nameplate.
+    self.right               = self.player_num == 2
     local timing = tex.timing_offset(player_num)
     if timing then
         self.timing_text = text.create_raw_text(timing, 20 * tex.get_screen_scale(), {255, 255, 255, 255}, {0, 0, 0, 255}, false, 3.0)
@@ -177,7 +182,7 @@ function ResultPlayer.new(player_num, is_2p, has_2p,
     self.count_up_score_sound  = "don_big"
     self.count_up_sound_1p_only = true
     self.seat_c   = has_2p and (is_2p and "_r" or "_l") or "_c"
-    self.seat_lr  = is_2p and "_r" or "_l"
+    self.seat_lr  = self.right and "_r" or "_l"
     self.count_loop_on = false
     self.achieve_played = false
     self.skip_don_big_played = false
@@ -205,8 +210,7 @@ function ResultPlayer.new(player_num, is_2p, has_2p,
     self.t_mod_speed    = tex.get_texture("result/score/mod_baisaku")     -- 14 frames x1.1 .. x4
     self.t_judge_labels = tex.get_texture("result/score/max_combo")       -- whole 良/可/不可/連打数/最大コンボ数 block (ja/en)
     self.t_judge_num    = tex.get_texture("result/score/judge_num")
-    self.t_score_lbl    = tex.get_texture("result/score/score")
-    self.t_score_shinuchi_lbl = tex.get_texture("result/score/score_shinuchi")
+    self.score_lbl      = text.create_text("result_score_text", { 255, 255, 255, 255 }, { 0, 0, 0, 0 }, false, 0, 0)
     self.t_score_num    = tex.get_texture("result/score/score_num")
     self.t_donback      = tex.get_texture("result/bottom/chara_0")        -- frames: 0 = 1P red, 1 = 2P blue
 
@@ -351,7 +355,7 @@ function ResultPlayer:update(current_ms, fade_in_finished,
             self.rank_done = true
             local rank = rank_of(math.floor(tonumber(self.score) or 0))
             if rank > 0 then
-                self.rank_obj = self.rank_obj or rank_clip(rank, self.is_2p)
+                self.rank_obj = self.rank_obj or rank_clip(rank, self.right)
                 if self.rank_obj then
                     self.rank_obj:start(current_ms - self.rank_obj.data.nframes * (1000 / 60))   -- clips run at 60 fps
                 end
@@ -365,11 +369,11 @@ function ResultPlayer:update(current_ms, fade_in_finished,
         self.rank_done = true
         local rank = rank_of(math.floor(tonumber(self.score) or 0))
         if rank > 0 then
-            self.rank_obj = rank_clip(rank, self.is_2p)
+            self.rank_obj = rank_clip(rank, self.right)
             if self.rank_obj then
                 self.rank_obj:start(current_ms)
                 -- se_result `scorerank_NN_<seat>`: one sample for every rank, seat like the crown
-                self:sfx("scorerank" .. (self.has_2p and (self.is_2p and "_r" or "_l") or "_c"), "sound")
+                self:sfx("scorerank" .. (self.has_2p and (self.right and "_r" or "_l") or "_c"), "sound")
                 self.crown_at = current_ms + RANK_STATE_MS
                 if self.msg_at then self.msg_at = self.msg_at + RANK_STATE_MS end
             end
@@ -379,7 +383,7 @@ function ResultPlayer:update(current_ms, fade_in_finished,
     -- Crown state entry: StartCrownDisplay (crownMc_ GotoAndPlay "start" + crown_<colour>_c)
     if self.crown_at and current_ms >= self.crown_at
        and self.gauge_state >= 1 and not self.crown_obj then
-        self.crown_obj = ResultCrown.new(self.crown_type, self.is_2p, self.has_2p)
+        self.crown_obj = ResultCrown.new(self.crown_type, self.right, self.has_2p)
         if self.crown_type == 1 or self.crown_type == 2 then
             self:sfx("full_combo_voice_" .. tostring(self.player_num) .. "p", "voice")
         end
@@ -392,7 +396,7 @@ function ResultPlayer:update(current_ms, fade_in_finished,
         elseif self.gauge_state >= 1 then   frame = 2        -- success
         elseif self.gauge_length > 87 * 0.3 then frame = 1   -- near
         else                                frame = 0 end    -- miss
-        self.crown_msg_obj = ResultCrownMessage.new(frame, self.is_2p)
+        self.crown_msg_obj = ResultCrownMessage.new(frame, self.right)
         local voices = { [0] = "max_fail_voice_", [1] = "fail_voice_",
                          [2] = "clear_voice_",    [3] = "max_clear_voice_" }
         self:sfx(voices[frame] .. tostring(self.player_num) .. "p", "voice")
@@ -410,7 +414,7 @@ function ResultPlayer:update(current_ms, fade_in_finished,
 
     -- DisplayHiscoreEffect runs inside the same branch that lands the total score.
     if not self.high_score_obj and self.score_diff > 0 and self.score ~= "" then
-        self.high_score_obj = HighScoreIndicator.new(self.score_diff, self.is_2p)
+        self.high_score_obj = HighScoreIndicator.new(self.score_diff, self.right)
     end
     if self.high_score_obj then self.high_score_obj:update(current_ms) end
 end
@@ -421,7 +425,7 @@ function ResultPlayer:draw()
         require("global.ai_battle").draw_result(self.rank_done == true)
         return
     end
-    local p_idx = self.is_2p and 1 or 0
+    local p_idx = self.right and 1 or 0
 
     -- success background cross-fade
     local success_a = success_fade_alpha(self.success_fade_t0, tex.get_current_ms())
@@ -474,7 +478,12 @@ local CHARA_X_2P  = 1682
 
 function ResultPlayer:chara_pos()
     if self.player_num == 2 and require("global.ai_battle").active() then return { -4000, -4000, 0.01 } end
-    return { self.is_2p and CHARA_X_2P or CHARA_X, CHARA_Y, CHARA_SCALE }
+    return { self.right and CHARA_X_2P or CHARA_X, CHARA_Y, CHARA_SCALE }
+end
+
+-- P2's Don is mirrored so both Dons face inward (Nijiiro-specific; other skins leave this unset).
+function ResultPlayer:chara_mirror()
+    return self.right
 end
 
 local NAMEPLATE_X    = 2
@@ -483,18 +492,24 @@ local NAMEPLATE_X_2P = 1509
 
 function ResultPlayer:nameplate_pos()
     if self.player_num == 2 and require("global.ai_battle").active() then return { -4000, -4000, 0 } end
-    return { self.is_2p and NAMEPLATE_X_2P or NAMEPLATE_X, NAMEPLATE_Y }
+    return { self.right and NAMEPLATE_X_2P or NAMEPLATE_X, NAMEPLATE_Y }
 end
 
 -- Song number, title and subtitle across the top of the screen. info = { title, subtitle, number };
 -- subtitle is "" when the chart hides it.
 local WHITE, BLACK, RED = { 255, 255, 255, 255 }, { 0, 0, 0, 255 }, { 255, 0, 0, 255 }
+local SONG_FONT = "FOT-Seurat_Pro_B.otf"   -- song number / max, the game HUD's face (MS UI Gothic record)
 
-local function cached_text(self, slot, str, size, color, thickness)
-    local key = str .. "\0" .. size
+local function cached_text(self, slot, str, size, color, thickness, font, max_w)
+    local key = str .. "\0" .. size .. "\0" .. (font or "")
     local entry = self._song_info_texts[slot]
     if not entry or entry.key ~= key then
-        entry = { key = key, text = text.create_raw_text(str, size, WHITE, color, false, thickness) }
+        local t = text.create_raw_text(str, size, WHITE, color, false, thickness, 2.0, 1.0, font)
+        if max_w and t.width > max_w then   -- en / ko "Song N" is wider than the CJK chip it replaces
+            t = text.create_raw_text(str, math.max(12, math.floor(size * max_w / t.width)), WHITE, color, false,
+                                     thickness, 2.0, 1.0, font)
+        end
+        entry = { key = key, text = t }
         self._song_info_texts[slot] = entry
     end
     return entry.text
@@ -526,7 +541,7 @@ function ResultPlayer:draw_song_info(info)
     local limit = tex.song_limit()
     local num = cached_text(self, "number", fmt:gsub("{0}", tostring(info.number)), num_cfg.font_size,
                             (limit > 0 and limit == info.number) and RED or BLACK,
-                            num_cfg.outline >= 0 and num_cfg.outline or 5.0)
+                            num_cfg.outline >= 0 and num_cfg.outline or 5.0, SONG_FONT, 120)
     -- strict audit (YKjsle7VBCI / MBAZD6xA1D8 1080p): "N曲目" ends at x 1777 (ink), centre y 43; the "M曲" half sits
     -- on the plate's blue part, its ink ending at 1877
     -- strict round 8: the cabinet's chip is its jp_32_DB bitmap glyphs (full-width digits + 曲 / 目; the same baked
@@ -559,8 +574,8 @@ function ResultPlayer:draw_song_info(info)
         local mx = tex.get_skin_config("song_num_max") or { font_size = 27, outline = 2.0 }
         local mfmt = tex.skin_text("song_num_max")
         if mfmt == "" then mfmt = "{0}" end
-        local mt = cached_text(self, "number_max", mfmt:gsub("{0}", tostring(limit)), mx.font_size or 27, BLACK,
-                               mx.outline and mx.outline >= 0 and mx.outline or 2.0)
+        local mt = cached_text(self, "number_max", mfmt:gsub("{0}", tostring(limit)), mx.font_size or 24, BLACK,
+                               mx.outline and mx.outline >= 0 and mx.outline or 2.0, SONG_FONT, 88)
         mt:draw({ x = 1882 - mt.width, y = 45 - mt.height / 2, fade = 1.0 })
     end
 
@@ -578,7 +593,7 @@ function ResultPlayer:draw_gauge()
     if self.player_num == 2 and require("global.ai_battle").active() then return end   -- Z-DON AI battle
     if not self.gauge_started then return end
 
-    local p_idx     = self.is_2p and 1 or 0
+    local p_idx     = self.right and 1 or 0
     local scale     = GAUGE_SCALE
     local base_fade = 1.0
     local gl_int    = self.gauge_shown
@@ -689,7 +704,7 @@ end
 function ResultPlayer:draw_score_info()
     -- judge rows top-down: good, ok, bad, drumroll, max combo
     local scores = { self.good, self.ok, self.bad, self.total_drumroll, self.max_combo }
-    local p_idx  = self.is_2p and 1 or 0
+    local p_idx  = self.right and 1 or 0
     for j, s in ipairs(scores) do
         if s ~= "" and self.t_judge_num then
             local pop = pop_scale(digit_judge, DGJ_TRACK, DGJ_F0, DGJ_F1,
@@ -711,11 +726,10 @@ function ResultPlayer:draw_score_info()
 end
 
 function ResultPlayer:draw_total_score()
-    local p_idx = self.is_2p and 1 or 0
-    if self.score_method then
-        if self.t_score_shinuchi_lbl then tex.draw_texture(self.t_score_shinuchi_lbl, { index = p_idx }) end
-    else
-        if self.t_score_lbl then tex.draw_texture(self.t_score_lbl, { index = p_idx }) end
+    local p_idx = self.right and 1 or 0
+    local lbl = self.score_lbl
+    if lbl then -- create_text already offsets it by result_score_text's x / y (the caption's centre)
+        lbl:draw({ x = math.floor(p_idx * 956 - lbl.width / 2 + 0.5), y = math.floor(-lbl.height / 2 + 0.5) })
     end
     if not self.fade_in_finished_flag then return end
     if self.score ~= "" and self.t_score_num then

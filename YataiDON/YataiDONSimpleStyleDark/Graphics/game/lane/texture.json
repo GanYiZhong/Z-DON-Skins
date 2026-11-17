@@ -290,5 +290,7 @@
     },
     "timer": {
         "y": 249
-    }
+    },
+    "battle_1p_lane_cover": {},
+    "battle_2p_lane_cover": {}
 }

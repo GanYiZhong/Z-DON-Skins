@@ -9,13 +9,10 @@ local SKIN = {
 
 local M = {}
 
--- TextureIndex (box/folder_texture colour frame) — must match enums.h.
-local TI_NONE, TI_VOCALOID, TI_DEFAULT, TI_RECOMMENDED, TI_FAVORITE, TI_RECENT = 0, 1, 2, 3, 4, 5
 -- GenreIndex (raw enum; folder_graphic / diff_overlay frame) — must match enums.h.
 local GI_DIFFICULTY = 14
 local GI_TUTORIAL, GI_DAN = 0, 13
 
-M.TI_NONE, M.TI_DEFAULT = TI_NONE, TI_DEFAULT
 M.GI_DIFFICULTY = GI_DIFFICULTY
 M.GI_TUTORIAL, M.GI_DAN = GI_TUTORIAL, GI_DAN
 
@@ -102,8 +99,12 @@ function M.draw_yellow_box(is_diff, fade, y_offset)
     tex.draw_texture(T("yellow_box", "yellow_box_center"),       { x = left_x + eh,         y = top_y + eh + y_offset,    x2 = center_width,  y2 = center_height, fade = fade })
 end
 
--- BaseBox::draw_closed — the generic folder_texture board (colour frame = texture_index).
+-- BaseBox::draw_closed — the generic folder_texture board.
 -- BackBox and DanBox reuse this; SongBox/FolderBox call it before their own closed content.
+local function G(box, name)
+    return (box:has_gradient() and box:gradient_texture(name)) or T("box", name)
+end
+
 function M.draw_base_closed(box)
     local bx = box:box_x()
     local by = box:box_y()
@@ -114,12 +115,12 @@ function M.draw_base_closed(box)
     M.draw_shadows(bx, by, fade, 0)
 
     if use_shader then box:begin_recolor() end
-    tex.draw_texture(T("box", "folder_texture_left"),  { frame = tex_index, x = bx, y = by, fade = fade })
-    tex.draw_texture(T("box", "folder_texture"),       { frame = tex_index, x = bx, y = by, x2 = song_box_bg_width(), fade = fade })
-    tex.draw_texture(T("box", "folder_texture_right"), { frame = tex_index, x = bx, y = by, fade = fade })
+    tex.draw_texture(G(box, "folder_texture_left"),  { frame = tex_index, x = bx, y = by, fade = fade })
+    tex.draw_texture(G(box, "folder_texture"),       { frame = tex_index, x = bx, y = by, x2 = song_box_bg_width(), fade = fade })
+    tex.draw_texture(G(box, "folder_texture_right"), { frame = tex_index, x = bx, y = by, fade = fade })
     if use_shader then box:end_recolor() end
 
-    if tex_index == TI_DEFAULT then
+    if box.collab then
         tex.draw_texture(T("box", "genre_overlay"), { x = bx, y = by, fade = fade })
     end
     if box:genre_index() == GI_DIFFICULTY then

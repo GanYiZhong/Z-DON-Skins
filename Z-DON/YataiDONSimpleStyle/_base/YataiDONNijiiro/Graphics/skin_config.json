@@ -239,13 +239,15 @@
             "disable_campaigns": true,
             "disable_reward_shop": true,
             "disable_total_result": true,
-            "disable_waiwai": true
+            "disable_waiwai": true,
+            "disable_enso_battle": true
         }
     },
     "game_song_info": {
         "x": 1873,
-        "y": 75,
-        "font_size": 52
+        "y": 50,
+        "font_size": 54,
+        "outline": 4.333333333333333
     },
     "game_song_info_center": {
         "x": 1734,
@@ -272,14 +274,14 @@
     "song_num": {
         "x": 1748,
         "y": 252,
-        "font_size": 31,
+        "font_size": 32,
         "text": {
             "ja": "{0}曲目",
             "en": "Song {0}",
             "zh": "{0}曲目",
             "ko": "{0}곡째"
         },
-        "outline": 2.3333333333333335
+        "outline": 3.0
     },
     "song_back_label": {
         "x": 0,
@@ -602,8 +604,8 @@
     "song_num_game": {
         "x": 1674,
         "y": 122,
-        "font_size": 31,
-        "outline": 2.3333333333333335
+        "font_size": 24,
+        "outline": 2.0
     },
     "game_gauge_cells": {
         "x": 50
@@ -767,19 +769,20 @@
         }
     },
     "song_num_max": {
-        "font_size": 27,
+        "font_size": 24,
         "text": {
             "ja": "{0}曲",
             "zh": "{0}曲",
             "en": "of {0}",
             "ko": "{0}곡"
         },
-        "outline": 2.0
+        "outline": 2.3333333333333335
     },
     "song_num_max_game": {
         "x": 1814,
         "y": 122,
-        "font_size": 27
+        "font_size": 24,
+        "outline": 2.0
     },
     "dan_exam_gauge_box": {
         "x": 436,
@@ -1067,7 +1070,7 @@
             922
         ],
         "result_2p": [
-            2,
+            1509,
             922
         ],
         "dan_result": [
@@ -1158,6 +1161,10 @@
             "zh": "超好",
             "ko": "엄청 좋아"
         }
+    },
+    "player_board_on": {
+        "x": 1,
+        "y": 1
     },
     "pboard_best": {
         "text": {
@@ -1336,9 +1343,6 @@
     "zdon_ai_end_hold": {
         "x": 3250
     },
-    "zdon_song_title_always": {
-        "x": 1
-    },
     "zdon_ai_keep_cabinet": {
         "x": 1
     },
@@ -1386,7 +1390,7 @@
         "text": {
             "ja": "どちらの太鼓を使いますか？",
             "en": "Which drum will you use?",
-            "zh": "要使用哪一边的太鼓？",
+            "zh": "要使用哪一邊的太鼓？",
             "ko": "어느 쪽 북을 사용하시겠습니까?"
         }
     },
@@ -1418,7 +1422,7 @@
         "text": {
             "ja": "名前をえらぼう！",
             "en": "Choose your name!",
-            "zh": "选择名字吧！",
+            "zh": "選擇名字吧！",
             "ko": "이름을 골라 보자!"
         }
     },
@@ -1426,18 +1430,18 @@
         "text": {
             "ja": "※名前はドンダーひろばでいつでもかえられるよ",
             "en": "* You can change your name on Donder Hiroba at any time",
-            "zh": "※名字随时可以在咚哒广场更改",
+            "zh": "※名字隨時可以在咚噠廣場更改",
             "ko": "※이름은 동더 광장에서 언제든지 바꿀 수 있어"
         }
     },
     "result_score_text": {
         "x": 282,
-        "y": 298,
+        "y": 302,
         "font_size": 34,
         "text": {
             "ja": "スコア",
-            "en": "SCORE",
-            "zh": "分数",
+            "en": "Score",
+            "zh": "分數",
             "ko": "스코어"
         }
     },
@@ -1445,8 +1449,36 @@
         "text": {
             "ja": "フチでえらんで、面で決定！",
             "en": "Hit the rim to choose, the face to decide!",
-            "zh": "敲鼓边选择，敲鼓面决定！",
+            "zh": "敲鼓邊選擇，敲鼓面決定！",
             "ko": "테두리로 고르고, 면으로 결정!"
         }
+    },
+    "gauge_clear_label": {
+        "font_size": 24,
+        "text": {
+            "ja": "クリア",
+            "en": "Clear",
+            "zh": "通關",
+            "ko": "클리어"
+        }
+    },
+    "combo_label": {
+        "font_size": 28,
+        "text": {
+            "ja": "コンボ",
+            "en": "Combo",
+            "zh": "連段",
+            "ko": "콤보"
+        }
+    },
+    "lane_course_name": {
+        "x": 66,
+        "y": 75.5,
+        "font_size": 22,
+        "outline": 3,
+        "text": {}
+    },
+    "zdon_song_title_always": {
+        "x": 1
     }
 }

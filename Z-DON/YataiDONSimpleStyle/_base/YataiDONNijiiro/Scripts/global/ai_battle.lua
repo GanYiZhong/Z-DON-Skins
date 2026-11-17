@@ -68,7 +68,9 @@ end
 
 local function battle()
     if tex.ai_battle then return tex.ai_battle() end
-    return AIB.up   -- YataiDON's own AI battle: global/ai_overlay.lua and ai_section_result keep this current
+    -- YataiDON's own AI battle: global/ai_overlay.lua and ai_section_result keep this current.  The state outlives
+    -- its screen, so only hand it out while the screen it was made for is up.
+    if AIB.up and AIB.up.screen == tex.current_screen() then return AIB.up end
 end
 
 local text_cache = {}
@@ -1074,7 +1076,7 @@ local function draw_detail(b)
     for i, sec in ipairs(b.sections) do
         local x, y = x0 + (i - 1) * CARD_STEP, CARD_Y
         local card = tx("detail_card_" .. i)
-        if card then tex.draw_texture(card.t, { x = x, y = y, frame = lang_frame() }) end
+        if card then tex.draw_texture(card.t, { x = x, y = y, frame = tx_lang_frame() }) end
         local bd = tx("detail_badge")
         if bd and sec.winner >= 0 then
             tex.draw_texture(bd.t, { x = x + D.badge[1], y = y + D.badge[2], frame = (sec.winner == 0) and 0 or 1 })
@@ -1093,7 +1095,7 @@ local function draw_detail(b)
         if b.new_best and best then
             if best.score ~= 0 and best.score < sec.score then
                 local bp = tx("detail_best")
-                if bp then tex.draw_texture(bp.t, { x = x + D.best[1], y = y + D.best[2], frame = lang_frame() }) end
+                if bp then tex.draw_texture(bp.t, { x = x + D.best[1], y = y + D.best[2], frame = tx_lang_frame() }) end
                 digits("rd_best", sec.score - best.score, x + D.best_d[1], y + D.best_d[2], D.best_d[3], 7)
             end
             local olds = { best.good, best.ok, best.bad, best.roll }

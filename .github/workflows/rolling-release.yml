@@ -1,0 +1,53 @@
+# Rolling release: every push to main that touches a skin rebuilds the zips and puts them on the "rolling" release
+# (the tag moves to the pushed commit). Run it by hand from Actions too.
+#   Z-DON-Skins-Z-DON.zip     YataiDONSimpleStyle + YataiDONSimpleStyleDark for Z-DON (4K)
+#   Z-DON-Skins-YataiDON.zip  the same two for upstream YataiDON (1080p)
+name: Skins rolling release
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "Z-DON/**"
+      - "YataiDON/**"
+      - ".github/workflows/rolling-release.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: skins-rolling
+  cancel-in-progress: true
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Zip the skins
+        run: |
+          mkdir -p dist
+          (cd Z-DON && zip -qr -X ../dist/Z-DON-Skins-Z-DON.zip YataiDONSimpleStyle YataiDONSimpleStyleDark)
+          (cd YataiDON && zip -qr -X ../dist/Z-DON-Skins-YataiDON.zip YataiDONSimpleStyle YataiDONSimpleStyleDark)
+          ls -la dist
+
+      - name: Publish the rolling release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          short="${GITHUB_SHA::8}"
+          date="$(date -u +%Y-%m-%d)"
+          notes="Latest skins from main (${date}, ${short}).
+
+          - **Z-DON-Skins-Z-DON.zip**: for Z-DON (4K pictures, per-language font overlays).
+          - **Z-DON-Skins-YataiDON.zip**: for upstream YataiDON (1080p).
+
+          Unzip into your game's \`Skins/\` folder and choose the skin in the settings. Dark is a child of
+          YataiDONSimpleStyle, so keep both. This release is replaced on every update."
+          gh release delete rolling --yes --cleanup-tag || true
+          git tag -f rolling "$GITHUB_SHA"
+          git push -f origin refs/tags/rolling
+          gh release create rolling dist/*.zip --latest --title "Rolling release (${date}, ${short})" \
+            --notes "$notes" --verify-tag

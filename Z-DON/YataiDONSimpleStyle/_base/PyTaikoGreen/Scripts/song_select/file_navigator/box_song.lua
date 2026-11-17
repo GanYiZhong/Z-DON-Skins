@@ -20,6 +20,7 @@ local DIFF_EASY, DIFF_NORMAL, DIFF_HARD, DIFF_ONI, DIFF_URA = 0, 1, 2, 3, 4
 local BLACK = { 0, 0, 0, 255 }
 local WHITE = { 255, 255, 255, 255 }
 local BLANK = { 0, 0, 0, 0 }
+local POPULAR_SCALE = 0.6
 
 local function is_2p_screen()
     local screen = tex.current_screen and tex.current_screen() or ""
@@ -242,6 +243,14 @@ function SongSelect:draw_song_closed(box)
     end
 
     draw_box_crown(box, bx, by, fade)
+
+    if box.popular_rank > 0 then
+        local info = tex.get_texture_info("yellow_box", "popular_rank")
+        tex.draw_texture(T("yellow_box", "popular_rank"), {
+            frame = box.popular_rank - 1, x = bx, y = by, fade = fade,
+            x2 = info.width * (POPULAR_SCALE - 1), y2 = info.height * (POPULAR_SCALE - 1),
+        })
+    end
 end
 
 function SongSelect:draw_song_open(box)
@@ -335,7 +344,11 @@ function SongSelect:draw_song_diff_select(box)
     local diff_fade = box.diff_fade_in.attribute
     tex.draw_texture(T("diff_select", "back"),   { fade = diff_fade })
     tex.draw_texture(T("diff_select", "option"), { fade = diff_fade })
-    tex.draw_texture(T("diff_select", "neiro"),  { fade = diff_fade })
+    if tex.current_screen() == "BATTLE_SELECT" then
+        tex.draw_texture(T("enso_battle", "skill_box"), { fade = diff_fade })
+    else
+        tex.draw_texture(T("diff_select", "neiro"), { fade = diff_fade })
+    end
 
     local s            = tex.get_screen_scale()
     -- strict audit (Green AI board, direct feed Tl7g8XXXvAM 2:07): towers stand 100 px apart, no empty crown outlines

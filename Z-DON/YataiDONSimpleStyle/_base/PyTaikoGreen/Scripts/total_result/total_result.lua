@@ -146,13 +146,13 @@ function TotalResult:update_meter(s)
     if s.meter == "mount" then
         local step = math.min(s.left, s.aim / METER_FULL)
         s.cur, s.left = s.cur + step, s.left - step
-        if s.tick % 10 == 0 then play("se_pt_up") end
+        if s.tick % 10 == 0 then play("se_pt") end
         s.tick = s.tick + 1
         if s.cur >= s.aim and s.left > 0 then
-            audio.stop_sound("se_pt_up")
+            audio.stop_sound("se_pt")
             self:reach_aim(s)
         elseif s.left <= 0 then
-            audio.stop_sound("se_pt_up")
+            audio.stop_sound("se_pt")
             play("don")
             s.meter = "idle"
         end
@@ -166,7 +166,7 @@ end
 -- finish a mount at once (Don pressed)
 function TotalResult:settle_meter(s)
     if not s.data or s.full then return end
-    audio.stop_sound("se_pt_up")
+    audio.stop_sound("se_pt")
     while s.left > 0 and not s.full do
         local need = s.aim - s.cur
         if s.left < need then
@@ -224,6 +224,7 @@ function TotalResult:update(current_ms)
         if f >= GATHER + WAIT_AFTER then
             for _, s in ipairs(self.seats) do self:mount(s, s.data and s.song_sum or 0) end
             self:go("music_mount")
+            play("se_song_count")
         end
     elseif st == "music_mount" or st == "title_mount" then
         if not (meter_busy(self.seats[1]) or meter_busy(self.seats[2])) then

@@ -6,7 +6,7 @@ HighScoreIndicator.__index = HighScoreIndicator
 local function outline(border) return border / tex.get_screen_scale() end
 
 local TEXT_CX_REL = 154.4
-local TEXT_CY_REL = 26.6
+local TEXT_CY_REL = 31.6
 local BAR_BASE_X  = { [0] = 64, [1] = 1020 }  -- texture.json high_score frame 0 (1P) / 1 (2P)
 local BAR_BASE_Y  = 266
 

@@ -34,6 +34,9 @@ local MODE_BADGES = {
     -- strict audit (round 3, direct feed Tl7g8XXXvAM t=4): the cabinet marks the AI battle as new and one player;
     -- the costume board carries no badge
     entry_ai_battle = { "one_player", "new" },
+    entry_enso_battle = { "one_player", "new" },
+    entry_costume = { },
+    entry_waiwai = { "two_player" },
 }
 
 -- Greyed-out board

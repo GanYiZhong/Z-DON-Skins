@@ -18,7 +18,8 @@ function ResultBackground.new(player_num, width)
     end
     if not self.layers then
         -- fallback: static sky plate alone
-        self.t_bg = tex.get_texture(player_num == 3 and "result/background/background_2p"
+        -- single player seated as P2 still gets the blue 2P backdrop
+        self.t_bg = tex.get_texture(player_num == 2 and "result/background/background_2p"
                                                       or "result/background/background_1p")
     end
     return self

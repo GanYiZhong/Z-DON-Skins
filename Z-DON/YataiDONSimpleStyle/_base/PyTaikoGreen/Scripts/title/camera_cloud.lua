@@ -27,16 +27,18 @@ function CameraCloud:update(current_ms)
     self.breathing:update(current_ms)
 end
 
-function CameraCloud:draw()
+function CameraCloud:draw(alpha)
+    alpha = alpha or 1
+    if alpha <= 0 then return end
     tex.draw_texture(self.t_cloud, {
-        scale = self.breathing.attribute, center = true, y = self.move_up.attribute,
+        scale = self.breathing.attribute, center = true, y = self.move_up.attribute, fade = alpha,
     })
     tex.draw_texture(self.t_cloud_text_1, {
         scale = self.breathing.attribute, center = true, y = self.move_up.attribute,
-        fade = math.min(self.fade_in.attribute, 1 - self.text_fade.attribute),
+        fade = alpha * math.min(self.fade_in.attribute, 1 - self.text_fade.attribute),
     })
     tex.draw_texture(self.t_cloud_text_2, {
         scale = self.breathing.attribute, center = true, y = self.move_up.attribute,
-        fade = math.min(self.fade_in.attribute, self.text_fade.attribute),
+        fade = alpha * math.min(self.fade_in.attribute, self.text_fade.attribute),
     })
 end

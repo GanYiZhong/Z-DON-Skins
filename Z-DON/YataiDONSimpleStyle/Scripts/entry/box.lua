@@ -26,6 +26,7 @@ local COMMENTS = {
     entry_dan      = { "mode_dan_comment_1", "mode_dan_comment_2", "mode_dan_comment_3" },
     entry_settings = { "entry_settings_comment_1", "entry_settings_comment_2" },
     entry_ai_battle = { "entry_ai_battle_comment_1", "entry_ai_battle_comment_2" },
+    entry_enso_battle = { "entry_enso_battle_comment_1", "entry_enso_battle_comment_2" },
     entry_record = { "entry_record_comment_1", "entry_record_comment_2" },
 }
 
@@ -107,6 +108,8 @@ function EntryBox:draw(x, left_x, right_x, is_selected, move_finished, open_attr
     end
 
     local by = button_y(self.index, n)
+    -- Z-DON mouse: a click on a button walks the selection to it, a click on the selected one decides
+    if tex.click_area then tex.click_area(BTN_X, by, BTN_W, BTN_H, self.index - (m.sel or self.index), self.index) end
     local decided = is_selected and fade < 0.999
     if decided and not m.decided then
         m.decided = true

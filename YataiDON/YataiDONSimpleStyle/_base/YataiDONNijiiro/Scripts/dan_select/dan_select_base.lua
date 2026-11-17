@@ -51,30 +51,40 @@ local function opt(name)
     return OPTS[name]
 end
 
+-- get_texture_info builds a fresh table per call, so remember the answer per texture.
+local _info = {}
+local function tex_info(subset, name)
+    local key = subset .. "/" .. name
+    local info = _info[key]
+    if info == nil then
+        info = tex.get_texture_info(subset, name) or false
+        _info[key] = info
+    end
+    return info
+end
+
 -- Texture draw-offset at index 0 (TextureObject::x[0] / y[0] / x2[0]).
 local function tex_x0(subset, name)
-    local info = tex.get_texture_info(subset, name)
+    local info = tex_info(subset, name)
     if info and info.x and info.x[1] then return info.x[1] end
     return 0
 end
 local function tex_y0(subset, name)
-    local info = tex.get_texture_info(subset, name)
+    local info = tex_info(subset, name)
     if info and info.y and info.y[1] then return info.y[1] end
     return 0
 end
 local function tex_x2(subset, name)
-    local info = tex.get_texture_info(subset, name)
+    local info = tex_info(subset, name)
     if info and info.x2 and info.x2[1] then return info.x2[1] end
     return 0
 end
 
--- exam.type -> icon texture name (exam_icon_id in box_dan.cpp). "renda" resolves to
--- exam_roll, falling back to exam_drumroll in older skins. Returns the resolved name.
 local EXAM_ICON = {
-    gauge = "exam_gauge",        combo = "exam_combo",
-    hit = "exam_hit",            judgebad = "exam_judgebad",
+    gauge = "exam_gauge",         combo = "exam_combo",
+    hit = "exam_hit",             judgebad = "exam_judgebad",
     judgegood = "exam_judgegood", judgeperfect = "exam_judgeperfect",
-    score = "exam_score",        renda = "exam_roll",
+    score = "exam_score",         renda = "exam_roll",
 }
 local function exam_icon_name(type)
     local name = EXAM_ICON[type]
@@ -84,15 +94,8 @@ local function exam_icon_name(type)
     return nil
 end
 
-local yb_box = { path = nil, state = "closed" }
-
-function DanSelect.new()
-    local self = setmetatable({ now = 0 }, DanSelect)
-    yb_box.path, yb_box.state = nil, "closed"
-    return self
-end
-
 local YB_DIFF_ANIMS = { 13, 14, 15, 16, 17, 18 }
+local yb_box = { path = nil, state = "closed" }
 
 local function draw_dan_yellow_box(is_diff, fade)
     local right_x       = tex.get_animation(is_diff and 14 or 10).attribute
@@ -101,7 +104,7 @@ local function draw_dan_yellow_box(is_diff, fade)
     local top_y         = tex.get_animation(16).attribute
     local center_height = tex.get_animation(17).attribute
     local bottom_y      = (cfg("yellow_box_bottom") or { y = 0 }).y
-    local info = tex.get_texture_info("yellow_box", "yellow_box_bottom_right")
+    local info = tex_info("yellow_box", "yellow_box_bottom_right")
     local eh = (info and info.height) or 0
 
     tex.draw_texture(T("yellow_box", "yellow_box_bottom_right"), { x = right_x,       y = bottom_y,             fade = fade })
@@ -181,8 +184,8 @@ function DanSelect:draw_confirm(f, index)
     end
     if index ~= CONFIRM_OPTION then
         -- selection_box slots are screen-left / screen-right; yes sits right of no unless swapped
-        local yes_info = tex.get_texture_info("confirm_box", "yes")
-        local no_info = tex.get_texture_info("confirm_box", "no")
+        local yes_info = tex_info("confirm_box", "yes")
+        local no_info = tex_info("confirm_box", "no")
         local yes_right = yes_info and no_info and yes_info.x[1] > no_info.x[1]
         local side = ((index == CONFIRM_YES) == (yes_right and true or false)) and 1 or 0
         draw_tex("confirm_box", "selection_box_highlight", { fade = f, index = side })
@@ -190,7 +193,7 @@ function DanSelect:draw_confirm(f, index)
     end
     local swap_dx = 0
     if opt("dan_confirm_yes_left") then
-        local info = tex.get_texture_info("confirm_box", "selection_box")
+        local info = tex_info("confirm_box", "selection_box")
         if info and info.x and #info.x >= 2 then swap_dx = info.x[2] - info.x[1] end
     end
     draw_tex("confirm_box", "yes", { x = -swap_dx, fade = f })

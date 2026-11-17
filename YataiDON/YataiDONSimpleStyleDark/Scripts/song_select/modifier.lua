@@ -179,6 +179,31 @@ function SongSelect:draw_option_board(player, offset, rows, cursor, change)
 
         if row.greyed then tex.draw_texture(ids.row, { x = x, y = row_y, color = OPT_SCRIM }) end
     end
+
+    -- Z-DON mouse (1P's board): outside it closes it, a row's click goes to that row, on the selected row the
+    -- arrows step its value back / on and the row itself steps it on
+    if tex.click_area and cursor and p == 1 then
+        local ri = tex.get_texture_info("modifier", "mod_bg")
+        local ai = tex.get_texture_info("modifier", "blue_arrow")
+        if ri and ri.x and ri.x[1] then
+            local rx, ry, rw = ri.x[1], ri.y[1], ri.width
+            tex.click_area(0, 0, tex.get_screen_width(), tex.get_screen_height(), "cmd:0")
+            tex.click_area(x + rx, offset + ry - 2 * pitch, rw, (n + 2) * pitch, "none")   -- the board's header
+            for i = 1, n do
+                local row_y = offset + (i - 1) * pitch
+                if i == cursor then
+                    tex.click_area(x + rx, row_y + ry, rw, pitch, 1)
+                    if ai and ai.x and ai.x[1] then
+                        local aw, ah, pad = ai.width, ai.height, 12
+                        tex.click_area(x + ai.x[1] - pad, row_y + ai.y[1] - pad, aw + 2 * pad, ah + 2 * pad, -1)
+                        tex.click_area(x + arrow_span + ai.x[1] - pad, row_y + ai.y[1] - pad, aw + 2 * pad, ah + 2 * pad, 1)
+                    end
+                elseif not rows[i].greyed then
+                    tex.click_area(x + rx, row_y + ry, rw, pitch, "cmd:" .. i)
+                end
+            end
+        end
+    end
 end
 
 -- Z-DON adds rows (等速): a board taller than the arcade's seven rows sits higher, so its foot stays on

@@ -82,7 +82,11 @@ function Kinotake:enter(phase)
     self.t0 = self.now
     self.cue_f = -1
     if phase == "select" then
-        self.menu = CampaignMenu.new({ "kinotake", "recog", "skip" }, { dir = DIR, sound = "kinotake_vo_sel_which" })
+        self.menu = CampaignMenu.new({ "kinotake", "recog", "skip" }, {
+            dir = DIR, sound = "kinotake_vo_sel_which",
+            voices = { kinotake = "kinotake_vo_sel_which", recog = "kinotake_vo_sel_recog" },
+        })
+        play("kinotake_se_tsuzumi")
     elseif phase == "recog" then
         self.recog_team = math.random(0, 1)
         self.reward = COSTUME[self.recog_team]

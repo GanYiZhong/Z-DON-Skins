@@ -30,7 +30,7 @@ function Timer.new(time, current_time_ms, confirm_func, is_frozen)
 end
 
 function Timer:update(current_ms)
-    if self.time == 0 and not self.is_finished and not audio.is_sound_playing("voice_timer_0") then
+    if self.time == 0 and not self.is_finished then
         self.is_finished = true
         self.confirm_func()
     end
@@ -52,12 +52,8 @@ function Timer:update(current_ms)
             self.highlight_resize:start()
         end
 
-        if self.time == 10 then
-            audio.play_sound("voice_timer_10", "voice")
-        elseif self.time == 5 then
-            audio.play_sound("voice_timer_5", "voice")
-        elseif self.time == 0 then
-            audio.play_sound("voice_timer_0", "voice")
+        if self.time == 30 or self.time == 10 or self.time == 5 then
+            audio.play_sound("voice_timer_" .. self.time, "voice")
         end
     end
 end

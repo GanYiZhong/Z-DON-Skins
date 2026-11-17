@@ -137,7 +137,7 @@
         "y": 4
     },
     "yellow_box_top": {
-        "x2": 0
+        "x2": 7
     },
     "yellow_box_center": {
         "x2": 7,
@@ -197,5 +197,11 @@
     "papamama_indicator_ura": {
         "x": 470,
         "y": 293
+    },
+    "popular_rank": {
+        "x": 5,
+        "y": 63,
+        "x2": 128,
+        "y2": 61
     }
 }

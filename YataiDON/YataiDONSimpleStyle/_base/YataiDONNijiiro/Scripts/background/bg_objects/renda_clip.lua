@@ -73,8 +73,14 @@ function RendaClip:update(current_ms)
     end
 end
 
+local draw_params = {}
+local draw_origin = {}
+draw_params.origin = draw_origin
+
 function RendaClip:draw()
     local shapes = self.data.shapes
+    local params = draw_params
+    local origin = draw_origin
     for slot = 1, POOL_SIZE do
         local r = self.live[slot]
         local row = r and r.part.frames[math.floor(r.frames) + 1]
@@ -86,16 +92,16 @@ function RendaClip:draw()
                 if id then
                     local sx, sy = e[4], e[5]
                     local mir = e[8] == 1
-                    tex.draw_texture(id, {
-                        x        = r.x0 + e[2],
-                        y        = r.y0 + e[3] + self.y_offset,
-                        x2       = s[1] * (sx - 1),
-                        y2       = s[2] * (sy - 1),
-                        origin   = { (mir and (s[1] - s[3]) or s[3]) * sx, s[4] * sy },
-                        rotation = e[6],
-                        fade     = e[7],
-                        mirror   = mir and "horizontal" or nil,
-                    })
+                    origin[1] = (mir and (s[1] - s[3]) or s[3]) * sx
+                    origin[2] = s[4] * sy
+                    params.x        = r.x0 + e[2]
+                    params.y        = r.y0 + e[3] + self.y_offset
+                    params.x2       = s[1] * (sx - 1)
+                    params.y2       = s[2] * (sy - 1)
+                    params.rotation = e[6]
+                    params.fade     = e[7]
+                    params.mirror   = mir and "horizontal" or nil
+                    tex.draw_texture(id, params)
                 end
             end
         end

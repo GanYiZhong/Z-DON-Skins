@@ -318,6 +318,7 @@ function SongSelect:draw_song_diff_select_bg(box)
             if SS_SEL then SS_SEL:readout_name(d, DS_MARK_X[p], ss_my, fade, box) end
         end
     end
+    if base.ds_layout then base.ds_layout() end   -- Z-DON enso battle: its own slot row
     if SS_SEL then SS_SEL:draw_backboard(self._id_backboard, box:genre_frame(), 960 - 636, 440 - 392)
     else tex.draw_texture(self._id_backboard, { frame = box:genre_frame(), x = 960 - 636, y = 440 - 392, fade = fade }) end
 end
@@ -359,6 +360,16 @@ function SongSelect:draw_song_diff_select(box)
         draw_centered(self._id_btn_option, DS_SLOT_X[DIFF_MODIFIER], DS_BTN_Y + ss_ody, 128, 360, { fade = fade })
     end
     if SS_SEL then SS_SEL:button_labels(DS_SLOT_X[DIFF_BACK], DS_SLOT_X[DIFF_MODIFIER], DS_BTN_Y, fade, ss_back) end
+    -- Z-DON enso battle: the special-move column (DIFF_NEIRO = -1), drawn like もどる / オプション
+    if base.ds_battle and base.ds_battle() then
+        if self._id_btn_skill == nil then self._id_btn_skill = tex.get_texture("ss_battle/item/btn_skill") or false end
+        local sdy, svis = 0, true
+        if SS_SEL then sdy, svis = SS_SEL:card_pose(-1) end
+        if svis and self._id_btn_skill then
+            draw_centered(self._id_btn_skill, DS_SLOT_X[-1], DS_BTN_Y + sdy, 128, 360, { fade = fade })
+        end
+        if SS_SEL and SS_SEL.skill_label then SS_SEL:skill_label(DS_SLOT_X[-1], DS_BTN_Y, fade) end
+    end
 
     -- diff boards
     for i = 0, 3 do
@@ -391,6 +402,24 @@ function SongSelect:draw_song_diff_select(box)
                 draw_centered(self._id_branch_diff, cx, DS_BOARD_Y + 144, 40, 40, { fade = f })
                 if SS_SEL then SS_SEL:mark("branch_mark", cx, DS_BOARD_Y + 144, 33, 24, f, true) end
             end
+        end
+    end
+
+    -- Z-DON mouse: a click on a course or a button walks the 1P cursor there, a click on the selected one decides
+    -- (the cursor goes back, option, special move, then the courses: the steps' sign is the way to go)
+    local cur = self._mark_diff and self._mark_diff[1]
+    local board_open = (SS_SEL and SS_SEL:panel_open(1)) or (self._mod_off and self._mod_off[1] ~= nil)
+    if tex.click_area and cur and fade >= 0.99 and not board_open then
+        local cc = (cur >= DIFF_EASY) and math.min(DIFF_ONI, cur) or cur
+        local function area(col, cy, w, h)
+            if DS_SLOT_X[col] then tex.click_area(DS_SLOT_X[col] - w / 2, cy - h / 2, w, h, col - cc, 100 + col) end
+        end
+        if ss_back and ss_bvis then area(DIFF_BACK, DS_BTN_Y, 128, 360) end
+        if ss_ovis then area(DIFF_MODIFIER, DS_BTN_Y, 128, 360) end
+        if base.ds_battle and base.ds_battle() then area(-1, DS_BTN_Y, 128, 360) end
+        for i = 0, 3 do
+            local diff = (i == DIFF_ONI and oni_shown) and DIFF_URA or i
+            if box:course_info(diff).has_course then area(i, DS_BOARD_Y, 200, 360) end
         end
     end
 

@@ -1,0 +1,23 @@
+return {
+    kind = "chat", stage = 5, node = 1,
+    half = "first",
+    next_bond = 29,
+    lines = {
+        { amitie = "smile", don = "cheer", bubble = "don", se = { "donjump", "wave" },
+            text = { ja = "青い海!空!白い砂浜!\nボクたちはリゾートにきたのカッ??", en = "Blue sea! Sky! White sand!\nDid we come to a resort, ka??" } },
+        { amitie = "worried", bubble = "don_r", se = "norm",
+            text = { ja = "どんちゃん、現実をみて。\nモンスターがうようよしているわ。", en = "Don-chan, face reality.\nThe place is crawling with monsters." } },
+        { don = "angry", bubble = "don", se = "surprise1",
+            text = { ja = "山をこえて、やっと着いたのに、\nこんなにモンスターがいるなんて\nドラゴンはひどいやつだドン・・・", en = "We crossed the mountain to get here,\nand it's full of monsters...\nThat dragon is awful, don..." } },
+        { amitie = "think", bubble = "don_r", se = "norm",
+            text = { ja = "モンスターも元は人間よ、\nわたしたちで、たすけましょう!", en = "The monsters were people once.\nLet's save them together!" } },
+        { amitie = "mic", don = "cheer", bubble = "don", se = "donjump",
+            text = { ja = "そうだったドン!\nいまは、みんなをたすけるドン!", en = "Right, don!\nFor now, we save everyone, don!" } },
+        { amitie = "think", bubble = "don_r", se = "norm",
+            text = { ja = "ええ!ドラゴンの元までは、\n海辺をとおって…火山をこえて…", en = "Yes! To reach the dragon, we go along\nthe shore... then over the volcano..." } },
+        { amitie = "smile", bubble = "don_r", se = "norm",
+            text = { ja = "あと半分くらいよ!がんばりましょう!", en = "We're about halfway! Let's keep going!" } },
+        { don = "angry", bubble = "don", se = "anger",
+            text = { ja = "半分もきたのカッ!!\n気合いがはいったドーーーン!!", en = "We're halfway already, ka!!\nNow I'm fired up, dooon!!" } },
+    },
+}

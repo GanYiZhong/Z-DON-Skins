@@ -1,0 +1,23 @@
+return {
+    kind = "chat", stage = 5, node = 3,
+    half = "first",
+    next_bond = 34,
+    lines = {
+        { amitie = "joy", don = "normal", bubble = "don_r", se = "norm",
+            text = { ja = "かっちゃんさんも手伝ってくれるのね!\nとてもうれしいわ!ありがとう!!", en = "You'll help us too, Katsu-chan!\nI'm so happy! Thank you!!" } },
+        { amitie = "katsu", don = "hop", bubble = "wide_r", se = "norm",
+            text = { ja = "我が魔法にかかれば、\nドラゴンなど敵ではナイ…", en = "Before my magic,\nthe dragon is no foe..." } },
+        { amitie = "none", bubble = "cloud", se = "norm",
+            text = { ja = "たのもしいドン!\n(本当カッ!?)", en = "How reliable, don!\n(Really, ka!?)" } },
+        { amitie = "lakis", bubble = "wide_r", se = "norm",
+            text = { ja = "あの…たすけていただいた\nお礼をしたいのですが…", en = "Um... I'd like to thank you\nfor saving me..." } },
+        { bubble = "don_r", se = "norm",
+            text = { ja = "すぐそこにワタシの村があるので\nついてきていただけませんか?", en = "My village is just over there.\nWould you come with me?" } },
+        { amitie = "joy", bubble = "don_r", se = "norm",
+            text = { ja = "いいのかしら!うれしい!\n(久しぶりにお風呂に入るチャンス!)", en = "Really? How lovely!\n(A chance for a bath at last!)" } },
+        { don = "cheer", bubble = "wide", se = "donjump",
+            text = { ja = "ワーイだドーン!!\nおなかがペコペコだドン!!", en = "Yaaay, dooon!!\nI'm starving, don!!" } },
+        { amitie = "lakis", bubble = "wide_r", se = "norm",
+            text = { ja = "それではまいりましょうか…\nウフフ…", en = "Shall we go, then...\nUfufu..." } },
+    },
+}

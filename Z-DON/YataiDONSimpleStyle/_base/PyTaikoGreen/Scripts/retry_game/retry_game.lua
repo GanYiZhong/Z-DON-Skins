@@ -159,7 +159,7 @@ function RetryGame:hit()
             snd("moon")
             snd("voice_more", "voice")
         end
-        if self:lamps_lit() > lamps_before then snd("lamp_up") end
+        if self:lamps_lit() > lamps_before then snd("light_up") end
     end
 end
 
@@ -200,18 +200,21 @@ function RetryGame:sounds()
         snd("whistle")
     end)
     if self.timeup and self.success then
-        self:once("flash", t >= self.t_end + ZERO_MS + 650, function() snd("se_flash") end)
+        self:once("flash", t >= self.t_end + ZERO_MS + 650, function()
+            if audio.is_sound_playing("moon") then audio.stop_sound("moon") end
+            snd("flash")
+        end)
         self:once("success", self.result_at ~= nil, function()
-            snd("clear")
+            snd("success")
             snd("voice_clear", "voice")
         end)
     elseif self.timeup then
         self:once("miss", true, function()
-            snd("fail")
+            snd("miss")
             snd("voice_fail", "voice")
         end)
         local lamps = self:lamps_lit()
-        if lamps < (self.last_lamps or lamps) then snd("lamp_down") end
+        if lamps < (self.last_lamps or lamps) then snd("light_down") end
         self.last_lamps = lamps
         self:once("wind", t >= self.result_at + FAILURE_MS, function() snd("wind") end)
     end
